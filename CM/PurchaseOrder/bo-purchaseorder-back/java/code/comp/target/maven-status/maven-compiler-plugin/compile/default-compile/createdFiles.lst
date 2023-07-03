@@ -1,0 +1,7 @@
+com\inspur\gs\scm\cm\purchaseorder\purchaseorder\back\bizactions\PurchaseOrderInstorage2MgrAction.class
+com\inspur\gs\scm\cm\purchaseorder\purchaseorder\back\purchaseorder\common\PurchaseOrderMgrActionUtils.class
+com\inspur\gs\scm\cm\purchaseorder\purchaseorder\back\bizactions\PurchaseOrderInstorage1MgrAction.class
+com\inspur\gs\scm\cm\purchaseorder\purchaseorder\back\purchaseorder\common\PurchaseOrderUtils.class
+com\inspur\gs\scm\cm\purchaseorder\purchaseorder\back\purchaseorder\entityactions\PurchaseOrderInstorageAction.class
+com\inspur\gs\scm\cm\purchaseorder\purchaseorder\back\orderquery\processunit\OrderQueryOrderUnitBuildInUnit.class
+com\inspur\gs\scm\cm\purchaseorder\purchaseorder\back\purchaseorder\common\OrderDetailsUtils.class

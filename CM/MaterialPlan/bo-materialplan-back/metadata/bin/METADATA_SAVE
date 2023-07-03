@@ -1,0 +1,8 @@
+#Last modified on: Sun Jul 02 14:49:20 GMT+08:00 2023
+#Sun Jul 02 14:49:20 GMT+08:00 2023
+metadata/be/MaterialPlan.be=765e0f1806e59c64aa8c4c5c3b5c842613d46200
+metadata/be=cb353a678bc4ac31e171228a542fca830474a8a3
+metadata/be/component/MaterialPlanDtmAfterCreate1DeterminationController.beDtmCmp=0dcf15ff54b2c681d2abd63cca7446a9b73f09f9
+metadata/be/component/MaterialPlanValBeforeSave1ValidationController.beValCmp=55fc36605cf6186e56db3e285b845e3b02c0dc45
+metadata/be/component=35d29fe6ad502a5d47df7ffd70479331058281c4
+metadata/be/MaterialPlan.be.res=dfc4cd123a9baf7226aa49e45f07847a0175b6ff

@@ -1,0 +1,129 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "bo-supplierma-front": {
+      "root": "projects/bo-supplierma-front/",
+      "sourceRoot": "projects/bo-supplierma-front/src",
+      "projectType": "application",
+      "prefix": "app",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "targets": {
+        "build": {
+          "builder": "@farris/farris-rollup:build",
+          "options": {
+            "format": "system",
+            "outputPath": "dist-rollup/bo-supplierma-front",
+            "ngcOut": "out-tsc/app/projects/bo-supplierma-front",
+            "excludeNgFactory": true,
+            "index": "projects/bo-supplierma-front/src/index.rollup.html",
+            "importmap": "/platform/runtime/common/web/runtime.common.manifest.json?v=1688345770183",
+            "tsConfig": "projects/bo-supplierma-front/tsconfig.app.json",
+            "entry": {
+              "main": {
+                "entry": "src/main.js",
+                "sourceMaps": false
+              },
+              "suppliermacard": {
+                "entry": "src/app/suppliermacard/suppliermacard.module.ngfactory.js",
+                "sourceMaps": false,
+                "output": "suppliermacard"
+              },
+              "suppliermalist": {
+                "entry": "src/app/suppliermalist/suppliermalist.module.ngfactory.js",
+                "sourceMaps": false,
+                "output": "suppliermalist"
+              }
+            },
+            "uglify": false,
+            "hash": false,
+            "libs": {},
+            "serve": false,
+            "visualize": false,
+            "libsPath": "F:/summer/Projects/node_modules/@farris/farris-rollup/src/build/libsWithNgFactory.json",
+            "linkedNodeModules": "F:/summer/Projects/node_modules",
+            "assets": [],
+            "i18n": {
+              "projects/bo-supplierma-front/src/app/suppliermacard/i18n": "dist-rollup/bo-supplierma-front/suppliermacard/i18n",
+              "projects/bo-supplierma-front/src/app/suppliermacard/expressions": "dist-rollup/bo-supplierma-front/suppliermacard/expressions",
+              "projects/bo-supplierma-front/src/app/suppliermacard/metadata": "dist-rollup/bo-supplierma-front/suppliermacard",
+              "projects/bo-supplierma-front/src/app/suppliermacard/services/dist-rollup": "dist-rollup/bo-supplierma-front/suppliermacard/services",
+              "projects/bo-supplierma-front/src/app/suppliermalist/i18n": "dist-rollup/bo-supplierma-front/suppliermalist/i18n",
+              "projects/bo-supplierma-front/src/app/suppliermalist/expressions": "dist-rollup/bo-supplierma-front/suppliermalist/expressions",
+              "projects/bo-supplierma-front/src/app/suppliermalist/metadata": "dist-rollup/bo-supplierma-front/suppliermalist",
+              "projects/bo-supplierma-front/src/app/suppliermalist/services/dist-rollup": "dist-rollup/bo-supplierma-front/suppliermalist/services"
+            }
+          },
+          "configurations": {
+            "production": {
+              "importmap": "/platform/runtime/common/web/runtime.common.manifest.json?v=1688345770184",
+              "optimization": false,
+              "buildOptimizer": false,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": true,
+              "showCircularDependencies": false,
+              "aot": true,
+              "extractLicenses": false,
+              "statsJson": false,
+              "progress": false,
+              "vendorChunk": true
+            },
+            "ci": {
+              "importmap": "/platform/runtime/common/web/runtime.common.manifest.json",
+              "libsPath": "请手工修改,参考示例：/builds/webadp/front-project-ci/node_modules/@farris/farris-rollup/src/build/libsWithNgFactory.json",
+              "linkedNodeModules": "请手工修改，参考示例：/builds/webadp/front-project-ci/node_modules",
+              "optimization": false,
+              "buildOptimizer": false,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": true,
+              "showCircularDependencies": false,
+              "aot": true,
+              "extractLicenses": false,
+              "statsJson": false,
+              "progress": false,
+              "vendorChunk": true
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "bo-supplierma-front:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "bo-supplierma-front:build:production"
+            },
+            "ci": {
+              "importmap": "/platform/runtime/common/web/runtime.common.manifest.json",
+              "libsPath": "请手工修改,参考示例：/builds/webadp/front-project-ci/node_modules/@farris/farris-rollup/src/build/libsWithNgFactory.json",
+              "linkedNodeModules": "请手工修改，参考示例：/builds/webadp/front-project-ci/node_modules",
+              "optimization": false,
+              "buildOptimizer": false,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": true,
+              "showCircularDependencies": false,
+              "aot": true,
+              "extractLicenses": false,
+              "statsJson": false,
+              "progress": false,
+              "vendorChunk": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "bo-supplierma-front"
+}

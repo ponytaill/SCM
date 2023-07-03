@@ -1,0 +1,43 @@
+{
+  "Header" : {
+    "Code" : "MaterialForm_frm_Controller",
+    "Type" : "WebComponent",
+    "NameSpace" : "Inspur.GS.SCM.CM.Material.Material.Front",
+    "CertId" : null,
+    "Name" : "物料管理表单_frm_Controller",
+    "FileName" : "MaterialForm_frm_Controller.webcmp",
+    "BizobjectID" : "d8bf8331-1d31-69b0-b6b6-d1ea9f4bba96",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "a31c8838-327e-4a8a-9ecf-e3eb049d5bc5",
+    "IsTranslating" : false
+  },
+  "Refs" : [ ],
+  "Content" : {
+    "name" : "物料管理表单_frm_Controller",
+    "application" : "SCM",
+    "serviceUnit" : "CM",
+    "version" : "1.0",
+    "refStructures" : [ ],
+    "resource" : {
+      "sourceFile" : "SCM/CM/Material/bo-material-front/metadata/components/MaterialForm_frm_Controller.ts",
+      "className" : null,
+      "kind" : "TypeScriptClass"
+    },
+    "Code" : "MaterialForm_frm_Controller",
+    "Id" : "a31c8838-327e-4a8a-9ecf-e3eb049d5bc5",
+    "Description" : null,
+    "Operations" : [ ],
+    "IsCommon" : false,
+    "ClassName" : null,
+    "FormCode" : "MaterialForm",
+    "Source" : "SCM/CM/Material/bo-material-front/metadata/components/MaterialForm_frm_Controller.ts"
+  },
+  "ExtendRule" : null,
+  "RelativePath" : "SCM/CM/Material/bo-material-front/metadata/components",
+  "ExtendProperty" : "{\"IsCommon\":false,\"FormCode\":\"MaterialForm\"}",
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

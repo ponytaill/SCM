@@ -1,0 +1,43 @@
+{
+  "Header" : {
+    "Code" : "PurchaseOrderList_frm_Add",
+    "Type" : "WebComponent",
+    "NameSpace" : "Inspur.GS.SCM.CM.PurchaseOrder.PurchaseOrder.Front",
+    "CertId" : null,
+    "Name" : "采购订单列表_frm_Add",
+    "FileName" : "PurchaseOrderList_frm_Add.webcmp",
+    "BizobjectID" : "8de461f4-9c5e-b7fc-9d76-c1108500332d",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "f9a32f63-4fcc-47a8-b546-da20706d5e18",
+    "IsTranslating" : false
+  },
+  "Refs" : [ ],
+  "Content" : {
+    "name" : "采购订单列表_frm_Add",
+    "application" : "SCM",
+    "serviceUnit" : "CM",
+    "version" : "1.0",
+    "refStructures" : [ ],
+    "resource" : {
+      "sourceFile" : "SCM/CM/PurchaseOrder/bo-purchaseorder-front/metadata/components/PurchaseOrderList_frm_Add.ts",
+      "className" : null,
+      "kind" : "TypeScriptClass"
+    },
+    "Code" : "PurchaseOrderList_frm_Add",
+    "Id" : "f9a32f63-4fcc-47a8-b546-da20706d5e18",
+    "Description" : null,
+    "Operations" : [ ],
+    "IsCommon" : false,
+    "ClassName" : null,
+    "FormCode" : "PurchaseOrderList",
+    "Source" : "SCM/CM/PurchaseOrder/bo-purchaseorder-front/metadata/components/PurchaseOrderList_frm_Add.ts"
+  },
+  "ExtendRule" : null,
+  "RelativePath" : "SCM/CM/PurchaseOrder/bo-purchaseorder-front/metadata/components",
+  "ExtendProperty" : "{\"IsCommon\":false,\"FormCode\":\"PurchaseOrderList\"}",
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

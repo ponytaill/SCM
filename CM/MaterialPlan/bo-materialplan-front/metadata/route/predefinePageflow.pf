@@ -1,0 +1,63 @@
+{
+  "Header" : {
+    "Code" : "predefinePageflow",
+    "Type" : "PageFlowMetadata",
+    "NameSpace" : "Inspur.GS.SCM.CM.MaterialPlan.MaterialPlan.Front",
+    "CertId" : null,
+    "Name" : "predefinePageflow",
+    "FileName" : "predefinePageflow.pf",
+    "BizobjectID" : "231b9526-f857-fa01-9eec-f45b6f98367d",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "cbb06004-f9f7-4222-bdaf-493b4bf9505e",
+    "IsTranslating" : false
+  },
+  "Refs" : [ ],
+  "Content" : {
+    "code" : null,
+    "name" : null,
+    "id" : "cbb06004-f9f7-4222-bdaf-493b4bf9505e",
+    "project" : {
+      "name" : "bo-materialplan-front"
+    },
+    "pages" : [ {
+      "id" : "13b2d168-4d6a-4ea3-b811-e3e56498f101",
+      "code" : "MaterialPlanCard",
+      "name" : "物料需求计划详情",
+      "fileName" : "MaterialPlanCard.frm",
+      "relativePath" : "SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components",
+      "formUri" : null,
+      "routeUri" : "MaterialPlanCard",
+      "routeParams" : null,
+      "forceDynamicForm" : false
+    }, {
+      "id" : "e72f0873-e8ea-4969-8451-a0bdf12a5d16",
+      "code" : "MaterialPlanForm",
+      "name" : "物料需求计划表单",
+      "fileName" : "MaterialPlanForm.frm",
+      "relativePath" : "SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components",
+      "formUri" : "e72f0873-e8ea-4969-8451-a0bdf12a5d16",
+      "routeUri" : "MaterialPlanForm",
+      "routeParams" : null,
+      "forceDynamicForm" : false
+    } ],
+    "entry" : "MaterialPlanCard",
+    "routes" : null,
+    "appCode" : "MaterialPlanList",
+    "appName" : "物料需求计划详情",
+    "publishes" : [ {
+      "id" : "8652724f-5e15-4348-b87b-5e735ed06830",
+      "entry" : "13b2d168-4d6a-4ea3-b811-e3e56498f101"
+    }, {
+      "id" : "2825fde0-c4b4-4f3d-a945-86bca0f4a992",
+      "entry" : "e72f0873-e8ea-4969-8451-a0bdf12a5d16"
+    } ]
+  },
+  "ExtendRule" : null,
+  "RelativePath" : "SCM/CM/MaterialPlan/bo-materialplan-front/metadata/route",
+  "ExtendProperty" : "",
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

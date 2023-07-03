@@ -1,0 +1,15 @@
+{
+  "AppCode" : "SCM",
+  "ServiceUnitCode" : "CM",
+  "BizobjectCode" : "SupplierMa",
+  "BizobjectID" : "ca0af27e-3ff4-a99d-a4e5-aec1c23a5eb7",
+  "ProjectNameSpace" : "Inspur.GS.SCM.CM.SupplierMa.SupplierMa.Front",
+  "SuDeploymentPath" : "apps/scm/cm",
+  "MetadataProjectName" : "bo-SupplierMa-Front",
+  "MetadataPackageName" : "Inspur.GS.SCM.CM.SupplierMa.SupplierMa.Front",
+  "SuConfigDeploymentPath" : null,
+  "ProjectType" : "frontend",
+  "ProjectExtendItem" : [ {
+    "codelanguage" : "java"
+  } ]
+}

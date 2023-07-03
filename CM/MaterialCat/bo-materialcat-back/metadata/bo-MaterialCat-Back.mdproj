@@ -1,0 +1,22 @@
+{
+  "NameSpace" : "Inspur.GS.SCM.CM.MaterialCat.MaterialCat.Back",
+  "Name" : "bo-MaterialCat-Back",
+  "ProjectFileName" : null,
+  "ProjectPath" : null,
+  "MetadataPackageInfo" : {
+    "Name" : "Inspur.GS.SCM.CM.MaterialCat.MaterialCat.Back",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  },
+  "MetadataPackageRefs" : [ ],
+  "ProjectRefs" : null,
+  "ExternalRefs" : null,
+  "MdpkgRefs" : null,
+  "MavenPackageRefs" : [ ],
+  "CsprojAssemblyName" : null,
+  "ID" : "2820a08e-c6da-431f-ae95-f2174658ffca"
+}

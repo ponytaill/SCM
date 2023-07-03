@@ -1,0 +1,70 @@
+{
+  "NameSpace" : "Inspur.GS.SCM.CM.Material.Material.Back",
+  "Name" : "bo-Material-Back",
+  "ProjectFileName" : "bo-Material-Back.mdproj",
+  "ProjectPath" : "SCM/CM/Material/bo-material-back/metadata",
+  "MetadataPackageInfo" : {
+    "Name" : "Inspur.GS.SCM.CM.Material.Material.Back",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  },
+  "MetadataPackageRefs" : [ {
+    "Name" : "Inspur.GS.SCM.CM.MaterialCat.MaterialCat.Back",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  }, {
+    "Name" : "Inspur.GS.SCM.CM.SupplierMa.SupplierMa.Back",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  } ],
+  "ProjectRefs" : [ {
+    "Name" : "Inspur.GS.SCM.CM.MaterialCat.MaterialCat.Back",
+    "ProjectPath" : "../../../../SCM/CM/MaterialCat/bo-materialcat-back"
+  }, {
+    "Name" : "Inspur.GS.SCM.CM.SupplierMa.SupplierMa.Back",
+    "ProjectPath" : "../../../../SCM/CM/SupplierMa/bo-supplierma-back"
+  } ],
+  "ExternalRefs" : null,
+  "MdpkgRefs" : [ {
+    "Name" : "Inspur.Gsp.Common.CommonUdt",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "generation"
+  }, {
+    "Name" : "Inspur.Gsp.Common.CommonCmp",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "generation"
+  } ],
+  "MavenPackageRefs" : [ {
+    "GroupId" : "com.inspur.gs",
+    "ArtifactId" : "scm-cm-materialcat-materialcat-back-api",
+    "Version" : "m0.1.0-SNAPSHOT",
+    "MetadataPackageName" : "Inspur.GS.SCM.CM.MaterialCat.MaterialCat.Back"
+  }, {
+    "GroupId" : "com.inspur.gs",
+    "ArtifactId" : "scm-cm-supplierma-supplierma-back-api",
+    "Version" : "m0.1.0-SNAPSHOT",
+    "MetadataPackageName" : "Inspur.GS.SCM.CM.SupplierMa.SupplierMa.Back"
+  } ],
+  "CsprojAssemblyName" : "Inspur.GS.SCM.CM.Material.Material.Back",
+  "ID" : "ed74cb0b-2347-425a-9454-b7859bf3fb18"
+}

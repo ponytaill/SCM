@@ -1,0 +1,317 @@
+{
+  "Header" : {
+    "Code" : "SupplierMaLookup",
+    "Type" : "HelpMetadata",
+    "NameSpace" : "Inspur.GS.SCM.CM.SupplierMa.SupplierMa.Front",
+    "CertId" : null,
+    "Name" : "供应商管理帮助",
+    "FileName" : "SupplierMaLookup.hlp",
+    "BizobjectID" : "ca0af27e-3ff4-a99d-a4e5-aec1c23a5eb7",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "c65c0ea9-68db-4152-a875-fbee4ee70887",
+    "IsTranslating" : false
+  },
+  "Refs" : [ {
+    "DependentMetadata" : {
+      "ID" : "eca249b1-85db-4659-8e88-eb82c1e49743",
+      "CertId" : null,
+      "NameSpace" : "Inspur.GS.SCM.CM.SupplierMa.SupplierMa.Front",
+      "Code" : "SupplierMaLookup.hlp",
+      "Name" : "SupplierMaLookup.hlp",
+      "Type" : "ResourceMetadata",
+      "BizobjectID" : "ca0af27e-3ff4-a99d-a4e5-aec1c23a5eb7"
+    }
+  } ],
+  "Content" : {
+    "code" : "SupplierMaLookup",
+    "name" : "供应商管理帮助",
+    "version" : "0.0.2",
+    "id" : "c65c0ea9-68db-4152-a875-fbee4ee70887",
+    "title" : "供应商管理帮助",
+    "idField" : "id",
+    "idFieldName" : "主键",
+    "textField" : "supplierName",
+    "textFieldName" : "供应商名称",
+    "valueField" : "id",
+    "valueFieldName" : "主键",
+    "displayType" : "List",
+    "description" : "",
+    "dataSource" : {
+      "columns" : [ {
+        "field" : "supplierCode",
+        "title" : "供应商编号",
+        "width" : 100,
+        "fieldPath" : "SupplierCode",
+        "fieldType" : "StringType",
+        "supportSearch" : true,
+        "align" : "left",
+        "formatter" : null,
+        "sortable" : false,
+        "order" : null,
+        "hAlign" : "left"
+      }, {
+        "field" : "supplierName",
+        "title" : "供应商名称",
+        "width" : 100,
+        "fieldPath" : "SupplierName",
+        "fieldType" : "StringType",
+        "supportSearch" : true,
+        "align" : "left",
+        "formatter" : null,
+        "sortable" : false,
+        "order" : null,
+        "hAlign" : "left"
+      } ],
+      "sourceType" : "BE",
+      "sourcePath" : "SCM/CM/SupplierMa/bo-supplierma-back/metadata/be/SupplierMa.be",
+      "sourceName" : "供应商管理",
+      "sourceId" : "73041b54-d424-45ed-9927-6be784dd1b91",
+      "uri" : "SCM/CM/SupplierMa/bo-supplierma-front/metadata/lookups/SupplierMaLookup_hlp.vo",
+      "vmCode" : "Inspur.GS.SCM.CM.SupplierMa.SupplierMa.Front.Vo.SupplierMaLookup_hlp",
+      "voSourceId" : "6eac3f85-60f3-4bcc-ab6f-373683cdfafd",
+      "conditions" : [ ],
+      "sorts" : [ ],
+      "pageInfo" : {
+        "pageList" : [ 10, 20, 30, 50 ],
+        "pageSize" : 20,
+        "pageIndex" : 0,
+        "enablePager" : true
+      },
+      "treeInfo" : {
+        "loadDataType" : "async",
+        "layerType" : "pathcode",
+        "dataField" : "",
+        "pathField" : "path",
+        "layerField" : "layer",
+        "isDetailField" : "isDetail",
+        "onlySelectLeaf" : false,
+        "parentField" : "parentElement",
+        "treeDataIsInit" : false
+      }
+    },
+    "navigation" : null,
+    "languages" : null,
+    "schema" : {
+      "main" : {
+        "entities" : [ {
+          "type" : {
+            "$type" : "EntityType",
+            "entities" : [ ],
+            "fields" : [ {
+              "$type" : "SimpleField",
+              "bindingField" : "id",
+              "bindingPath" : "id",
+              "type" : {
+                "$type" : "StringType"
+              },
+              "path" : "ID",
+              "id" : "9061cbb3-e683-4c2f-8bb0-4fd11bc25e2c_ID",
+              "originalId" : "9061cbb3-e683-4c2f-8bb0-4fd11bc25e2c",
+              "label" : "id",
+              "code" : "ID",
+              "name" : "主键",
+              "parentPath" : ""
+            }, {
+              "$type" : "SimpleField",
+              "bindingField" : "version",
+              "bindingPath" : "version",
+              "type" : {
+                "$type" : "DateTimeType"
+              },
+              "path" : "Version",
+              "id" : "8ac66c8c-d711-4c64-ab67-1000ae9cd5da_Version",
+              "originalId" : "8ac66c8c-d711-4c64-ab67-1000ae9cd5da",
+              "label" : "version",
+              "code" : "Version",
+              "name" : "版本",
+              "parentPath" : ""
+            }, {
+              "$type" : "SimpleField",
+              "bindingField" : "supplierName",
+              "bindingPath" : "supplierName",
+              "type" : {
+                "$type" : "StringType"
+              },
+              "path" : "SupplierName",
+              "id" : "f6a2037f-7e32-4474-955c-763056d8f6c3_SupplierName",
+              "originalId" : "f6a2037f-7e32-4474-955c-763056d8f6c3",
+              "label" : "supplierName",
+              "code" : "SupplierName",
+              "name" : "供应商名称",
+              "parentPath" : ""
+            }, {
+              "$type" : "SimpleField",
+              "bindingField" : "supplierCode",
+              "bindingPath" : "supplierCode",
+              "type" : {
+                "$type" : "StringType"
+              },
+              "path" : "SupplierCode",
+              "id" : "173dcfb0-29d9-4ab0-860b-58ed9a138019_SupplierCode",
+              "originalId" : "173dcfb0-29d9-4ab0-860b-58ed9a138019",
+              "label" : "supplierCode",
+              "code" : "SupplierCode",
+              "name" : "供应商编号",
+              "parentPath" : ""
+            }, {
+              "$type" : "ComplexField",
+              "bindingField" : "contacts",
+              "bindingPath" : "contacts",
+              "type" : {
+                "$type" : "EntityType",
+                "entities" : [ ],
+                "fields" : [ {
+                  "$type" : "SimpleField",
+                  "bindingField" : "contacts",
+                  "bindingPath" : "contacts.contacts",
+                  "type" : {
+                    "$type" : "StringType"
+                  },
+                  "path" : "Contacts.Contacts",
+                  "id" : "1a95777a-e315-49f3-a50d-58a6101ac8a3_Contacts.Contacts",
+                  "originalId" : "1a95777a-e315-49f3-a50d-58a6101ac8a3",
+                  "label" : "contacts",
+                  "code" : "Contacts",
+                  "name" : "联系人姓名",
+                  "parentPath" : "contacts"
+                }, {
+                  "$type" : "SimpleField",
+                  "bindingField" : "contacts_Contacts_ID",
+                  "bindingPath" : "contacts.contacts_ID",
+                  "type" : {
+                    "$type" : "StringType"
+                  },
+                  "path" : "Contacts.Contacts_ID",
+                  "id" : "557b0460-1b2d-44d1-9487-d808d0d1813b_Contacts.Contacts_ID",
+                  "originalId" : "557b0460-1b2d-44d1-9487-d808d0d1813b",
+                  "label" : "contacts_ID",
+                  "code" : "ID",
+                  "name" : "ID",
+                  "parentPath" : "contacts"
+                }, {
+                  "$type" : "SimpleField",
+                  "bindingField" : "contacts_Contacts_Name",
+                  "bindingPath" : "contacts.contacts_Name",
+                  "type" : {
+                    "$type" : "StringType"
+                  },
+                  "path" : "Contacts.Contacts_Name",
+                  "id" : "74df6872-f066-4b2e-b6d3-0777882ff0c6_Contacts.Contacts_Name",
+                  "originalId" : "74df6872-f066-4b2e-b6d3-0777882ff0c6",
+                  "label" : "contacts_Name",
+                  "code" : "Name",
+                  "name" : "名称",
+                  "parentPath" : "contacts"
+                }, {
+                  "$type" : "SimpleField",
+                  "bindingField" : "contacts_Contacts_Code",
+                  "bindingPath" : "contacts.contacts_Code",
+                  "type" : {
+                    "$type" : "StringType"
+                  },
+                  "path" : "Contacts.Contacts_Code",
+                  "id" : "8650163d-1c59-4410-a625-88200f3f8920_Contacts.Contacts_Code",
+                  "originalId" : "8650163d-1c59-4410-a625-88200f3f8920",
+                  "label" : "contacts_Code",
+                  "code" : "Code",
+                  "name" : "编号",
+                  "parentPath" : "contacts"
+                } ],
+                "primary" : "contacts"
+              },
+              "path" : "Contacts",
+              "id" : "84486d72-1078-4da3-90af-84e874ed7a2c_Contacts",
+              "originalId" : "84486d72-1078-4da3-90af-84e874ed7a2c",
+              "label" : "contacts",
+              "code" : "Contacts",
+              "name" : "联系人姓名",
+              "parentPath" : ""
+            }, {
+              "$type" : "SimpleField",
+              "bindingField" : "contactsEmail",
+              "bindingPath" : "contactsEmail",
+              "type" : {
+                "$type" : "StringType"
+              },
+              "path" : "ContactsEmail",
+              "id" : "10ceec31-792e-4261-87ea-e0192ebb2c2a_ContactsEmail",
+              "originalId" : "10ceec31-792e-4261-87ea-e0192ebb2c2a",
+              "label" : "contactsEmail",
+              "code" : "ContactsEmail",
+              "name" : "联系人邮箱",
+              "parentPath" : ""
+            }, {
+              "$type" : "SimpleField",
+              "bindingField" : "contactsAddress",
+              "bindingPath" : "contactsAddress",
+              "type" : {
+                "$type" : "StringType"
+              },
+              "path" : "ContactsAddress",
+              "id" : "9c71c309-7353-4986-80b1-a09180f1696d_ContactsAddress",
+              "originalId" : "9c71c309-7353-4986-80b1-a09180f1696d",
+              "label" : "contactsAddress",
+              "code" : "ContactsAddress",
+              "name" : "办公地址",
+              "parentPath" : ""
+            }, {
+              "$type" : "SimpleField",
+              "bindingField" : "signTime",
+              "bindingPath" : "signTime",
+              "type" : {
+                "$type" : "DateTimeType"
+              },
+              "path" : "SignTime",
+              "id" : "082bbefe-c3a3-4383-ad35-da3a089fc083_SignTime",
+              "originalId" : "082bbefe-c3a3-4383-ad35-da3a089fc083",
+              "label" : "signTime",
+              "code" : "SignTime",
+              "name" : "注册时间",
+              "parentPath" : ""
+            }, {
+              "$type" : "SimpleField",
+              "bindingField" : "remark",
+              "bindingPath" : "remark",
+              "type" : {
+                "$type" : "TextType"
+              },
+              "path" : "Remark",
+              "id" : "92d98872-a011-4696-a55f-ef64e5a568ca_Remark",
+              "originalId" : "92d98872-a011-4696-a55f-ef64e5a568ca",
+              "label" : "remark",
+              "code" : "Remark",
+              "name" : "备注",
+              "parentPath" : ""
+            } ],
+            "primary" : "id",
+            "displayName" : "供应商管理",
+            "name" : "SupplierMa"
+          },
+          "id" : "ba8e92bf-693f-49d8-a555-06b348db0e5b",
+          "label" : "supplierMas",
+          "code" : "SupplierMa",
+          "name" : "供应商管理"
+        } ],
+        "extendProperties" : {
+          "enableStdTimeFormat" : true
+        },
+        "sourceType" : "vo",
+        "id" : "6eac3f85-60f3-4bcc-ab6f-373683cdfafd",
+        "variables" : [ ],
+        "sourceUri" : null,
+        "code" : "SupplierMaLookup_hlp",
+        "name" : "供应商管理帮助_ViewObject"
+      }
+    },
+    "initDataSource" : true,
+    "createTime" : "2023-06-21 09:43:02"
+  },
+  "ExtendRule" : null,
+  "RelativePath" : "SCM/CM/SupplierMa/bo-supplierma-front/metadata/lookups",
+  "ExtendProperty" : "",
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

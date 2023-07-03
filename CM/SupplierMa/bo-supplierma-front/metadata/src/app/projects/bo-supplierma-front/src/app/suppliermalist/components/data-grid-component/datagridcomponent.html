@@ -1,0 +1,15 @@
+<farris-section class="f-section-grid f-section-in-managelist" id="data-grid-section" [index]="index" [expandStatus]="true" [mainTitle]="SectiondatagridsectionMainTitle" [subTitle]="SectiondatagridsectionSubTitle" [fill]="true" [showHeader]="false" [enableMaximize]="true" [enableAccordion]="'default'" *ngIf="true" sectionRef>
+<!DOCTYPE html><div class="f-utils-fill"><farris-datagrid class="f-component-grid" id="dataGrid" farris-use-binding-data datagridRef farris-grid-end-edit [enableHighlightCell]="false" [fitColumns]="true" [fields]="this.viewModel.dataGridColumns" [showLineNumber]="false" [striped]="true" [virtualized]="false" [pagination]="true" [pageSize]="20" [virtualizedAsyncLoad]="false" [multiSelect]="false" [editMode]="'cell'" (pageChanged)="this.viewModel.ChangePage1($event);" [fit]="true" [showCheckbox]="false" [farris-datagrid-editable]="viewModel.stateMachine && viewModel.stateMachine['editable']" [disableGroupOnEditing]="true" [lockPagination]="viewModel.stateMachine&&viewModel.stateMachine['editable']" [footerHeight]="29" (scrollYLoad)="this.viewModel.ChangePage1($event);" [showAllCheckbox]="false" [lineNumberTitle]="dataGridlineNumberTitle" [mergeCell]="false" [showBorder]="false" [checkOnSelect]="false" [selectOnCheck]="false" [nowrap]="true" [footerDataFrom]="'client'" *ngIf="true" farris-remote-summary-command="" [autoFitColumns]="false" [showGroupColumn]="true" [autoHeight]="false" [AutoColumnWidthUseDblclick]="true" [showPageList]="false" (pageSizeChanged)="this.viewModel.ChangePage1($event);" [pageList]="[10,20,30,50,100]" [lineNumberWidth]="36" [headerWrap]="false" [rowHeight]="30" [enableEditCellStyle]="false" [enableDragColumn]="false" [showRowGroupPanel]="false" [groupSummaryPosition]="'groupFooterRow'" [keepSelect]="true" [clearSelectionsWhenDataIsEmpty]="true" [selectOnEditing]="false" [footerPosition]="'bottom'" [showGotoInput]="false" [scrollBarShowMode]="'auto'" [enableContextMenu]="false" [enableSimpleMode]="false" [selectionMode]="'default'" [enableScheme]="false" #dataGridDataGrid=""></farris-datagrid></div>
+</farris-section><ng-template #dataGridcontacts_contacts_NameTemplate let-ctx>
+<ng-template #contextTmpl>
+    <div style=" padding:20px 10px 26px 20px; font-size: 12px;color: #515151;width:330px">
+        <h4 style="font-weight:600;font-size: 18px;color: rgba(0,0,0,0.80);margin:0 0 14px;">联系人信息</h4>
+         <p style="margin:0 0 12px;"><i class="f-icon f-icon-basic text-success" style="margin-right: 8px;font-size: 13px;"></i>联系人姓名：{{ctx.rowData['contacts']['contacts_Name']}}</p>
+        <p style="margin:0 0 12px;"><i class="f-icon f-icon-basic text-success" style="margin-right: 8px;font-size: 13px;"></i>联系人邮箱：{{ctx.rowData['contactsEmail']}}</p>
+        <p style="margin:0 0 12px;"><i class="f-icon f-icon-user text-success" style="margin-right: 8px;font-size: 13px;"></i>办公地址：{{ctx.rowData['contactsAddress']}}</p>
+    </div>
+</ng-template>
+<div class="f-datagrid-cell-content">
+    <span class="mr-5" farrisPopover [placement]="'right'" [triggers]="'hover'" [popover]="contextTmpl">{{ctx.rowData['contacts']['contacts_Name']}}</span>
+</div>
+</ng-template>

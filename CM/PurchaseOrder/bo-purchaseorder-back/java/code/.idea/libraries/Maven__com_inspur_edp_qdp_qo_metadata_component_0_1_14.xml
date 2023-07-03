@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.inspur.edp:qdp-qo-metadata-component:0.1.14">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../../../maven/Respository/com/inspur/edp/qdp-qo-metadata-component/0.1.14/qdp-qo-metadata-component-0.1.14.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../../../../maven/Respository/com/inspur/edp/qdp-qo-metadata-component/0.1.14/qdp-qo-metadata-component-0.1.14-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../../../../maven/Respository/com/inspur/edp/qdp-qo-metadata-component/0.1.14/qdp-qo-metadata-component-0.1.14-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

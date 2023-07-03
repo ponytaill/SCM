@@ -1,0 +1,71 @@
+{
+  "Header" : {
+    "Code" : "PurchaseOrderInstorage1MgrActionController",
+    "Type" : "BEMgrComponent",
+    "NameSpace" : "Inspur.GS.SCM.CM.PurchaseOrder.PurchaseOrder.Back",
+    "CertId" : null,
+    "Name" : "PurchaseOrderInstorage1MgrActionController",
+    "FileName" : "PurchaseOrderInstorage1MgrActionController.beMgrCmp",
+    "BizobjectID" : "8de461f4-9c5e-b7fc-9d76-c1108500332d",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "10e99d19-f54d-47ba-8eb1-1fa5b95aeaf7",
+    "IsTranslating" : false
+  },
+  "Refs" : [ ],
+  "Content" : {
+    "BEMgrMethod" : {
+      "Assembly" : "Inspur.GS.SCM.CM.PurchaseOrder.PurchaseOrder.Back",
+      "BEMgrParams" : [ {
+        "Assembly" : "mscorlib.dll",
+        "ClassName" : "System.String",
+        "ID" : "3fb4c53d-8a20-4f0b-b575-d9e6d8d00411",
+        "JavaClassName" : "java.lang.String",
+        "Mode" : 0,
+        "ParamCode" : "id",
+        "ParamDescription" : "",
+        "ParamName" : "id",
+        "ParameterCollectionType" : 0,
+        "ParameterType" : 0
+      }, {
+        "Assembly" : "mscorlib.dll",
+        "ClassName" : "System.String",
+        "ID" : "48e311c6-f3e7-4dc8-b8de-3b5d5b4d346a",
+        "JavaClassName" : "java.lang.String",
+        "Mode" : 0,
+        "ParamCode" : "IsFinished",
+        "ParamDescription" : "",
+        "ParamName" : "是否入库",
+        "ParameterCollectionType" : 0,
+        "ParameterType" : 0
+      } ],
+      "ClassName" : "Inspur.GS.SCM.CM.PurchaseOrder.PurchaseOrder.Back.bizactions.PurchaseOrderInstorage1MgrAction",
+      "JavaClassName" : "com.inspur.gs.scm.cm.purchaseorder.purchaseorder.back.bizactions.PurchaseOrderInstorage1MgrAction",
+      "JavaPackageName" : null,
+      "ReturnValue" : {
+        "Assembly" : "mscorlib.dll",
+        "ClassName" : "System.String",
+        "ID" : "354f5899-8077-4552-abec-822757579f55",
+        "JavaClassName" : "java.lang.String",
+        "Mode" : 0,
+        "ParamCode" : "",
+        "ParamDescription" : "",
+        "ParamName" : "",
+        "ParameterCollectionType" : 0,
+        "ParameterType" : 0
+      }
+    },
+    "ComponentCode" : "Instorage1",
+    "ComponentDescription" : "",
+    "ComponentID" : "10e99d19-f54d-47ba-8eb1-1fa5b95aeaf7",
+    "ComponentName" : "入库1",
+    "ComponentType" : "BEMgrComponent"
+  },
+  "ExtendRule" : null,
+  "RelativePath" : null,
+  "ExtendProperty" : null,
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

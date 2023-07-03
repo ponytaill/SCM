@@ -1,0 +1,1 @@
+[{"path":"totalPrice","ns":"","type":"Field","expressions":[{"id":"b3c131a8-baa8-47e0-bf39-97dbacc7167a_compute","type":"compute","value":"return DefaultFunction.round(DefaultFunction.MultiplyChildNumber(\"PurchaseOrder.orderDetailss\",\"amount\",\"materialId.materialId_EvePrice\"),2)","message":null,"messageType":null}]}]

@@ -1,0 +1,86 @@
+{
+  "NameSpace" : "Inspur.GS.SCM.CM.Material.Material.Front",
+  "Name" : "bo-Material-Front",
+  "ProjectFileName" : "bo-Material-Front.mdproj",
+  "ProjectPath" : "SCM/CM/Material/bo-material-front/metadata",
+  "MetadataPackageInfo" : {
+    "Name" : "Inspur.GS.SCM.CM.Material.Material.Front",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  },
+  "MetadataPackageRefs" : [ {
+    "Name" : "Inspur.GS.SCM.CM.MaterialCat.MaterialCat.Front",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  }, {
+    "Name" : "Inspur.GS.SCM.CM.Material.Material.Back",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  } ],
+  "ProjectRefs" : [ {
+    "Name" : "Inspur.GS.SCM.CM.Material.Material.Back",
+    "ProjectPath" : "../../../../SCM/CM/Material/bo-material-back"
+  }, {
+    "Name" : "Inspur.GS.SCM.CM.MaterialCat.MaterialCat.Front",
+    "ProjectPath" : "../../../../SCM/CM/MaterialCat/bo-materialcat-front"
+  } ],
+  "ExternalRefs" : null,
+  "MdpkgRefs" : [ {
+    "Name" : "Inspur.GS.Gsp.Web.WebCmp",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "generation"
+  }, {
+    "Name" : "Inspur.GS.Gsp.Web.AttachmentCmp",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "generation"
+  }, {
+    "Name" : "Inspur.GS.Gsp.Sys.User",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "generation"
+  }, {
+    "Name" : "Inspur.GS.SCM.CM.SupplierMa.SupplierMa.Front",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  } ],
+  "MavenPackageRefs" : [ {
+    "GroupId" : "com.inspur.gs",
+    "ArtifactId" : "scm-cm-material-material-back-api",
+    "Version" : "m0.1.0-SNAPSHOT",
+    "MetadataPackageName" : "Inspur.GS.SCM.CM.Material.Material.Back"
+  }, {
+    "GroupId" : "com.inspur.gs",
+    "ArtifactId" : "scm-cm-materialcat-materialcat-front-api",
+    "Version" : "m0.1.0-SNAPSHOT",
+    "MetadataPackageName" : "Inspur.GS.SCM.CM.MaterialCat.MaterialCat.Front"
+  } ],
+  "CsprojAssemblyName" : "Inspur.GS.SCM.CM.Material.Material.Front",
+  "ID" : "31ac25f9-68f7-4376-a991-40dd21966792"
+}

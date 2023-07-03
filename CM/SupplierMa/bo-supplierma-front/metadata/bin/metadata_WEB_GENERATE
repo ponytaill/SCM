@@ -1,0 +1,12 @@
+#Last modified on: Mon Jul 03 08:56:11 GMT+08:00 2023
+#Mon Jul 03 08:56:11 GMT+08:00 2023
+metadata/eapi/SupplierMaCard_frm.eapi=1688089885778
+metadata/eapi/SupplierMaList_frm.eapi=1687316856481
+metadata/components/SupplierMaCard_frm.sm=1687315296388
+metadata/components/SupplierMaCard.frm=1688110385930
+metadata/components/SupplierMaCard.frm.res=1688088466750
+metadata/route/predefinePageflow.pf=1687317298305
+metadata/components/SupplierMaList.frm.res=1688092073270
+metadata/components/SupplierMaList_frm.sm=1687316856517
+metadata/components/SupplierMaList.frm=1688345759222
+metadata/eapi/SupplierMaLookup_hlp.eapi=1687311782828

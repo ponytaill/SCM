@@ -1,0 +1,50 @@
+{
+  "Header" : {
+    "Code" : "predefinePageflow",
+    "Type" : "PageFlowMetadata",
+    "NameSpace" : "Inspur.GS.SCM.CM.Material.Material.Front",
+    "CertId" : null,
+    "Name" : "predefinePageflow",
+    "FileName" : "predefinePageflow.pf",
+    "BizobjectID" : "d8bf8331-1d31-69b0-b6b6-d1ea9f4bba96",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "ead9a7f7-51ea-4ab5-b328-b249996216b0",
+    "IsTranslating" : false
+  },
+  "Refs" : [ ],
+  "Content" : {
+    "code" : null,
+    "name" : null,
+    "id" : "ead9a7f7-51ea-4ab5-b328-b249996216b0",
+    "project" : {
+      "name" : "bo-material-front"
+    },
+    "pages" : [ {
+      "id" : "ee8cb07d-4f79-4276-ac0d-489f3faff10a",
+      "code" : "MaterialForm",
+      "name" : "物料管理表单",
+      "fileName" : "MaterialForm.frm",
+      "relativePath" : "SCM/CM/Material/bo-material-front/metadata/components",
+      "formUri" : null,
+      "routeUri" : "MaterialForm",
+      "routeParams" : null,
+      "forceDynamicForm" : false
+    } ],
+    "entry" : "MaterialForm",
+    "routes" : null,
+    "appCode" : "MaterialMaList",
+    "appName" : "物料管理列表",
+    "publishes" : [ {
+      "id" : "c70a61b5-54f9-45ec-9908-ccb987bc4803",
+      "entry" : "ee8cb07d-4f79-4276-ac0d-489f3faff10a"
+    } ]
+  },
+  "ExtendRule" : null,
+  "RelativePath" : "SCM/CM/Material/bo-material-front/metadata/route",
+  "ExtendProperty" : "",
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

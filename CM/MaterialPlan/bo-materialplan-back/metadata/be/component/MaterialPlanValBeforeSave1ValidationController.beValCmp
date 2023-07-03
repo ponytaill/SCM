@@ -1,0 +1,49 @@
+{
+  "Header" : {
+    "Code" : "MaterialPlanValBeforeSave1ValidationController",
+    "Type" : "ValidationComponent",
+    "NameSpace" : "Inspur.GS.SCM.CM.MaterialPlan.MaterialPlan.Back",
+    "CertId" : null,
+    "Name" : "MaterialPlanValBeforeSave1ValidationController",
+    "FileName" : "MaterialPlanValBeforeSave1ValidationController.beValCmp",
+    "BizobjectID" : "231b9526-f857-fa01-9eec-f45b6f98367d",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "cff23a44-bd2c-4157-8448-6b7b9cc53ad2",
+    "IsTranslating" : false
+  },
+  "Refs" : [ ],
+  "Content" : {
+    "ComponentCode" : "ValBeforeSave1",
+    "ComponentDescription" : "",
+    "ComponentID" : "cff23a44-bd2c-4157-8448-6b7b9cc53ad2",
+    "ComponentName" : "保存前校验1",
+    "ComponentType" : "ValidationComponent",
+    "ValidationMethod" : {
+      "Assembly" : "Inspur.GS.SCM.CM.MaterialPlan.MaterialPlan.Back",
+      "ClassName" : "Inspur.GS.SCM.CM.MaterialPlan.MaterialPlan.Back.Validations.PlanDetailsValBeforeSave1Validation",
+      "JavaClassName" : "com.inspur.gs.scm.cm.materialplan.materialplan.back.plandetails.validations.PlanDetailsValBeforeSave1Validation",
+      "JavaPackageName" : null,
+      "ReturnValue" : {
+        "Assembly" : "mscorlib.dll",
+        "ClassName" : "Void",
+        "ID" : null,
+        "JavaClassName" : "void",
+        "Mode" : 0,
+        "ParamCode" : "",
+        "ParamDescription" : null,
+        "ParamName" : "",
+        "ParameterCollectionType" : 0,
+        "ParameterType" : 7
+      },
+      "ValidationParams" : [ ]
+    }
+  },
+  "ExtendRule" : null,
+  "RelativePath" : null,
+  "ExtendProperty" : null,
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

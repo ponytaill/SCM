@@ -1,0 +1,15 @@
+{
+  "AppCode" : "SCM",
+  "ServiceUnitCode" : "CM",
+  "BizobjectCode" : "PurchaseOrder",
+  "BizobjectID" : "8de461f4-9c5e-b7fc-9d76-c1108500332d",
+  "ProjectNameSpace" : "Inspur.GS.SCM.CM.PurchaseOrder.PurchaseOrder.Back",
+  "SuDeploymentPath" : "apps/scm/cm",
+  "MetadataProjectName" : "bo-PurchaseOrder-Back",
+  "MetadataPackageName" : "Inspur.GS.SCM.CM.PurchaseOrder.PurchaseOrder.Back",
+  "SuConfigDeploymentPath" : null,
+  "ProjectType" : "backend",
+  "ProjectExtendItem" : [ {
+    "codelanguage" : "java"
+  } ]
+}

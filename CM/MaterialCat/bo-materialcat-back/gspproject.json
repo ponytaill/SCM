@@ -1,0 +1,15 @@
+{
+  "AppCode" : "SCM",
+  "ServiceUnitCode" : "CM",
+  "BizobjectCode" : "MaterialCat",
+  "BizobjectID" : "03bbd78c-747f-fda9-b2be-66b1f219c065",
+  "ProjectNameSpace" : "Inspur.GS.SCM.CM.MaterialCat.MaterialCat.Back",
+  "SuDeploymentPath" : "apps/scm/cm",
+  "MetadataProjectName" : "bo-MaterialCat-Back",
+  "MetadataPackageName" : "Inspur.GS.SCM.CM.MaterialCat.MaterialCat.Back",
+  "SuConfigDeploymentPath" : null,
+  "ProjectType" : "backend",
+  "ProjectExtendItem" : [ {
+    "codelanguage" : "java"
+  } ]
+}

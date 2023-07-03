@@ -1,0 +1,41 @@
+<div class="f-page f-page-card f-page-is-mainsubcard f-page-is-sidescrollspy" id="root-layout" *ngIf="true" fe-scroll-collapsible=""><div class="f-page-header" id="page-header" *ngIf="true"><div class="f-page-header-base" id="header-nav" *ngIf="true"><div class="f-title" id="header-title-container" *ngIf="true"><span class="f-title-icon f-text-orna-bill"><i class="f-icon f-icon-page-title-record"></i></span><h4 class="f-title-text">{{'title'|lang:lang:'供应商管理卡片'}}</h4><div class="f-title-pagination"><span class="f-icon f-icon-arrow-w" [ngClass]="{'f-state-disabled':!viewModel.stateMachine['canEdit']}" (click)="viewModel.stateMachine['canEdit']&&viewModel.ChangeItem1()"></span><span class="f-icon f-icon-arrow-e" [ngClass]="{'f-state-disabled':!viewModel.stateMachine['canEdit']}" (click)="viewModel.stateMachine['canEdit']&&viewModel.ChangeItem2()"></span></div></div><f-response-toolbar class="col-7 f-toolbar" id="page-header-toolbar" #responsebar [datas]="pageHeaderToolbarToolbarItems" [btnState]="pageHeaderToolbarToolbarItemsStates" [btnVisible]="pageHeaderToolbarToolbarItemsVisibleStates" (rtClickEvent)="pageHeaderToolbarClickHandler($event)" *ngIf="true" [buttonSize]="'default'" [popDirection]="'default'"></f-response-toolbar></div><fe-collapsible-area id="scrollCollapsibleArea" [defaultCollapse]="!!(!!this.viewModel.bindingData['id']? this.viewModel.stateMachine['editable'] : this.viewModel.stateMachine['collapseForTop'])"><div class="d-flex no-gutters"
+    style="border-top: 1px dashed #D1DEE7;padding:6px 18px 18px 56px;font-size:12px;color: rgba(0,0,0,0.70);">
+    <div class="d-none d-lg-block col-2 pr-3">
+        <p style="margin:0 0 4px 0;font-size:13px;">基本信息</p>
+        <p class="mb-0 text-truncate"><span
+                class="f-text-lighter">供应商名称：</span><span>{{viewModel.bindingData.supplierName}}</span>
+        </p>
+        <p class="mb-0 text-truncate"><span
+                class="f-text-lighter">供应商编号：</span><span>{{viewModel.bindingData.supplierCode}}</span>
+        </p>
+        <p class="mb-0 text-truncate"><span
+                class="f-text-lighter">注册时间：</span><span>{{viewModel.bindingData.signTime}}</span>
+        </p>
+    </div>
+    <div class="col-12 col-lg-8 col-xl-6" style="padding:0!important;">
+        <div class="d-flex">
+            <div class="col-4 pr-3">
+                <p style="margin:0;font-size:13px;">联系人</p>
+                <p style="font-size:24px;color:#FF6C29;font-weight:700;margin:0;height:38px;">
+                  {{viewModel.bindingData.contacts.contacts_Name}}
+                </p>
+            </div>
+            <div class="col-4 pr-3">
+                <p style="margin:0;font-size:13px;">办公地址</p>
+                <p style="font-size:24px;color: #51BD78;font-weight:700;margin:0;height:38px;">
+                    {{viewModel.bindingData.contactsAddress}}
+                </p>
+            </div>
+            <div class="col-4 pr-3">
+                <p style="margin:0;font-size:13px;">邮箱</p>
+                <p style="font-size:24px;color: rgba(67,80,105,0.70);font-weight:700;margin:0;height:38px;">
+                  {{viewModel.bindingData.contactsEmail}}
+                </p>
+            </div>
+        </div>
+       
+    </div>
+    
+</div></fe-collapsible-area></div><div class="f-page-main h-100" id="main-container" *ngIf="true"><farris-scrollspy id="scrollspy" [scrollspyData]="ScrollspyItemsscrollspy" [currentSectionId]="ScrollspyCurrentSectionscrollspy" scrollspyRef [hidden]="!true" [fFollowType]="(!!this.viewModel.bindingData['id']? this.viewModel.stateMachine['editable'] : this.viewModel.stateMachine['collapseForTop'])?'fixedTab':'side'"></farris-scrollspy><div class="f-scrollspy-content d-block" id="scrollspy-container" fScrollSpyContainer="" [fOffset]="0" *ngIf="true" fe-scroll-area=""><div class="f-struct-like-card" id="like-card-container" *ngIf="true"><app-basicformcomponent></app-basicformcomponent><app-suppliermaoholcomponent></app-suppliermaoholcomponent><div class="f-struct-wrapper" id="detail-container-suppliermaterial" *ngIf="true"><farris-section class="f-section-in-mainsubcard" id="section-suppliermaterial" [index]="index" [expandStatus]="true" [mainTitle]="SectionsectionsuppliermaterialMainTitle" [subTitle]="SectionsectionsuppliermaterialSubTitle" [fill]="false" [showHeader]="true" [enableMaximize]="false" *ngIf="true" [btnStates]="sectionsToolbarStates" sectionRef [btnVisible]="sectionsToolbarVisibleStates" [toolbar]="toolbarSuppliermaterial" [fScrollSpy]="'section-suppliermaterial'">
+<app-suppliermaterialcomponent></app-suppliermaterialcomponent>
+</farris-section></div></div></div></div></div>

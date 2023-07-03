@@ -1,0 +1,118 @@
+{
+  "NameSpace" : "Inspur.GS.SCM.CM.MaterialPlan.MaterialPlan.Front",
+  "Name" : "bo-MaterialPlan-Front",
+  "ProjectFileName" : "bo-MaterialPlan-Front.mdproj",
+  "ProjectPath" : "SCM/CM/MaterialPlan/bo-materialplan-front/metadata",
+  "MetadataPackageInfo" : {
+    "Name" : "Inspur.GS.SCM.CM.MaterialPlan.MaterialPlan.Front",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  },
+  "MetadataPackageRefs" : [ {
+    "Name" : "Inspur.GS.SCM.CM.SupplierMa.SupplierMa.Front",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  }, {
+    "Name" : "Inspur.GS.SCM.CM.MaterialPlan.MaterialPlan.Back",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  } ],
+  "ProjectRefs" : [ {
+    "Name" : "Inspur.GS.SCM.CM.MaterialPlan.MaterialPlan.Back",
+    "ProjectPath" : "../../../../SCM/CM/MaterialPlan/bo-materialplan-back"
+  }, {
+    "Name" : "Inspur.GS.SCM.CM.SupplierMa.SupplierMa.Front",
+    "ProjectPath" : "../../../../SCM/CM/SupplierMa/bo-supplierma-front"
+  } ],
+  "ExternalRefs" : null,
+  "MdpkgRefs" : [ {
+    "Name" : "Inspur.GS.Gsp.Web.WebCmp",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "generation"
+  }, {
+    "Name" : "Inspur.GS.SCM.CM.Material.Material.Front",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  }, {
+    "Name" : "Inspur.GS.Gsp.Web.WebApprove",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "generation"
+  }, {
+    "Name" : "Inspur.GS.Gsp.Sys.SysOrg",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "generation"
+  }, {
+    "Name" : "Inspur.GS.Gsp.Common.DataIE",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "generation"
+  }, {
+    "Name" : "Inspur.GS.Gsp.Sys.User",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "generation"
+  }, {
+    "Name" : "Inspur.Gsp.Common.CommonCmp",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "generation"
+  }, {
+    "Name" : "Inspur.GS.SCM.CM.Material.Material.Back",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  } ],
+  "MavenPackageRefs" : [ {
+    "GroupId" : "com.inspur.gs",
+    "ArtifactId" : "scm-cm-materialplan-materialplan-back-api",
+    "Version" : "m0.1.0-SNAPSHOT",
+    "MetadataPackageName" : "Inspur.GS.SCM.CM.MaterialPlan.MaterialPlan.Back"
+  }, {
+    "GroupId" : "com.inspur.gs",
+    "ArtifactId" : "scm-cm-supplierma-supplierma-front-api",
+    "Version" : "m0.1.0-SNAPSHOT",
+    "MetadataPackageName" : "Inspur.GS.SCM.CM.SupplierMa.SupplierMa.Front"
+  } ],
+  "CsprojAssemblyName" : "Inspur.GS.SCM.CM.MaterialPlan.MaterialPlan.Front",
+  "ID" : "438023cf-0bf4-44e0-aa9d-1b93cdde8e91"
+}

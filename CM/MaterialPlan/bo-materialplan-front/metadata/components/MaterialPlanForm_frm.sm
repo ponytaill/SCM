@@ -1,0 +1,120 @@
+{
+  "Header" : {
+    "Code" : "MaterialPlanForm_frm",
+    "Type" : "StateMachine",
+    "NameSpace" : "Inspur.GS.SCM.CM.MaterialPlan.MaterialPlan.Front",
+    "CertId" : null,
+    "Name" : "物料需求计划表单_frm",
+    "FileName" : "MaterialPlanForm_frm.sm",
+    "BizobjectID" : "231b9526-f857-fa01-9eec-f45b6f98367d",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "ae2ed0b0-a9bf-4b2a-bf47-91114a3e2222",
+    "IsTranslating" : false
+  },
+  "Refs" : [ ],
+  "Content" : {
+    "code" : null,
+    "name" : null,
+    "renderState" : {
+      "canView" : {
+        "condition" : [ {
+          "lBracket" : "",
+          "source" : "state",
+          "compare" : "===",
+          "target" : "'init'",
+          "relation" : "",
+          "rBracket" : ""
+        } ],
+        "name" : "查看",
+        "description" : "是否允许查看"
+      },
+      "canOperation" : {
+        "condition" : [ {
+          "lBracket" : "",
+          "source" : "getData('{DATA~/root-component/isPurchaseOrder}')",
+          "compare" : "===",
+          "target" : "true",
+          "relation" : "",
+          "rBracket" : ""
+        } ],
+        "name" : "可操作删除和编辑按钮",
+        "description" : ""
+      },
+      "canRemove" : {
+        "condition" : [ {
+          "lBracket" : "",
+          "source" : "state",
+          "compare" : "===",
+          "target" : "'init'",
+          "relation" : "",
+          "rBracket" : ""
+        } ],
+        "name" : "删除",
+        "description" : ""
+      },
+      "canCancelApprove" : {
+        "condition" : [ {
+          "lBracket" : "",
+          "source" : "state",
+          "compare" : "===",
+          "target" : "'init'",
+          "relation" : "",
+          "rBracket" : ""
+        } ],
+        "name" : "取消提交审批",
+        "description" : ""
+      },
+      "canApprove" : {
+        "condition" : [ {
+          "lBracket" : "",
+          "source" : "state",
+          "compare" : "===",
+          "target" : "'init'",
+          "relation" : "",
+          "rBracket" : ""
+        } ],
+        "name" : "提交审批",
+        "description" : ""
+      },
+      "canEdit" : {
+        "condition" : [ {
+          "lBracket" : "",
+          "source" : "state",
+          "compare" : "===",
+          "target" : "'init'",
+          "relation" : "",
+          "rBracket" : ""
+        } ],
+        "name" : "编辑",
+        "description" : ""
+      },
+      "canAdd" : {
+        "condition" : [ {
+          "lBracket" : "",
+          "source" : "state",
+          "compare" : "===",
+          "target" : "'init'",
+          "relation" : "",
+          "rBracket" : ""
+        } ],
+        "name" : "新增",
+        "description" : ""
+      }
+    },
+    "state" : [ {
+      "state" : "init",
+      "name" : "初始",
+      "description" : "处于初始状态"
+    } ],
+    "initialState" : "init",
+    "action" : { }
+  },
+  "ExtendRule" : null,
+  "RelativePath" : "SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components",
+  "ExtendProperty" : "",
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

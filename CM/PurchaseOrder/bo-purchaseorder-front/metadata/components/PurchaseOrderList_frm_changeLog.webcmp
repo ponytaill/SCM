@@ -1,0 +1,54 @@
+{
+  "Header" : {
+    "Code" : "PurchaseOrderList_frm_changeLog",
+    "Type" : "WebComponent",
+    "NameSpace" : "Inspur.GS.SCM.CM.PurchaseOrder.PurchaseOrder.Front",
+    "CertId" : null,
+    "Name" : "采购订单列表_frm_查看变更日志",
+    "FileName" : "PurchaseOrderList_frm_changeLog.webcmp",
+    "BizobjectID" : "8de461f4-9c5e-b7fc-9d76-c1108500332d",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "5b50c46d-3cdf-4639-a4b9-611cbaaa7108",
+    "IsTranslating" : false
+  },
+  "Refs" : [ ],
+  "Content" : {
+    "name" : "采购订单列表_frm_查看变更日志",
+    "application" : null,
+    "serviceUnit" : null,
+    "version" : null,
+    "refStructures" : [ ],
+    "resource" : {
+      "sourceFile" : "SCM/CM/PurchaseOrder/bo-purchaseorder-front/metadata/components/PurchaseOrderList_frm_changeLog.ts",
+      "className" : "PurchaseOrderFormFrmChangeLogService",
+      "kind" : "TypeScriptClass"
+    },
+    "Code" : "PurchaseOrderList_frm_changeLog",
+    "Id" : "5b50c46d-3cdf-4639-a4b9-611cbaaa7108",
+    "Description" : null,
+    "Operations" : [ {
+      "dict" : null,
+      "uri" : null,
+      "returnType" : null,
+      "kind" : "DefaultOperation",
+      "extensionKeys" : null,
+      "Code" : "changeLog",
+      "Name" : "changeLog",
+      "Description" : "",
+      "Id" : "facf576e-7735-43f4-8aad-9cc6ad95035b",
+      "Parameters" : null
+    } ],
+    "IsCommon" : false,
+    "ClassName" : "PurchaseOrderFormFrmChangeLogService",
+    "FormCode" : "PurchaseOrderList",
+    "Source" : "SCM/CM/PurchaseOrder/bo-purchaseorder-front/metadata/components/PurchaseOrderList_frm_changeLog.ts"
+  },
+  "ExtendRule" : null,
+  "RelativePath" : "SCM/CM/PurchaseOrder/bo-purchaseorder-front/metadata/components",
+  "ExtendProperty" : "{\"IsCommon\":false,\"FormCode\":\"PurchaseOrderList\",\"sourceCode\":\"import { Injectable } from '@angular/core';\\r\\nimport { ChgdrListUiService } from '@gsp-cmp/chgdr';\\r\\nimport { AppContext } from '@farris/devkit';\\r\\n@Injectable()\\r\\nexport class PurchaseOrderFormFrmChangeLogService {\\r\\n  constructor( private chgdrListUiService: ChgdrListUiService,\\r\\n    private appContext: AppContext) {}\\r\\n    changeLog() {\\r\\n    // 此处entityId为业务实体ID\\r\\n    const entityId = \\\"385d8182-1b4a-4c7d-9d7f-2fe1ca5283ab\\\";\\r\\n    const dataId = this.appContext.getFrameContext('data-grid-component').bindingData.list.currentItem.getValue(\\\"id\\\");\\r\\n    this.chgdrListUiService.showDialog(entityId, dataId);\\r\\n  }\\r\\n}\"}",
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

@@ -1,0 +1,84 @@
+{
+  "Header" : {
+    "Code" : "SupplierMaList_frm",
+    "Type" : "StateMachine",
+    "NameSpace" : "Inspur.GS.SCM.CM.SupplierMa.SupplierMa.Front",
+    "CertId" : null,
+    "Name" : "供应商管理表单_frm",
+    "FileName" : "SupplierMaList_frm.sm",
+    "BizobjectID" : "ca0af27e-3ff4-a99d-a4e5-aec1c23a5eb7",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "7b266adf-4bb7-4d05-b37a-0fe91682137b",
+    "IsTranslating" : false
+  },
+  "Refs" : [ ],
+  "Content" : {
+    "code" : null,
+    "name" : null,
+    "renderState" : {
+      "canView" : {
+        "condition" : [ {
+          "lBracket" : "",
+          "source" : "state",
+          "compare" : "===",
+          "target" : "'init'",
+          "relation" : "",
+          "rBracket" : ""
+        } ],
+        "name" : "查看",
+        "description" : "是否允许查看"
+      },
+      "canRemove" : {
+        "condition" : [ {
+          "lBracket" : "",
+          "source" : "state",
+          "compare" : "===",
+          "target" : "'init'",
+          "relation" : "",
+          "rBracket" : ""
+        } ],
+        "name" : "删除",
+        "description" : ""
+      },
+      "canEdit" : {
+        "condition" : [ {
+          "lBracket" : "",
+          "source" : "state",
+          "compare" : "===",
+          "target" : "'init'",
+          "relation" : "",
+          "rBracket" : ""
+        } ],
+        "name" : "编辑",
+        "description" : ""
+      },
+      "canAdd" : {
+        "condition" : [ {
+          "lBracket" : "",
+          "source" : "state",
+          "compare" : "===",
+          "target" : "'init'",
+          "relation" : "",
+          "rBracket" : ""
+        } ],
+        "name" : "新增",
+        "description" : ""
+      }
+    },
+    "state" : [ {
+      "state" : "init",
+      "name" : "初始",
+      "description" : "处于初始状态"
+    } ],
+    "initialState" : "init",
+    "action" : { }
+  },
+  "ExtendRule" : null,
+  "RelativePath" : "SCM/CM/SupplierMa/bo-supplierma-front/metadata/components",
+  "ExtendProperty" : "",
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

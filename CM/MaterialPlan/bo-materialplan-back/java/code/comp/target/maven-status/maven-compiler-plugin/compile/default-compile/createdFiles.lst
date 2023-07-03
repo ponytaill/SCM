@@ -1,0 +1,4 @@
+com\inspur\gs\scm\cm\materialplan\materialplan\back\materialplan\common\MaterialPlanUtils.class
+com\inspur\gs\scm\cm\materialplan\materialplan\back\materialplan\common\PlanDetailsUtils.class
+com\inspur\gs\scm\cm\materialplan\materialplan\back\materialplan\determinations\MaterialPlanDtmAfterCreate1Determination.class
+com\inspur\gs\scm\cm\materialplan\materialplan\back\plandetails\validations\PlanDetailsValBeforeSave1Validation.class

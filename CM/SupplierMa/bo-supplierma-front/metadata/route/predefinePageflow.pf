@@ -1,0 +1,63 @@
+{
+  "Header" : {
+    "Code" : "predefinePageflow",
+    "Type" : "PageFlowMetadata",
+    "NameSpace" : "Inspur.GS.SCM.CM.SupplierMa.SupplierMa.Front",
+    "CertId" : null,
+    "Name" : "predefinePageflow",
+    "FileName" : "predefinePageflow.pf",
+    "BizobjectID" : "ca0af27e-3ff4-a99d-a4e5-aec1c23a5eb7",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "a54b0ead-d692-4ae2-99e3-168da372f11e",
+    "IsTranslating" : false
+  },
+  "Refs" : [ ],
+  "Content" : {
+    "code" : null,
+    "name" : null,
+    "id" : "a54b0ead-d692-4ae2-99e3-168da372f11e",
+    "project" : {
+      "name" : "bo-supplierma-front"
+    },
+    "pages" : [ {
+      "id" : "fefb3340-5083-4841-8de2-d8a0e990f141",
+      "code" : "SupplierMaCard",
+      "name" : "供应商管理卡片",
+      "fileName" : "SupplierMaCard.frm",
+      "relativePath" : "SCM/CM/SupplierMa/bo-supplierma-front/metadata/components",
+      "formUri" : null,
+      "routeUri" : "SupplierMaCard",
+      "routeParams" : null,
+      "forceDynamicForm" : false
+    }, {
+      "id" : "172d5655-d3fe-4ceb-994a-4e113e530fb4",
+      "code" : "SupplierMaList",
+      "name" : "供应商管理表单",
+      "fileName" : "SupplierMaList.frm",
+      "relativePath" : "SCM/CM/SupplierMa/bo-supplierma-front/metadata/components",
+      "formUri" : "172d5655-d3fe-4ceb-994a-4e113e530fb4",
+      "routeUri" : "SupplierMaList",
+      "routeParams" : null,
+      "forceDynamicForm" : false
+    } ],
+    "entry" : "SupplierMaCard",
+    "routes" : null,
+    "appCode" : "SupplierList",
+    "appName" : "供应商管理列表",
+    "publishes" : [ {
+      "id" : "cc348030-8221-4ae5-8a42-1ac545353fa1",
+      "entry" : "fefb3340-5083-4841-8de2-d8a0e990f141"
+    }, {
+      "id" : "8e247f72-a764-44a5-9ff0-6479208f98ac",
+      "entry" : "172d5655-d3fe-4ceb-994a-4e113e530fb4"
+    } ]
+  },
+  "ExtendRule" : null,
+  "RelativePath" : "SCM/CM/SupplierMa/bo-supplierma-front/metadata/route",
+  "ExtendProperty" : "",
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

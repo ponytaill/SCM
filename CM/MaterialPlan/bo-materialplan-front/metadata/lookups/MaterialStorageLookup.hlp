@@ -1,0 +1,279 @@
+{
+  "Header" : {
+    "Code" : "MaterialStorageLookup",
+    "Type" : "HelpMetadata",
+    "NameSpace" : "Inspur.GS.SCM.CM.MaterialPlan.MaterialPlan.Front",
+    "CertId" : null,
+    "Name" : "物料库存数量帮助",
+    "FileName" : "MaterialStorageLookup.hlp",
+    "BizobjectID" : "231b9526-f857-fa01-9eec-f45b6f98367d",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "4ce0776d-9347-4749-8207-a958370893be",
+    "IsTranslating" : false
+  },
+  "Refs" : [ {
+    "DependentMetadata" : {
+      "ID" : "c89c2d81-6d20-4793-ad15-c317ecf5ce07",
+      "CertId" : null,
+      "NameSpace" : "Inspur.GS.SCM.CM.MaterialPlan.MaterialPlan.Front",
+      "Code" : "MaterialStorageLookup.hlp",
+      "Name" : "MaterialStorageLookup.hlp",
+      "Type" : "ResourceMetadata",
+      "BizobjectID" : "231b9526-f857-fa01-9eec-f45b6f98367d"
+    }
+  } ],
+  "Content" : {
+    "code" : "MaterialStorageLookup",
+    "name" : "物料库存数量帮助",
+    "version" : "0.0.2",
+    "id" : "4ce0776d-9347-4749-8207-a958370893be",
+    "title" : "物料库存数量帮助",
+    "idField" : "id",
+    "idFieldName" : "主键",
+    "textField" : "repertory",
+    "textFieldName" : "库存数量",
+    "valueField" : "id",
+    "valueFieldName" : "主键",
+    "displayType" : "List",
+    "description" : "",
+    "dataSource" : {
+      "columns" : [ {
+        "field" : "repertory",
+        "title" : "库存数量",
+        "width" : 100,
+        "fieldPath" : "Repertory",
+        "fieldType" : "NumericType",
+        "supportSearch" : false,
+        "align" : "left",
+        "formatter" : null,
+        "sortable" : false,
+        "order" : null,
+        "hAlign" : "left"
+      } ],
+      "sourceType" : "BE",
+      "sourcePath" : "SCM/CM/Material/bo-material-back/metadata/be/Material.be",
+      "sourceName" : "物料管理",
+      "sourceId" : "29853816-a2dc-4688-9fe5-a7730091921b",
+      "uri" : "SCM/CM/MaterialPlan/bo-materialplan-front/metadata/lookups/MaterialStorageLookup_hlp.vo",
+      "vmCode" : "Inspur.GS.SCM.CM.MaterialPlan.MaterialPlan.Front.Vo.MaterialStorageLookup_hlp",
+      "voSourceId" : "726708f7-102d-4d38-9163-f3a59d039d2f",
+      "conditions" : [ ],
+      "sorts" : [ ],
+      "pageInfo" : {
+        "pageList" : [ 10, 20, 30, 50 ],
+        "pageSize" : 20,
+        "pageIndex" : 0,
+        "enablePager" : true
+      },
+      "treeInfo" : {
+        "loadDataType" : "async",
+        "layerType" : "pathcode",
+        "dataField" : "",
+        "pathField" : "path",
+        "layerField" : "layer",
+        "isDetailField" : "isDetail",
+        "onlySelectLeaf" : false,
+        "parentField" : "parentElement",
+        "treeDataIsInit" : false
+      }
+    },
+    "navigation" : null,
+    "languages" : null,
+    "schema" : {
+      "main" : {
+        "name" : "物料库存数量帮助_ViewObject",
+        "id" : "726708f7-102d-4d38-9163-f3a59d039d2f",
+        "code" : "MaterialStorageLookup_hlp",
+        "sourceType" : "vo",
+        "variables" : [ ],
+        "entities" : [ {
+          "name" : "物料管理",
+          "id" : "c4bcd514-c32f-4314-9338-d06fefa3cf51",
+          "type" : {
+            "$type" : "EntityType",
+            "fields" : [ {
+              "$type" : "SimpleField",
+              "name" : "主键",
+              "id" : "2ee9a4f4-efce-41c4-afee-fbd8187013dd_ID",
+              "type" : {
+                "$type" : "StringType"
+              },
+              "path" : "ID",
+              "originalId" : "2ee9a4f4-efce-41c4-afee-fbd8187013dd",
+              "label" : "id",
+              "code" : "ID",
+              "bindingField" : "id",
+              "bindingPath" : "id",
+              "parentPath" : ""
+            }, {
+              "$type" : "SimpleField",
+              "name" : "版本",
+              "id" : "ce0cb982-b73f-4aa6-bc5e-5a8d816fc3ce_Version",
+              "type" : {
+                "$type" : "DateTimeType"
+              },
+              "path" : "Version",
+              "originalId" : "ce0cb982-b73f-4aa6-bc5e-5a8d816fc3ce",
+              "label" : "version",
+              "code" : "Version",
+              "bindingField" : "version",
+              "bindingPath" : "version",
+              "parentPath" : ""
+            }, {
+              "$type" : "SimpleField",
+              "name" : "物料编号",
+              "id" : "43825b41-f952-4add-bede-a16aee35a743_MaterialCode",
+              "type" : {
+                "$type" : "StringType"
+              },
+              "path" : "MaterialCode",
+              "originalId" : "43825b41-f952-4add-bede-a16aee35a743",
+              "label" : "materialCode",
+              "code" : "MaterialCode",
+              "bindingField" : "materialCode",
+              "bindingPath" : "materialCode",
+              "parentPath" : ""
+            }, {
+              "$type" : "SimpleField",
+              "name" : "物料名称",
+              "id" : "85900982-f484-43ed-af88-9c406d1586c6_MaterialName",
+              "type" : {
+                "$type" : "StringType"
+              },
+              "path" : "MaterialName",
+              "originalId" : "85900982-f484-43ed-af88-9c406d1586c6",
+              "label" : "materialName",
+              "code" : "MaterialName",
+              "bindingField" : "materialName",
+              "bindingPath" : "materialName",
+              "parentPath" : ""
+            }, {
+              "$type" : "ComplexField",
+              "name" : "物料类别",
+              "id" : "932ab3f3-d8d3-4e0f-84b9-1392d6bc1bc7_MaterialCat",
+              "type" : {
+                "$type" : "EntityType",
+                "fields" : [ {
+                  "$type" : "SimpleField",
+                  "name" : "物料类别",
+                  "id" : "add42470-800c-4fa7-bb08-34127dc7ff90_MaterialCat.MaterialCat",
+                  "type" : {
+                    "$type" : "StringType"
+                  },
+                  "path" : "MaterialCat.MaterialCat",
+                  "originalId" : "add42470-800c-4fa7-bb08-34127dc7ff90",
+                  "label" : "materialCat",
+                  "code" : "MaterialCat",
+                  "bindingField" : "materialCat",
+                  "bindingPath" : "materialCat.materialCat",
+                  "parentPath" : "materialCat"
+                }, {
+                  "$type" : "SimpleField",
+                  "name" : "主键",
+                  "id" : "21ca4447-5744-4341-89c4-3698084ebfed_MaterialCat.MaterialCat_ID",
+                  "type" : {
+                    "$type" : "StringType"
+                  },
+                  "path" : "MaterialCat.MaterialCat_ID",
+                  "originalId" : "21ca4447-5744-4341-89c4-3698084ebfed",
+                  "label" : "materialCat_ID",
+                  "code" : "ID",
+                  "bindingField" : "materialCat_MaterialCat_ID",
+                  "bindingPath" : "materialCat.materialCat_ID",
+                  "parentPath" : "materialCat"
+                }, {
+                  "$type" : "SimpleField",
+                  "name" : "类别名称",
+                  "id" : "44a2b019-277a-48b8-ac03-9f2f2dacc53c_MaterialCat.MaterialCat_CatName",
+                  "type" : {
+                    "$type" : "StringType"
+                  },
+                  "path" : "MaterialCat.MaterialCat_CatName",
+                  "originalId" : "44a2b019-277a-48b8-ac03-9f2f2dacc53c",
+                  "label" : "materialCat_CatName",
+                  "code" : "CatName",
+                  "bindingField" : "materialCat_MaterialCat_CatName",
+                  "bindingPath" : "materialCat.materialCat_CatName",
+                  "parentPath" : "materialCat"
+                }, {
+                  "$type" : "SimpleField",
+                  "name" : "类别编号",
+                  "id" : "e612febe-803f-4f2a-b666-f514b7e9c897_MaterialCat.MaterialCat_CatCode",
+                  "type" : {
+                    "$type" : "StringType"
+                  },
+                  "path" : "MaterialCat.MaterialCat_CatCode",
+                  "originalId" : "e612febe-803f-4f2a-b666-f514b7e9c897",
+                  "label" : "materialCat_CatCode",
+                  "code" : "CatCode",
+                  "bindingField" : "materialCat_MaterialCat_CatCode",
+                  "bindingPath" : "materialCat.materialCat_CatCode",
+                  "parentPath" : "materialCat"
+                } ],
+                "primary" : "materialCat",
+                "entities" : [ ]
+              },
+              "path" : "MaterialCat",
+              "originalId" : "932ab3f3-d8d3-4e0f-84b9-1392d6bc1bc7",
+              "label" : "materialCat",
+              "code" : "MaterialCat",
+              "bindingField" : "materialCat",
+              "bindingPath" : "materialCat",
+              "parentPath" : ""
+            }, {
+              "$type" : "SimpleField",
+              "name" : "市场价格",
+              "id" : "1defc4f4-af24-4a70-8a8d-843a2936014e_EvePrice",
+              "type" : {
+                "$type" : "NumericType",
+                "precision" : 2
+              },
+              "path" : "EvePrice",
+              "originalId" : "1defc4f4-af24-4a70-8a8d-843a2936014e",
+              "label" : "evePrice",
+              "code" : "EvePrice",
+              "bindingField" : "evePrice",
+              "bindingPath" : "evePrice",
+              "parentPath" : ""
+            }, {
+              "$type" : "SimpleField",
+              "name" : "库存数量",
+              "id" : "5a719542-a908-4a04-a53b-ad7c5d31a342_Repertory",
+              "type" : {
+                "$type" : "NumericType",
+                "precision" : 0
+              },
+              "path" : "Repertory",
+              "originalId" : "5a719542-a908-4a04-a53b-ad7c5d31a342",
+              "label" : "repertory",
+              "code" : "Repertory",
+              "bindingField" : "repertory",
+              "bindingPath" : "repertory",
+              "parentPath" : ""
+            } ],
+            "primary" : "id",
+            "entities" : [ ],
+            "name" : "Material",
+            "displayName" : "物料管理"
+          },
+          "label" : "materials",
+          "code" : "Material"
+        } ],
+        "sourceUri" : null,
+        "extendProperties" : {
+          "enableStdTimeFormat" : true
+        }
+      }
+    },
+    "initDataSource" : true,
+    "createTime" : "2023-07-02 14:25:54"
+  },
+  "ExtendRule" : null,
+  "RelativePath" : "SCM/CM/MaterialPlan/bo-materialplan-front/metadata/lookups",
+  "ExtendProperty" : "",
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

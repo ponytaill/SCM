@@ -1,0 +1,43 @@
+{
+  "Header" : {
+    "Code" : "MaterialPlanCard_frm_Controller",
+    "Type" : "WebComponent",
+    "NameSpace" : "Inspur.GS.SCM.CM.MaterialPlan.MaterialPlan.Front",
+    "CertId" : null,
+    "Name" : "物料需求计划详情_frm_Controller",
+    "FileName" : "MaterialPlanCard_frm_Controller.webcmp",
+    "BizobjectID" : "231b9526-f857-fa01-9eec-f45b6f98367d",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "ba7db75e-96a0-4fce-bec0-6bba8e95d2c5",
+    "IsTranslating" : false
+  },
+  "Refs" : [ ],
+  "Content" : {
+    "name" : "物料需求计划详情_frm_Controller",
+    "application" : "SCM",
+    "serviceUnit" : "CM",
+    "version" : "1.0",
+    "refStructures" : [ ],
+    "resource" : {
+      "sourceFile" : "SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanCard_frm_Controller.ts",
+      "className" : null,
+      "kind" : "TypeScriptClass"
+    },
+    "Code" : "MaterialPlanCard_frm_Controller",
+    "Id" : "ba7db75e-96a0-4fce-bec0-6bba8e95d2c5",
+    "Description" : null,
+    "Operations" : [ ],
+    "IsCommon" : false,
+    "ClassName" : null,
+    "FormCode" : "MaterialPlanCard",
+    "Source" : "SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanCard_frm_Controller.ts"
+  },
+  "ExtendRule" : null,
+  "RelativePath" : "SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components",
+  "ExtendProperty" : "{\"IsCommon\":false,\"FormCode\":\"MaterialPlanCard\"}",
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

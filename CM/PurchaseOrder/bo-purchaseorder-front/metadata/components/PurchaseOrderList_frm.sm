@@ -1,0 +1,96 @@
+{
+  "Header" : {
+    "Code" : "PurchaseOrderList_frm",
+    "Type" : "StateMachine",
+    "NameSpace" : "Inspur.GS.SCM.CM.PurchaseOrder.PurchaseOrder.Front",
+    "CertId" : null,
+    "Name" : "采购订单列表_frm",
+    "FileName" : "PurchaseOrderList_frm.sm",
+    "BizobjectID" : "8de461f4-9c5e-b7fc-9d76-c1108500332d",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "2119e50e-0c33-470c-a712-af12227a7dd1",
+    "IsTranslating" : false
+  },
+  "Refs" : [ ],
+  "Content" : {
+    "code" : null,
+    "name" : null,
+    "renderState" : {
+      "canView" : {
+        "condition" : [ {
+          "lBracket" : "",
+          "source" : "state",
+          "compare" : "===",
+          "target" : "'init'",
+          "relation" : "",
+          "rBracket" : ""
+        } ],
+        "name" : "查看",
+        "description" : "是否允许查看"
+      },
+      "canRemove" : {
+        "condition" : [ {
+          "lBracket" : "",
+          "source" : "state",
+          "compare" : "===",
+          "target" : "'init'",
+          "relation" : "",
+          "rBracket" : ""
+        } ],
+        "name" : "删除",
+        "description" : ""
+      },
+      "canEdit" : {
+        "condition" : [ {
+          "lBracket" : "",
+          "source" : "state",
+          "compare" : "===",
+          "target" : "'init'",
+          "relation" : "",
+          "rBracket" : ""
+        } ],
+        "name" : "编辑",
+        "description" : ""
+      },
+      "canAdd" : {
+        "condition" : [ {
+          "lBracket" : "",
+          "source" : "state",
+          "compare" : "===",
+          "target" : "'init'",
+          "relation" : "",
+          "rBracket" : ""
+        } ],
+        "name" : "新增",
+        "description" : ""
+      },
+      "canStore" : {
+        "condition" : [ {
+          "lBracket" : "",
+          "source" : "getData('{DATA~/root-component/isFinished}')",
+          "compare" : "===",
+          "target" : "'yes'",
+          "relation" : "",
+          "rBracket" : ""
+        } ],
+        "name" : "是否能入库",
+        "description" : ""
+      }
+    },
+    "state" : [ {
+      "state" : "init",
+      "name" : "初始",
+      "description" : "处于初始状态"
+    } ],
+    "initialState" : "init",
+    "action" : { }
+  },
+  "ExtendRule" : null,
+  "RelativePath" : "SCM/CM/PurchaseOrder/bo-purchaseorder-front/metadata/components",
+  "ExtendProperty" : "",
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

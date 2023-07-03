@@ -1,0 +1,15 @@
+{
+  "AppCode" : "SCM",
+  "ServiceUnitCode" : "CM",
+  "BizobjectCode" : "MaterialPlan",
+  "BizobjectID" : "231b9526-f857-fa01-9eec-f45b6f98367d",
+  "ProjectNameSpace" : "Inspur.GS.SCM.CM.MaterialPlan.MaterialPlan.Back",
+  "SuDeploymentPath" : "apps/scm/cm",
+  "MetadataProjectName" : "bo-MaterialPlan-Back",
+  "MetadataPackageName" : "Inspur.GS.SCM.CM.MaterialPlan.MaterialPlan.Back",
+  "SuConfigDeploymentPath" : null,
+  "ProjectType" : "backend",
+  "ProjectExtendItem" : [ {
+    "codelanguage" : "java"
+  } ]
+}

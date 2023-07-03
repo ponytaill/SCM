@@ -1,0 +1,54 @@
+{
+  "Header" : {
+    "Code" : "MaterialPlanCard_frm_MinDate",
+    "Type" : "WebComponent",
+    "NameSpace" : "Inspur.GS.SCM.CM.MaterialPlan.MaterialPlan.Front",
+    "CertId" : null,
+    "Name" : "物料需求计划详情_frm_最小交货日期设置",
+    "FileName" : "MaterialPlanCard_frm_MinDate.webcmp",
+    "BizobjectID" : "231b9526-f857-fa01-9eec-f45b6f98367d",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "20a2c140-e124-49c6-8d4f-3e263e61189d",
+    "IsTranslating" : false
+  },
+  "Refs" : [ ],
+  "Content" : {
+    "name" : "物料需求计划详情_frm_最小交货日期设置",
+    "application" : null,
+    "serviceUnit" : null,
+    "version" : null,
+    "refStructures" : [ ],
+    "resource" : {
+      "sourceFile" : "SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanCard_frm_MinDate.ts",
+      "className" : "MaterialDetailFrmMinDateService",
+      "kind" : "TypeScriptClass"
+    },
+    "Code" : "MaterialPlanCard_frm_MinDate",
+    "Id" : "20a2c140-e124-49c6-8d4f-3e263e61189d",
+    "Description" : null,
+    "Operations" : [ {
+      "dict" : null,
+      "uri" : null,
+      "returnType" : null,
+      "kind" : "DefaultOperation",
+      "extensionKeys" : null,
+      "Code" : "getMinDate",
+      "Name" : "getMinDate",
+      "Description" : "",
+      "Id" : "068ad987-ee01-4327-993c-cf1cdd94a241",
+      "Parameters" : null
+    } ],
+    "IsCommon" : false,
+    "ClassName" : "MaterialDetailFrmMinDateService",
+    "FormCode" : "MaterialPlanCard",
+    "Source" : "SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanCard_frm_MinDate.ts"
+  },
+  "ExtendRule" : null,
+  "RelativePath" : "SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components",
+  "ExtendProperty" : "{\"IsCommon\":false,\"FormCode\":\"MaterialPlanCard\",\"sourceCode\":\"import { Injectable } from '@angular/core';\\r\\nimport { catchError, switchMap, map, tap } from 'rxjs/operators';\\r\\nimport { FrameContext, Entity, BindingData, EntityValueChange } from '@farris/devkit';\\r\\nimport { Observable, EMPTY, of } from 'rxjs';\\r\\nimport { FormMessageService, FormLoadingService, CommandService,FormNotifyService } from '@farris/command-services';\\r\\n\\r\\n@Injectable()\\r\\nexport class MaterialDetailFrmMinDateService {\\r\\n  constructor(\\r\\n     private msgService: FormMessageService,\\r\\n        private frameContext: FrameContext,\\r\\n        private bindingData: BindingData\\r\\n  ) {}\\r\\n  \\r\\ngetMinDate(){\\r\\n  var date = new Date();\\r\\n   this.frameContext.appContext.frameContextManager.getFrameContextById(\\\"root-component\\\").viewModel.uiState['mindate'] = date;\\r\\n}\\r\\n}\\r\\n\"}",
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

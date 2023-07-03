@@ -1,0 +1,49 @@
+{
+  "Header" : {
+    "Code" : "MaterialPlanDtmAfterCreate1DeterminationController",
+    "Type" : "DeterminationComponent",
+    "NameSpace" : "Inspur.GS.SCM.CM.MaterialPlan.MaterialPlan.Back",
+    "CertId" : null,
+    "Name" : "MaterialPlanDtmAfterCreate1DeterminationController",
+    "FileName" : "MaterialPlanDtmAfterCreate1DeterminationController.beDtmCmp",
+    "BizobjectID" : "231b9526-f857-fa01-9eec-f45b6f98367d",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "f0786d74-3a1f-40de-8ada-bef6b6b757ec",
+    "IsTranslating" : false
+  },
+  "Refs" : [ ],
+  "Content" : {
+    "ComponentCode" : "DtmAfterCreate1",
+    "ComponentDescription" : "",
+    "ComponentID" : "f0786d74-3a1f-40de-8ada-bef6b6b757ec",
+    "ComponentName" : "新增后1",
+    "ComponentType" : "DeterminationComponent",
+    "DeterminationMethod" : {
+      "Assembly" : "Inspur.GS.SCM.CM.MaterialPlan.MaterialPlan.Back",
+      "ClassName" : "Inspur.GS.SCM.CM.MaterialPlan.MaterialPlan.Back.Determinations.MaterialPlanDtmAfterCreate1Determination",
+      "DeterminationParams" : [ ],
+      "JavaClassName" : "com.inspur.gs.scm.cm.materialplan.materialplan.back.materialplan.determinations.MaterialPlanDtmAfterCreate1Determination",
+      "JavaPackageName" : null,
+      "ReturnValue" : {
+        "Assembly" : "mscorlib.dll",
+        "ClassName" : "Void",
+        "ID" : null,
+        "JavaClassName" : "void",
+        "Mode" : 0,
+        "ParamCode" : "",
+        "ParamDescription" : null,
+        "ParamName" : "",
+        "ParameterCollectionType" : 0,
+        "ParameterType" : 7
+      }
+    }
+  },
+  "ExtendRule" : null,
+  "RelativePath" : null,
+  "ExtendProperty" : null,
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

@@ -1,0 +1,20 @@
+#Last modified on: Sun Jul 02 18:21:41 GMT+08:00 2023
+#Sun Jul 02 18:21:41 GMT+08:00 2023
+metadata/eapi/PurchaseOrderDetail_frm.eapi=1687663026849
+metadata/components/PurchaseOrderList_frm.sm=1688042924858
+metadata/components/PurchaseOrderList.frm=1688086978137
+metadata/components/PurchaseOrderDetail.frm=1688293291667
+metadata/components/PurchaseOrderList_frm_Add.webcmp=1687920862152
+metadata/components/PurchaseOrderList_frm_changeLog.webcmp=1687675771703
+metadata/components/PurchaseOrderList_frm_Controller.webcmp=1687937109546
+metadata/eapi/PurchaseOrderQuery_frm.eapi=1687678411590
+metadata/components/PurchaseOrderDetail_frm.sm=1687663026889
+metadata/components/PurchaseOrderDetail.frm.res=1687674561896
+metadata/components/PurchaseOrderList_frm_Add.webcmd=1687920862208
+metadata/components/PurchaseOrderList_frm_Controller.webcmd=1687934979071
+metadata/components/PurchaseOrderList_frm_changeLog.webcmd=1687675771719
+metadata/components/PurchaseOrderQuery.frm.res=1687678655569
+metadata/components/PurchaseOrderList.frm.res=1687933841878
+metadata/components/PurchaseOrderQuery.frm=1687680012840
+metadata/route/predefinePageflow.pf=1687678685428
+metadata/eapi/PurchaseOrderList_frm.eapi=1687938914086

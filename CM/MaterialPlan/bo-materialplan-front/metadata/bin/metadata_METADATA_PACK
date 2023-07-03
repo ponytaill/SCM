@@ -1,0 +1,24 @@
+#Last modified on: Sun Jul 02 16:33:44 GMT+08:00 2023
+#Sun Jul 02 16:33:44 GMT+08:00 2023
+metadata/lookups/MaterialStorageLookup_hlp.vo.res=1688279154102
+metadata/components/MaterialPlanCard_frm_MinDate.webcmd=1687653779148
+metadata/components/MaterialPlanCard_frm.vo=1688282292902
+metadata/components/MaterialPlanCard_frm.sm=1688113200446
+metadata/eapi/MaterialPlanCard_frm.eapi=1687744827722
+metadata/components/MaterialPlanCard.frm.res=1688091793862
+metadata/eapi/MaterialPlanForm_frm.eapi=1687658189130
+metadata/components/MaterialPlanForm_frm.vo.res=1688280566456
+metadata/lookups/MaterialStorageLookup_hlp.vo=1688279154107
+metadata/components/MaterialPlanCard_frm_Controller.webcmp=1687749142468
+metadata/eapi/MaterialStorageLookup_hlp.eapi=1688279154908
+metadata/components/MaterialPlanCard_frm.vo.res=1688280566334
+metadata/components/MaterialPlanForm.frm.res=1688051456150
+metadata/components/MaterialPlanCard_frm_Controller.webcmd=1687749142516
+metadata/components/MaterialPlanCard.frm=1688286806858
+metadata/lookups/MaterialStorageLookup.hlp=1688279154132
+metadata/components/MaterialPlanCard_frm_MinDate.webcmp=1687653779128
+metadata/components/MaterialPlanForm_frm.vo=1688282315016
+metadata/components/MaterialPlanForm.frm=1688282315030
+metadata/components/MaterialPlanForm_frm.sm=1687658971563
+metadata/route/predefinePageflow.pf=1687660013418
+metadata/lookups/MaterialStorageLookup.hlp.res=1688279154127
