@@ -25,6 +25,8 @@ import { FrmI18nSettingService, FrameworkVariableService } from '@gsp-sys/rtf-co
 import { FarrisTooltipModule } from '@farris/ui-tooltip';
 import { GridModule } from '@progress/kendo-angular-grid';
 import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
+import { FarrisCommonModule } from '@farris/ui-common';
+import { DateHelperModule } from '@farris/ui-common/date';
 import { DropDownsModule } from '@progress/kendo-angular-dropdowns';
 import { ButtonsModule } from '@progress/kendo-angular-buttons';
 import { InputsModule } from '@progress/kendo-angular-inputs';
@@ -147,6 +149,8 @@ var MaterialPlanCardModule = /** @class */ (function () {
                 FarrisTooltipModule,
                 GridModule,
                 DateInputsModule,
+                FarrisCommonModule,
+                DateHelperModule.forRoot(),
                 DropDownsModule,
                 ButtonsModule,
                 FarrisTabsModule,

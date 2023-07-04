@@ -1,7 +1,7 @@
-/*! UPDATE TIME: 2023-7-2 16:34:24 */
-System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', '@farris/kendo-binding', '@progress/kendo-angular-layout', '@farris/ui-flex-layout', '@farris/ui-forms', '@farris/ui-forms/validation-message', '@farris/ui-loading', '@farris/ui-messager', '@farris/ui-notify', '@farris/ui-response-toolbar', '@farris/bef', '@ngx-translate/core', '@ngx-translate/http-loader', 'rxjs', 'rxjs/operators', '@angular/common/http', '@angular/platform-browser', '@farris/devkit', '@farris/command-services', '@farris/ui-verify-detail', '@ecp-caf/caf-common', '@gsp-sys/rtf-common', '@farris/ui-tooltip', '@progress/kendo-angular-grid', '@progress/kendo-angular-dateinputs', '@progress/kendo-angular-dropdowns', '@progress/kendo-angular-buttons', '@progress/kendo-angular-inputs', '@progress/kendo-angular-intl', '@progress/kendo-angular-intl/locales/zh/all', '@farris/ui-lookup', '@farris/ui-treetable', '@farris/ui-field-group', '@farris/ui-tabs', '@farris/ui-tag', '@farris/ui-sidebar', '@gsp-svc/formdoc-upload', '@farris/ui-section', '@farris/ui-datepicker', '@farris/ui-time-spinner', '@farris/ui-datagrid', '@farris/ui-wizard', '@gsp-cmp/querysolution', '@farris/ui-button', '@farris/ui-list-view', '@farris/ui-time-picker', '@farris/ui-draggable', '@farris/ui-splitter', '@farris/ui-list-nav', '@farris/ui-text', '@gsp-wf/rtdevkit', '@farris/ui-multi-select', '@farris/ui-input-group', '@farris/ui-combo-list', '@farris/ui-html-editor', '@gsp-svc/cloudprint', '@farris/ui-datagrid-editors', '@farris/ui-view-change', '@farris/ui-switch', '@farris/ui-list-filter', '@farris/ui-filter', '@farris/ui-avatar', '@farris/ui-calendar', '@gsp-wf/ui-flowchart', '@farris/ui-number-spinner', '@farris/ui-combo-lookup', '@farris/ui-scrollspy', '@gsp-svc/file-viewer', '@farris/ui-language-textbox', '@farris/dynamic-control-group', '@farris/ui-batch-edit-dialog', '@farris/ui-datagrid-filter', '@farris/ui-datagrid-settings', '@farris/ui-footer', '@farris/discussion-group', '@farris/ui-nav', '@farris/tags', '@farris/ui-editor', '@farris/extend-fileupload-adapt-unifile', '@farris/extend-header-footer', '@farris/extend-page-modal', '@farris/ui-feature-editor', '@farris/extend-scroll-collapsible-area', '@angular/router', '@gsp-wf/wf-task-handler', '@farris/ui-common', '@farris/ui-loading/farris-ui-loading.ngfactory', '@farris/ui-tooltip/farris-ui-tooltip.ngfactory', '@farris/ui-modal/farris-ui-modal.ngfactory', '@farris/ui-messager/farris-ui-messager.ngfactory', '@farris/ui-notify/farris-ui-notify.ngfactory', '@farris/ui-popover/farris-ui-popover.ngfactory', '@farris/ui-context-menu/farris-ui-context-menu.ngfactory', '@farris/ui-datatable/farris-ui-datatable.ngfactory', '@farris/ui-treetable/farris-ui-treetable.ngfactory', '@farris/ui-lookup/farris-ui-lookup.ngfactory', '@farris/ui-time-picker/farris-ui-time-picker.ngfactory', '@farris/ui-datepicker/farris-ui-datepicker.ngfactory', '@farris/ui-filter-panel/farris-ui-filter-panel.ngfactory', '@progress/kendo-angular-popup.ngfactory', '@gsp-svc/file-viewer/gsp-svc-file-viewer.ngfactory', '@gsp-wf/wf-approval-logs/gsp-wf-wf-approval-logs.ngfactory', '@gsp-wf/ui-flowchart/gsp-wf-ui-flowchart.ngfactory', '@farris/ui-language-textbox/farris-ui-language-textbox.ngfactory', '@farris/ui-modal', 'lodash-es', '@farris/ui-locale', '@farris/ui-perfect-scrollbar', '@farris/ui-popover/farris-ui-popover.ngfactory', '@farris/ui-tooltip/farris-ui-tooltip.ngfactory', '@farris/ui-modal/farris-ui-modal.ngfactory', '@farris/ui-messager/farris-ui-messager.ngfactory', '@farris/ui-notify/farris-ui-notify.ngfactory', '@farris/ui-loading/farris-ui-loading.ngfactory', '@farris/ui-context-menu/farris-ui-context-menu.ngfactory', '@farris/ui-datatable/farris-ui-datatable.ngfactory', '@farris/ui-treetable/farris-ui-treetable.ngfactory', '@farris/ui-lookup/farris-ui-lookup.ngfactory', '@farris/ui-popover', '@farris/ui-modal/positioning', '@farris/ui-modal/component-loader', '@farris/ui-pagination', '@farris/ui-common/date', '@farris/ui-common/number', '@farris/ui-common/column', '@farris/ui-context-menu', '@farris/ui-common/events', '@farris/ui-dialog', '@farris/ui-area-response', '@farris/ui-layout', '@farris/ui-datatable', '@farris/ui-perfect-scrollbar/farris-ui-perfect-scrollbar.ngfactory', '@farris/ui-input-group/farris-ui-input-group.ngfactory', '@farris/ui-filter-editor/farris-ui-filter-editor.ngfactory', '@farris/ui-sort-editor/farris-ui-sort-editor.ngfactory', '@farris/ui-datagrid-editors/farris-ui-datagrid-editors.ngfactory', '@gsp-wf/wf-task-handler/gsp-wf-wf-task-handler.ngfactory', '@farris/ui-verify-detail/farris-ui-verify-detail.ngfactory', '@progress/kendo-angular-grid.ngfactory', '@farris/ui-tabs/farris-ui-tabs.ngfactory', '@gsp-svc/formdoc-upload/gsp-svc-formdoc-upload.ngfactory', '@farris/component-querycondition/farris-component-querycondition.ngfactory', '@gsp-cmp/querysolution/gsp-cmp-querysolution.ngfactory', '@farris/ui-splitter/farris-ui-splitter.ngfactory', '@gsp-wf/rtdevkit/gsp-wf-rtdevkit.ngfactory', '@progress/kendo-angular-dialog.ngfactory', '@gsp-svc/cloudprint/gsp-svc-cloudprint.ngfactory', '@farris/dynamic-control-group/farris-dynamic-control-group.ngfactory', '@farris/ui-batch-edit-dialog/farris-ui-batch-edit-dialog.ngfactory', '@farris/discussion-group/farris-discussion-group.ngfactory', '@farris/extend-file-upload/farris-extend-file-upload.ngfactory', '@farris/ui-datagrid-filter/farris-ui-datagrid-filter.ngfactory', '@farris/ui-organization-selector/farris-ui-organization-selector.ngfactory', '@farris/ui-datagrid-settings/farris-ui-datagrid-settings.ngfactory', '@farris/extend-page-modal/farris-extend-page-modal.ngfactory', '@farris/ui-feature-editor/farris-ui-feature-editor.ngfactory', '@farris/component-querycondition', '@farris/ui-section/farris-ui-section.ngfactory', '@farris/ui-response-toolbar/farris-ui-response-toolbar.ngfactory', '@farris/ui-datagrid/farris-ui-datagrid.ngfactory', '@progress/kendo-angular-dialog', '@progress/kendo-angular-l10n', '@farris/ui-filter-condition', '@gsp-sys/sysmgr-common', '@gsp-sys/sysmgr-ui', '@progress/kendo-angular-popup', '@gsp-wf/wf-approval-logs', '@progress/kendo-angular-resize-sensor', '@gsp-wf/ui-comment', '@farris/extend-file-upload', '@farris/ui-datalist', '@farris/ui-filter-panel', '@farris/ui-dropdown', '@gsp-wf/task-impl-api', '@gsp-wf/wf-sign', '@farris/ui-filter-editor', '@farris/ui-sort-editor', '@farris/ui-progress', '@farris/ui-progress-step', '@farris/ui-tree', '@farris/ui-organization-selector'], function (exports, module) {
+/*! UPDATE TIME: 2023/7/3 16:22:19 */
+System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', '@farris/kendo-binding', '@progress/kendo-angular-layout', '@farris/ui-flex-layout', '@farris/ui-forms', '@farris/ui-forms/validation-message', '@farris/ui-loading', '@farris/ui-messager', '@farris/ui-notify', '@farris/ui-response-toolbar', '@farris/bef', '@ngx-translate/core', '@ngx-translate/http-loader', 'rxjs', 'rxjs/operators', '@angular/common/http', '@angular/platform-browser', '@farris/devkit', '@farris/command-services', '@farris/ui-verify-detail', '@ecp-caf/caf-common', '@gsp-sys/rtf-common', '@farris/ui-tooltip', '@progress/kendo-angular-grid', '@progress/kendo-angular-dateinputs', '@farris/ui-common', '@farris/ui-common/date', '@progress/kendo-angular-dropdowns', '@progress/kendo-angular-buttons', '@progress/kendo-angular-inputs', '@progress/kendo-angular-intl', '@progress/kendo-angular-intl/locales/zh/all', '@farris/ui-lookup', '@farris/ui-treetable', '@farris/ui-field-group', '@farris/ui-tabs', '@farris/ui-tag', '@farris/ui-sidebar', '@gsp-svc/formdoc-upload', '@farris/ui-section', '@farris/ui-datepicker', '@farris/ui-time-spinner', '@farris/ui-datagrid', '@farris/ui-wizard', '@gsp-cmp/querysolution', '@farris/ui-button', '@farris/ui-list-view', '@farris/ui-time-picker', '@farris/ui-draggable', '@farris/ui-splitter', '@farris/ui-list-nav', '@farris/ui-text', '@gsp-wf/rtdevkit', '@farris/ui-multi-select', '@farris/ui-input-group', '@farris/ui-combo-list', '@farris/ui-html-editor', '@gsp-svc/cloudprint', '@farris/ui-datagrid-editors', '@farris/ui-view-change', '@farris/ui-switch', '@farris/ui-list-filter', '@farris/ui-filter', '@farris/ui-avatar', '@farris/ui-calendar', '@gsp-wf/ui-flowchart', '@farris/ui-number-spinner', '@farris/ui-combo-lookup', '@farris/ui-scrollspy', '@gsp-svc/file-viewer', '@farris/ui-language-textbox', '@farris/dynamic-control-group', '@farris/ui-batch-edit-dialog', '@farris/ui-datagrid-filter', '@farris/ui-datagrid-settings', '@farris/ui-footer', '@farris/discussion-group', '@farris/ui-nav', '@farris/tags', '@farris/ui-editor', '@farris/extend-fileupload-adapt-unifile', '@farris/extend-header-footer', '@farris/extend-page-modal', '@farris/ui-feature-editor', '@farris/extend-scroll-collapsible-area', '@angular/router', '@gsp-wf/wf-task-handler', '@farris/ui-loading/farris-ui-loading.ngfactory', '@farris/ui-tooltip/farris-ui-tooltip.ngfactory', '@farris/ui-modal/farris-ui-modal.ngfactory', '@farris/ui-messager/farris-ui-messager.ngfactory', '@farris/ui-notify/farris-ui-notify.ngfactory', '@farris/ui-popover/farris-ui-popover.ngfactory', '@progress/kendo-angular-popup.ngfactory', '@gsp-svc/file-viewer/gsp-svc-file-viewer.ngfactory', '@gsp-wf/wf-approval-logs/gsp-wf-wf-approval-logs.ngfactory', '@farris/ui-time-picker/farris-ui-time-picker.ngfactory', '@farris/ui-datepicker/farris-ui-datepicker.ngfactory', '@farris/ui-context-menu/farris-ui-context-menu.ngfactory', '@farris/ui-datatable/farris-ui-datatable.ngfactory', '@farris/ui-treetable/farris-ui-treetable.ngfactory', '@farris/ui-lookup/farris-ui-lookup.ngfactory', '@farris/ui-forms/farris-ui-forms.ngfactory', '@farris/ui-filter-panel/farris-ui-filter-panel.ngfactory', '@gsp-wf/ui-flowchart/gsp-wf-ui-flowchart.ngfactory', '@farris/ui-language-textbox/farris-ui-language-textbox.ngfactory', '@farris/ui-enum-editor/farris-ui-enum-editor.ngfactory', '@farris/ui-filter-editor/farris-ui-filter-editor.ngfactory', '@farris/ui-sort-editor/farris-ui-sort-editor.ngfactory', '@farris/ui-datagrid-editors/farris-ui-datagrid-editors.ngfactory', '@gsp-wf/wf-task-handler/gsp-wf-wf-task-handler.ngfactory', '@farris/ui-verify-detail/farris-ui-verify-detail.ngfactory', '@progress/kendo-angular-grid.ngfactory', '@farris/ui-tabs/farris-ui-tabs.ngfactory', '@gsp-svc/formdoc-upload/gsp-svc-formdoc-upload.ngfactory', '@farris/component-querycondition/farris-component-querycondition.ngfactory', '@gsp-cmp/querysolution/gsp-cmp-querysolution.ngfactory', '@farris/ui-splitter/farris-ui-splitter.ngfactory', '@gsp-wf/rtdevkit/gsp-wf-rtdevkit.ngfactory', '@progress/kendo-angular-dialog.ngfactory', '@gsp-svc/cloudprint/gsp-svc-cloudprint.ngfactory', '@farris/dynamic-control-group/farris-dynamic-control-group.ngfactory', '@farris/ui-batch-edit-dialog/farris-ui-batch-edit-dialog.ngfactory', '@farris/discussion-group/farris-discussion-group.ngfactory', '@farris/extend-file-upload/farris-extend-file-upload.ngfactory', '@farris/ui-datagrid-filter/farris-ui-datagrid-filter.ngfactory', '@farris/ui-organization-selector/farris-ui-organization-selector.ngfactory', '@farris/ui-datagrid-settings/farris-ui-datagrid-settings.ngfactory', '@farris/extend-page-modal/farris-extend-page-modal.ngfactory', '@farris/ui-feature-editor/farris-ui-feature-editor.ngfactory', '@farris/component-querycondition', '@farris/ui-modal', '@farris/ui-locale', '@farris/ui-section/farris-ui-section.ngfactory', '@farris/ui-response-toolbar/farris-ui-response-toolbar.ngfactory', '@farris/ui-datagrid/farris-ui-datagrid.ngfactory', '@farris/ui-dialog', '@farris/ui-common/column', '@progress/kendo-angular-dialog', '@progress/kendo-angular-l10n', '@farris/ui-common/number', '@farris/ui-modal/positioning', '@farris/ui-modal/component-loader', '@farris/ui-pagination', '@farris/ui-popover', '@progress/kendo-angular-popup', '@gsp-wf/wf-approval-logs', '@farris/ui-context-menu', '@farris/ui-common/events', '@farris/ui-filter-condition', '@progress/kendo-angular-resize-sensor', '@gsp-wf/ui-comment', '@farris/extend-file-upload', '@farris/ui-perfect-scrollbar', '@farris/ui-area-response', '@farris/ui-datatable', '@farris/ui-datalist', '@farris/ui-layout', '@farris/ui-dropdown', '@farris/ui-filter-panel', '@gsp-wf/task-impl-api', '@gsp-wf/wf-sign', '@farris/ui-enum-editor', '@farris/ui-filter-editor', '@farris/ui-sort-editor', '@farris/ui-progress', '@farris/ui-progress-step', '@farris/ui-tree', '@farris/ui-organization-selector'], function (exports, module) {
     'use strict';
-    var Pipe, Injectable, Injector, HostBinding, Component, ElementRef, NgModule, ViewChild, TemplateRef, LOCALE_ID, ɵcmf, ɵmod, ɵmpd, ComponentFactoryResolver, ɵCodegenComponentFactoryResolver, NgModuleRef, ɵcrt, ɵccf, ɵvid, ɵeld, ɵdid, ViewContainerRef, ChangeDetectorRef, Renderer2, Input, Output, defineInjectable, inject, INJECTOR, forwardRef, EventEmitter, RendererFactory2, PLATFORM_ID, NgZone, ApplicationRef, ɵnov, ɵprd, ɵpid, ɵqud, ɵted, ɵppd, ɵand, IterableDiffers, ɵunv, ɵEMPTY_MAP, ɵpad, Inject, InjectionToken, ErrorHandler, __decorate, __metadata, __extends, __spread, CommonModule, NgLocalization, NgLocaleLocalization, ɵangular_packages_common_common_a, NgForOf, NgIf, DOCUMENT, isPlatformBrowser, FormControl, FormsModule, ReactiveFormsModule, NG_VALUE_ACCESSOR, ɵangular_packages_forms_forms_j, ɵangular_packages_forms_forms_bc, DefaultValueAccessor, COMPOSITION_BUFFER_MODE, NgModel, NgControl, NgControlStatus, FormBuilder, DateConverter, KendoBindingModule, SectionComponentRefDirective, FarrisDatagridUseBindingDataDirective, EditableDirective, FarrisDataGridEndEditDirective, FarrisDataGridRemoteSummaryDirective, DatagridComponentRefDirective, FarrisQuerySolutionEventBindDirective, FarrisKendoGridFormatService, FarrisTreetableFormatService, LayoutModule, PanelBarModule, SplitterModule$1, TabStripModule, FlexLayoutModule, FarrisFormsModule, FormMessageModule, LoadingModule, LoadingService, LOADING_DEFAULT_CONFIG, loaddingDefaultConfig, MessagerModule, MessagerService, MESSAGER_DEFAULT_CONFIG, MessagerDefaultConfig, NotifyModule, NotifyService, FResponseToolbarModule, ResponseToolbarComponent, UriService, BefProxy, BefRepository, BefLookupRestService, DefaultComboHttpService, FrameworkSessionService, BE_SESSION_HANDLING_STRATEGY_TOKEN, BE_SERVER_URI_TOKEN, TranslateService, TranslateModule, TranslateLoader, MissingTranslationHandler, TranslateStore, TranslateCompiler, TranslateFakeCompiler, TranslateParser, TranslateDefaultParser, USE_DEFAULT_LANG, USE_STORE, TranslateHttpLoader, of, Observable, BehaviorSubject, Subject, switchMap, catchError, HttpClient, HttpXsrfTokenExtractor, ɵangular_packages_common_http_http_g, ɵangular_packages_common_http_http_e, ɵangular_packages_common_http_http_h, ɵangular_packages_common_http_http_f, HTTP_INTERCEPTORS, HttpClientXsrfModule, HttpClientModule, ɵangular_packages_common_http_http_d, XhrFactory, HttpXhrBackend, HttpBackend, HttpHandler, ɵHttpInterceptingHandler, DomSanitizer, EventManager, Declaration, NgCommand, ViewModel, NgField, NgEntity, Entity, NgObject, NgList, EntityList, NgRepository, NgValidateForm, Form, NgState, State, NgRenderState, StateMachine, NgParam, UIState, NgCommandHandler, CommandHandler, FARRIS_DEVKIT_FRAME_PROVIDERS, FRAME_ID, BindingData, Repository, NAMESPACE, TranslateToken, FARRIS_DEVKIT_EXPRESSION_LISTENER_PROVIDERS, FARRIS_DEVKIT_EXPRESSION_EFFECTOR_PROVIDERS, FARRIS_DEVKIT_EXPRESSION_ROOT_FRAME_PROVIDERS, AppContext, PARAM_TYPE_TRANSFORM_TOKEN, FORM_ID, EXCEPTION_HANDLER, BACK_END_MESSAGE_HANDLER_TOKEN, COMMAND_HANDLERS_TOKEN, FrameComponent, NgFormControl, FARRIS_DEVKIT_APP_PROVIDERS, FORM_PATH_TOKEN, FrameContext, CommandHandlerRegistry, CommandHandlerExtenderRegistry, COMMAND_HANDLER_EXTENDERS_TOKEN, CommandHandlerFactory, VariableParseService, CommandBus, RouterParamService, ResolveService, ExpressionExecutor, FORM_MANIFEST_SERVICE_TOKEN, FORM_EXPRESSION_MANIFEST_SERVICE_TOKEN, MESSAGE_SERVICE_TOKEN, NOTIFY_SERVICE_TOKEN, FRAME_COMPONENT_INIT_HANDLER_TOKEN, UserSettingsToken, AppContextManager, RESOLVER_TOKEN, EntityDependencyResolver, StateDependencyResolver, CommentDependencyResolver, ResolverRegistry, LISTENER_TOKEN, UIStateChangeListener, RepositoryChangeListener, BindingDataChangeListener, EFFECTOR_TOKEN, RepositoryEffector, UIStateEffector, ReadonlyEffector, DependencyEffector, RelativeEffector, ValidateEffector, RequiredEffector, VisibleEffector, ListenerRegistry, Listeners, EffectorRegistry, EffectorFactory, ExpressionRegistry, ExpressionEventEmitter, ExpressionResult, ExpressionManager, ExpressionResultFactory, EVENT_HANDLER_TOKEN, RepositoryAddEntityEventHandler, RepositoryRemoveEntityEventHandler, EntityValueChangedEventHandler, StateValueChangedEventHandler, RepositoryLoadEventHandler, EntityUpdateEventHandler, BindingDataAppendObjectEventHandler, BindingDataValueChangeEventHandler, BindingDataRemoveObjectEventHandler, BindingDataLoadEventHandler, BindingDataSelectionChangedEventHandler, EventHandlerRegistry, ExpressionEngineImpl, FrameEventBus, EventBus, Subscription, RestfulService, VARIABLE_PARSERS, FrameIdVariableParser, ɵa$3, EventParamVariableParser, DataVariableParser, UIStateVariableParser, StateMachineVariableParser, CommandVariableParser, ChangeItemService, ListDataService, FilterService, DataGridService, NavigationMiddlewareService, NavigationService, DataCheckService, CardDataService, StateMachineService, FARRIS_COMMAND_SERVICE_FRAME_PROVIDERS, ComponentManagerService, ExceptionHandler, BackEndMessageHandler, KeybindingService, LocalizationService, ApplicationParamService, CommandService, FocusInvalidService, CommandServicesModule, NavigationEventService, RuntimeFrameworkService, MenuStateService, QuerystringService, LanguageService, FormMessageService, FormLoadingService, FormNotifyService, FormErrorService, ValidationService, UIStateService, BindingDataService, EntityTraversingService, EntityManipulationService, EntityAggregationService, EntityListService, EntityService, FilterConditionService, TreeDataService, SubTreeDataService, SubListDataService, RemoveDataService, SaveDataService, EditDataService, FilterConditionDataService, RemoteSummaryService, BeActionService, ApproveService, PrintService, AttachmentDataService, AttachmentService, FileService, GridMiddlewareService, SidebarService, FarrisFormService, FARRIS_FORM_COMPONENTS, DialogService$1, RouterService, AuthorityService, ɵb, ɵc, EndEditService, BatchEditService, DiscussionGroupService, FormAttentionService, FeatureDataService, FeatureRepository, FeatureEditService, ExpressionService, PopUpService, DirtyCheckingService, FormService, ViewModelService, PaginationService$1, FormManifestService, FormExpressionManifestService, WorkFlowMessageHandler, WorkFlowMessageService, WorkFlowMessage, BindingPathService, FormControlService, FrameContextService, HideEventService, FormWizardService, CheckService, EventService, ParamService, UserSettingsService, VerifyDetailService, VerifyDetailModule, FrmCommonModule, SessionService, LanguageService$1, HttpService, CacheStorageAbstract, CacheMemoryStorage, CacheService, WindowVariableService, TabEntityService, FrmI18nSettingService, FrameworkService, FrameworkVariableService, AppService, FrmEventBus, FuncsService, LoadingService$1, CommonSharedModule, FarrisTooltipModule, AttentionService, GridModule, GridComponent, BrowserSupportService, SelectionService, GroupInfoService, GroupsService, ChangeNotificationService, DetailsService, EditService$1, FilterService$1, PDFService, ResponsiveService, ExcelService, ScrollSyncService, DomEventsService, ColumnResizingService, ColumnReorderService, ColumnInfoService, NavigationService$1, SortService, SharedModule, DragAndDropModule, GroupModule, BodyModule, SharedFilterModule, RowFilterModule, FilterMenuModule, ColumnMenuModule, HeaderModule, FooterModule, PagerModule, DateInputsModule, DOMService, CenturyViewService, DecadeViewService, MonthViewService, YearViewService, WeekNamesService, NavigationService$2, BusViewService, DOMService$1, HoursService, MinutesService, SecondsService, DayPeriodService, EventsModule$1, DateInputModule, CalendarCommonModule, TemplatesModule, VirtualizationModule, CalendarModule$1, DatePickerModule, MultiViewCalendarModule, CalendarsModule, TimePickerModule$1, DateRangeModule, TOUCH_ENABLED, touchEnabled, DropDownsModule, SharedDirectivesModule, SharedModule$1, DropDownListModule, AutoCompleteModule, ComboBoxModule, MultiSelectModule$1, TOUCH_ENABLED$1, touchEnabled$1, ButtonsModule, ButtonModule, ButtonGroupModule, ListModule, SplitButtonModule, DropDownButtonModule, InputsModule, EventsModule, NumericTextBoxModule, TextBoxModule, DraggableModule, SliderModule, SwitchModule$1, MaskedTextBoxModule, IntlModule, IntlService, CldrIntlService, ServerSideToken, LookupModule, LookupComponent, TreeTableModule, TreetableService, TTHotkeys, FieldGroupModule, FarrisTabsModule, NgbDropdownConfig, NgbTooltipConfig, TabService, TabConfig, NgbDropdownModule, NgbTooltipModule, FarrisTagModule, FarrisSidebarModule, FarrisSidebarService, UploadDialogMoudle, UploadDialogService, DownloadService, UploadService, UploadModule, FarrisSectionModule, FarrisSectionComponent, FarrisDatePickerModule, FarrisTimeSpinnerModule, CalculationType, DatagridComponent, GRID_SETTINGS_HTTP, DatagridModule, ɵb$1, DatagridSmartFilterService, DatagridFacadeService, DatagridService, ɵt, ValidatorMessagerService, GRID_SETTINGS_SERVICE, NgxPaginationModule, ScrollbarModule, DatagridSmartFilterModule, SCROLLBAR_CONFIG, GRID_EDITORS, GRID_FILTER_ROW, WizardService, WizardModule, QuerySolutionModule, QUERYSOLUTION_HANDLER_TOKEN, ɵa$1, ɵb$3, QuerySolutionComponent, FarrisButtonModule, ListViewModule, TimePickerModule, AngularDraggableModule, SplitterModule, ListNavModule, TextModule, WFSubmiteService, WFRuntimeModule, I18nService$1, TaskService$1, UserService, MultiSelectModule, InputGroupModule, InputGroupComponent, ComboServerSideToken, ComboListModule, ComboLocaleService, FarrisHtmlEditorModule, ɵb$5, defaultModules, CloudprintService, CloudPrintModule, ɵa, ɵb$2, ɵc$1, ɵe, DatagridEditorsModule, EditorProviders, DatagridTextareaComponent, DatagridTextboxComponent, ɵa$4, ɵb$4, ɵc$2, ɵd$1, ɵe$1, ɵf$2, ɵg$1, ɵh$1, ɵi, ɵj$1, ɵk, DatagridEnumEditorComponent, DatagridFilterEditorComponent, DatagridSortEditorComponent, ViewChangeModule, SwitchModule, SWITCH_OPTIONS, ListFilterModule, LISTFILTER_HANDLER_TOKEN, ConvertorService$2, SolutionService$2, QuerySolutionService$1, SimpleFilterModule, FilterService$2, ConvertorService$1, SolutionService$1, AvatarModule, CalendarModule, WFFlowchartService, UiFlowchartModule, UiFlowchartService, NumberSpinnerModule, ComboLookupModule, ScrollspyModule, FarrisScrollSpyService, FileListModule, FileViewerService, ɵj, ɵs, ɵn, ɵu, ɵv, ɵo, ɵz, ɵd, ɵa$2, ɵy, ɵf$1, ɵh, ɵbe, ɵg, ɵt$1, ɵbg, ɵbh, LanguageTextboxModule, DynamicControlGroupModule, BatchEditDialogModule, BatchEditDialogService, DatagridFilterRowModule, FilterRowComponent, DatagridSettingsModule, DatagridSettingsService, FarrisFooterModule, DiscussionGroupModule, DiscussionListService, NavModule, TagsModule, EditorModule, EditorService, TINYMCE_SCRIPT_SRC, FfileuploadAdaptUnifileModule, FFileUploadAdaptUnifileConfigService, FFileUploadAdaptUnifileConfigToken, FfileuploadAdaptUnifileService, FfilepreviewAdaptUnifileService, FEHeaderFooterModule, FEPageModalModule, FEPageModalService, FeatureEditorModule, FeatureEditorService, I18nService, FEScrollCollapsibleAreaModule, FEScrollCollapsibleAreaService, ActivatedRoute, Router, RouterModule, ɵangular_packages_router_router_a, ɵEmptyOutletComponent, RouterOutlet, ChildrenOutletContexts, ROUTES, WfTaskHandlerService, TaskService, I18nService$2, WfTaskHandlerModule, CommonUtils, FarrisCommonModule, RuntimeStateService, IdService, LoadingComponentNgFactory$1, TooltipComponentNgFactory$1, ModalBackdropComponentNgFactory$1, ModalContainerComponentNgFactory$1, MessagerComponentNgFactory$1, NotifyContainerComponentNgFactory$1, PopoverContainerComponentNgFactory$1, FarrisContextMenuComponentNgFactory$1, DataTableComponentNgFactory$1, TreeTableComponentNgFactory$1, LookupLeftComponentNgFactory$1, LookupTabsComponentNgFactory$1, LookupQuickSelectPanelComponentNgFactory$1, TimePickerPanelComponentNgFactory, CalendarComponentNgFactory, FilterPanelComponentNgFactory, PopupComponentNgFactory, ɵbNgFactory, ɵiNgFactory, ɵwNgFactory, ɵbfNgFactory, ɵcNgFactory, ɵeNgFactory, ɵbbNgFactory, ɵbcNgFactory, FileListComponentNgFactory, WfApprovalLogsComponentNgFactory, UIFlowchartComponentNgFactory, LanguageTextPanelComponentNgFactory, BsModalService, ModalModule, cloneDeep, LocaleService, LocaleModule, FARRIS_LOCAL_CUSTOM_DATA, FarrisLocalePipe, PerfectScrollbarModule, PerfectScrollbarComponent, PopoverContainerComponentNgFactory, TooltipComponentNgFactory, ModalBackdropComponentNgFactory, ModalContainerComponentNgFactory, MessagerComponentNgFactory, NotifyContainerComponentNgFactory, LoadingComponentNgFactory, FarrisContextMenuComponentNgFactory, DataTableComponentNgFactory, TreeTableComponentNgFactory, LookupLeftComponentNgFactory, LookupTabsComponentNgFactory, LookupQuickSelectPanelComponentNgFactory, PopoverConfig, PopoverModule, PositioningService, ComponentLoaderFactory, PaginationService, PaginationModule, DateTimeHelperService, DateHelperModule, NumberHelperService, NumberHelperModule, ColumnFormatService, DataColumnModule, FarrisContextMenuService, FarrisContextMenuModule, ResizeService, DialogService, FarrisDialogModule, FAreaResponseModule, LayoutModule$1, DataTableModule, View_PerfectScrollbarComponent_0, RenderType_PerfectScrollbarComponent, View_InputGroupComponent_0, RenderType_InputGroupComponent, FilterEditorComponentNgFactory, SortEditorComponentNgFactory, ɵlNgFactory, DatagridTextboxComponentNgFactory, DatagridTextareaComponentNgFactory, ɵaNgFactory, ɵbNgFactory$1, ɵcNgFactory$1, ɵdNgFactory, ɵeNgFactory$1, ɵfNgFactory, ɵgNgFactory, ɵhNgFactory, ɵiNgFactory$1, ɵjNgFactory, ɵkNgFactory, DatagridEnumEditorComponentNgFactory, DatagridSortEditorComponentNgFactory, DatagridFilterEditorComponentNgFactory, TaskExecuteComponentNgFactory, TaskAssigninfoComponentNgFactory, ProcessSelectorComponentNgFactory, VerifyDetailComponentNgFactory, StringFilterCellComponentNgFactory, NumericFilterCellComponentNgFactory, BooleanFilterCellComponentNgFactory, DateFilterCellComponentNgFactory, StringFilterMenuComponentNgFactory, NumericFilterMenuComponentNgFactory, DateFilterMenuComponentNgFactory, BooleanFilterMenuComponentNgFactory, NgbTooltipWindowNgFactory, FileUploadComponentNgFactory, UploadDialogComponentNgFactory, ɵbNgFactory$2, QueryConditionComponentNgFactory, View_QuerySolutionComponent_0, RenderType_QuerySolutionComponent, ɵcNgFactory$2, ɵeNgFactory$2, ɵaNgFactory$1, ProcessSelectorComponentNgFactory$1, WfWorkitemHandleComponentNgFactory, UserHelperComponentNgFactory, TaskAssignComponentNgFactory, TaskSignaddComponentNgFactory, TaskTransferComponentNgFactory, ɵaNgFactory$2, WindowComponentNgFactory, WindowTitleBarComponentNgFactory, DialogComponentNgFactory, DialogTitleBarComponentNgFactory, ɵdNgFactory$1, ɵfNgFactory$1, ɵgNgFactory$1, ɵhNgFactory$1, ɵbNgFactory$3, ɵcNgFactory$3, ɵdNgFactory$2, ɵeNgFactory$3, ɵfNgFactory$2, ɵgNgFactory$2, ɵhNgFactory$2, BatchEditDialogComponentNgFactory, ResultConfirmComponentNgFactory, DiscussionPersonnelComponentNgFactory, MultiDownloadInfoComponentNgFactory, FilterRowComponentNgFactory, FilterTextboxComponentNgFactory, FilterCheckboxComponentNgFactory, ConditionEditorComponentNgFactory, FilterDatalistComponentNgFactory, FilterRowPanelComponentNgFactory, FilterRowEditorComponentNgFactory, FilterSelectComponentNgFactory, OrganizationSelectorComponentNgFactory, GridOrganizationSelectorComponentNgFactory, DatagridSettingsComponentNgFactory, SimpleColumnsComponentNgFactory, NewSchemeComponentNgFactory, SchemeListComponentNgFactory, FEPageModalComponentNgFactory, FEModalBackdropComponentNgFactory, ɵaNgFactory$3, FeatureEditorComponentNgFactory, ConvertorService, SolutionService, QueryConditionModule, View_FarrisSectionComponent_0, RenderType_FarrisSectionComponent, View_ResponseToolbarComponent_0, RenderType_ResponseToolbarComponent, View_DatagridComponent_0, RenderType_DatagridComponent, WindowService, WindowContainerService, DialogContainerService, DialogService$2, SharedModule$2, WindowModule, DialogModule, LocalizationService$1, QuerySolutionService, FilterConditionModule, SysCommonUtilService, SysSecurityConfigService, SysCommonModule, HelpFilterMap, SysHelpService, SysExceptionService, ɵf, SysLocaleService, SysManagerUIModule, PopupService, POPUP_CONTAINER, PopupModule, WfApprovalLogsService, WfApprovalLogsModule, ResizeBatchService, ResizeSensorModule, TaskCommentService, TaskCommentUIState, TaskCommentViewModel, I18nService$3, TaskCommentRepository, WFCommentModule, UploadServerService, FFileUploaderService, FFileUploadModule, FFileUploadAPIServiceToken, DatalistModule, FilterPanelModule, FDropdownDirectiveTypeModule, TaskImplApiModule, WfSignModule, FilterModule, SorterModule, ProgressModule, ProgressStepModule, TreeModule, OrganizationSelectorModule;
+    var Pipe, Injectable, Injector, HostBinding, Component, ElementRef, NgModule, ViewChild, TemplateRef, LOCALE_ID, ɵcmf, ɵmod, ɵmpd, ComponentFactoryResolver, ɵCodegenComponentFactoryResolver, NgModuleRef, ɵcrt, ɵccf, ɵvid, ɵeld, ɵdid, ViewContainerRef, ChangeDetectorRef, ɵprd, ApplicationRef, ɵnov, ɵpid, ɵqud, ɵand, ɵted, ɵunv, NgZone, Renderer2, ɵpad, ɵppd, Inject, InjectionToken, PLATFORM_ID, RendererFactory2, ErrorHandler, __decorate, __metadata, __extends, CommonModule, NgIf, DOCUMENT, isPlatformBrowser, NgLocalization, NgLocaleLocalization, ɵangular_packages_common_common_a, FormControl, FormsModule, ReactiveFormsModule, FormGroupDirective, ControlContainer, NgControlStatusGroup, ɵangular_packages_forms_forms_j, FormBuilder, ɵangular_packages_forms_forms_bc, DateConverter, KendoBindingModule, SectionComponentRefDirective, FarrisDatagridUseBindingDataDirective, EditableDirective, FarrisDataGridEndEditDirective, FarrisDataGridRemoteSummaryDirective, DatagridComponentRefDirective, FarrisQuerySolutionEventBindDirective, FarrisKendoGridFormatService, FarrisTreetableFormatService, LayoutModule, PanelBarModule, SplitterModule$1, TabStripModule, FlexLayoutModule, FarrisFormsModule, FormMessageModule, LoadingModule, LoadingService, LOADING_DEFAULT_CONFIG, loaddingDefaultConfig, MessagerModule, MessagerService, MESSAGER_DEFAULT_CONFIG, MessagerDefaultConfig, NotifyModule, NotifyService, FResponseToolbarModule, ResponseToolbarComponent, UriService, BefProxy, BefRepository, BefLookupRestService, DefaultComboHttpService, FrameworkSessionService, BE_SESSION_HANDLING_STRATEGY_TOKEN, BE_SERVER_URI_TOKEN, TranslateService, TranslateModule, TranslateLoader, MissingTranslationHandler, TranslateStore, TranslateCompiler, TranslateFakeCompiler, TranslateParser, TranslateDefaultParser, USE_DEFAULT_LANG, USE_STORE, TranslateHttpLoader, of, Observable, BehaviorSubject, switchMap, catchError, HttpClient, HttpXsrfTokenExtractor, ɵangular_packages_common_http_http_g, ɵangular_packages_common_http_http_e, ɵangular_packages_common_http_http_h, ɵangular_packages_common_http_http_f, HTTP_INTERCEPTORS, HttpClientXsrfModule, HttpClientModule, ɵangular_packages_common_http_http_d, XhrFactory, HttpXhrBackend, HttpBackend, HttpHandler, ɵHttpInterceptingHandler, DomSanitizer, EventManager, Declaration, NgCommand, ViewModel, NgField, NgEntity, Entity, NgObject, NgList, EntityList, NgRepository, NgValidateForm, Form, NgState, State, NgRenderState, StateMachine, NgParam, UIState, NgCommandHandler, CommandHandler, FARRIS_DEVKIT_FRAME_PROVIDERS, FRAME_ID, BindingData, Repository, NAMESPACE, TranslateToken, FARRIS_DEVKIT_EXPRESSION_LISTENER_PROVIDERS, FARRIS_DEVKIT_EXPRESSION_EFFECTOR_PROVIDERS, FARRIS_DEVKIT_EXPRESSION_ROOT_FRAME_PROVIDERS, AppContext, PARAM_TYPE_TRANSFORM_TOKEN, FORM_ID, EXCEPTION_HANDLER, CHANGE_SET_POLICY_TOKEN, BACK_END_MESSAGE_HANDLER_TOKEN, COMMAND_HANDLERS_TOKEN, FrameComponent, NgFormControl, FARRIS_DEVKIT_APP_PROVIDERS, FORM_PATH_TOKEN, FrameContext, CommandHandlerRegistry, CommandHandlerExtenderRegistry, COMMAND_HANDLER_EXTENDERS_TOKEN, CommandHandlerFactory, VariableParseService, CommandBus, RouterParamService, ResolveService, ExpressionExecutor, FORM_MANIFEST_SERVICE_TOKEN, FORM_EXPRESSION_MANIFEST_SERVICE_TOKEN, MESSAGE_SERVICE_TOKEN, NOTIFY_SERVICE_TOKEN, FRAME_COMPONENT_INIT_HANDLER_TOKEN, UserSettingsToken, AppContextManager, RESOLVER_TOKEN, EntityDependencyResolver, StateDependencyResolver, CommentDependencyResolver, ResolverRegistry, LISTENER_TOKEN, UIStateChangeListener, RepositoryChangeListener, BindingDataChangeListener, EFFECTOR_TOKEN, RepositoryEffector, UIStateEffector, ReadonlyEffector, DependencyEffector, RelativeEffector, ValidateEffector, RequiredEffector, VisibleEffector, ListenerRegistry, Listeners, EffectorRegistry, EffectorFactory, ExpressionRegistry, ExpressionEventEmitter, ExpressionResult, ExpressionManager, ExpressionResultFactory, EVENT_HANDLER_TOKEN, RepositoryAddEntityEventHandler, RepositoryRemoveEntityEventHandler, EntityValueChangedEventHandler, StateValueChangedEventHandler, RepositoryLoadEventHandler, EntityUpdateEventHandler, BindingDataAppendObjectEventHandler, BindingDataValueChangeEventHandler, BindingDataRemoveObjectEventHandler, BindingDataLoadEventHandler, BindingDataSelectionChangedEventHandler, EventHandlerRegistry, ExpressionEngineImpl, FrameEventBus, EventBus, Subscription, RestfulService, VARIABLE_PARSERS, FrameIdVariableParser, ɵa$3, EventParamVariableParser, DataVariableParser, UIStateVariableParser, StateMachineVariableParser, CommandVariableParser, ChangeItemService, ListDataService, FilterService, DataGridService, NavigationMiddlewareService, NavigationService, DataCheckService, CardDataService, StateMachineService, FARRIS_COMMAND_SERVICE_FRAME_PROVIDERS, ComponentManagerService, ExceptionHandler, BackEndMessageHandler, KeybindingService, LocalizationService, ApplicationParamService, CommandService, FocusInvalidService, CommandServicesModule, NavigationEventService, RuntimeFrameworkService, MenuStateService, QuerystringService, LanguageService, FormMessageService, FormLoadingService, FormNotifyService, FormErrorService, ValidationService, UIStateService, BindingDataService, EntityTraversingService, EntityManipulationService, EntityAggregationService, EntityListService, EntityService, FilterConditionService, TreeDataService, SubTreeDataService, SubListDataService, RemoveDataService, SaveDataService, EditDataService, FilterConditionDataService, RemoteSummaryService, BeActionService, ApproveService, PrintService, AttachmentDataService, AttachmentService, FileService, GridMiddlewareService, SidebarService, FarrisFormService, FARRIS_FORM_COMPONENTS, DialogService, RouterService, AuthorityService, ɵb, ɵc, EndEditService, BatchEditService, DiscussionGroupService, FormAttentionService, FeatureDataService, FeatureRepository, FeatureEditService, ExpressionService, PopUpService, DirtyCheckingService, FormService, ViewModelService, PaginationService, FormManifestService, FormExpressionManifestService, WorkFlowMessageHandler, WorkFlowMessageService, WorkFlowMessage, BindingPathService, FormControlService, FrameContextService, HideEventService, FormWizardService, CheckService, EventService, ParamService, UserSettingsService, VerifyDetailService, VerifyDetailModule, FrmCommonModule, SessionService, HttpService, LanguageService$1, CacheStorageAbstract, CacheMemoryStorage, CacheService, WindowVariableService, TabEntityService, FrmI18nSettingService, FrameworkService, FrameworkVariableService, AppService, FrmEventBus, FuncsService, LoadingService$1, CommonSharedModule, FarrisTooltipModule, AttentionService, GridModule, GridComponent, BrowserSupportService, SelectionService, GroupInfoService, GroupsService, ChangeNotificationService, DetailsService, EditService$1, FilterService$1, PDFService, ResponsiveService, ExcelService, ScrollSyncService, DomEventsService, ColumnResizingService, ColumnReorderService, ColumnInfoService, NavigationService$1, SortService, SharedModule, DragAndDropModule, GroupModule, BodyModule, SharedFilterModule, RowFilterModule, FilterMenuModule, ColumnMenuModule, HeaderModule, FooterModule, PagerModule, DateInputsModule, DOMService, CenturyViewService, DecadeViewService, MonthViewService, YearViewService, WeekNamesService, NavigationService$2, BusViewService, DOMService$1, HoursService, MinutesService, SecondsService, DayPeriodService, EventsModule$1, DateInputModule, CalendarCommonModule, TemplatesModule, VirtualizationModule, CalendarModule$1, DatePickerModule, MultiViewCalendarModule, CalendarsModule, TimePickerModule$1, DateRangeModule, TOUCH_ENABLED, touchEnabled, CommonUtils, FarrisCommonModule, RuntimeStateService, IdService, OverLayHiddenService, DateHelperModule, DateTimeHelperService, DropDownsModule, SharedDirectivesModule, SharedModule$1, DropDownListModule, AutoCompleteModule, ComboBoxModule, MultiSelectModule$1, TOUCH_ENABLED$1, touchEnabled$1, ButtonsModule, ButtonModule, ButtonGroupModule, ListModule, SplitButtonModule, DropDownButtonModule, InputsModule, EventsModule, NumericTextBoxModule, TextBoxModule, DraggableModule, SliderModule, SwitchModule$1, MaskedTextBoxModule, IntlModule, IntlService, CldrIntlService, ServerSideToken, LookupModule, TreeTableModule, TreetableService, TTHotkeys, FieldGroupModule, FarrisTabsModule, NgbDropdownConfig, NgbTooltipConfig, TabService, TabConfig, NgbDropdownModule, NgbTooltipModule, FarrisTagModule, FarrisSidebarModule, FarrisSidebarService, UploadDialogMoudle, UploadDialogService, DownloadService, UploadService, UploadModule, FarrisSectionModule, FarrisSectionComponent, FarrisDatePickerModule, FarrisTimeSpinnerModule, CalculationType, DatagridComponent, GRID_SETTINGS_HTTP, DatagridModule, ɵb$1, DatagridSmartFilterService, DatagridFacadeService, DatagridService, ɵt, ValidatorMessagerService, GRID_SETTINGS_SERVICE, NgxPaginationModule, ScrollbarModule, DatagridSmartFilterModule, SCROLLBAR_CONFIG, GRID_EDITORS, GRID_FILTER_ROW, WizardService, WizardModule, QuerySolutionModule, QUERYSOLUTION_HANDLER_TOKEN, ɵa$1, ɵb$3, QuerySolutionComponent, FarrisButtonModule, ListViewModule, TimePickerModule, AngularDraggableModule, SplitterModule, ListNavModule, TextModule, WFSubmiteService, WFRuntimeModule, I18nService$1, TaskService$1, UserService, MultiSelectModule, InputGroupModule, ComboServerSideToken, ComboListModule, ComboLocaleService, FarrisHtmlEditorModule, ɵb$5, defaultModules, CloudprintService, CloudPrintModule, ɵa, ɵb$2, ɵc$1, ɵe, DatagridEditorsModule, EditorProviders, DatagridTextareaComponent, DatagridTextboxComponent, ɵa$4, ɵb$4, ɵc$2, ɵd$1, ɵe$1, ɵf$1, ɵg$1, ɵh$1, ɵi, ɵj$1, ɵk, DatagridEnumEditorComponent, DatagridFilterEditorComponent, DatagridSortEditorComponent, ViewChangeModule, SwitchModule, SWITCH_OPTIONS, ListFilterModule, LISTFILTER_HANDLER_TOKEN, ConvertorService$2, SolutionService$2, QuerySolutionService$1, SimpleFilterModule, FilterService$2, ConvertorService$1, SolutionService$1, AvatarModule, CalendarModule, WFFlowchartService, UiFlowchartModule, UiFlowchartService, NumberSpinnerModule, ComboLookupModule, ScrollspyModule, FarrisScrollSpyService, FileListModule, FileViewerService, ɵj, ɵs, ɵn, ɵu, ɵv, ɵo, ɵz, ɵd, ɵa$2, ɵy, ɵf, ɵh, ɵbe, ɵg, ɵt$1, ɵbg, ɵbh, LanguageTextboxModule, DynamicControlGroupModule, BatchEditDialogModule, BatchEditDialogService, DatagridFilterRowModule, FilterRowComponent, DatagridSettingsModule, DatagridSettingsService, FarrisFooterModule, DiscussionGroupModule, DiscussionListService, NavModule, TagsModule, EditorModule, EditorService, TINYMCE_SCRIPT_SRC, FfileuploadAdaptUnifileModule, FFileUploadAdaptUnifileConfigService, FFileUploadAdaptUnifileConfigToken, FfileuploadAdaptUnifileService, FfilepreviewAdaptUnifileService, FEHeaderFooterModule, FEPageModalModule, FEPageModalService, FeatureEditorModule, FeatureEditorService, I18nService, FEScrollCollapsibleAreaModule, FEScrollCollapsibleAreaService, ActivatedRoute, Router, RouterModule, ɵangular_packages_router_router_a, ɵEmptyOutletComponent, RouterOutlet, ChildrenOutletContexts, ROUTES, WfTaskHandlerService, TaskService, I18nService$2, WfTaskHandlerModule, LoadingComponentNgFactory, TooltipComponentNgFactory, ModalBackdropComponentNgFactory, ModalContainerComponentNgFactory, MessagerComponentNgFactory, NotifyContainerComponentNgFactory, PopoverContainerComponentNgFactory, PopupComponentNgFactory, ɵbNgFactory, ɵiNgFactory, ɵwNgFactory, ɵbfNgFactory, ɵcNgFactory, ɵeNgFactory, ɵbbNgFactory, ɵbcNgFactory, FileListComponentNgFactory, WfApprovalLogsComponentNgFactory, TimePickerPanelComponentNgFactory, CalendarComponentNgFactory, FarrisContextMenuComponentNgFactory, DataTableComponentNgFactory, TreeTableComponentNgFactory, LookupLeftComponentNgFactory, LookupTabsComponentNgFactory, LookupQuickSelectPanelComponentNgFactory, SingleListComponentNgFactory, FilterPanelComponentNgFactory, UIFlowchartComponentNgFactory, LanguageTextPanelComponentNgFactory, EnumEditorComponentNgFactory, FilterEditorComponentNgFactory, SortEditorComponentNgFactory, ɵlNgFactory, DatagridTextboxComponentNgFactory, DatagridTextareaComponentNgFactory, ɵaNgFactory, ɵbNgFactory$1, ɵcNgFactory$1, ɵdNgFactory, ɵeNgFactory$1, ɵfNgFactory, ɵgNgFactory, ɵhNgFactory, ɵiNgFactory$1, ɵjNgFactory, ɵkNgFactory, DatagridEnumEditorComponentNgFactory, DatagridSortEditorComponentNgFactory, DatagridFilterEditorComponentNgFactory, TaskExecuteComponentNgFactory, TaskAssigninfoComponentNgFactory, ProcessSelectorComponentNgFactory, AssigneeInfoComponentNgFactory, TaskCommentComponentNgFactory, CommentManageComponentNgFactory, VerifyDetailComponentNgFactory, StringFilterCellComponentNgFactory, NumericFilterCellComponentNgFactory, BooleanFilterCellComponentNgFactory, DateFilterCellComponentNgFactory, StringFilterMenuComponentNgFactory, NumericFilterMenuComponentNgFactory, DateFilterMenuComponentNgFactory, BooleanFilterMenuComponentNgFactory, NgbTooltipWindowNgFactory, FileUploadComponentNgFactory, UploadDialogComponentNgFactory, ɵbNgFactory$2, QueryConditionComponentNgFactory, View_QuerySolutionComponent_0, RenderType_QuerySolutionComponent, ɵcNgFactory$2, ɵeNgFactory$2, ɵaNgFactory$1, ProcessSelectorComponentNgFactory$1, WfWorkitemHandleComponentNgFactory, UserHelperComponentNgFactory, TaskAssignComponentNgFactory, TaskSignaddComponentNgFactory, TaskTransferComponentNgFactory, ɵaNgFactory$2, WindowComponentNgFactory, WindowTitleBarComponentNgFactory, DialogComponentNgFactory, DialogTitleBarComponentNgFactory, ɵdNgFactory$1, ɵfNgFactory$1, ɵgNgFactory$1, ɵhNgFactory$1, ɵbNgFactory$3, ɵcNgFactory$3, ɵdNgFactory$2, ɵeNgFactory$3, ɵfNgFactory$2, ɵgNgFactory$2, ɵhNgFactory$2, BatchEditDialogComponentNgFactory, ResultConfirmComponentNgFactory, DiscussionPersonnelComponentNgFactory, MultiDownloadInfoComponentNgFactory, FilterRowComponentNgFactory, FilterTextboxComponentNgFactory, FilterCheckboxComponentNgFactory, ConditionEditorComponentNgFactory, FilterDatalistComponentNgFactory, FilterRowPanelComponentNgFactory, FilterRowEditorComponentNgFactory, FilterSelectComponentNgFactory, OrganizationSelectorComponentNgFactory, GridOrganizationSelectorComponentNgFactory, DatagridSettingsComponentNgFactory, SimpleColumnsComponentNgFactory, NewSchemeComponentNgFactory, SchemeListComponentNgFactory, FEPageModalComponentNgFactory, FEModalBackdropComponentNgFactory, ɵaNgFactory$3, FeatureEditorComponentNgFactory, ConvertorService, SolutionService, QueryConditionModule, BsModalService, ModalModule, LocaleService, FARRIS_LOCAL_CUSTOM_DATA, LocaleModule, View_FarrisSectionComponent_0, RenderType_FarrisSectionComponent, View_ResponseToolbarComponent_0, RenderType_ResponseToolbarComponent, View_DatagridComponent_0, RenderType_DatagridComponent, DialogService$1, FarrisDialogModule, ColumnFormatService, DataColumnModule, WindowService, WindowContainerService, DialogContainerService, DialogService$2, SharedModule$2, WindowModule, DialogModule, LocalizationService$1, NumberHelperService, NumberHelperModule, PositioningService, ComponentLoaderFactory, PaginationService$1, PaginationModule, PopoverConfig, PopoverModule, PopupService, POPUP_CONTAINER, PopupModule, WfApprovalLogsService, WfApprovalLogsModule, FarrisContextMenuService, FarrisContextMenuModule, ResizeService, QuerySolutionService, FilterConditionModule, ResizeBatchService, ResizeSensorModule, TaskCommentService, TaskCommentUIState, TaskCommentViewModel, I18nService$3, TaskCommentRepository, WFCommentModule, UploadServerService, FFileUploaderService, FFileUploadModule, FFileUploadAPIServiceToken, PerfectScrollbarModule, FAreaResponseModule, DataTableModule, DatalistModule, LayoutModule$1, FDropdownDirectiveTypeModule, FilterPanelModule, TaskImplApiModule, WfSignModule, EnumEditorModule, FilterModule, SorterModule, ProgressModule, ProgressStepModule, TreeModule, OrganizationSelectorModule;
     return {
         setters: [function (module) {
             Pipe = module.Pipe;
@@ -27,59 +27,45 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
             ɵdid = module.ɵdid;
             ViewContainerRef = module.ViewContainerRef;
             ChangeDetectorRef = module.ChangeDetectorRef;
-            Renderer2 = module.Renderer2;
-            Input = module.Input;
-            Output = module.Output;
-            defineInjectable = module.defineInjectable;
-            inject = module.inject;
-            INJECTOR = module.INJECTOR;
-            forwardRef = module.forwardRef;
-            EventEmitter = module.EventEmitter;
-            RendererFactory2 = module.RendererFactory2;
-            PLATFORM_ID = module.PLATFORM_ID;
-            NgZone = module.NgZone;
+            ɵprd = module.ɵprd;
             ApplicationRef = module.ApplicationRef;
             ɵnov = module.ɵnov;
-            ɵprd = module.ɵprd;
             ɵpid = module.ɵpid;
             ɵqud = module.ɵqud;
-            ɵted = module.ɵted;
-            ɵppd = module.ɵppd;
             ɵand = module.ɵand;
-            IterableDiffers = module.IterableDiffers;
+            ɵted = module.ɵted;
             ɵunv = module.ɵunv;
-            ɵEMPTY_MAP = module.ɵEMPTY_MAP;
+            NgZone = module.NgZone;
+            Renderer2 = module.Renderer2;
             ɵpad = module.ɵpad;
+            ɵppd = module.ɵppd;
             Inject = module.Inject;
             InjectionToken = module.InjectionToken;
+            PLATFORM_ID = module.PLATFORM_ID;
+            RendererFactory2 = module.RendererFactory2;
             ErrorHandler = module.ErrorHandler;
         }, function (module) {
             __decorate = module.__decorate;
             __metadata = module.__metadata;
             __extends = module.__extends;
-            __spread = module.__spread;
         }, function (module) {
             CommonModule = module.CommonModule;
-            NgLocalization = module.NgLocalization;
-            NgLocaleLocalization = module.NgLocaleLocalization;
-            ɵangular_packages_common_common_a = module.ɵangular_packages_common_common_a;
-            NgForOf = module.NgForOf;
             NgIf = module.NgIf;
             DOCUMENT = module.DOCUMENT;
             isPlatformBrowser = module.isPlatformBrowser;
+            NgLocalization = module.NgLocalization;
+            NgLocaleLocalization = module.NgLocaleLocalization;
+            ɵangular_packages_common_common_a = module.ɵangular_packages_common_common_a;
         }, function (module) {
             FormControl = module.FormControl;
             FormsModule = module.FormsModule;
             ReactiveFormsModule = module.ReactiveFormsModule;
-            NG_VALUE_ACCESSOR = module.NG_VALUE_ACCESSOR;
+            FormGroupDirective = module.FormGroupDirective;
+            ControlContainer = module.ControlContainer;
+            NgControlStatusGroup = module.NgControlStatusGroup;
             ɵangular_packages_forms_forms_j = module.ɵangular_packages_forms_forms_j;
-            ɵangular_packages_forms_forms_bc = module.ɵangular_packages_forms_forms_bc;
-            DefaultValueAccessor = module.DefaultValueAccessor;
-            COMPOSITION_BUFFER_MODE = module.COMPOSITION_BUFFER_MODE;
-            NgModel = module.NgModel;
-            NgControl = module.NgControl;
-            NgControlStatus = module.NgControlStatus;
             FormBuilder = module.FormBuilder;
+            ɵangular_packages_forms_forms_bc = module.ɵangular_packages_forms_forms_bc;
         }, function (module) {
             DateConverter = module.DateConverter;
             KendoBindingModule = module.KendoBindingModule;
@@ -146,7 +132,6 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
             of = module.of;
             Observable = module.Observable;
             BehaviorSubject = module.BehaviorSubject;
-            Subject = module.Subject;
         }, function (module) {
             switchMap = module.switchMap;
             catchError = module.catchError;
@@ -203,6 +188,7 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
             PARAM_TYPE_TRANSFORM_TOKEN = module.PARAM_TYPE_TRANSFORM_TOKEN;
             FORM_ID = module.FORM_ID;
             EXCEPTION_HANDLER = module.EXCEPTION_HANDLER;
+            CHANGE_SET_POLICY_TOKEN = module.CHANGE_SET_POLICY_TOKEN;
             BACK_END_MESSAGE_HANDLER_TOKEN = module.BACK_END_MESSAGE_HANDLER_TOKEN;
             COMMAND_HANDLERS_TOKEN = module.COMMAND_HANDLERS_TOKEN;
             FrameComponent = module.FrameComponent;
@@ -335,7 +321,7 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
             SidebarService = module.SidebarService;
             FarrisFormService = module.FarrisFormService;
             FARRIS_FORM_COMPONENTS = module.FARRIS_FORM_COMPONENTS;
-            DialogService$1 = module.DialogService;
+            DialogService = module.DialogService;
             RouterService = module.RouterService;
             AuthorityService = module.AuthorityService;
             ɵb = module.ɵb;
@@ -352,7 +338,7 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
             DirtyCheckingService = module.DirtyCheckingService;
             FormService = module.FormService;
             ViewModelService = module.ViewModelService;
-            PaginationService$1 = module.PaginationService;
+            PaginationService = module.PaginationService;
             FormManifestService = module.FormManifestService;
             FormExpressionManifestService = module.FormExpressionManifestService;
             WorkFlowMessageHandler = module.WorkFlowMessageHandler;
@@ -373,8 +359,8 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
         }, function (module) {
             FrmCommonModule = module.FrmCommonModule;
             SessionService = module.SessionService;
-            LanguageService$1 = module.LanguageService;
             HttpService = module.HttpService;
+            LanguageService$1 = module.LanguageService;
             CacheStorageAbstract = module.CacheStorageAbstract;
             CacheMemoryStorage = module.CacheMemoryStorage;
             CacheService = module.CacheService;
@@ -453,6 +439,15 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
             TOUCH_ENABLED = module.TOUCH_ENABLED;
             touchEnabled = module.touchEnabled;
         }, function (module) {
+            CommonUtils = module.CommonUtils;
+            FarrisCommonModule = module.FarrisCommonModule;
+            RuntimeStateService = module.RuntimeStateService;
+            IdService = module.IdService;
+            OverLayHiddenService = module.OverLayHiddenService;
+        }, function (module) {
+            DateHelperModule = module.DateHelperModule;
+            DateTimeHelperService = module.DateTimeHelperService;
+        }, function (module) {
             DropDownsModule = module.DropDownsModule;
             SharedDirectivesModule = module.SharedDirectivesModule;
             SharedModule$1 = module.SharedModule;
@@ -485,7 +480,6 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
         }, function () {}, function (module) {
             ServerSideToken = module.ServerSideToken;
             LookupModule = module.LookupModule;
-            LookupComponent = module.LookupComponent;
         }, function (module) {
             TreeTableModule = module.TreeTableModule;
             TreetableService = module.TreetableService;
@@ -569,7 +563,6 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
             MultiSelectModule = module.MultiSelectModule;
         }, function (module) {
             InputGroupModule = module.InputGroupModule;
-            InputGroupComponent = module.InputGroupComponent;
         }, function (module) {
             ComboServerSideToken = module.ComboServerSideToken;
             ComboListModule = module.ComboListModule;
@@ -595,7 +588,7 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
             ɵc$2 = module.ɵc;
             ɵd$1 = module.ɵd;
             ɵe$1 = module.ɵe;
-            ɵf$2 = module.ɵf;
+            ɵf$1 = module.ɵf;
             ɵg$1 = module.ɵg;
             ɵh$1 = module.ɵh;
             ɵi = module.ɵi;
@@ -648,7 +641,7 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
             ɵd = module.ɵd;
             ɵa$2 = module.ɵa;
             ɵy = module.ɵy;
-            ɵf$1 = module.ɵf;
+            ɵf = module.ɵf;
             ɵh = module.ɵh;
             ɵbe = module.ɵbe;
             ɵg = module.ɵg;
@@ -714,39 +707,18 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
             I18nService$2 = module.I18nService;
             WfTaskHandlerModule = module.WfTaskHandlerModule;
         }, function (module) {
-            CommonUtils = module.CommonUtils;
-            FarrisCommonModule = module.FarrisCommonModule;
-            RuntimeStateService = module.RuntimeStateService;
-            IdService = module.IdService;
+            LoadingComponentNgFactory = module.LoadingComponentNgFactory;
         }, function (module) {
-            LoadingComponentNgFactory$1 = module.LoadingComponentNgFactory;
+            TooltipComponentNgFactory = module.TooltipComponentNgFactory;
         }, function (module) {
-            TooltipComponentNgFactory$1 = module.TooltipComponentNgFactory;
+            ModalBackdropComponentNgFactory = module.ModalBackdropComponentNgFactory;
+            ModalContainerComponentNgFactory = module.ModalContainerComponentNgFactory;
         }, function (module) {
-            ModalBackdropComponentNgFactory$1 = module.ModalBackdropComponentNgFactory;
-            ModalContainerComponentNgFactory$1 = module.ModalContainerComponentNgFactory;
+            MessagerComponentNgFactory = module.MessagerComponentNgFactory;
         }, function (module) {
-            MessagerComponentNgFactory$1 = module.MessagerComponentNgFactory;
+            NotifyContainerComponentNgFactory = module.NotifyContainerComponentNgFactory;
         }, function (module) {
-            NotifyContainerComponentNgFactory$1 = module.NotifyContainerComponentNgFactory;
-        }, function (module) {
-            PopoverContainerComponentNgFactory$1 = module.PopoverContainerComponentNgFactory;
-        }, function (module) {
-            FarrisContextMenuComponentNgFactory$1 = module.FarrisContextMenuComponentNgFactory;
-        }, function (module) {
-            DataTableComponentNgFactory$1 = module.DataTableComponentNgFactory;
-        }, function (module) {
-            TreeTableComponentNgFactory$1 = module.TreeTableComponentNgFactory;
-        }, function (module) {
-            LookupLeftComponentNgFactory$1 = module.LookupLeftComponentNgFactory;
-            LookupTabsComponentNgFactory$1 = module.LookupTabsComponentNgFactory;
-            LookupQuickSelectPanelComponentNgFactory$1 = module.LookupQuickSelectPanelComponentNgFactory;
-        }, function (module) {
-            TimePickerPanelComponentNgFactory = module.TimePickerPanelComponentNgFactory;
-        }, function (module) {
-            CalendarComponentNgFactory = module.CalendarComponentNgFactory;
-        }, function (module) {
-            FilterPanelComponentNgFactory = module.FilterPanelComponentNgFactory;
+            PopoverContainerComponentNgFactory = module.PopoverContainerComponentNgFactory;
         }, function (module) {
             PopupComponentNgFactory = module.PopupComponentNgFactory;
         }, function (module) {
@@ -762,35 +734,9 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
         }, function (module) {
             WfApprovalLogsComponentNgFactory = module.WfApprovalLogsComponentNgFactory;
         }, function (module) {
-            UIFlowchartComponentNgFactory = module.UIFlowchartComponentNgFactory;
+            TimePickerPanelComponentNgFactory = module.TimePickerPanelComponentNgFactory;
         }, function (module) {
-            LanguageTextPanelComponentNgFactory = module.LanguageTextPanelComponentNgFactory;
-        }, function (module) {
-            BsModalService = module.BsModalService;
-            ModalModule = module.ModalModule;
-        }, function (module) {
-            cloneDeep = module.cloneDeep;
-        }, function (module) {
-            LocaleService = module.LocaleService;
-            LocaleModule = module.LocaleModule;
-            FARRIS_LOCAL_CUSTOM_DATA = module.FARRIS_LOCAL_CUSTOM_DATA;
-            FarrisLocalePipe = module.FarrisLocalePipe;
-        }, function (module) {
-            PerfectScrollbarModule = module.PerfectScrollbarModule;
-            PerfectScrollbarComponent = module.PerfectScrollbarComponent;
-        }, function (module) {
-            PopoverContainerComponentNgFactory = module.PopoverContainerComponentNgFactory;
-        }, function (module) {
-            TooltipComponentNgFactory = module.TooltipComponentNgFactory;
-        }, function (module) {
-            ModalBackdropComponentNgFactory = module.ModalBackdropComponentNgFactory;
-            ModalContainerComponentNgFactory = module.ModalContainerComponentNgFactory;
-        }, function (module) {
-            MessagerComponentNgFactory = module.MessagerComponentNgFactory;
-        }, function (module) {
-            NotifyContainerComponentNgFactory = module.NotifyContainerComponentNgFactory;
-        }, function (module) {
-            LoadingComponentNgFactory = module.LoadingComponentNgFactory;
+            CalendarComponentNgFactory = module.CalendarComponentNgFactory;
         }, function (module) {
             FarrisContextMenuComponentNgFactory = module.FarrisContextMenuComponentNgFactory;
         }, function (module) {
@@ -802,44 +748,15 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
             LookupTabsComponentNgFactory = module.LookupTabsComponentNgFactory;
             LookupQuickSelectPanelComponentNgFactory = module.LookupQuickSelectPanelComponentNgFactory;
         }, function (module) {
-            PopoverConfig = module.PopoverConfig;
-            PopoverModule = module.PopoverModule;
+            SingleListComponentNgFactory = module.SingleListComponentNgFactory;
         }, function (module) {
-            PositioningService = module.PositioningService;
+            FilterPanelComponentNgFactory = module.FilterPanelComponentNgFactory;
         }, function (module) {
-            ComponentLoaderFactory = module.ComponentLoaderFactory;
+            UIFlowchartComponentNgFactory = module.UIFlowchartComponentNgFactory;
         }, function (module) {
-            PaginationService = module.PaginationService;
-            PaginationModule = module.PaginationModule;
+            LanguageTextPanelComponentNgFactory = module.LanguageTextPanelComponentNgFactory;
         }, function (module) {
-            DateTimeHelperService = module.DateTimeHelperService;
-            DateHelperModule = module.DateHelperModule;
-        }, function (module) {
-            NumberHelperService = module.NumberHelperService;
-            NumberHelperModule = module.NumberHelperModule;
-        }, function (module) {
-            ColumnFormatService = module.ColumnFormatService;
-            DataColumnModule = module.DataColumnModule;
-        }, function (module) {
-            FarrisContextMenuService = module.FarrisContextMenuService;
-            FarrisContextMenuModule = module.FarrisContextMenuModule;
-        }, function (module) {
-            ResizeService = module.ResizeService;
-        }, function (module) {
-            DialogService = module.DialogService;
-            FarrisDialogModule = module.FarrisDialogModule;
-        }, function (module) {
-            FAreaResponseModule = module.FAreaResponseModule;
-        }, function (module) {
-            LayoutModule$1 = module.LayoutModule;
-        }, function (module) {
-            DataTableModule = module.DataTableModule;
-        }, function (module) {
-            View_PerfectScrollbarComponent_0 = module.View_PerfectScrollbarComponent_0;
-            RenderType_PerfectScrollbarComponent = module.RenderType_PerfectScrollbarComponent;
-        }, function (module) {
-            View_InputGroupComponent_0 = module.View_InputGroupComponent_0;
-            RenderType_InputGroupComponent = module.RenderType_InputGroupComponent;
+            EnumEditorComponentNgFactory = module.EnumEditorComponentNgFactory;
         }, function (module) {
             FilterEditorComponentNgFactory = module.FilterEditorComponentNgFactory;
         }, function (module) {
@@ -866,6 +783,9 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
             TaskExecuteComponentNgFactory = module.TaskExecuteComponentNgFactory;
             TaskAssigninfoComponentNgFactory = module.TaskAssigninfoComponentNgFactory;
             ProcessSelectorComponentNgFactory = module.ProcessSelectorComponentNgFactory;
+            AssigneeInfoComponentNgFactory = module.AssigneeInfoComponentNgFactory;
+            TaskCommentComponentNgFactory = module.TaskCommentComponentNgFactory;
+            CommentManageComponentNgFactory = module.CommentManageComponentNgFactory;
         }, function (module) {
             VerifyDetailComponentNgFactory = module.VerifyDetailComponentNgFactory;
         }, function (module) {
@@ -953,6 +873,13 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
             SolutionService = module.SolutionService;
             QueryConditionModule = module.QueryConditionModule;
         }, function (module) {
+            BsModalService = module.BsModalService;
+            ModalModule = module.ModalModule;
+        }, function (module) {
+            LocaleService = module.LocaleService;
+            FARRIS_LOCAL_CUSTOM_DATA = module.FARRIS_LOCAL_CUSTOM_DATA;
+            LocaleModule = module.LocaleModule;
+        }, function (module) {
             View_FarrisSectionComponent_0 = module.View_FarrisSectionComponent_0;
             RenderType_FarrisSectionComponent = module.RenderType_FarrisSectionComponent;
         }, function (module) {
@@ -961,6 +888,12 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
         }, function (module) {
             View_DatagridComponent_0 = module.View_DatagridComponent_0;
             RenderType_DatagridComponent = module.RenderType_DatagridComponent;
+        }, function (module) {
+            DialogService$1 = module.DialogService;
+            FarrisDialogModule = module.FarrisDialogModule;
+        }, function (module) {
+            ColumnFormatService = module.ColumnFormatService;
+            DataColumnModule = module.DataColumnModule;
         }, function (module) {
             WindowService = module.WindowService;
             WindowContainerService = module.WindowContainerService;
@@ -972,19 +905,18 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
         }, function (module) {
             LocalizationService$1 = module.LocalizationService;
         }, function (module) {
-            QuerySolutionService = module.QuerySolutionService;
-            FilterConditionModule = module.FilterConditionModule;
+            NumberHelperService = module.NumberHelperService;
+            NumberHelperModule = module.NumberHelperModule;
         }, function (module) {
-            SysCommonUtilService = module.SysCommonUtilService;
-            SysSecurityConfigService = module.SysSecurityConfigService;
-            SysCommonModule = module.SysCommonModule;
+            PositioningService = module.PositioningService;
         }, function (module) {
-            HelpFilterMap = module.HelpFilterMap;
-            SysHelpService = module.SysHelpService;
-            SysExceptionService = module.SysExceptionService;
-            ɵf = module.ɵf;
-            SysLocaleService = module.SysLocaleService;
-            SysManagerUIModule = module.SysManagerUIModule;
+            ComponentLoaderFactory = module.ComponentLoaderFactory;
+        }, function (module) {
+            PaginationService$1 = module.PaginationService;
+            PaginationModule = module.PaginationModule;
+        }, function (module) {
+            PopoverConfig = module.PopoverConfig;
+            PopoverModule = module.PopoverModule;
         }, function (module) {
             PopupService = module.PopupService;
             POPUP_CONTAINER = module.POPUP_CONTAINER;
@@ -992,6 +924,14 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
         }, function (module) {
             WfApprovalLogsService = module.WfApprovalLogsService;
             WfApprovalLogsModule = module.WfApprovalLogsModule;
+        }, function (module) {
+            FarrisContextMenuService = module.FarrisContextMenuService;
+            FarrisContextMenuModule = module.FarrisContextMenuModule;
+        }, function (module) {
+            ResizeService = module.ResizeService;
+        }, function (module) {
+            QuerySolutionService = module.QuerySolutionService;
+            FilterConditionModule = module.FilterConditionModule;
         }, function (module) {
             ResizeBatchService = module.ResizeBatchService;
             ResizeSensorModule = module.ResizeSensorModule;
@@ -1008,15 +948,25 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
             FFileUploadModule = module.FFileUploadModule;
             FFileUploadAPIServiceToken = module.FFileUploadAPIServiceToken;
         }, function (module) {
+            PerfectScrollbarModule = module.PerfectScrollbarModule;
+        }, function (module) {
+            FAreaResponseModule = module.FAreaResponseModule;
+        }, function (module) {
+            DataTableModule = module.DataTableModule;
+        }, function (module) {
             DatalistModule = module.DatalistModule;
         }, function (module) {
-            FilterPanelModule = module.FilterPanelModule;
+            LayoutModule$1 = module.LayoutModule;
         }, function (module) {
             FDropdownDirectiveTypeModule = module.FDropdownDirectiveTypeModule;
+        }, function (module) {
+            FilterPanelModule = module.FilterPanelModule;
         }, function (module) {
             TaskImplApiModule = module.TaskImplApiModule;
         }, function (module) {
             WfSignModule = module.WfSignModule;
+        }, function (module) {
+            EnumEditorModule = module.EnumEditorModule;
         }, function (module) {
             FilterModule = module.FilterModule;
         }, function (module) {
@@ -1039,7 +989,7 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                 }
                 return new TranslateHttpLoader(http, '/apps/scm/cm/web/bo-materialplan-front/materialplanform/i18n/', '.json' + versionSuffix);
             }
-            var lang = { "zh-CHS": { "GridField/isPurchaseOrder_75108363_6uu3/formatter/trueText": "是", "GridField/isPurchaseOrder_75108363_6uu3/formatter/falseText": "否", "root-component": "", "root-layout": "", "query-scheme-section": "", "Section/query-scheme-section/mainTitle": "主标题", "Section/query-scheme-section/subTitle": "", "query-scheme-1": "默认筛选方案", "QueryScheme/query-scheme-1/f73f5927-a02c-491c-9b5c-cd74be14d2fa": "主键", "QueryScheme/query-scheme-1/f73f5927-a02c-491c-9b5c-cd74be14d2fa/placeHolder": "", "QueryScheme/query-scheme-1/040f40dd-c841-498f-86c5-d8d58afb91d7": "版本", "QueryScheme/query-scheme-1/040f40dd-c841-498f-86c5-d8d58afb91d7/placeHolder": "", "QueryScheme/query-scheme-1/6a6f7e09-0101-468f-ae3f-40c76c0f06b0": "状态", "QueryScheme/query-scheme-1/6a6f7e09-0101-468f-ae3f-40c76c0f06b0/placeHolder": "", "QueryScheme/query-scheme-1/6a6f7e09-0101-468f-ae3f-40c76c0f06b0/control/enumValues/Billing": "制单", "QueryScheme/query-scheme-1/6a6f7e09-0101-468f-ae3f-40c76c0f06b0/control/enumValues/SubmitApproval": "提交审批", "QueryScheme/query-scheme-1/6a6f7e09-0101-468f-ae3f-40c76c0f06b0/control/enumValues/Approved": "审批通过", "QueryScheme/query-scheme-1/6a6f7e09-0101-468f-ae3f-40c76c0f06b0/control/enumValues/ApprovalNotPassed": "审批不通过", "QueryScheme/query-scheme-1/502cfc60-ad8f-4da3-a430-c8a7f2162135": "流程实例", "QueryScheme/query-scheme-1/502cfc60-ad8f-4da3-a430-c8a7f2162135/placeHolder": "", "QueryScheme/query-scheme-1/a50f04eb-fc31-457c-8c85-0c5ab0cae592": "制单人", "QueryScheme/query-scheme-1/a50f04eb-fc31-457c-8c85-0c5ab0cae592/placeHolder": "", "QueryScheme/query-scheme-1/493e5d57-896f-46dd-a9a7-af9a5a54d0a1": "ID", "QueryScheme/query-scheme-1/493e5d57-896f-46dd-a9a7-af9a5a54d0a1/placeHolder": "", "QueryScheme/query-scheme-1/36e050c8-bb2f-4649-8974-9b4af77eeb21": "名称", "QueryScheme/query-scheme-1/36e050c8-bb2f-4649-8974-9b4af77eeb21/placeHolder": "", "QueryScheme/query-scheme-1/19bd9bfb-8d65-4f70-b5e9-c1dee32cec5a": "交货日期", "QueryScheme/query-scheme-1/19bd9bfb-8d65-4f70-b5e9-c1dee32cec5a/placeHolder": "", "QueryScheme/query-scheme-1/f9f7f6fd-68a4-430c-856a-adda5d47fd52": "采购部门", "QueryScheme/query-scheme-1/f9f7f6fd-68a4-430c-856a-adda5d47fd52/placeHolder": "", "QueryScheme/query-scheme-1/97d95d4b-8497-4df5-bec8-8838acc68ee7": "采购部门", "QueryScheme/query-scheme-1/97d95d4b-8497-4df5-bec8-8838acc68ee7/placeHolder": "", "QueryScheme/query-scheme-1/97d95d4b-8497-4df5-bec8-8838acc68ee7/control/help/dialogTitle": "", "QueryScheme/query-scheme-1/53265c41-b6d3-4977-9dde-450cb0505c91": "名称", "QueryScheme/query-scheme-1/53265c41-b6d3-4977-9dde-450cb0505c91/placeHolder": "", "QueryScheme/query-scheme-1/210f7065-4c19-4009-81e3-3cafec40792a": "计划编号", "QueryScheme/query-scheme-1/210f7065-4c19-4009-81e3-3cafec40792a/placeHolder": "", "QueryScheme/query-scheme-1/4f24ebc0-acb5-4039-8ee5-9e1fd296f133": "计划名称", "QueryScheme/query-scheme-1/4f24ebc0-acb5-4039-8ee5-9e1fd296f133/placeHolder": "", "QueryScheme/query-scheme-1/75108363-b463-4d9a-8ee1-899a42e20e04": "是否已生成采购订单", "QueryScheme/query-scheme-1/75108363-b463-4d9a-8ee1-899a42e20e04/placeHolder": "", "QueryScheme/query-scheme-1/75108363-b463-4d9a-8ee1-899a42e20e04/control/enumValues/true": "true", "QueryScheme/query-scheme-1/75108363-b463-4d9a-8ee1-899a42e20e04/control/enumValues/false": "false", "QueryScheme/query-scheme-1/da36cd69-7e29-4add-85f0-ea43a2691188": "物料总价", "QueryScheme/query-scheme-1/da36cd69-7e29-4add-85f0-ea43a2691188/placeHolder": "", "QueryScheme/query-scheme-1/f039a9da-8150-4935-8af3-836b7aca3bef": "采购员", "QueryScheme/query-scheme-1/f039a9da-8150-4935-8af3-836b7aca3bef/placeHolder": "", "QueryScheme/query-scheme-1/8a441b44-720b-4e36-aa28-a20d4008658e": "ID", "QueryScheme/query-scheme-1/8a441b44-720b-4e36-aa28-a20d4008658e/placeHolder": "", "QueryScheme/query-scheme-1/e646ee4c-4ae8-4df5-a9b4-0c39402adff8": "名称", "QueryScheme/query-scheme-1/e646ee4c-4ae8-4df5-a9b4-0c39402adff8/placeHolder": "", "page-header": "", "header-nav": "", "header-title-container": "", "page-header-title": "", "title": "物料需求计划表单", "page-header-toolbar": "", "button-add": "新增", "button-edit": "编辑", "button-view": "查看", "button-delete": "删除", "button-approve": "提交审批", "button-cancel-approve": "取消提交审批", "page-main": "", "data-grid-component-ref": "", "data-grid-component": "", "data-grid-section": "", "Section/data-grid-section/mainTitle": "", "Section/data-grid-section/subTitle": "", "dataGrid": "", "DataGrid/dataGrid/lineNumberTitle": "序", "DataGrid/dataGrid/OperateEditButton": "编辑", "DataGrid/dataGrid/OperateDeleteButton": "删除", "DataGrid/dataGrid/OperateColumn": "操作", "billStatus_BillState_6a6f7e09_pbh3": "审批状态", "GridField/billStatus_BillState_6a6f7e09_pbh3/enumData/Billing": "制单", "GridField/billStatus_BillState_6a6f7e09_pbh3/enumData/SubmitApproval": "提交审批", "GridField/billStatus_BillState_6a6f7e09_pbh3/enumData/Approved": "审批通过", "GridField/billStatus_BillState_6a6f7e09_pbh3/enumData/ApprovalNotPassed": "审批不通过", "planCode_210f7065_7a35": "计划编号", "applicant_Applicant_Name_36e050c8_radi": "制单人", "purchaseDept_PurchaseDept_name_53265c41_3q8s": "采购部门", "purchaser_Purchaser_Name_e646ee4c_5c6k": "采购员", "deliveryDate_19bd9bfb_nnlo": "交货日期", "planName_4f24ebc0_a9kt": "计划名称", "totalPrice_da36cd69_48ad": "物料总价", "isPurchaseOrder_75108363_6uu3": "是否已生成采购订单" } };
+            var lang = { "zh-CHS": { "GridField/isPurchaseOrder_75108363_6uu3/formatter/trueText": "是", "GridField/isPurchaseOrder_75108363_6uu3/formatter/falseText": "否", "root-component": "", "root-layout": "", "query-scheme-section": "", "Section/query-scheme-section/mainTitle": "主标题", "Section/query-scheme-section/subTitle": "", "query-scheme-1": "默认筛选方案", "QueryScheme/query-scheme-1/f73f5927-a02c-491c-9b5c-cd74be14d2fa": "主键", "QueryScheme/query-scheme-1/f73f5927-a02c-491c-9b5c-cd74be14d2fa/placeHolder": "", "QueryScheme/query-scheme-1/040f40dd-c841-498f-86c5-d8d58afb91d7": "版本", "QueryScheme/query-scheme-1/040f40dd-c841-498f-86c5-d8d58afb91d7/placeHolder": "", "QueryScheme/query-scheme-1/6a6f7e09-0101-468f-ae3f-40c76c0f06b0": "状态", "QueryScheme/query-scheme-1/6a6f7e09-0101-468f-ae3f-40c76c0f06b0/placeHolder": "", "QueryScheme/query-scheme-1/6a6f7e09-0101-468f-ae3f-40c76c0f06b0/control/enumValues/Billing": "制单", "QueryScheme/query-scheme-1/6a6f7e09-0101-468f-ae3f-40c76c0f06b0/control/enumValues/SubmitApproval": "提交审批", "QueryScheme/query-scheme-1/6a6f7e09-0101-468f-ae3f-40c76c0f06b0/control/enumValues/Approved": "审批通过", "QueryScheme/query-scheme-1/6a6f7e09-0101-468f-ae3f-40c76c0f06b0/control/enumValues/ApprovalNotPassed": "审批不通过", "QueryScheme/query-scheme-1/502cfc60-ad8f-4da3-a430-c8a7f2162135": "流程实例", "QueryScheme/query-scheme-1/502cfc60-ad8f-4da3-a430-c8a7f2162135/placeHolder": "", "QueryScheme/query-scheme-1/a50f04eb-fc31-457c-8c85-0c5ab0cae592": "制单人", "QueryScheme/query-scheme-1/a50f04eb-fc31-457c-8c85-0c5ab0cae592/placeHolder": "", "QueryScheme/query-scheme-1/493e5d57-896f-46dd-a9a7-af9a5a54d0a1": "ID", "QueryScheme/query-scheme-1/493e5d57-896f-46dd-a9a7-af9a5a54d0a1/placeHolder": "", "QueryScheme/query-scheme-1/36e050c8-bb2f-4649-8974-9b4af77eeb21": "名称", "QueryScheme/query-scheme-1/36e050c8-bb2f-4649-8974-9b4af77eeb21/placeHolder": "", "QueryScheme/query-scheme-1/19bd9bfb-8d65-4f70-b5e9-c1dee32cec5a": "交货日期", "QueryScheme/query-scheme-1/19bd9bfb-8d65-4f70-b5e9-c1dee32cec5a/placeHolder": "", "QueryScheme/query-scheme-1/f9f7f6fd-68a4-430c-856a-adda5d47fd52": "采购部门", "QueryScheme/query-scheme-1/f9f7f6fd-68a4-430c-856a-adda5d47fd52/placeHolder": "", "QueryScheme/query-scheme-1/97d95d4b-8497-4df5-bec8-8838acc68ee7": "采购部门", "QueryScheme/query-scheme-1/97d95d4b-8497-4df5-bec8-8838acc68ee7/placeHolder": "", "QueryScheme/query-scheme-1/97d95d4b-8497-4df5-bec8-8838acc68ee7/control/help/dialogTitle": "", "QueryScheme/query-scheme-1/53265c41-b6d3-4977-9dde-450cb0505c91": "名称", "QueryScheme/query-scheme-1/53265c41-b6d3-4977-9dde-450cb0505c91/placeHolder": "", "QueryScheme/query-scheme-1/210f7065-4c19-4009-81e3-3cafec40792a": "计划编号", "QueryScheme/query-scheme-1/210f7065-4c19-4009-81e3-3cafec40792a/placeHolder": "", "QueryScheme/query-scheme-1/4f24ebc0-acb5-4039-8ee5-9e1fd296f133": "计划名称", "QueryScheme/query-scheme-1/4f24ebc0-acb5-4039-8ee5-9e1fd296f133/placeHolder": "", "QueryScheme/query-scheme-1/75108363-b463-4d9a-8ee1-899a42e20e04": "是否已生成采购订单", "QueryScheme/query-scheme-1/75108363-b463-4d9a-8ee1-899a42e20e04/placeHolder": "", "QueryScheme/query-scheme-1/75108363-b463-4d9a-8ee1-899a42e20e04/control/enumValues/true": "true", "QueryScheme/query-scheme-1/75108363-b463-4d9a-8ee1-899a42e20e04/control/enumValues/false": "false", "QueryScheme/query-scheme-1/da36cd69-7e29-4add-85f0-ea43a2691188": "物料总价", "QueryScheme/query-scheme-1/da36cd69-7e29-4add-85f0-ea43a2691188/placeHolder": "", "QueryScheme/query-scheme-1/f039a9da-8150-4935-8af3-836b7aca3bef": "采购员", "QueryScheme/query-scheme-1/f039a9da-8150-4935-8af3-836b7aca3bef/placeHolder": "", "QueryScheme/query-scheme-1/8a441b44-720b-4e36-aa28-a20d4008658e": "ID", "QueryScheme/query-scheme-1/8a441b44-720b-4e36-aa28-a20d4008658e/placeHolder": "", "QueryScheme/query-scheme-1/e646ee4c-4ae8-4df5-a9b4-0c39402adff8": "名称", "QueryScheme/query-scheme-1/e646ee4c-4ae8-4df5-a9b4-0c39402adff8/placeHolder": "", "page-header": "", "header-nav": "", "header-title-container": "", "page-header-title": "", "title": "物料需求计划表单", "page-header-toolbar": "", "toolBarItem-epjr": "同步", "button-add": "新增", "button-edit": "编辑", "button-view": "查看", "button-delete": "删除", "button-approve": "提交审批", "button-cancel-approve": "取消提交审批", "page-main": "", "data-grid-component-ref": "", "data-grid-component": "", "data-grid-section": "", "Section/data-grid-section/mainTitle": "", "Section/data-grid-section/subTitle": "", "dataGrid": "", "DataGrid/dataGrid/lineNumberTitle": "序", "DataGrid/dataGrid/OperateEditButton": "编辑", "DataGrid/dataGrid/OperateDeleteButton": "删除", "DataGrid/dataGrid/OperateColumn": "操作", "billStatus_BillState_6a6f7e09_pbh3": "审批状态", "GridField/billStatus_BillState_6a6f7e09_pbh3/enumData/Billing": "制单", "GridField/billStatus_BillState_6a6f7e09_pbh3/enumData/SubmitApproval": "提交审批", "GridField/billStatus_BillState_6a6f7e09_pbh3/enumData/Approved": "审批通过", "GridField/billStatus_BillState_6a6f7e09_pbh3/enumData/ApprovalNotPassed": "审批不通过", "planCode_210f7065_7a35": "计划编号", "applicant_Applicant_Name_36e050c8_radi": "制单人", "purchaseDept_PurchaseDept_name_53265c41_3q8s": "采购部门", "purchaser_Purchaser_Name_e646ee4c_5c6k": "采购员", "deliveryDate_19bd9bfb_nnlo": "交货日期", "planName_4f24ebc0_a9kt": "计划名称", "totalPrice_da36cd69_48ad": "物料总价", "isPurchaseOrder_75108363_6uu3": "是否已生成采购订单" } };
             var LangPipe = /** @class */ (function () {
                 function LangPipe(translate, http) {
                     this.translate = translate;
@@ -1174,6 +1124,7 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                 RootViewmodel.prototype.Filter1 = function (commandParam) { return; };
                 RootViewmodel.prototype.submitWithBizDefKey1 = function (commandParam) { return; };
                 RootViewmodel.prototype.cancelSubmitWithDataId1 = function (commandParam) { return; };
+                RootViewmodel.prototype.rootviewmodelLoad1 = function (commandParam) { return; };
                 __decorate([
                     NgCommand({
                         name: 'Load1',
@@ -1360,6 +1311,22 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                     __metadata("design:paramtypes", [Object]),
                     __metadata("design:returntype", Observable)
                 ], RootViewmodel.prototype, "cancelSubmitWithDataId1", null);
+                __decorate([
+                    NgCommand({
+                        name: 'rootviewmodelLoad1',
+                        params: {
+                            filter: '',
+                            sort: ''
+                        },
+                        paramDescriptions: {
+                            filter: { type: 'string' },
+                            sort: { type: 'string' }
+                        }
+                    }),
+                    __metadata("design:type", Function),
+                    __metadata("design:paramtypes", [Object]),
+                    __metadata("design:returntype", Observable)
+                ], RootViewmodel.prototype, "rootviewmodelLoad1", null);
                 RootViewmodel = __decorate([
                     Injectable()
                 ], RootViewmodel);
@@ -2652,6 +2619,40 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                 return cancelSubmitWithDataId1Handler;
             }(CommandHandler));
 
+            var rootviewmodelLoad1Handler = /** @class */ (function (_super) {
+                __extends(rootviewmodelLoad1Handler, _super);
+                function rootviewmodelLoad1Handler(_ChangeItemService1, _ListDataService1) {
+                    var _this = _super.call(this) || this;
+                    _this._ChangeItemService1 = _ChangeItemService1;
+                    _this._ListDataService1 = _ListDataService1;
+                    return _this;
+                }
+                rootviewmodelLoad1Handler.prototype.schedule = function () {
+                    var _this = this;
+                    this.addTask('load', function (context) {
+                        var args = [
+                            '{COMMAND~/params/filter}',
+                            '{COMMAND~/params/sort}'
+                        ];
+                        return _this.invoke(_this._ListDataService1, 'load', args, context);
+                    });
+                    this.addTask('setRepository', function (context) {
+                        var args = [];
+                        return _this.invoke(_this._ChangeItemService1, 'setRepository', args, context);
+                    });
+                    this.addLink('load', 'setRepository', "1==1");
+                };
+                rootviewmodelLoad1Handler = __decorate([
+                    Injectable(),
+                    NgCommandHandler({
+                        commandName: 'rootviewmodelLoad1'
+                    }),
+                    __metadata("design:paramtypes", [ChangeItemService,
+                        ListDataService])
+                ], rootviewmodelLoad1Handler);
+                return rootviewmodelLoad1Handler;
+            }(CommandHandler));
+
             var RootComponent = /** @class */ (function (_super) {
                 __extends(RootComponent, _super);
                 function RootComponent(wizardSer, keybindingService, langService, route, router, rootElement, localizationService, frmI18nSettingService, frameworkService, applicationParamsService, verifyService, stateMachine, sanitizer, injector) {
@@ -2675,8 +2676,16 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                     _this.size = {};
                     _this.enabledLanguageList = [];
                     _this.pageHeaderToolbarToolbarItems = [{
+                            "id": "toolBarItem-epjr",
+                            "text": _this.langService.transform("toolBarItem-epjr", _this.lang, "同步"),
+                            "resourceId": "toolBarItem-epjr",
+                            "isDP": false,
+                            "tipsEnable": false,
+                            "icon": "",
+                            "children": []
+                        }, {
                             "id": "button-add",
-                            "text": _this.langService.transform('button-add', _this.lang, "新增"),
+                            "text": _this.langService.transform("button-add", _this.lang, "新增"),
                             "resourceId": "button-add",
                             "isDP": false,
                             "class": "btn-primary",
@@ -2685,7 +2694,7 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                             "children": []
                         }, {
                             "id": "button-edit",
-                            "text": _this.langService.transform('button-edit', _this.lang, "编辑"),
+                            "text": _this.langService.transform("button-edit", _this.lang, "编辑"),
                             "resourceId": "button-edit",
                             "isDP": false,
                             "tipsEnable": false,
@@ -2693,7 +2702,7 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                             "children": []
                         }, {
                             "id": "button-view",
-                            "text": _this.langService.transform('button-view', _this.lang, "查看"),
+                            "text": _this.langService.transform("button-view", _this.lang, "查看"),
                             "resourceId": "button-view",
                             "isDP": false,
                             "tipsEnable": false,
@@ -2701,7 +2710,7 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                             "children": []
                         }, {
                             "id": "button-delete",
-                            "text": _this.langService.transform('button-delete', _this.lang, "删除"),
+                            "text": _this.langService.transform("button-delete", _this.lang, "删除"),
                             "resourceId": "button-delete",
                             "isDP": false,
                             "tipsEnable": false,
@@ -2709,7 +2718,7 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                             "children": []
                         }, {
                             "id": "button-approve",
-                            "text": _this.langService.transform('button-approve', _this.lang, "提交审批"),
+                            "text": _this.langService.transform("button-approve", _this.lang, "提交审批"),
                             "resourceId": "button-approve",
                             "isDP": false,
                             "tipsEnable": false,
@@ -2717,7 +2726,7 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                             "children": []
                         }, {
                             "id": "button-cancel-approve",
-                            "text": _this.langService.transform('button-cancel-approve', _this.lang, "取消提交审批"),
+                            "text": _this.langService.transform("button-cancel-approve", _this.lang, "取消提交审批"),
                             "resourceId": "button-cancel-approve",
                             "isDP": false,
                             "tipsEnable": false,
@@ -2735,32 +2744,32 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                         position: 'inHead',
                         contents: []
                     };
-                    _this.SectionqueryschemesectionMainTitle = _this.langService.transform('Section/query-scheme-section/mainTitle', _this.lang, "主标题");
-                    _this.SectionqueryschemesectionSubTitle = _this.langService.transform('Section/query-scheme-section/subTitle', _this.lang, "");
-                    _this.QuerySolutionqueryscheme1 = _this.langService.transform('query-scheme-1', _this.lang, "默认筛选方案");
+                    _this.SectionqueryschemesectionMainTitle = _this.langService.transform("Section/query-scheme-section/mainTitle", _this.lang, "主标题");
+                    _this.SectionqueryschemesectionSubTitle = _this.langService.transform("Section/query-scheme-section/subTitle", _this.lang, "");
+                    _this.QuerySolutionqueryscheme1 = _this.langService.transform("query-scheme-1", _this.lang, "默认筛选方案");
                     _this.fieldConfigsqueryscheme1 = [
                         {
                             "id": "f73f5927-a02c-491c-9b5c-cd74be14d2fa",
                             "labelCode": "ID",
                             "code": "ID",
-                            "name": _this.langService.transform('QueryScheme/query-scheme-1/f73f5927-a02c-491c-9b5c-cd74be14d2fa', _this.lang, "主键"),
-                            "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/f73f5927-a02c-491c-9b5c-cd74be14d2fa/placeHolder', _this.lang, ""),
+                            "name": _this.langService.transform("QueryScheme/query-scheme-1/f73f5927-a02c-491c-9b5c-cd74be14d2fa", _this.lang, "主键"),
+                            "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/f73f5927-a02c-491c-9b5c-cd74be14d2fa/placeHolder", _this.lang, ""),
                             "control": { "id": "f73f5927-a02c-491c-9b5c-cd74be14d2fa", "controltype": "text", "require": false, "className": "", "modalConfig": { "modalCmp": null, "mapFields": null, "showHeader": true, "title": "", "showCloseButton": true, "showMaxButton": true, "width": 800, "height": 600, "showFooterButtons": true, "footerButtons": [] } }
                         },
                         {
                             "id": "040f40dd-c841-498f-86c5-d8d58afb91d7",
                             "labelCode": "Version",
                             "code": "Version",
-                            "name": _this.langService.transform('QueryScheme/query-scheme-1/040f40dd-c841-498f-86c5-d8d58afb91d7', _this.lang, "版本"),
-                            "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/040f40dd-c841-498f-86c5-d8d58afb91d7/placeHolder', _this.lang, ""),
+                            "name": _this.langService.transform("QueryScheme/query-scheme-1/040f40dd-c841-498f-86c5-d8d58afb91d7", _this.lang, "版本"),
+                            "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/040f40dd-c841-498f-86c5-d8d58afb91d7/placeHolder", _this.lang, ""),
                             "control": { "id": "040f40dd-c841-498f-86c5-d8d58afb91d7", "controltype": "date", "require": false, "format": "yyyy-MM-dd", "weekSelect": false }
                         },
                         {
                             "id": "6a6f7e09-0101-468f-ae3f-40c76c0f06b0",
                             "labelCode": "BillStatus.BillState",
                             "code": "BillState",
-                            "name": _this.langService.transform('QueryScheme/query-scheme-1/6a6f7e09-0101-468f-ae3f-40c76c0f06b0', _this.lang, "状态"),
-                            "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/6a6f7e09-0101-468f-ae3f-40c76c0f06b0/placeHolder', _this.lang, ""),
+                            "name": _this.langService.transform("QueryScheme/query-scheme-1/6a6f7e09-0101-468f-ae3f-40c76c0f06b0", _this.lang, "状态"),
+                            "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/6a6f7e09-0101-468f-ae3f-40c76c0f06b0/placeHolder", _this.lang, ""),
                             "control": {
                                 "controltype": "dropdown",
                                 "require": false,
@@ -2769,19 +2778,19 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                                 "enumValues": [
                                     {
                                         "value": "Billing",
-                                        "name": _this.langService.transform('QueryScheme/query-scheme-1/6a6f7e09-0101-468f-ae3f-40c76c0f06b0/control/enumValues/Billing', _this.lang, "制单")
+                                        "name": _this.langService.transform("QueryScheme/query-scheme-1/6a6f7e09-0101-468f-ae3f-40c76c0f06b0/control/enumValues/Billing", _this.lang, "制单")
                                     },
                                     {
                                         "value": "SubmitApproval",
-                                        "name": _this.langService.transform('QueryScheme/query-scheme-1/6a6f7e09-0101-468f-ae3f-40c76c0f06b0/control/enumValues/SubmitApproval', _this.lang, "提交审批")
+                                        "name": _this.langService.transform("QueryScheme/query-scheme-1/6a6f7e09-0101-468f-ae3f-40c76c0f06b0/control/enumValues/SubmitApproval", _this.lang, "提交审批")
                                     },
                                     {
                                         "value": "Approved",
-                                        "name": _this.langService.transform('QueryScheme/query-scheme-1/6a6f7e09-0101-468f-ae3f-40c76c0f06b0/control/enumValues/Approved', _this.lang, "审批通过")
+                                        "name": _this.langService.transform("QueryScheme/query-scheme-1/6a6f7e09-0101-468f-ae3f-40c76c0f06b0/control/enumValues/Approved", _this.lang, "审批通过")
                                     },
                                     {
                                         "value": "ApprovalNotPassed",
-                                        "name": _this.langService.transform('QueryScheme/query-scheme-1/6a6f7e09-0101-468f-ae3f-40c76c0f06b0/control/enumValues/ApprovalNotPassed', _this.lang, "审批不通过")
+                                        "name": _this.langService.transform("QueryScheme/query-scheme-1/6a6f7e09-0101-468f-ae3f-40c76c0f06b0/control/enumValues/ApprovalNotPassed", _this.lang, "审批不通过")
                                     }
                                 ]
                             }
@@ -2790,56 +2799,56 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                             "id": "502cfc60-ad8f-4da3-a430-c8a7f2162135",
                             "labelCode": "ProcessInstance.ProcessInstance",
                             "code": "ProcessInstance",
-                            "name": _this.langService.transform('QueryScheme/query-scheme-1/502cfc60-ad8f-4da3-a430-c8a7f2162135', _this.lang, "流程实例"),
-                            "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/502cfc60-ad8f-4da3-a430-c8a7f2162135/placeHolder', _this.lang, ""),
+                            "name": _this.langService.transform("QueryScheme/query-scheme-1/502cfc60-ad8f-4da3-a430-c8a7f2162135", _this.lang, "流程实例"),
+                            "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/502cfc60-ad8f-4da3-a430-c8a7f2162135/placeHolder", _this.lang, ""),
                             "control": { "id": "502cfc60-ad8f-4da3-a430-c8a7f2162135", "controltype": "text", "require": false, "className": "" }
                         },
                         {
                             "id": "a50f04eb-fc31-457c-8c85-0c5ab0cae592",
                             "labelCode": "Applicant.Applicant",
                             "code": "Applicant",
-                            "name": _this.langService.transform('QueryScheme/query-scheme-1/a50f04eb-fc31-457c-8c85-0c5ab0cae592', _this.lang, "制单人"),
-                            "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/a50f04eb-fc31-457c-8c85-0c5ab0cae592/placeHolder', _this.lang, ""),
+                            "name": _this.langService.transform("QueryScheme/query-scheme-1/a50f04eb-fc31-457c-8c85-0c5ab0cae592", _this.lang, "制单人"),
+                            "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/a50f04eb-fc31-457c-8c85-0c5ab0cae592/placeHolder", _this.lang, ""),
                             "control": { "id": "a50f04eb-fc31-457c-8c85-0c5ab0cae592", "controltype": "text", "require": false, "className": "" }
                         },
                         {
                             "id": "493e5d57-896f-46dd-a9a7-af9a5a54d0a1",
                             "labelCode": "Applicant.Applicant_ID",
                             "code": "ID",
-                            "name": _this.langService.transform('QueryScheme/query-scheme-1/493e5d57-896f-46dd-a9a7-af9a5a54d0a1', _this.lang, "ID"),
-                            "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/493e5d57-896f-46dd-a9a7-af9a5a54d0a1/placeHolder', _this.lang, ""),
+                            "name": _this.langService.transform("QueryScheme/query-scheme-1/493e5d57-896f-46dd-a9a7-af9a5a54d0a1", _this.lang, "ID"),
+                            "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/493e5d57-896f-46dd-a9a7-af9a5a54d0a1/placeHolder", _this.lang, ""),
                             "control": { "id": "493e5d57-896f-46dd-a9a7-af9a5a54d0a1", "controltype": "text", "require": false, "className": "" }
                         },
                         {
                             "id": "36e050c8-bb2f-4649-8974-9b4af77eeb21",
                             "labelCode": "Applicant.Applicant_Name",
                             "code": "Name",
-                            "name": _this.langService.transform('QueryScheme/query-scheme-1/36e050c8-bb2f-4649-8974-9b4af77eeb21', _this.lang, "名称"),
-                            "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/36e050c8-bb2f-4649-8974-9b4af77eeb21/placeHolder', _this.lang, ""),
+                            "name": _this.langService.transform("QueryScheme/query-scheme-1/36e050c8-bb2f-4649-8974-9b4af77eeb21", _this.lang, "名称"),
+                            "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/36e050c8-bb2f-4649-8974-9b4af77eeb21/placeHolder", _this.lang, ""),
                             "control": { "id": "36e050c8-bb2f-4649-8974-9b4af77eeb21", "controltype": "text", "require": false, "className": "" }
                         },
                         {
                             "id": "19bd9bfb-8d65-4f70-b5e9-c1dee32cec5a",
                             "labelCode": "DeliveryDate",
                             "code": "DeliveryDate",
-                            "name": _this.langService.transform('QueryScheme/query-scheme-1/19bd9bfb-8d65-4f70-b5e9-c1dee32cec5a', _this.lang, "交货日期"),
-                            "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/19bd9bfb-8d65-4f70-b5e9-c1dee32cec5a/placeHolder', _this.lang, ""),
+                            "name": _this.langService.transform("QueryScheme/query-scheme-1/19bd9bfb-8d65-4f70-b5e9-c1dee32cec5a", _this.lang, "交货日期"),
+                            "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/19bd9bfb-8d65-4f70-b5e9-c1dee32cec5a/placeHolder", _this.lang, ""),
                             "control": { "id": "19bd9bfb-8d65-4f70-b5e9-c1dee32cec5a", "controltype": "date", "require": false, "format": "yyyy-MM-dd", "weekSelect": false }
                         },
                         {
                             "id": "f9f7f6fd-68a4-430c-856a-adda5d47fd52",
                             "labelCode": "PurchaseDept.PurchaseDept",
                             "code": "PurchaseDept",
-                            "name": _this.langService.transform('QueryScheme/query-scheme-1/f9f7f6fd-68a4-430c-856a-adda5d47fd52', _this.lang, "采购部门"),
-                            "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/f9f7f6fd-68a4-430c-856a-adda5d47fd52/placeHolder', _this.lang, ""),
+                            "name": _this.langService.transform("QueryScheme/query-scheme-1/f9f7f6fd-68a4-430c-856a-adda5d47fd52", _this.lang, "采购部门"),
+                            "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/f9f7f6fd-68a4-430c-856a-adda5d47fd52/placeHolder", _this.lang, ""),
                             "control": { "id": "f9f7f6fd-68a4-430c-856a-adda5d47fd52", "controltype": "text", "require": false, "className": "", "modalConfig": { "modalCmp": null, "mapFields": null, "showHeader": true, "title": "", "showCloseButton": true, "showMaxButton": true, "width": 800, "height": 600, "showFooterButtons": true, "footerButtons": [] } }
                         },
                         {
                             "id": "97d95d4b-8497-4df5-bec8-8838acc68ee7",
                             "labelCode": "PurchaseDept.PurchaseDept_ID",
                             "code": "ID",
-                            "name": _this.langService.transform('QueryScheme/query-scheme-1/97d95d4b-8497-4df5-bec8-8838acc68ee7', _this.lang, "采购部门"),
-                            "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/97d95d4b-8497-4df5-bec8-8838acc68ee7/placeHolder', _this.lang, ""),
+                            "name": _this.langService.transform("QueryScheme/query-scheme-1/97d95d4b-8497-4df5-bec8-8838acc68ee7", _this.lang, "采购部门"),
+                            "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/97d95d4b-8497-4df5-bec8-8838acc68ee7/placeHolder", _this.lang, ""),
                             "control": {
                                 "controltype": "help",
                                 "require": false,
@@ -2852,15 +2861,21 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                                 "loadTreeDataType": 'default',
                                 "enableFullTree": false,
                                 "editable": false,
-                                "dialogTitle": _this.langService.transform('QueryScheme/query-scheme-1/97d95d4b-8497-4df5-bec8-8838acc68ee7/control/help/dialogTitle', _this.lang, ""),
+                                "dialogTitle": _this.langService.transform("QueryScheme/query-scheme-1/97d95d4b-8497-4df5-bec8-8838acc68ee7/control/help/dialogTitle", _this.lang, ""),
                                 "singleSelect": true,
                                 "enableCascade": false,
+                                "cascadeStatus": "enable",
                                 "pageSize": 20,
                                 "pageList": "10,20,30,50,100",
                                 "nosearch": false,
                                 "expandLevel": -1,
                                 "context": {
-                                    "enableExtendLoadMethod": true
+                                    "enableExtendLoadMethod": false
+                                },
+                                "quickSelect": {
+                                    "enable": false,
+                                    "showMore": true,
+                                    "showItemsCount": 10
                                 }
                             }
                         },
@@ -2868,32 +2883,32 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                             "id": "53265c41-b6d3-4977-9dde-450cb0505c91",
                             "labelCode": "PurchaseDept.PurchaseDept_name",
                             "code": "name",
-                            "name": _this.langService.transform('QueryScheme/query-scheme-1/53265c41-b6d3-4977-9dde-450cb0505c91', _this.lang, "名称"),
-                            "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/53265c41-b6d3-4977-9dde-450cb0505c91/placeHolder', _this.lang, ""),
+                            "name": _this.langService.transform("QueryScheme/query-scheme-1/53265c41-b6d3-4977-9dde-450cb0505c91", _this.lang, "名称"),
+                            "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/53265c41-b6d3-4977-9dde-450cb0505c91/placeHolder", _this.lang, ""),
                             "control": { "id": "53265c41-b6d3-4977-9dde-450cb0505c91", "controltype": "text", "require": false, "className": "" }
                         },
                         {
                             "id": "210f7065-4c19-4009-81e3-3cafec40792a",
                             "labelCode": "PlanCode",
                             "code": "PlanCode",
-                            "name": _this.langService.transform('QueryScheme/query-scheme-1/210f7065-4c19-4009-81e3-3cafec40792a', _this.lang, "计划编号"),
-                            "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/210f7065-4c19-4009-81e3-3cafec40792a/placeHolder', _this.lang, ""),
+                            "name": _this.langService.transform("QueryScheme/query-scheme-1/210f7065-4c19-4009-81e3-3cafec40792a", _this.lang, "计划编号"),
+                            "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/210f7065-4c19-4009-81e3-3cafec40792a/placeHolder", _this.lang, ""),
                             "control": { "id": "210f7065-4c19-4009-81e3-3cafec40792a", "controltype": "text", "require": false, "className": "" }
                         },
                         {
                             "id": "4f24ebc0-acb5-4039-8ee5-9e1fd296f133",
                             "labelCode": "PlanName",
                             "code": "PlanName",
-                            "name": _this.langService.transform('QueryScheme/query-scheme-1/4f24ebc0-acb5-4039-8ee5-9e1fd296f133', _this.lang, "计划名称"),
-                            "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/4f24ebc0-acb5-4039-8ee5-9e1fd296f133/placeHolder', _this.lang, ""),
+                            "name": _this.langService.transform("QueryScheme/query-scheme-1/4f24ebc0-acb5-4039-8ee5-9e1fd296f133", _this.lang, "计划名称"),
+                            "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/4f24ebc0-acb5-4039-8ee5-9e1fd296f133/placeHolder", _this.lang, ""),
                             "control": { "id": "4f24ebc0-acb5-4039-8ee5-9e1fd296f133", "controltype": "text", "require": false, "className": "" }
                         },
                         {
                             "id": "75108363-b463-4d9a-8ee1-899a42e20e04",
                             "labelCode": "IsPurchaseOrder",
                             "code": "IsPurchaseOrder",
-                            "name": _this.langService.transform('QueryScheme/query-scheme-1/75108363-b463-4d9a-8ee1-899a42e20e04', _this.lang, "是否已生成采购订单"),
-                            "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/75108363-b463-4d9a-8ee1-899a42e20e04/placeHolder', _this.lang, ""),
+                            "name": _this.langService.transform("QueryScheme/query-scheme-1/75108363-b463-4d9a-8ee1-899a42e20e04", _this.lang, "是否已生成采购订单"),
+                            "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/75108363-b463-4d9a-8ee1-899a42e20e04/placeHolder", _this.lang, ""),
                             "control": {
                                 "controltype": "dropdown",
                                 "require": false,
@@ -2902,11 +2917,11 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                                 "enumValues": [
                                     {
                                         "value": "true",
-                                        "name": _this.langService.transform('QueryScheme/query-scheme-1/75108363-b463-4d9a-8ee1-899a42e20e04/control/enumValues/true', _this.lang, "true")
+                                        "name": _this.langService.transform("QueryScheme/query-scheme-1/75108363-b463-4d9a-8ee1-899a42e20e04/control/enumValues/true", _this.lang, "true")
                                     },
                                     {
                                         "value": "false",
-                                        "name": _this.langService.transform('QueryScheme/query-scheme-1/75108363-b463-4d9a-8ee1-899a42e20e04/control/enumValues/false', _this.lang, "false")
+                                        "name": _this.langService.transform("QueryScheme/query-scheme-1/75108363-b463-4d9a-8ee1-899a42e20e04/control/enumValues/false", _this.lang, "false")
                                     }
                                 ]
                             }
@@ -2915,32 +2930,32 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                             "id": "da36cd69-7e29-4add-85f0-ea43a2691188",
                             "labelCode": "TotalPrice",
                             "code": "TotalPrice",
-                            "name": _this.langService.transform('QueryScheme/query-scheme-1/da36cd69-7e29-4add-85f0-ea43a2691188', _this.lang, "物料总价"),
-                            "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/da36cd69-7e29-4add-85f0-ea43a2691188/placeHolder', _this.lang, ""),
+                            "name": _this.langService.transform("QueryScheme/query-scheme-1/da36cd69-7e29-4add-85f0-ea43a2691188", _this.lang, "物料总价"),
+                            "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/da36cd69-7e29-4add-85f0-ea43a2691188/placeHolder", _this.lang, ""),
                             "control": { "id": "da36cd69-7e29-4add-85f0-ea43a2691188", "controltype": "number", "require": false, "className": "", "textAlign": "left", "precision": 2, "isBigNumber": false }
                         },
                         {
                             "id": "f039a9da-8150-4935-8af3-836b7aca3bef",
                             "labelCode": "Purchaser.Purchaser",
                             "code": "Purchaser",
-                            "name": _this.langService.transform('QueryScheme/query-scheme-1/f039a9da-8150-4935-8af3-836b7aca3bef', _this.lang, "采购员"),
-                            "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/f039a9da-8150-4935-8af3-836b7aca3bef/placeHolder', _this.lang, ""),
+                            "name": _this.langService.transform("QueryScheme/query-scheme-1/f039a9da-8150-4935-8af3-836b7aca3bef", _this.lang, "采购员"),
+                            "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/f039a9da-8150-4935-8af3-836b7aca3bef/placeHolder", _this.lang, ""),
                             "control": { "id": "f039a9da-8150-4935-8af3-836b7aca3bef", "controltype": "text", "require": false, "className": "" }
                         },
                         {
                             "id": "8a441b44-720b-4e36-aa28-a20d4008658e",
                             "labelCode": "Purchaser.Purchaser_ID",
                             "code": "ID",
-                            "name": _this.langService.transform('QueryScheme/query-scheme-1/8a441b44-720b-4e36-aa28-a20d4008658e', _this.lang, "ID"),
-                            "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/8a441b44-720b-4e36-aa28-a20d4008658e/placeHolder', _this.lang, ""),
+                            "name": _this.langService.transform("QueryScheme/query-scheme-1/8a441b44-720b-4e36-aa28-a20d4008658e", _this.lang, "ID"),
+                            "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/8a441b44-720b-4e36-aa28-a20d4008658e/placeHolder", _this.lang, ""),
                             "control": { "id": "8a441b44-720b-4e36-aa28-a20d4008658e", "controltype": "text", "require": false, "className": "" }
                         },
                         {
                             "id": "e646ee4c-4ae8-4df5-a9b4-0c39402adff8",
                             "labelCode": "Purchaser.Purchaser_Name",
                             "code": "Name",
-                            "name": _this.langService.transform('QueryScheme/query-scheme-1/e646ee4c-4ae8-4df5-a9b4-0c39402adff8', _this.lang, "名称"),
-                            "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/e646ee4c-4ae8-4df5-a9b4-0c39402adff8/placeHolder', _this.lang, ""),
+                            "name": _this.langService.transform("QueryScheme/query-scheme-1/e646ee4c-4ae8-4df5-a9b4-0c39402adff8", _this.lang, "名称"),
+                            "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/e646ee4c-4ae8-4df5-a9b4-0c39402adff8/placeHolder", _this.lang, ""),
                             "control": { "id": "e646ee4c-4ae8-4df5-a9b4-0c39402adff8", "controltype": "text", "require": false, "className": "" }
                         }
                     ];
@@ -2949,32 +2964,32 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                             "id": "210f7065-4c19-4009-81e3-3cafec40792a",
                             "labelCode": "PlanCode",
                             "code": "PlanCode",
-                            "name": _this.langService.transform('QueryScheme/query-scheme-1/210f7065-4c19-4009-81e3-3cafec40792a', _this.lang, "计划编号"),
-                            "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/210f7065-4c19-4009-81e3-3cafec40792a/placeHolder', _this.lang, ""),
+                            "name": _this.langService.transform("QueryScheme/query-scheme-1/210f7065-4c19-4009-81e3-3cafec40792a", _this.lang, "计划编号"),
+                            "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/210f7065-4c19-4009-81e3-3cafec40792a/placeHolder", _this.lang, ""),
                             "control": { "id": "210f7065-4c19-4009-81e3-3cafec40792a", "controltype": "text", "require": false, "className": "" }
                         },
                         {
                             "id": "4f24ebc0-acb5-4039-8ee5-9e1fd296f133",
                             "labelCode": "PlanName",
                             "code": "PlanName",
-                            "name": _this.langService.transform('QueryScheme/query-scheme-1/4f24ebc0-acb5-4039-8ee5-9e1fd296f133', _this.lang, "计划名称"),
-                            "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/4f24ebc0-acb5-4039-8ee5-9e1fd296f133/placeHolder', _this.lang, ""),
+                            "name": _this.langService.transform("QueryScheme/query-scheme-1/4f24ebc0-acb5-4039-8ee5-9e1fd296f133", _this.lang, "计划名称"),
+                            "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/4f24ebc0-acb5-4039-8ee5-9e1fd296f133/placeHolder", _this.lang, ""),
                             "control": { "id": "4f24ebc0-acb5-4039-8ee5-9e1fd296f133", "controltype": "text", "require": false, "className": "" }
                         },
                         {
                             "id": "19bd9bfb-8d65-4f70-b5e9-c1dee32cec5a",
                             "labelCode": "DeliveryDate",
                             "code": "DeliveryDate",
-                            "name": _this.langService.transform('QueryScheme/query-scheme-1/19bd9bfb-8d65-4f70-b5e9-c1dee32cec5a', _this.lang, "交货日期"),
-                            "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/19bd9bfb-8d65-4f70-b5e9-c1dee32cec5a/placeHolder', _this.lang, ""),
+                            "name": _this.langService.transform("QueryScheme/query-scheme-1/19bd9bfb-8d65-4f70-b5e9-c1dee32cec5a", _this.lang, "交货日期"),
+                            "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/19bd9bfb-8d65-4f70-b5e9-c1dee32cec5a/placeHolder", _this.lang, ""),
                             "control": { "id": "19bd9bfb-8d65-4f70-b5e9-c1dee32cec5a", "controltype": "date", "require": false, "format": "yyyy-MM-dd", "weekSelect": false }
                         },
                         {
                             "id": "97d95d4b-8497-4df5-bec8-8838acc68ee7",
                             "labelCode": "PurchaseDept.PurchaseDept_ID",
                             "code": "ID",
-                            "name": _this.langService.transform('QueryScheme/query-scheme-1/97d95d4b-8497-4df5-bec8-8838acc68ee7', _this.lang, "采购部门"),
-                            "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/97d95d4b-8497-4df5-bec8-8838acc68ee7/placeHolder', _this.lang, ""),
+                            "name": _this.langService.transform("QueryScheme/query-scheme-1/97d95d4b-8497-4df5-bec8-8838acc68ee7", _this.lang, "采购部门"),
+                            "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/97d95d4b-8497-4df5-bec8-8838acc68ee7/placeHolder", _this.lang, ""),
                             "control": {
                                 "controltype": "help",
                                 "require": false,
@@ -2987,15 +3002,21 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                                 "loadTreeDataType": 'default',
                                 "enableFullTree": false,
                                 "editable": false,
-                                "dialogTitle": _this.langService.transform('QueryScheme/query-scheme-1/97d95d4b-8497-4df5-bec8-8838acc68ee7/control/help/dialogTitle', _this.lang, ""),
+                                "dialogTitle": _this.langService.transform("QueryScheme/query-scheme-1/97d95d4b-8497-4df5-bec8-8838acc68ee7/control/help/dialogTitle", _this.lang, ""),
                                 "singleSelect": true,
                                 "enableCascade": false,
+                                "cascadeStatus": "enable",
                                 "pageSize": 20,
                                 "pageList": "10,20,30,50,100",
                                 "nosearch": false,
                                 "expandLevel": -1,
                                 "context": {
-                                    "enableExtendLoadMethod": true
+                                    "enableExtendLoadMethod": false
+                                },
+                                "quickSelect": {
+                                    "enable": false,
+                                    "showMore": true,
+                                    "showItemsCount": 10
                                 }
                             }
                         }
@@ -3042,6 +3063,7 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                     });
                     this.stateMachine.stateChange.subscribe(function () {
                         var pageHeaderToolbarToolbarItemsstates = {
+                            'toolBarItem-epjr': false,
                             'button-add': !_this.viewModel.stateMachine['canAdd'],
                             'button-edit': _this.viewModel.stateMachine['canOperation'],
                             'button-view': !_this.viewModel.stateMachine['canView'],
@@ -3053,6 +3075,7 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                     });
                     this.stateMachine.stateChange.subscribe(function () {
                         var pageHeaderToolbarToolbarItemsvisibleStates = {
+                            'toolBarItem-epjr': true,
                             'button-add': true,
                             'button-edit': true,
                             'button-view': true,
@@ -3105,6 +3128,9 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                 };
                 RootComponent.prototype.pageHeaderToolbarClickHandler = function (args) {
                     switch (args.id) {
+                        case 'toolBarItem-epjr':
+                            this.viewModel.rootviewmodelLoad1(args);
+                            break;
                         case 'button-add':
                             this.viewModel.Add1(args);
                             break;
@@ -3167,6 +3193,7 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                             { provide: FORM_ID, useValue: "d5d6ccf3-5d06-44e2-92eb-e75d8fb2fcd3" },
                             { provide: BE_SESSION_HANDLING_STRATEGY_TOKEN, useValue: "SeparatedSession" },
                             { provide: EXCEPTION_HANDLER, useClass: ExceptionHandler },
+                            { provide: CHANGE_SET_POLICY_TOKEN, useValue: 'valid' },
                             { provide: BACK_END_MESSAGE_HANDLER_TOKEN, useClass: BackEndMessageHandler },
                             { provide: COMMAND_HANDLERS_TOKEN, useClass: Load1Handler, multi: true },
                             { provide: COMMAND_HANDLERS_TOKEN, useClass: Search1Handler, multi: true },
@@ -3178,6 +3205,7 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                             { provide: COMMAND_HANDLERS_TOKEN, useClass: Filter1Handler, multi: true },
                             { provide: COMMAND_HANDLERS_TOKEN, useClass: submitWithBizDefKey1Handler, multi: true },
                             { provide: COMMAND_HANDLERS_TOKEN, useClass: cancelSubmitWithDataId1Handler, multi: true },
+                            { provide: COMMAND_HANDLERS_TOKEN, useClass: rootviewmodelLoad1Handler, multi: true },
                         ]
                     }),
                     __metadata("design:paramtypes", [WizardService,
@@ -3997,9 +4025,9 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                     _this.enabledLanguageList = [];
                     _this.tabsToolbarStates = new BehaviorSubject({});
                     _this.tabsToolbarVisibleStates = new BehaviorSubject({});
-                    _this.SectiondatagridsectionMainTitle = _this.langService.transform('Section/data-grid-section/mainTitle', _this.lang, "");
-                    _this.SectiondatagridsectionSubTitle = _this.langService.transform('Section/data-grid-section/subTitle', _this.lang, "");
-                    _this.dataGridlineNumberTitle = _this.langService.transform('DataGrid/dataGrid/lineNumberTitle', _this.lang, "序");
+                    _this.SectiondatagridsectionMainTitle = _this.langService.transform("Section/data-grid-section/mainTitle", _this.lang, "");
+                    _this.SectiondatagridsectionSubTitle = _this.langService.transform("Section/data-grid-section/subTitle", _this.lang, "");
+                    _this.dataGridlineNumberTitle = _this.langService.transform("DataGrid/dataGrid/lineNumberTitle", _this.lang, "序");
                     _this.lang = localStorage.getItem('languageCode') || "zh-CHS";
                     _this.viewModel.verifycationChanged.subscribe(function (verifyInformations) {
                         _this.focusInvalidService.focusGridCell(verifyInformations, _this.dataGridDataGrid);
@@ -4037,7 +4065,7 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                                 id: 'billStatus_BillState_6a6f7e09_pbh3',
                                 field: 'billStatus.billState',
                                 width: 120,
-                                title: this.langService.transform('billStatus_BillState_6a6f7e09_pbh3', this.lang, "审批状态"),
+                                title: this.langService.transform("billStatus_BillState_6a6f7e09_pbh3", this.lang, "审批状态"),
                                 dataType: 'enum',
                                 template: this.dataGridbillStatus_billStateTemplate,
                                 align: 'left',
@@ -4064,19 +4092,19 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                                         "data": [
                                             {
                                                 "value": "Billing",
-                                                "name": this.langService.transform('GridField/billStatus_BillState_6a6f7e09_pbh3/enumData/Billing', this.lang, "制单")
+                                                "name": this.langService.transform("GridField/billStatus_BillState_6a6f7e09_pbh3/enumData/Billing", this.lang, "制单")
                                             },
                                             {
                                                 "value": "SubmitApproval",
-                                                "name": this.langService.transform('GridField/billStatus_BillState_6a6f7e09_pbh3/enumData/SubmitApproval', this.lang, "提交审批")
+                                                "name": this.langService.transform("GridField/billStatus_BillState_6a6f7e09_pbh3/enumData/SubmitApproval", this.lang, "提交审批")
                                             },
                                             {
                                                 "value": "Approved",
-                                                "name": this.langService.transform('GridField/billStatus_BillState_6a6f7e09_pbh3/enumData/Approved', this.lang, "审批通过")
+                                                "name": this.langService.transform("GridField/billStatus_BillState_6a6f7e09_pbh3/enumData/Approved", this.lang, "审批通过")
                                             },
                                             {
                                                 "value": "ApprovalNotPassed",
-                                                "name": this.langService.transform('GridField/billStatus_BillState_6a6f7e09_pbh3/enumData/ApprovalNotPassed', this.lang, "审批不通过")
+                                                "name": this.langService.transform("GridField/billStatus_BillState_6a6f7e09_pbh3/enumData/ApprovalNotPassed", this.lang, "审批不通过")
                                             }
                                         ]
                                     }
@@ -4086,7 +4114,7 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                                 id: 'planCode_210f7065_7a35',
                                 field: 'planCode',
                                 width: 120,
-                                title: this.langService.transform('planCode_210f7065_7a35', this.lang, "计划编号"),
+                                title: this.langService.transform("planCode_210f7065_7a35", this.lang, "计划编号"),
                                 dataType: 'string',
                                 template: this.dataGridplanCodeTemplate,
                                 align: 'left',
@@ -4111,7 +4139,7 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                                 id: 'applicant_Applicant_Name_36e050c8_radi',
                                 field: 'applicant.applicant_Name',
                                 width: 120,
-                                title: this.langService.transform('applicant_Applicant_Name_36e050c8_radi', this.lang, "制单人"),
+                                title: this.langService.transform("applicant_Applicant_Name_36e050c8_radi", this.lang, "制单人"),
                                 dataType: 'string',
                                 align: 'left',
                                 halign: 'left',
@@ -4135,7 +4163,7 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                                 id: 'purchaseDept_PurchaseDept_name_53265c41_3q8s',
                                 field: 'purchaseDept.purchaseDept_name',
                                 width: 120,
-                                title: this.langService.transform('purchaseDept_PurchaseDept_name_53265c41_3q8s', this.lang, "采购部门"),
+                                title: this.langService.transform("purchaseDept_PurchaseDept_name_53265c41_3q8s", this.lang, "采购部门"),
                                 dataType: 'string',
                                 align: 'left',
                                 halign: 'left',
@@ -4159,7 +4187,7 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                                 id: 'purchaser_Purchaser_Name_e646ee4c_5c6k',
                                 field: 'purchaser.purchaser_Name',
                                 width: 120,
-                                title: this.langService.transform('purchaser_Purchaser_Name_e646ee4c_5c6k', this.lang, "采购员"),
+                                title: this.langService.transform("purchaser_Purchaser_Name_e646ee4c_5c6k", this.lang, "采购员"),
                                 dataType: 'string',
                                 align: 'left',
                                 halign: 'left',
@@ -4183,7 +4211,7 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                                 id: 'deliveryDate_19bd9bfb_nnlo',
                                 field: 'deliveryDate',
                                 width: 120,
-                                title: this.langService.transform('deliveryDate_19bd9bfb_nnlo', this.lang, "交货日期"),
+                                title: this.langService.transform("deliveryDate_19bd9bfb_nnlo", this.lang, "交货日期"),
                                 dataType: 'datetime',
                                 align: 'left',
                                 halign: 'left',
@@ -4207,7 +4235,7 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                                 id: 'planName_4f24ebc0_a9kt',
                                 field: 'planName',
                                 width: 120,
-                                title: this.langService.transform('planName_4f24ebc0_a9kt', this.lang, "计划名称"),
+                                title: this.langService.transform("planName_4f24ebc0_a9kt", this.lang, "计划名称"),
                                 dataType: 'string',
                                 align: 'left',
                                 halign: 'left',
@@ -4231,7 +4259,7 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                                 id: 'totalPrice_da36cd69_48ad',
                                 field: 'totalPrice',
                                 width: 120,
-                                title: this.langService.transform('totalPrice_da36cd69_48ad', this.lang, "物料总价"),
+                                title: this.langService.transform("totalPrice_da36cd69_48ad", this.lang, "物料总价"),
                                 dataType: 'number',
                                 align: 'left',
                                 halign: 'left',
@@ -4266,7 +4294,7 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                                 id: 'isPurchaseOrder_75108363_6uu3',
                                 field: 'isPurchaseOrder',
                                 width: 120,
-                                title: this.langService.transform('isPurchaseOrder_75108363_6uu3', this.lang, "是否已生成采购订单"),
+                                title: this.langService.transform("isPurchaseOrder_75108363_6uu3", this.lang, "是否已生成采购订单"),
                                 dataType: 'boolean',
                                 align: 'left',
                                 halign: 'left',
@@ -4437,6 +4465,8 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                             FarrisTooltipModule,
                             GridModule,
                             DateInputsModule,
+                            FarrisCommonModule,
+                            DateHelperModule.forRoot(),
                             DropDownsModule,
                             ButtonsModule,
                             FarrisTabsModule,
@@ -4530,920 +4560,6 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
             var ɵEmptyOutletComponentNgFactory = ɵccf("ng-component", ɵEmptyOutletComponent, View_ɵEmptyOutletComponent_Host_0, {}, {}, []);
 
             /**
-             * @fileoverview added by tsickle
-             * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
-             */
-            var EnumEditorComponent = /** @class */ (function () {
-                function EnumEditorComponent(el, render, messagerService, localeSer) {
-                    var _a;
-                    this.el = el;
-                    this.render = render;
-                    this.messagerService = messagerService;
-                    this.localeSer = localeSer;
-                    /**
-                     * enum data
-                     */
-                    this.data = [];
-                    this.columns = [];
-                    this.textField = 'name';
-                    this.valueField = 'value';
-                    this.dataChange = new EventEmitter();
-                    this.cls = 'd-flex flex-column flex-fill';
-                    this.overflow = 'hidden';
-                    this.height = '100%';
-                    this.showSortBtns = true;
-                    this.currentEnumData = null;
-                    this.newEnumData = (_a = {},
-                        _a[this.textField] = '',
-                        _a[this.valueField] = '',
-                        _a);
-                }
-                /**
-                 * @param {?} changes
-                 * @return {?}
-                 */
-                EnumEditorComponent.prototype.ngOnChanges = /**
-                 * @param {?} changes
-                 * @return {?}
-                 */
-                function (changes) {
-                    // console.log(changes);
-                };
-                /**
-                 * @return {?}
-                 */
-                EnumEditorComponent.prototype.ngOnInit = /**
-                 * @return {?}
-                 */
-                function () {
-                };
-                /**
-                 * @param {?} index
-                 * @return {?}
-                 */
-                EnumEditorComponent.prototype.insertCondition = /**
-                 * @param {?} index
-                 * @return {?}
-                 */
-                function (index) {
-                    /** @type {?} */
-                    var newEnumData = Object.assign({}, this.newEnumData);
-                    if (index === 0) {
-                        this.data.unshift(newEnumData);
-                    }
-                    else {
-                        this.data.splice(index, 0, newEnumData);
-                    }
-                    this.changeConditionList();
-                };
-                /**
-                 * @param {?} index
-                 * @return {?}
-                 */
-                EnumEditorComponent.prototype.remove = /**
-                 * @param {?} index
-                 * @return {?}
-                 */
-                function (index) {
-                    this.data.splice(index, 1);
-                    this.changeConditionList();
-                    if (this.currentEnumData) {
-                        if (index === this.currentEnumData.index) {
-                            this.currentEnumData = null;
-                        }
-                    }
-                };
-                /**
-                 * @return {?}
-                 */
-                EnumEditorComponent.prototype.onAddFilter = /**
-                 * @return {?}
-                 */
-                function () {
-                    this.data = __spread(this.data, [Object.assign({}, this.newEnumData)]);
-                    this.changeConditionList();
-                };
-                /**
-                 * @return {?}
-                 */
-                EnumEditorComponent.prototype.onClear = /**
-                 * @return {?}
-                 */
-                function () {
-                    var _this = this;
-                    this.messagerService.question(this.localeSer.getValue('enumEditor.message'), (/**
-                     * @return {?}
-                     */
-                    function () {
-                        _this.data = [];
-                        _this.changeConditionList();
-                    }));
-                };
-                /**
-                 * @return {?}
-                 */
-                EnumEditorComponent.prototype.onMoveTop = /**
-                 * @return {?}
-                 */
-                function () {
-                    if (this.currentEnumData) {
-                        this.data.unshift(this.currentEnumData.data);
-                        this.data.splice(this.currentEnumData.index + 1, 1);
-                        this.currentEnumData.index = 0;
-                        this.changeConditionList();
-                    }
-                };
-                /**
-                 * @return {?}
-                 */
-                EnumEditorComponent.prototype.onMovePrev = /**
-                 * @return {?}
-                 */
-                function () {
-                    var _a;
-                    if (this.currentEnumData) {
-                        /** @type {?} */
-                        var index = this.currentEnumData.index;
-                        /** @type {?} */
-                        var tempArr = this.data.splice(index, 1);
-                        (_a = this.data).splice.apply(_a, __spread([index - 1, 0], tempArr));
-                        this.currentEnumData.index = index - 1;
-                        this.changeConditionList();
-                    }
-                };
-                /**
-                 * @return {?}
-                 */
-                EnumEditorComponent.prototype.onMoveNext = /**
-                 * @return {?}
-                 */
-                function () {
-                    var _a;
-                    if (this.currentEnumData) {
-                        /** @type {?} */
-                        var index = this.currentEnumData.index;
-                        /** @type {?} */
-                        var tempArr = this.data.splice(index, 1);
-                        (_a = this.data).splice.apply(_a, __spread([index + 1, 0], tempArr));
-                        this.currentEnumData.index = index + 1;
-                        this.changeConditionList();
-                    }
-                };
-                /**
-                 * @return {?}
-                 */
-                EnumEditorComponent.prototype.onMoveBottom = /**
-                 * @return {?}
-                 */
-                function () {
-                    if (this.currentEnumData) {
-                        this.data.push(this.currentEnumData.data);
-                        this.data.splice(this.currentEnumData.index, 1);
-                        this.currentEnumData.index = this.data.length - 1;
-                        this.changeConditionList();
-                    }
-                };
-                /**
-                 * @private
-                 * @return {?}
-                 */
-                EnumEditorComponent.prototype.changeConditionList = /**
-                 * @private
-                 * @return {?}
-                 */
-                function () {
-                    this.dataChange.next(this.data);
-                };
-                /**
-                 * @param {?} $event
-                 * @return {?}
-                 */
-                EnumEditorComponent.prototype.selected = /**
-                 * @param {?} $event
-                 * @return {?}
-                 */
-                function ($event) {
-                    // console.log($event);
-                    this.currentEnumData = $event;
-                };
-                /**
-                 * @param {?} $event
-                 * @return {?}
-                 */
-                EnumEditorComponent.prototype.isSelected = /**
-                 * @param {?} $event
-                 * @return {?}
-                 */
-                function ($event) {
-                    if (this.currentEnumData) {
-                        return this.currentEnumData.index === $event;
-                    }
-                    return false;
-                };
-                EnumEditorComponent.decorators = [
-                    { type: Component, args: [{
-                                selector: 'farris-enum-editor',
-                                template: "<div class=\"table-header \">\r\n    <table class=\"table table-bordered\" style=\"margin-bottom: 0\">\r\n        <colgroup>\r\n            <col style=\"width: 42px\">\r\n            <col style=\"width: 40%\">\r\n            <col>\r\n        </colgroup>\r\n        <thead>\r\n            <tr>\r\n                <th></th>\r\n                <th><b>{{'enumEditor.value'| locale}}</b></th>\r\n                <th><b>{{'enumEditor.name'| locale}}</b></th>\r\n            </tr>\r\n        </thead>\r\n    </table>\r\n</div>\r\n<div class=\"table-body flex-fill\" style=\"overflow: hidden\" #tablebodybox>\r\n    <perfect-scrollbar [config]=\"{}\">\r\n        <table class=\"table table-bordered\">\r\n            <colgroup>\r\n                <col style=\"width: 42px\">\r\n                <col style=\"width: 40%\">\r\n                <col>\r\n            </colgroup>\r\n            <tbody>\r\n                <tr *ngFor=\"let item of data; let index=index;\" (click)=\"selected({'index':index, 'data': item})\" [class.selected]=\"isSelected(index)\" >\r\n                    <td>\r\n                        <button type=\"button\" class=\"btn btn-link\" (click)=\"remove(index)\">\r\n                            <span class=\"f-icon f-icon-close\" style=\"color: red\"></span>\r\n                        </button>\r\n                    </td>\r\n                    <td>\r\n                        <input type=\"text\" style=\"width:100%\" autocomplete=\"off\" placeholder=\"\" class=\"k-textbox\" [(ngModel)]=\"item[valueField]\">\r\n                    </td>\r\n                    <td>\r\n                        <input type=\"text\" style=\"width:100%\" placeholder=\"\" autocomplete=\"off\" class=\"k-textbox\" [(ngModel)]=\"item[textField]\">\r\n                    </td>\r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n    </perfect-scrollbar>\r\n</div>\r\n<div style=\"flex-shrink: 0;\">\r\n<enum-editor-footer\r\n[showSortBtns]=\"showSortBtns\"\r\n(addFilter)=\"onAddFilter()\"\r\n(clearFilter)=\"onClear()\"\r\n(moveTop)=\"onMoveTop()\"\r\n(movePrev)=\"onMovePrev()\"\r\n(moveNext)=\"onMoveNext()\"\r\n(moveBottom)=\"onMoveBottom()\"></enum-editor-footer>\r\n</div>"
-                            }] }
-                ];
-                /** @nocollapse */
-                EnumEditorComponent.ctorParameters = function () { return [
-                    { type: ElementRef },
-                    { type: Renderer2 },
-                    { type: MessagerService },
-                    { type: LocaleService }
-                ]; };
-                EnumEditorComponent.propDecorators = {
-                    data: [{ type: Input }],
-                    columns: [{ type: Input }],
-                    textField: [{ type: Input }],
-                    valueField: [{ type: Input }],
-                    dataChange: [{ type: Output }],
-                    tablebodybox: [{ type: ViewChild, args: ['tablebodybox',] }],
-                    cls: [{ type: HostBinding, args: ['class',] }],
-                    overflow: [{ type: HostBinding, args: ['style.overflow',] }],
-                    height: [{ type: HostBinding, args: ['style.height',] }],
-                    showSortBtns: [{ type: Input }]
-                };
-                return EnumEditorComponent;
-            }());
-
-            /**
-             * @fileoverview added by tsickle
-             * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
-             */
-            /** @enum {number} */
-            var EnumOutType = {
-                'array': 0,
-                'object': 1,
-            };
-            EnumOutType[EnumOutType['array']] = 'array';
-            EnumOutType[EnumOutType['object']] = 'object';
-            var EnumEditorService = /** @class */ (function () {
-                function EnumEditorService(injector, cfr, modalService, localeService) {
-                    this.injector = injector;
-                    this.cfr = cfr;
-                    this.modalService = modalService;
-                    this.localeService = localeService;
-                    this.enumEditorRef = null;
-                    this.dlgRef = null;
-                    this.originalData = [];
-                    this.textField = 'name';
-                    this.valueField = 'value';
-                    this.outType = EnumOutType.array;
-                    this.dataChanged = new Subject();
-                }
-                /**
-                 * @param {?=} enumData
-                 * @param {?=} options
-                 * @return {?}
-                 */
-                EnumEditorService.prototype.showDialog = /**
-                 * @param {?=} enumData
-                 * @param {?=} options
-                 * @return {?}
-                 */
-                function (enumData, options) {
-                    var _this = this;
-                    if (enumData === void 0) { enumData = []; }
-                    if (options === void 0) { options = {}; }
-                    enumData = this.toJSON(enumData);
-                    /** @type {?} */
-                    var enumEditorFactory = this.cfr.resolveComponentFactory(EnumEditorComponent);
-                    this.enumEditorRef = enumEditorFactory.create(this.injector);
-                    this.enumEditorRef.instance.data = enumData;
-                    this.originalData = cloneDeep(enumData);
-                    this.textField = options['textField'] || 'name';
-                    this.valueField = options['valueField'] || 'value';
-                    this.outType = options['outType'] || EnumOutType.array;
-                    options['showSortBtns'] = this.outType === EnumOutType.array;
-                    this.dlgRef = this.modalService.show(this.enumEditorRef, {
-                        width: 800, height: 500,
-                        title: this.localeService.getValue('enumEditor.title'), enableScroll: false,
-                        minHeight: 398, minWidth: 798, iconCls: 'f-icon f-icon-top_developmenttool',
-                        buttons: [
-                            {
-                                text: this.localeService.getValue('enumEditor.cancelButton'),
-                                cls: 'btn btn-outline-secondary',
-                                handle: (/**
-                                 * @return {?}
-                                 */
-                                function () {
-                                    _this.cancel();
-                                })
-                            },
-                            {
-                                text: this.localeService.getValue('enumEditor.okButton'),
-                                cls: 'btn btn-primary',
-                                handle: (/**
-                                 * @return {?}
-                                 */
-                                function () {
-                                    _this.save();
-                                })
-                            }
-                        ],
-                        initialState: options,
-                        dialogFooterStyles: { background: '#F4F6F9' },
-                        buttonAlign: 'right',
-                        closed: (/**
-                         * @param {?} isCloseButtonClick
-                         * @return {?}
-                         */
-                        function (isCloseButtonClick) {
-                            if (isCloseButtonClick) {
-                                _this.cancel();
-                            }
-                        })
-                    });
-                    this.enumEditorRef.instance.height = this.dlgRef.dialog.instance.getContainerSize().height;
-                    this.dlgRef.dialog.instance.resized.subscribe((/**
-                     * @param {?} size
-                     * @return {?}
-                     */
-                    function (size) {
-                        _this.enumEditorRef.instance.height = size.containerHeight;
-                    }));
-                    this.enumEditorRef.changeDetectorRef.detectChanges();
-                    this.dlgRef.dialog.changeDetectorRef.reattach();
-                    // this.openDialog.emit();
-                };
-                /**
-                 * @return {?}
-                 */
-                EnumEditorService.prototype.cancel = /**
-                 * @return {?}
-                 */
-                function () {
-                    this._dataChanged(this.originalData);
-                    this.dlgRef.close();
-                };
-                /**
-                 * @return {?}
-                 */
-                EnumEditorService.prototype.save = /**
-                 * @return {?}
-                 */
-                function () {
-                    /** @type {?} */
-                    var enumData = this.enumEditorRef.instance.data;
-                    this._dataChanged(enumData);
-                    this.dlgRef.close();
-                };
-                /**
-                 * @private
-                 * @param {?} enumData
-                 * @return {?}
-                 */
-                EnumEditorService.prototype._dataChanged = /**
-                 * @private
-                 * @param {?} enumData
-                 * @return {?}
-                 */
-                function (enumData) {
-                    /** @type {?} */
-                    var str = this.toString(enumData);
-                    this.dataChanged.next(str);
-                };
-                /**
-                 * @param {?} enumData
-                 * @return {?}
-                 */
-                EnumEditorService.prototype.toString = /**
-                 * @param {?} enumData
-                 * @return {?}
-                 */
-                function (enumData) {
-                    var _this = this;
-                    if (enumData && enumData.length) {
-                        if (this.outType === EnumOutType.array) {
-                            return JSON.stringify(enumData);
-                        }
-                        else {
-                            /** @type {?} */
-                            var obj = enumData.reduce((/**
-                             * @param {?} r
-                             * @param {?} c
-                             * @return {?}
-                             */
-                            function (r, c) {
-                                r[c[_this.valueField]] = c[_this.textField];
-                                return r;
-                            }), {});
-                            return JSON.stringify(obj);
-                        }
-                    }
-                    return '';
-                };
-                /**
-                 * @param {?} val
-                 * @return {?}
-                 */
-                EnumEditorService.prototype.toJSON = /**
-                 * @param {?} val
-                 * @return {?}
-                 */
-                function (val) {
-                    /** @type {?} */
-                    var enumData = [];
-                    if (val) {
-                        if (typeof val === 'string') {
-                            try {
-                                enumData = JSON.parse(val);
-                                if (this.outType === EnumOutType.object) {
-                                    enumData = this.convertObject2Array(enumData);
-                                }
-                            }
-                            catch (e) {
-                                enumData = [];
-                                // console.warn(e);
-                            }
-                        }
-                        else {
-                            if (Array.isArray(val)) {
-                                enumData = val;
-                            }
-                            else {
-                                enumData = this.convertObject2Array(val);
-                            }
-                        }
-                    }
-                    return enumData;
-                };
-                /**
-                 * @private
-                 * @param {?} obj
-                 * @return {?}
-                 */
-                EnumEditorService.prototype.convertObject2Array = /**
-                 * @private
-                 * @param {?} obj
-                 * @return {?}
-                 */
-                function (obj) {
-                    var _this = this;
-                    /** @type {?} */
-                    var _enumData = [];
-                    Object.keys(obj).forEach((/**
-                     * @param {?} n
-                     * @return {?}
-                     */
-                    function (n) {
-                        var _a;
-                        _enumData.push((_a = {}, _a[_this.valueField] = n, _a[_this.textField] = obj[n], _a));
-                    }));
-                    return _enumData;
-                };
-                EnumEditorService.decorators = [
-                    { type: Injectable, args: [{
-                                providedIn: 'root'
-                            },] }
-                ];
-                /** @nocollapse */
-                EnumEditorService.ctorParameters = function () { return [
-                    { type: Injector },
-                    { type: ComponentFactoryResolver },
-                    { type: BsModalService },
-                    { type: LocaleService }
-                ]; };
-                /** @nocollapse */ EnumEditorService.ngInjectableDef = defineInjectable({ factory: function EnumEditorService_Factory() { return new EnumEditorService(inject(INJECTOR), inject(ComponentFactoryResolver), inject(BsModalService), inject(LocaleService)); }, token: EnumEditorService, providedIn: "root" });
-                return EnumEditorService;
-            }());
-
-            /**
-             * @fileoverview added by tsickle
-             * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
-             */
-            var EnumEditorFooterComponent = /** @class */ (function () {
-                function EnumEditorFooterComponent(grid) {
-                    this.grid = grid;
-                    this.cls = 'f-filter-footer';
-                    this.showSortBtns = true;
-                    this.addFilter = new EventEmitter();
-                    this.clearFilter = new EventEmitter();
-                    this.moveTop = new EventEmitter();
-                    this.movePrev = new EventEmitter();
-                    this.moveNext = new EventEmitter();
-                    this.moveBottom = new EventEmitter();
-                }
-                /**
-                 * @return {?}
-                 */
-                EnumEditorFooterComponent.prototype.ngOnInit = /**
-                 * @return {?}
-                 */
-                function () { };
-                /**
-                 * @return {?}
-                 */
-                EnumEditorFooterComponent.prototype.onAddFilter = /**
-                 * @return {?}
-                 */
-                function () {
-                    this.addFilter.emit();
-                };
-                /**
-                 * @return {?}
-                 */
-                EnumEditorFooterComponent.prototype.onClear = /**
-                 * @return {?}
-                 */
-                function () {
-                    this.clearFilter.emit();
-                };
-                /**
-                 * @return {?}
-                 */
-                EnumEditorFooterComponent.prototype.onMoveTop = /**
-                 * @return {?}
-                 */
-                function () {
-                    this.moveTop.emit();
-                };
-                /**
-                 * @return {?}
-                 */
-                EnumEditorFooterComponent.prototype.onMovePrev = /**
-                 * @return {?}
-                 */
-                function () {
-                    this.movePrev.emit();
-                };
-                /**
-                 * @return {?}
-                 */
-                EnumEditorFooterComponent.prototype.onMoveNext = /**
-                 * @return {?}
-                 */
-                function () {
-                    this.moveNext.emit();
-                };
-                /**
-                 * @return {?}
-                 */
-                EnumEditorFooterComponent.prototype.onMoveBottom = /**
-                 * @return {?}
-                 */
-                function () {
-                    this.moveBottom.emit();
-                };
-                /**
-                 * @return {?}
-                 */
-                EnumEditorFooterComponent.prototype.canUse = /**
-                 * @return {?}
-                 */
-                function () {
-                    if (this.grid.currentEnumData) {
-                        return this.grid.data.length > 1;
-                    }
-                    return false;
-                };
-                /**
-                 * @return {?}
-                 */
-                EnumEditorFooterComponent.prototype.canMoveUp = /**
-                 * @return {?}
-                 */
-                function () {
-                    if (this.canUse()) {
-                        return this.grid.currentEnumData.index > 0;
-                    }
-                    return false;
-                };
-                /**
-                 * @return {?}
-                 */
-                EnumEditorFooterComponent.prototype.canMoveDown = /**
-                 * @return {?}
-                 */
-                function () {
-                    if (this.canUse()) {
-                        return this.grid.currentEnumData.index < this.grid.data.length - 1;
-                    }
-                    return false;
-                };
-                EnumEditorFooterComponent.decorators = [
-                    { type: Component, args: [{
-                                selector: 'enum-editor-footer',
-                                template: "\n    <div class=\"footer-container\">\n        <button type=\"button\" (click)=\"onAddFilter()\"\n            class=\"k-button k-button-icontext k-flat \"><span class=\"k-icon k-i-add\"></span> {{ 'enumEditor.addWhere' | locale }}</button>\n        <button type=\"button\" (click)=\"onClear()\" [disabled]=\"!grid.data.length\"\n            class=\"k-button k-button-icontext k-flat \"><span class=\"k-icon k-i-delete\"></span> {{ 'enumEditor.clear' | locale }}</button>\n        <ng-container *ngIf=\"showSortBtns\">\n            <button type=\"button\" [disabled]=\"!canMoveUp()\" (click)=\"onMoveTop()\"\n            class=\"k-button k-button-icontext k-flat \"><span class=\"k-icon k-i-arrow-end-up\"></span>\n            {{'enumEditor.moveTop' | locale }}</button>\n        <button type=\"button\" [disabled]=\"!canMoveUp()\" (click)=\"onMovePrev()\"\n            class=\"k-button k-button-icontext k-flat \"><span class=\"k-icon k-i-arrow-60-up\"></span>\n            {{'enumEditor.moveUp' | locale }}</button>\n        <button type=\"button\" [disabled]=\"!canMoveDown()\" (click)=\"onMoveNext()\"\n            class=\"k-button k-button-icontext k-flat \"><span class=\"k-icon k-i-arrow-60-down\"></span>\n            {{'enumEditor.moveDown' | locale }}</button>\n        <button type=\"button\" [disabled]=\"!canMoveDown()\" (click)=\"onMoveBottom()\"\n            class=\"k-button k-button-icontext k-flat\"><span class=\"k-icon k-i-arrow-end-down\"></span>\n            {{'enumEditor.moveBottom' | locale }}</button>\n            </ng-container>\n    </div>\n    "
-                            }] }
-                ];
-                /** @nocollapse */
-                EnumEditorFooterComponent.ctorParameters = function () { return [
-                    { type: EnumEditorComponent }
-                ]; };
-                EnumEditorFooterComponent.propDecorators = {
-                    cls: [{ type: HostBinding, args: ['class',] }],
-                    showSortBtns: [{ type: Input }],
-                    addFilter: [{ type: Output }],
-                    clearFilter: [{ type: Output }],
-                    moveTop: [{ type: Output }],
-                    movePrev: [{ type: Output }],
-                    moveNext: [{ type: Output }],
-                    moveBottom: [{ type: Output }]
-                };
-                return EnumEditorFooterComponent;
-            }());
-
-            /**
-             * @fileoverview added by tsickle
-             * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
-             */
-            /** @type {?} */
-            var ENUM_EDITOR_VALUE_ACCESSOR = {
-                provide: NG_VALUE_ACCESSOR,
-                useExisting: forwardRef((/**
-                 * @return {?}
-                 */
-                function () { return EnumEditorInputComponent; })),
-                multi: true
-            };
-            var EnumEditorInputComponent = /** @class */ (function (_super) {
-                __extends(EnumEditorInputComponent, _super);
-                function EnumEditorInputComponent(injector, ees, el) {
-                    var _this = _super.call(this, injector, el) || this;
-                    _this.injector = injector;
-                    _this.ees = ees;
-                    _this.el = el;
-                    _this.textField = 'name';
-                    _this.valueField = 'value';
-                    _this.outType = EnumOutType.array;
-                    _this.enableClear = true;
-                    _this.valueChange = new EventEmitter();
-                    _this.groupIcon = '<i class="f-icon f-icon-lookup"></i>';
-                    _this.cd = null;
-                    _this.ees.dataChanged.subscribe((/**
-                     * @param {?} str
-                     * @return {?}
-                     */
-                    function (str) {
-                        _this.updateData(str);
-                    }));
-                    _this.cd = _this.injector.get(ChangeDetectorRef, null);
-                    return _this;
-                }
-                /**
-                 * @private
-                 * @param {?} str
-                 * @return {?}
-                 */
-                EnumEditorInputComponent.prototype.updateData = /**
-                 * @private
-                 * @param {?} str
-                 * @return {?}
-                 */
-                function (str) {
-                    this.value = str;
-                    if (this.cd) {
-                        this.cd.detectChanges();
-                    }
-                    this.valueChange.emit(str);
-                    this.onModelChange(str);
-                    this.onModelTouched(str);
-                };
-                /**
-                 * @return {?}
-                 */
-                EnumEditorInputComponent.prototype.ngOnInit = /**
-                 * @return {?}
-                 */
-                function () { };
-                /**
-                 * @return {?}
-                 */
-                EnumEditorInputComponent.prototype.showDialog = /**
-                 * @return {?}
-                 */
-                function () {
-                    /** @type {?} */
-                    var enumData = this.convertValue2JSON();
-                    this.ees.showDialog(enumData, {
-                        textField: this.textField,
-                        valueField: this.valueField,
-                        outType: this.outType
-                    });
-                };
-                /**
-                 * @param {?} $event
-                 * @return {?}
-                 */
-                EnumEditorInputComponent.prototype.onClear = /**
-                 * @param {?} $event
-                 * @return {?}
-                 */
-                function ($event) {
-                    this.updateData('');
-                };
-                /**
-                 * @param {?} val
-                 * @return {?}
-                 */
-                EnumEditorInputComponent.prototype.writeValue = /**
-                 * @param {?} val
-                 * @return {?}
-                 */
-                function (val) {
-                    if (val && typeof val === 'object') {
-                        this.value = JSON.stringify(val);
-                    }
-                    else {
-                        this.value = val || '';
-                    }
-                };
-                /**
-                 * @private
-                 * @return {?}
-                 */
-                EnumEditorInputComponent.prototype.convertValue2JSON = /**
-                 * @private
-                 * @return {?}
-                 */
-                function () {
-                    return this.ees.toJSON(this.value);
-                };
-                EnumEditorInputComponent.decorators = [
-                    { type: Component, args: [{
-                                selector: 'enum-editor-input',
-                                template: "\n    <input-group #ig style=\"width: 100%\"\n        [groupText]=\"groupIcon\"\n        (clear)=\"onClear($event)\"\n        (clickHandle)=\"showDialog()\"\n        [readonly] = \"readonly\"\n        [editable] = \"editable\"\n        [enableClear] = \"enableClear\"\n        [(value)]=\"value\">\n    </input-group>\n    ",
-                                providers: [
-                                    ENUM_EDITOR_VALUE_ACCESSOR,
-                                    EnumEditorService
-                                ]
-                            }] }
-                ];
-                /** @nocollapse */
-                EnumEditorInputComponent.ctorParameters = function () { return [
-                    { type: Injector },
-                    { type: EnumEditorService },
-                    { type: ElementRef }
-                ]; };
-                EnumEditorInputComponent.propDecorators = {
-                    value: [{ type: Input }],
-                    textField: [{ type: Input }],
-                    valueField: [{ type: Input }],
-                    outType: [{ type: Input }],
-                    enableClear: [{ type: Input }],
-                    valueChange: [{ type: Output }],
-                    inputGroupRef: [{ type: ViewChild, args: ['ig',] }]
-                };
-                return EnumEditorInputComponent;
-            }(LookupComponent));
-
-            /**
-             * @fileoverview added by tsickle
-             * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
-             */
-            var EnumEditorModule = /** @class */ (function () {
-                function EnumEditorModule() {
-                }
-                /**
-                 * @return {?}
-                 */
-                EnumEditorModule.forRoot = /**
-                 * @return {?}
-                 */
-                function () {
-                    return {
-                        ngModule: EnumEditorModule,
-                        providers: [
-                            EnumEditorService
-                        ]
-                    };
-                };
-                EnumEditorModule.decorators = [
-                    { type: NgModule, args: [{
-                                declarations: [
-                                    EnumEditorComponent,
-                                    EnumEditorInputComponent,
-                                    EnumEditorFooterComponent
-                                ],
-                                imports: [
-                                    CommonModule,
-                                    FormsModule,
-                                    InputGroupModule,
-                                    FarrisCommonModule,
-                                    MessagerModule.forRoot(),
-                                    PerfectScrollbarModule,
-                                    LookupModule,
-                                    LocaleModule
-                                ],
-                                entryComponents: [
-                                    EnumEditorComponent
-                                ],
-                                exports: [EnumEditorComponent, EnumEditorInputComponent]
-                            },] }
-                ];
-                return EnumEditorModule;
-            }());
-
-            /**
-             * @fileoverview This file was generated by the Angular template compiler. Do not edit.
-             *
-             * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
-             * tslint:disable
-             */ 
-            var EnumEditorModuleNgFactory = ɵcmf(EnumEditorModule, [], function (_l) { return ɵmod([ɵmpd(512, ComponentFactoryResolver, ɵCodegenComponentFactoryResolver, [[8, [PopoverContainerComponentNgFactory, TooltipComponentNgFactory, ModalBackdropComponentNgFactory, ModalContainerComponentNgFactory, MessagerComponentNgFactory, NotifyContainerComponentNgFactory, LoadingComponentNgFactory, FarrisContextMenuComponentNgFactory, DataTableComponentNgFactory, TreeTableComponentNgFactory, LookupLeftComponentNgFactory, LookupTabsComponentNgFactory, LookupQuickSelectPanelComponentNgFactory, EnumEditorComponentNgFactory]], [3, ComponentFactoryResolver], NgModuleRef]), ɵmpd(4608, NgLocalization, NgLocaleLocalization, [LOCALE_ID, [2, ɵangular_packages_common_common_a]]), ɵmpd(4608, ɵangular_packages_forms_forms_j, ɵangular_packages_forms_forms_j, []), ɵmpd(4608, PopoverConfig, PopoverConfig, []), ɵmpd(4608, PositioningService, PositioningService, [RendererFactory2, PLATFORM_ID]), ɵmpd(4608, ComponentLoaderFactory, ComponentLoaderFactory, [ComponentFactoryResolver, NgZone, Injector, PositioningService, ApplicationRef]), ɵmpd(4608, CommonUtils, CommonUtils, []), ɵmpd(4608, RuntimeStateService, RuntimeStateService, [CommonUtils]), ɵmpd(4608, IdService, IdService, []), ɵmpd(4608, LocaleService, LocaleService, [LOCALE_ID, CommonUtils, [2, FARRIS_LOCAL_CUSTOM_DATA]]), ɵmpd(4608, AttentionService, AttentionService, [RendererFactory2, NgZone]), ɵmpd(4608, BsModalService, BsModalService, [RendererFactory2, ComponentLoaderFactory, NgZone]), ɵmpd(4608, NotifyService, NotifyService, [ComponentFactoryResolver, Injector, ApplicationRef]), ɵmpd(4608, PaginationService, PaginationService, []), ɵmpd(4608, DateTimeHelperService, DateTimeHelperService, []), ɵmpd(4608, NumberHelperService, NumberHelperService, []), ɵmpd(4608, ColumnFormatService, ColumnFormatService, [DateTimeHelperService, NumberHelperService]), ɵmpd(4608, FarrisContextMenuService, FarrisContextMenuService, [ComponentFactoryResolver, Injector]), ɵmpd(4608, TreetableService, TreetableService, []), ɵmpd(4608, ResizeService, ResizeService, []), ɵmpd(4608, TTHotkeys, TTHotkeys, [EventManager]), ɵmpd(4608, DialogService, DialogService, []), ɵmpd(4608, MessagerService, MessagerService, [BsModalService, Injector]), ɵmpd(4608, LoadingService, LoadingService, [ApplicationRef, ComponentFactoryResolver, Injector]), ɵmpd(1073742336, CommonModule, CommonModule, []), ɵmpd(1073742336, ɵangular_packages_forms_forms_bc, ɵangular_packages_forms_forms_bc, []), ɵmpd(1073742336, FormsModule, FormsModule, []), ɵmpd(1073742336, FarrisCommonModule, FarrisCommonModule, []), ɵmpd(1073742336, PopoverModule, PopoverModule, []), ɵmpd(1073742336, InputGroupModule, InputGroupModule, []), ɵmpd(1073742336, LocaleModule, LocaleModule, []), ɵmpd(1073742336, PerfectScrollbarModule, PerfectScrollbarModule, []), ɵmpd(1073742336, AngularDraggableModule, AngularDraggableModule, []), ɵmpd(1073742336, FAreaResponseModule, FAreaResponseModule, []), ɵmpd(1073742336, FarrisTooltipModule, FarrisTooltipModule, []), ɵmpd(1073742336, ModalModule, ModalModule, []), ɵmpd(1073742336, MessagerModule, MessagerModule, []), ɵmpd(1073742336, FarrisDialogModule, FarrisDialogModule, []), ɵmpd(1073742336, NotifyModule, NotifyModule, []), ɵmpd(1073742336, LoadingModule, LoadingModule, []), ɵmpd(1073742336, LayoutModule$1, LayoutModule$1, []), ɵmpd(1073742336, PaginationModule, PaginationModule, []), ɵmpd(1073742336, DateHelperModule, DateHelperModule, []), ɵmpd(1073742336, NumberHelperModule, NumberHelperModule, []), ɵmpd(1073742336, DataColumnModule, DataColumnModule, []), ɵmpd(1073742336, DataTableModule, DataTableModule, []), ɵmpd(1073742336, FarrisContextMenuModule, FarrisContextMenuModule, []), ɵmpd(1073742336, TreeTableModule, TreeTableModule, []), ɵmpd(1073742336, LookupModule, LookupModule, []), ɵmpd(1073742336, EnumEditorModule, EnumEditorModule, []), ɵmpd(256, FARRIS_LOCAL_CUSTOM_DATA, {}, []), ɵmpd(256, MESSAGER_DEFAULT_CONFIG, MessagerDefaultConfig, []), ɵmpd(256, LOADING_DEFAULT_CONFIG, { delay: 1000 }, [])]); });
-            var styles_EnumEditorComponent = [];
-            var RenderType_EnumEditorComponent = ɵcrt({ encapsulation: 2, styles: styles_EnumEditorComponent, data: {} });
-            function View_EnumEditorComponent_1(_l) { return ɵvid(0, [(_l()(), ɵeld(0, 0, null, null, 17, "tr", [], [[2, "selected", null]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
-                    var pd_0 = (_co.selected({ "index": _v.context.index, "data": _v.context.$implicit }) !== false);
-                    ad = (pd_0 && ad);
-                } return ad; }, null, null)), (_l()(), ɵeld(1, 0, null, null, 2, "td", [], null, null, null, null, null)), (_l()(), ɵeld(2, 0, null, null, 1, "button", [["class", "btn btn-link"], ["type", "button"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
-                    var pd_0 = (_co.remove(_v.context.index) !== false);
-                    ad = (pd_0 && ad);
-                } return ad; }, null, null)), (_l()(), ɵeld(3, 0, null, null, 0, "span", [["class", "f-icon f-icon-close"], ["style", "color: red"]], null, null, null, null, null)), (_l()(), ɵeld(4, 0, null, null, 6, "td", [], null, null, null, null, null)), (_l()(), ɵeld(5, 0, null, null, 5, "input", [["autocomplete", "off"], ["class", "k-textbox"], ["placeholder", ""], ["style", "width:100%"], ["type", "text"]], [[2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "ngModelChange"], [null, "input"], [null, "blur"], [null, "compositionstart"], [null, "compositionend"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("input" === en)) {
-                    var pd_0 = (ɵnov(_v, 6)._handleInput($event.target.value) !== false);
-                    ad = (pd_0 && ad);
-                } if (("blur" === en)) {
-                    var pd_1 = (ɵnov(_v, 6).onTouched() !== false);
-                    ad = (pd_1 && ad);
-                } if (("compositionstart" === en)) {
-                    var pd_2 = (ɵnov(_v, 6)._compositionStart() !== false);
-                    ad = (pd_2 && ad);
-                } if (("compositionend" === en)) {
-                    var pd_3 = (ɵnov(_v, 6)._compositionEnd($event.target.value) !== false);
-                    ad = (pd_3 && ad);
-                } if (("ngModelChange" === en)) {
-                    var pd_4 = ((_v.context.$implicit[_co.valueField] = $event) !== false);
-                    ad = (pd_4 && ad);
-                } return ad; }, null, null)), ɵdid(6, 16384, null, 0, DefaultValueAccessor, [Renderer2, ElementRef, [2, COMPOSITION_BUFFER_MODE]], null, null), ɵprd(1024, null, NG_VALUE_ACCESSOR, function (p0_0) { return [p0_0]; }, [DefaultValueAccessor]), ɵdid(8, 671744, null, 0, NgModel, [[8, null], [8, null], [8, null], [6, NG_VALUE_ACCESSOR]], { model: [0, "model"] }, { update: "ngModelChange" }), ɵprd(2048, null, NgControl, null, [NgModel]), ɵdid(10, 16384, null, 0, NgControlStatus, [[4, NgControl]], null, null), (_l()(), ɵeld(11, 0, null, null, 6, "td", [], null, null, null, null, null)), (_l()(), ɵeld(12, 0, null, null, 5, "input", [["autocomplete", "off"], ["class", "k-textbox"], ["placeholder", ""], ["style", "width:100%"], ["type", "text"]], [[2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "ngModelChange"], [null, "input"], [null, "blur"], [null, "compositionstart"], [null, "compositionend"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("input" === en)) {
-                    var pd_0 = (ɵnov(_v, 13)._handleInput($event.target.value) !== false);
-                    ad = (pd_0 && ad);
-                } if (("blur" === en)) {
-                    var pd_1 = (ɵnov(_v, 13).onTouched() !== false);
-                    ad = (pd_1 && ad);
-                } if (("compositionstart" === en)) {
-                    var pd_2 = (ɵnov(_v, 13)._compositionStart() !== false);
-                    ad = (pd_2 && ad);
-                } if (("compositionend" === en)) {
-                    var pd_3 = (ɵnov(_v, 13)._compositionEnd($event.target.value) !== false);
-                    ad = (pd_3 && ad);
-                } if (("ngModelChange" === en)) {
-                    var pd_4 = ((_v.context.$implicit[_co.textField] = $event) !== false);
-                    ad = (pd_4 && ad);
-                } return ad; }, null, null)), ɵdid(13, 16384, null, 0, DefaultValueAccessor, [Renderer2, ElementRef, [2, COMPOSITION_BUFFER_MODE]], null, null), ɵprd(1024, null, NG_VALUE_ACCESSOR, function (p0_0) { return [p0_0]; }, [DefaultValueAccessor]), ɵdid(15, 671744, null, 0, NgModel, [[8, null], [8, null], [8, null], [6, NG_VALUE_ACCESSOR]], { model: [0, "model"] }, { update: "ngModelChange" }), ɵprd(2048, null, NgControl, null, [NgModel]), ɵdid(17, 16384, null, 0, NgControlStatus, [[4, NgControl]], null, null)], function (_ck, _v) { var _co = _v.component; var currVal_8 = _v.context.$implicit[_co.valueField]; _ck(_v, 8, 0, currVal_8); var currVal_16 = _v.context.$implicit[_co.textField]; _ck(_v, 15, 0, currVal_16); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.isSelected(_v.context.index); _ck(_v, 0, 0, currVal_0); var currVal_1 = ɵnov(_v, 10).ngClassUntouched; var currVal_2 = ɵnov(_v, 10).ngClassTouched; var currVal_3 = ɵnov(_v, 10).ngClassPristine; var currVal_4 = ɵnov(_v, 10).ngClassDirty; var currVal_5 = ɵnov(_v, 10).ngClassValid; var currVal_6 = ɵnov(_v, 10).ngClassInvalid; var currVal_7 = ɵnov(_v, 10).ngClassPending; _ck(_v, 5, 0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7); var currVal_9 = ɵnov(_v, 17).ngClassUntouched; var currVal_10 = ɵnov(_v, 17).ngClassTouched; var currVal_11 = ɵnov(_v, 17).ngClassPristine; var currVal_12 = ɵnov(_v, 17).ngClassDirty; var currVal_13 = ɵnov(_v, 17).ngClassValid; var currVal_14 = ɵnov(_v, 17).ngClassInvalid; var currVal_15 = ɵnov(_v, 17).ngClassPending; _ck(_v, 12, 0, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14, currVal_15); }); }
-            function View_EnumEditorComponent_0(_l) { return ɵvid(0, [ɵpid(0, FarrisLocalePipe, [LocaleService]), ɵqud(402653184, 1, { tablebodybox: 0 }), (_l()(), ɵeld(2, 0, null, null, 16, "div", [["class", "table-header "]], null, null, null, null, null)), (_l()(), ɵeld(3, 0, null, null, 15, "table", [["class", "table table-bordered"], ["style", "margin-bottom: 0"]], null, null, null, null, null)), (_l()(), ɵeld(4, 0, null, null, 3, "colgroup", [], null, null, null, null, null)), (_l()(), ɵeld(5, 0, null, null, 0, "col", [["style", "width: 42px"]], null, null, null, null, null)), (_l()(), ɵeld(6, 0, null, null, 0, "col", [["style", "width: 40%"]], null, null, null, null, null)), (_l()(), ɵeld(7, 0, null, null, 0, "col", [], null, null, null, null, null)), (_l()(), ɵeld(8, 0, null, null, 10, "thead", [], null, null, null, null, null)), (_l()(), ɵeld(9, 0, null, null, 9, "tr", [], null, null, null, null, null)), (_l()(), ɵeld(10, 0, null, null, 0, "th", [], null, null, null, null, null)), (_l()(), ɵeld(11, 0, null, null, 3, "th", [], null, null, null, null, null)), (_l()(), ɵeld(12, 0, null, null, 2, "b", [], null, null, null, null, null)), (_l()(), ɵted(13, null, ["", ""])), ɵppd(14, 1), (_l()(), ɵeld(15, 0, null, null, 3, "th", [], null, null, null, null, null)), (_l()(), ɵeld(16, 0, null, null, 2, "b", [], null, null, null, null, null)), (_l()(), ɵted(17, null, ["", ""])), ɵppd(18, 1), (_l()(), ɵeld(19, 0, [[1, 0], ["tablebodybox", 1]], null, 10, "div", [["class", "table-body flex-fill"], ["style", "overflow: hidden"]], null, null, null, null, null)), (_l()(), ɵeld(20, 0, null, null, 9, "perfect-scrollbar", [], [[2, "ps-show-limits", null], [2, "ps-show-active", null]], null, null, View_PerfectScrollbarComponent_0, RenderType_PerfectScrollbarComponent)), ɵdid(21, 507904, null, 0, PerfectScrollbarComponent, [NgZone, ChangeDetectorRef, PLATFORM_ID], { config: [0, "config"] }, null), (_l()(), ɵeld(22, 0, null, 0, 7, "table", [["class", "table table-bordered"]], null, null, null, null, null)), (_l()(), ɵeld(23, 0, null, null, 3, "colgroup", [], null, null, null, null, null)), (_l()(), ɵeld(24, 0, null, null, 0, "col", [["style", "width: 42px"]], null, null, null, null, null)), (_l()(), ɵeld(25, 0, null, null, 0, "col", [["style", "width: 40%"]], null, null, null, null, null)), (_l()(), ɵeld(26, 0, null, null, 0, "col", [], null, null, null, null, null)), (_l()(), ɵeld(27, 0, null, null, 2, "tbody", [], null, null, null, null, null)), (_l()(), ɵand(16777216, null, null, 1, null, View_EnumEditorComponent_1)), ɵdid(29, 278528, null, 0, NgForOf, [ViewContainerRef, TemplateRef, IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), ɵeld(30, 0, null, null, 2, "div", [["style", "flex-shrink: 0;"]], null, null, null, null, null)), (_l()(), ɵeld(31, 0, null, null, 1, "enum-editor-footer", [], [[8, "className", 0]], [[null, "addFilter"], [null, "clearFilter"], [null, "moveTop"], [null, "movePrev"], [null, "moveNext"], [null, "moveBottom"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("addFilter" === en)) {
-                    var pd_0 = (_co.onAddFilter() !== false);
-                    ad = (pd_0 && ad);
-                } if (("clearFilter" === en)) {
-                    var pd_1 = (_co.onClear() !== false);
-                    ad = (pd_1 && ad);
-                } if (("moveTop" === en)) {
-                    var pd_2 = (_co.onMoveTop() !== false);
-                    ad = (pd_2 && ad);
-                } if (("movePrev" === en)) {
-                    var pd_3 = (_co.onMovePrev() !== false);
-                    ad = (pd_3 && ad);
-                } if (("moveNext" === en)) {
-                    var pd_4 = (_co.onMoveNext() !== false);
-                    ad = (pd_4 && ad);
-                } if (("moveBottom" === en)) {
-                    var pd_5 = (_co.onMoveBottom() !== false);
-                    ad = (pd_5 && ad);
-                } return ad; }, View_EnumEditorFooterComponent_0, RenderType_EnumEditorFooterComponent)), ɵdid(32, 114688, null, 0, EnumEditorFooterComponent, [EnumEditorComponent], { showSortBtns: [0, "showSortBtns"] }, { addFilter: "addFilter", clearFilter: "clearFilter", moveTop: "moveTop", movePrev: "movePrev", moveNext: "moveNext", moveBottom: "moveBottom" })], function (_ck, _v) { var _co = _v.component; var currVal_4 = ɵEMPTY_MAP; _ck(_v, 21, 0, currVal_4); var currVal_5 = _co.data; _ck(_v, 29, 0, currVal_5); var currVal_7 = _co.showSortBtns; _ck(_v, 32, 0, currVal_7); }, function (_ck, _v) { var currVal_0 = ɵunv(_v, 13, 0, _ck(_v, 14, 0, ɵnov(_v, 0), "enumEditor.value")); _ck(_v, 13, 0, currVal_0); var currVal_1 = ɵunv(_v, 17, 0, _ck(_v, 18, 0, ɵnov(_v, 0), "enumEditor.name")); _ck(_v, 17, 0, currVal_1); var currVal_2 = ɵnov(_v, 21).autoPropagation; var currVal_3 = ɵnov(_v, 21).scrollIndicators; _ck(_v, 20, 0, currVal_2, currVal_3); var currVal_6 = ɵnov(_v, 32).cls; _ck(_v, 31, 0, currVal_6); }); }
-            function View_EnumEditorComponent_Host_0(_l) { return ɵvid(0, [(_l()(), ɵeld(0, 0, null, null, 1, "farris-enum-editor", [], [[8, "className", 0], [4, "overflow", null], [4, "height", null]], null, null, View_EnumEditorComponent_0, RenderType_EnumEditorComponent)), ɵdid(1, 638976, null, 0, EnumEditorComponent, [ElementRef, Renderer2, MessagerService, LocaleService], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, function (_ck, _v) { var currVal_0 = ɵnov(_v, 1).cls; var currVal_1 = ɵnov(_v, 1).overflow; var currVal_2 = ɵnov(_v, 1).height; _ck(_v, 0, 0, currVal_0, currVal_1, currVal_2); }); }
-            var EnumEditorComponentNgFactory = ɵccf("farris-enum-editor", EnumEditorComponent, View_EnumEditorComponent_Host_0, { data: "data", columns: "columns", textField: "textField", valueField: "valueField", showSortBtns: "showSortBtns" }, { dataChange: "dataChange" }, []);
-            var styles_EnumEditorFooterComponent = [];
-            var RenderType_EnumEditorFooterComponent = ɵcrt({ encapsulation: 2, styles: styles_EnumEditorFooterComponent, data: {} });
-            function View_EnumEditorFooterComponent_1(_l) { return ɵvid(0, [(_l()(), ɵeld(0, 0, null, null, 16, null, null, null, null, null, null, null)), (_l()(), ɵeld(1, 0, null, null, 3, "button", [["class", "k-button k-button-icontext k-flat "], ["type", "button"]], [[8, "disabled", 0]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
-                    var pd_0 = (_co.onMoveTop() !== false);
-                    ad = (pd_0 && ad);
-                } return ad; }, null, null)), (_l()(), ɵeld(2, 0, null, null, 0, "span", [["class", "k-icon k-i-arrow-end-up"]], null, null, null, null, null)), (_l()(), ɵted(3, null, [" ", ""])), ɵppd(4, 1), (_l()(), ɵeld(5, 0, null, null, 3, "button", [["class", "k-button k-button-icontext k-flat "], ["type", "button"]], [[8, "disabled", 0]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
-                    var pd_0 = (_co.onMovePrev() !== false);
-                    ad = (pd_0 && ad);
-                } return ad; }, null, null)), (_l()(), ɵeld(6, 0, null, null, 0, "span", [["class", "k-icon k-i-arrow-60-up"]], null, null, null, null, null)), (_l()(), ɵted(7, null, [" ", ""])), ɵppd(8, 1), (_l()(), ɵeld(9, 0, null, null, 3, "button", [["class", "k-button k-button-icontext k-flat "], ["type", "button"]], [[8, "disabled", 0]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
-                    var pd_0 = (_co.onMoveNext() !== false);
-                    ad = (pd_0 && ad);
-                } return ad; }, null, null)), (_l()(), ɵeld(10, 0, null, null, 0, "span", [["class", "k-icon k-i-arrow-60-down"]], null, null, null, null, null)), (_l()(), ɵted(11, null, [" ", ""])), ɵppd(12, 1), (_l()(), ɵeld(13, 0, null, null, 3, "button", [["class", "k-button k-button-icontext k-flat"], ["type", "button"]], [[8, "disabled", 0]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
-                    var pd_0 = (_co.onMoveBottom() !== false);
-                    ad = (pd_0 && ad);
-                } return ad; }, null, null)), (_l()(), ɵeld(14, 0, null, null, 0, "span", [["class", "k-icon k-i-arrow-end-down"]], null, null, null, null, null)), (_l()(), ɵted(15, null, [" ", ""])), ɵppd(16, 1)], null, function (_ck, _v) { var _co = _v.component; var currVal_0 = !_co.canMoveUp(); _ck(_v, 1, 0, currVal_0); var currVal_1 = ɵunv(_v, 3, 0, _ck(_v, 4, 0, ɵnov(_v.parent, 0), "enumEditor.moveTop")); _ck(_v, 3, 0, currVal_1); var currVal_2 = !_co.canMoveUp(); _ck(_v, 5, 0, currVal_2); var currVal_3 = ɵunv(_v, 7, 0, _ck(_v, 8, 0, ɵnov(_v.parent, 0), "enumEditor.moveUp")); _ck(_v, 7, 0, currVal_3); var currVal_4 = !_co.canMoveDown(); _ck(_v, 9, 0, currVal_4); var currVal_5 = ɵunv(_v, 11, 0, _ck(_v, 12, 0, ɵnov(_v.parent, 0), "enumEditor.moveDown")); _ck(_v, 11, 0, currVal_5); var currVal_6 = !_co.canMoveDown(); _ck(_v, 13, 0, currVal_6); var currVal_7 = ɵunv(_v, 15, 0, _ck(_v, 16, 0, ɵnov(_v.parent, 0), "enumEditor.moveBottom")); _ck(_v, 15, 0, currVal_7); }); }
-            function View_EnumEditorFooterComponent_0(_l) { return ɵvid(0, [ɵpid(0, FarrisLocalePipe, [LocaleService]), (_l()(), ɵeld(1, 0, null, null, 10, "div", [["class", "footer-container"]], null, null, null, null, null)), (_l()(), ɵeld(2, 0, null, null, 3, "button", [["class", "k-button k-button-icontext k-flat "], ["type", "button"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
-                    var pd_0 = (_co.onAddFilter() !== false);
-                    ad = (pd_0 && ad);
-                } return ad; }, null, null)), (_l()(), ɵeld(3, 0, null, null, 0, "span", [["class", "k-icon k-i-add"]], null, null, null, null, null)), (_l()(), ɵted(4, null, [" ", ""])), ɵppd(5, 1), (_l()(), ɵeld(6, 0, null, null, 3, "button", [["class", "k-button k-button-icontext k-flat "], ["type", "button"]], [[8, "disabled", 0]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
-                    var pd_0 = (_co.onClear() !== false);
-                    ad = (pd_0 && ad);
-                } return ad; }, null, null)), (_l()(), ɵeld(7, 0, null, null, 0, "span", [["class", "k-icon k-i-delete"]], null, null, null, null, null)), (_l()(), ɵted(8, null, [" ", ""])), ɵppd(9, 1), (_l()(), ɵand(16777216, null, null, 1, null, View_EnumEditorFooterComponent_1)), ɵdid(11, 16384, null, 0, NgIf, [ViewContainerRef, TemplateRef], { ngIf: [0, "ngIf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_3 = _co.showSortBtns; _ck(_v, 11, 0, currVal_3); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = ɵunv(_v, 4, 0, _ck(_v, 5, 0, ɵnov(_v, 0), "enumEditor.addWhere")); _ck(_v, 4, 0, currVal_0); var currVal_1 = !_co.grid.data.length; _ck(_v, 6, 0, currVal_1); var currVal_2 = ɵunv(_v, 8, 0, _ck(_v, 9, 0, ɵnov(_v, 0), "enumEditor.clear")); _ck(_v, 8, 0, currVal_2); }); }
-            function View_EnumEditorFooterComponent_Host_0(_l) { return ɵvid(0, [(_l()(), ɵeld(0, 0, null, null, 1, "enum-editor-footer", [], [[8, "className", 0]], null, null, View_EnumEditorFooterComponent_0, RenderType_EnumEditorFooterComponent)), ɵdid(1, 114688, null, 0, EnumEditorFooterComponent, [EnumEditorComponent], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, function (_ck, _v) { var currVal_0 = ɵnov(_v, 1).cls; _ck(_v, 0, 0, currVal_0); }); }
-            var EnumEditorFooterComponentNgFactory = ɵccf("enum-editor-footer", EnumEditorFooterComponent, View_EnumEditorFooterComponent_Host_0, { showSortBtns: "showSortBtns" }, { addFilter: "addFilter", clearFilter: "clearFilter", moveTop: "moveTop", movePrev: "movePrev", moveNext: "moveNext", moveBottom: "moveBottom" }, []);
-            var styles_EnumEditorInputComponent = [];
-            var RenderType_EnumEditorInputComponent = ɵcrt({ encapsulation: 2, styles: styles_EnumEditorInputComponent, data: {} });
-            function View_EnumEditorInputComponent_0(_l) { return ɵvid(0, [ɵqud(402653184, 1, { content: 0 }), ɵqud(402653184, 2, { inputGroupRef: 0 }), (_l()(), ɵeld(2, 0, null, null, 2, "input-group", [["style", "width: 100%"]], [[2, "f-cmp-inputgroup", null]], [[null, "clear"], [null, "clickHandle"], [null, "valueChange"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("clear" === en)) {
-                    var pd_0 = (_co.onClear($event) !== false);
-                    ad = (pd_0 && ad);
-                } if (("clickHandle" === en)) {
-                    var pd_1 = (_co.showDialog() !== false);
-                    ad = (pd_1 && ad);
-                } if (("valueChange" === en)) {
-                    var pd_2 = ((_co.value = $event) !== false);
-                    ad = (pd_2 && ad);
-                } return ad; }, View_InputGroupComponent_0, RenderType_InputGroupComponent)), ɵprd(5120, null, NG_VALUE_ACCESSOR, function (p0_0) { return [p0_0]; }, [InputGroupComponent]), ɵdid(4, 4833280, [[2, 4], ["ig", 4]], 0, InputGroupComponent, [ElementRef, Renderer2, NgZone, Injector], { value: [0, "value"], readonly: [1, "readonly"], editable: [2, "editable"], enableClear: [3, "enableClear"], groupText: [4, "groupText"] }, { clear: "clear", valueChange: "valueChange", clickHandle: "clickHandle" })], function (_ck, _v) { var _co = _v.component; var currVal_1 = _co.value; var currVal_2 = _co.readonly; var currVal_3 = _co.editable; var currVal_4 = _co.enableClear; var currVal_5 = _co.groupIcon; _ck(_v, 4, 0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5); }, function (_ck, _v) { var currVal_0 = ɵnov(_v, 4).autocomplete; _ck(_v, 2, 0, currVal_0); }); }
-            function View_EnumEditorInputComponent_Host_0(_l) { return ɵvid(0, [(_l()(), ɵeld(0, 0, null, null, 3, "enum-editor-input", [], [[8, "className", 0]], null, null, View_EnumEditorInputComponent_0, RenderType_EnumEditorInputComponent)), ɵprd(5120, null, NG_VALUE_ACCESSOR, function (p0_0) { return [p0_0]; }, [EnumEditorInputComponent]), ɵprd(512, null, EnumEditorService, EnumEditorService, [Injector, ComponentFactoryResolver, BsModalService, LocaleService]), ɵdid(3, 8634368, null, 0, EnumEditorInputComponent, [Injector, EnumEditorService, ElementRef], null, null)], function (_ck, _v) { _ck(_v, 3, 0); }, function (_ck, _v) { var currVal_0 = ɵnov(_v, 3).hostCls; _ck(_v, 0, 0, currVal_0); }); }
-            var EnumEditorInputComponentNgFactory = ɵccf("enum-editor-input", EnumEditorInputComponent, View_EnumEditorInputComponent_Host_0, { dialogWidth: "dialogWidth", dialogHeight: "dialogHeight", title: "title", buttonAlign: "buttonAlign", buttonsRef: "buttonsRef", showButtons: "showButtons", showCloseButton: "showCloseButton", showMaxButton: "showMaxButton", resizable: "resizable", draggable: "draggable", disabled: "disabled", editable: "editable", readonly: "readonly", mapFields: "mapFields", valueField: "valueField", textField: "textField", displayText: "displayText", context: "context", beforeOpen: "beforeOpen", beforeClose: "beforeClose", dictPicking: "dictPicking", dictPicked: "dictPicked", value: "value", outType: "outType", enableClear: "enableClear" }, { dialogOpened: "dialogOpened", dialogClosed: "dialogClosed", dialogMaxed: "dialogMaxed", resizing: "resizing", resized: "resized", valueChange: "valueChange" }, []);
-
-            /**
              * @fileoverview This file was generated by the Angular template compiler. Do not edit.
              *
              * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
@@ -5500,7 +4616,7 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                 } if (("pageSizeChanged" === en)) {
                     var pd_10 = (_co.viewModel.ChangePage1($event) !== false);
                     ad = (pd_10 && ad);
-                } return ad; }, View_DatagridComponent_0, RenderType_DatagridComponent)), ɵprd(4608, null, DatagridSmartFilterService, DatagridSmartFilterService, []), ɵprd(512, null, DatagridFacadeService, DatagridFacadeService, [HttpClient]), ɵprd(512, null, DatagridService, DatagridService, []), ɵdid(4, 6275072, [[1, 4], ["dataGridDataGrid", 4]], 1, DatagridComponent, [ChangeDetectorRef, ElementRef, Injector, NgZone, DatagridFacadeService, DatagridService, ApplicationRef, DomSanitizer, Renderer2], { id: [0, "id"], autoHeight: [1, "autoHeight"], showBorder: [2, "showBorder"], striped: [3, "striped"], headerWrap: [4, "headerWrap"], showFooter: [5, "showFooter"], footerHeight: [6, "footerHeight"], footerDataFrom: [7, "footerDataFrom"], footerPosition: [8, "footerPosition"], rowHeight: [9, "rowHeight"], fit: [10, "fit"], fitColumns: [11, "fitColumns"], autoFitColumns: [12, "autoFitColumns"], scrollBarShowMode: [13, "scrollBarShowMode"], showLineNumber: [14, "showLineNumber"], lineNumberTitle: [15, "lineNumberTitle"], lineNumberWidth: [16, "lineNumberWidth"], lockPagination: [17, "lockPagination"], pagination: [18, "pagination"], pageList: [19, "pageList"], pageSize: [20, "pageSize"], showPageList: [21, "showPageList"], showGotoInput: [22, "showGotoInput"], multiSelect: [23, "multiSelect"], showCheckbox: [24, "showCheckbox"], showAllCheckbox: [25, "showAllCheckbox"], checkOnSelect: [26, "checkOnSelect"], selectOnCheck: [27, "selectOnCheck"], selectionMode: [28, "selectionMode"], keepSelect: [29, "keepSelect"], fields: [30, "fields"], nowrap: [31, "nowrap"], virtualized: [32, "virtualized"], virtualizedAsyncLoad: [33, "virtualizedAsyncLoad"], editMode: [34, "editMode"], enableEditCellStyle: [35, "enableEditCellStyle"], selectOnEditing: [36, "selectOnEditing"], enableDragColumn: [37, "enableDragColumn"], groupSummaryPosition: [38, "groupSummaryPosition"], showGroupColumn: [39, "showGroupColumn"], showRowGroupPanel: [40, "showRowGroupPanel"], AutoColumnWidthUseDblclick: [41, "AutoColumnWidthUseDblclick"], mergeCell: [42, "mergeCell"], useControlPanel: [43, "useControlPanel"], enableSimpleMode: [44, "enableSimpleMode"], enableScheme: [45, "enableScheme"], clearSelectionsWhenDataIsEmpty: [46, "clearSelectionsWhenDataIsEmpty"], enableContextMenu: [47, "enableContextMenu"], enableHighlightCell: [48, "enableHighlightCell"] }, { pageSizeChanged: "pageSizeChanged", pageChanged: "pageChanged", filterChanged: "filterChanged", selectChanged: "selectChanged", unSelect: "unSelect", scrollYLoad: "scrollYLoad", checkedChange: "checkedChange" }), ɵqud(603979776, 11, { dgColumns: 1 }), ɵpad(6, 5), ɵdid(7, 737280, null, 0, FarrisDatagridUseBindingDataDirective, [BindingData, ViewModel, DatagridComponent], null, null), ɵdid(8, 737280, null, 0, EditableDirective, [BindingData, ViewModel, DatagridComponent, DateTimeHelperService, Injector, RuntimeStateService, DialogService, NgZone], { gridEditable: [0, "gridEditable"], disableGroupOnEditing: [1, "disableGroupOnEditing"] }, null), ɵdid(9, 147456, null, 0, FarrisDataGridEndEditDirective, [AppContext, DatagridComponent], null, null), ɵdid(10, 16384, null, 0, FarrisDataGridRemoteSummaryDirective, [ViewModel, DatagridComponent], { remoteSummaryCommand: [0, "remoteSummaryCommand"] }, null), ɵdid(11, 212992, null, 0, DatagridComponentRefDirective, [Injector, DatagridComponent, ElementRef, FrameContext], null, null)], function (_ck, _v) { var _co = _v.component; var currVal_3 = "dataGrid"; var currVal_4 = false; var currVal_5 = false; var currVal_6 = true; var currVal_7 = false; var currVal_8 = true; var currVal_9 = 29; var currVal_10 = "client"; var currVal_11 = "bottom"; var currVal_12 = 30; var currVal_13 = true; var currVal_14 = true; var currVal_15 = true; var currVal_16 = "auto"; var currVal_17 = true; var currVal_18 = _co.dataGridlineNumberTitle; var currVal_19 = 36; var currVal_20 = (_co.viewModel.stateMachine && _co.viewModel.stateMachine["editable"]); var currVal_21 = true; var currVal_22 = _ck(_v, 6, 0, 10, 20, 30, 50, 100); var currVal_23 = 20; var currVal_24 = false; var currVal_25 = false; var currVal_26 = false; var currVal_27 = false; var currVal_28 = false; var currVal_29 = false; var currVal_30 = false; var currVal_31 = "default"; var currVal_32 = true; var currVal_33 = _co.viewModel.dataGridColumns; var currVal_34 = true; var currVal_35 = false; var currVal_36 = false; var currVal_37 = "cell"; var currVal_38 = false; var currVal_39 = false; var currVal_40 = false; var currVal_41 = "groupFooterRow"; var currVal_42 = true; var currVal_43 = false; var currVal_44 = true; var currVal_45 = false; var currVal_46 = true; var currVal_47 = true; var currVal_48 = true; var currVal_49 = true; var currVal_50 = false; var currVal_51 = false; _ck(_v, 4, 1, [currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14, currVal_15, currVal_16, currVal_17, currVal_18, currVal_19, currVal_20, currVal_21, currVal_22, currVal_23, currVal_24, currVal_25, currVal_26, currVal_27, currVal_28, currVal_29, currVal_30, currVal_31, currVal_32, currVal_33, currVal_34, currVal_35, currVal_36, currVal_37, currVal_38, currVal_39, currVal_40, currVal_41, currVal_42, currVal_43, currVal_44, currVal_45, currVal_46, currVal_47, currVal_48, currVal_49, currVal_50, currVal_51]); _ck(_v, 7, 0); var currVal_52 = (_co.viewModel.stateMachine && _co.viewModel.stateMachine["editable"]); var currVal_53 = true; _ck(_v, 8, 0, currVal_52, currVal_53); var currVal_54 = ""; _ck(_v, 10, 0, currVal_54); _ck(_v, 11, 0); }, function (_ck, _v) { var currVal_0 = ɵnov(_v, 4).pos; var currVal_1 = ɵnov(_v, 4).hostCls; var currVal_2 = ɵnov(_v, 4).autoHeightCls; _ck(_v, 0, 0, currVal_0, currVal_1, currVal_2); }); }
+                } return ad; }, View_DatagridComponent_0, RenderType_DatagridComponent)), ɵprd(4608, null, DatagridSmartFilterService, DatagridSmartFilterService, []), ɵprd(512, null, DatagridFacadeService, DatagridFacadeService, [HttpClient]), ɵprd(512, null, DatagridService, DatagridService, []), ɵdid(4, 6275072, [[1, 4], ["dataGridDataGrid", 4]], 1, DatagridComponent, [ChangeDetectorRef, ElementRef, Injector, NgZone, DatagridFacadeService, DatagridService, ApplicationRef, DomSanitizer, Renderer2], { id: [0, "id"], autoHeight: [1, "autoHeight"], maxHeight: [2, "maxHeight"], showBorder: [3, "showBorder"], striped: [4, "striped"], headerWrap: [5, "headerWrap"], showFooter: [6, "showFooter"], footerHeight: [7, "footerHeight"], footerDataFrom: [8, "footerDataFrom"], footerPosition: [9, "footerPosition"], rowHeight: [10, "rowHeight"], fit: [11, "fit"], fitColumns: [12, "fitColumns"], autoFitColumns: [13, "autoFitColumns"], scrollBarShowMode: [14, "scrollBarShowMode"], showLineNumber: [15, "showLineNumber"], lineNumberTitle: [16, "lineNumberTitle"], lineNumberWidth: [17, "lineNumberWidth"], lockPagination: [18, "lockPagination"], pagination: [19, "pagination"], pageList: [20, "pageList"], pageSize: [21, "pageSize"], showPageList: [22, "showPageList"], showGotoInput: [23, "showGotoInput"], multiSelect: [24, "multiSelect"], showCheckbox: [25, "showCheckbox"], showAllCheckbox: [26, "showAllCheckbox"], checkOnSelect: [27, "checkOnSelect"], selectOnCheck: [28, "selectOnCheck"], selectionMode: [29, "selectionMode"], keepSelect: [30, "keepSelect"], useBlankWhenDataIsEmpty: [31, "useBlankWhenDataIsEmpty"], emptyDataHeight: [32, "emptyDataHeight"], fields: [33, "fields"], nowrap: [34, "nowrap"], virtualized: [35, "virtualized"], virtualizedAsyncLoad: [36, "virtualizedAsyncLoad"], editMode: [37, "editMode"], enableEditCellStyle: [38, "enableEditCellStyle"], selectOnEditing: [39, "selectOnEditing"], enableDragColumn: [40, "enableDragColumn"], expandGroupRows: [41, "expandGroupRows"], groupSummaryPosition: [42, "groupSummaryPosition"], showGroupColumn: [43, "showGroupColumn"], showRowGroupPanel: [44, "showRowGroupPanel"], AutoColumnWidthUseDblclick: [45, "AutoColumnWidthUseDblclick"], mergeCell: [46, "mergeCell"], useControlPanel: [47, "useControlPanel"], enableSimpleMode: [48, "enableSimpleMode"], enableScheme: [49, "enableScheme"], clearSelectionsWhenDataIsEmpty: [50, "clearSelectionsWhenDataIsEmpty"], enableContextMenu: [51, "enableContextMenu"], enableHighlightCell: [52, "enableHighlightCell"] }, { pageSizeChanged: "pageSizeChanged", pageChanged: "pageChanged", filterChanged: "filterChanged", selectChanged: "selectChanged", unSelect: "unSelect", scrollYLoad: "scrollYLoad", checkedChange: "checkedChange" }), ɵqud(603979776, 11, { dgColumns: 1 }), ɵpad(6, 5), ɵdid(7, 737280, null, 0, FarrisDatagridUseBindingDataDirective, [BindingData, ViewModel, DatagridComponent], null, null), ɵdid(8, 737280, null, 0, EditableDirective, [BindingData, ViewModel, DatagridComponent, DateTimeHelperService, Injector, RuntimeStateService, DialogService$1, NgZone], { gridEditable: [0, "gridEditable"], disableGroupOnEditing: [1, "disableGroupOnEditing"] }, null), ɵdid(9, 147456, null, 0, FarrisDataGridEndEditDirective, [AppContext, DatagridComponent], null, null), ɵdid(10, 16384, null, 0, FarrisDataGridRemoteSummaryDirective, [ViewModel, DatagridComponent], { remoteSummaryCommand: [0, "remoteSummaryCommand"] }, null), ɵdid(11, 212992, null, 0, DatagridComponentRefDirective, [Injector, DatagridComponent, ElementRef, FrameContext], null, null)], function (_ck, _v) { var _co = _v.component; var currVal_3 = "dataGrid"; var currVal_4 = false; var currVal_5 = 300; var currVal_6 = false; var currVal_7 = true; var currVal_8 = false; var currVal_9 = true; var currVal_10 = 29; var currVal_11 = "client"; var currVal_12 = "bottom"; var currVal_13 = 30; var currVal_14 = true; var currVal_15 = true; var currVal_16 = true; var currVal_17 = "auto"; var currVal_18 = true; var currVal_19 = _co.dataGridlineNumberTitle; var currVal_20 = 36; var currVal_21 = (_co.viewModel.stateMachine && _co.viewModel.stateMachine["editable"]); var currVal_22 = true; var currVal_23 = _ck(_v, 6, 0, 10, 20, 30, 50, 100); var currVal_24 = 20; var currVal_25 = false; var currVal_26 = false; var currVal_27 = false; var currVal_28 = false; var currVal_29 = false; var currVal_30 = false; var currVal_31 = false; var currVal_32 = "default"; var currVal_33 = true; var currVal_34 = false; var currVal_35 = 36; var currVal_36 = _co.viewModel.dataGridColumns; var currVal_37 = true; var currVal_38 = false; var currVal_39 = false; var currVal_40 = "cell"; var currVal_41 = false; var currVal_42 = false; var currVal_43 = false; var currVal_44 = true; var currVal_45 = "groupFooterRow"; var currVal_46 = true; var currVal_47 = false; var currVal_48 = true; var currVal_49 = false; var currVal_50 = true; var currVal_51 = true; var currVal_52 = true; var currVal_53 = true; var currVal_54 = false; var currVal_55 = false; _ck(_v, 4, 1, [currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14, currVal_15, currVal_16, currVal_17, currVal_18, currVal_19, currVal_20, currVal_21, currVal_22, currVal_23, currVal_24, currVal_25, currVal_26, currVal_27, currVal_28, currVal_29, currVal_30, currVal_31, currVal_32, currVal_33, currVal_34, currVal_35, currVal_36, currVal_37, currVal_38, currVal_39, currVal_40, currVal_41, currVal_42, currVal_43, currVal_44, currVal_45, currVal_46, currVal_47, currVal_48, currVal_49, currVal_50, currVal_51, currVal_52, currVal_53, currVal_54, currVal_55]); _ck(_v, 7, 0); var currVal_56 = (_co.viewModel.stateMachine && _co.viewModel.stateMachine["editable"]); var currVal_57 = true; _ck(_v, 8, 0, currVal_56, currVal_57); var currVal_58 = ""; _ck(_v, 10, 0, currVal_58); _ck(_v, 11, 0); }, function (_ck, _v) { var currVal_0 = ɵnov(_v, 4).pos; var currVal_1 = ɵnov(_v, 4).hostCls; var currVal_2 = ɵnov(_v, 4).autoHeightCls; _ck(_v, 0, 0, currVal_0, currVal_1, currVal_2); }); }
             function View_DataGridComponent_1(_l) { return ɵvid(0, [(_l()(), ɵeld(0, 0, null, null, 12, "farris-section", [["class", "f-section-grid f-section-in-managelist"], ["id", "data-grid-section"], ["sectionRef", ""]], [[2, "f-section", null], [2, "f-section-maximize", null], [2, "f-section-fill", null], [2, "f-section-accordion", null], [2, "f-state-collapse", null], [2, "f-section-custom-accordion", null]], null, null, View_FarrisSectionComponent_0, RenderType_FarrisSectionComponent)), ɵdid(1, 245760, null, 7, FarrisSectionComponent, [[2, Injector]], { mainTitle: [0, "mainTitle"], subTitle: [1, "subTitle"], showHeader: [2, "showHeader"], enableMaximize: [3, "enableMaximize"], enableAccordion: [4, "enableAccordion"], fill: [5, "fill"], expandStatus: [6, "expandStatus"], index: [7, "index"] }, null), ɵqud(335544320, 4, { headerDirective: 0 }), ɵqud(335544320, 5, { headerTitleDirective: 0 }), ɵqud(335544320, 6, { headerContentDirective: 0 }), ɵqud(335544320, 7, { headerToolbarDirective: 0 }), ɵqud(335544320, 8, { extendDirective: 0 }), ɵqud(335544320, 9, { contentDirective: 0 }), ɵqud(335544320, 10, { viewChangeDirective: 0 }), ɵdid(9, 212992, null, 0, SectionComponentRefDirective, [Injector, FarrisSectionComponent, ElementRef, FrameContext], null, null), (_l()(), ɵeld(10, 0, null, 0, 2, "div", [["class", "f-utils-fill"]], null, null, null, null, null)), (_l()(), ɵand(16777216, null, null, 1, null, View_DataGridComponent_2)), ɵdid(12, 16384, null, 0, NgIf, [ViewContainerRef, TemplateRef], { ngIf: [0, "ngIf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_6 = _co.SectiondatagridsectionMainTitle; var currVal_7 = _co.SectiondatagridsectionSubTitle; var currVal_8 = false; var currVal_9 = true; var currVal_10 = "default"; var currVal_11 = true; var currVal_12 = true; var currVal_13 = _co.index; _ck(_v, 1, 0, currVal_6, currVal_7, currVal_8, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13); _ck(_v, 9, 0); var currVal_14 = true; _ck(_v, 12, 0, currVal_14); }, function (_ck, _v) { var currVal_0 = ɵnov(_v, 1).baseCls; var currVal_1 = ɵnov(_v, 1).maxStatus; var currVal_2 = ɵnov(_v, 1).fillCls; var currVal_3 = ɵnov(_v, 1).enableAccordionCls; var currVal_4 = ɵnov(_v, 1).enableCollapseCls; var currVal_5 = ɵnov(_v, 1).enableCustomAccordionCls; _ck(_v, 0, 0, currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5); }); }
             function View_DataGridComponent_4(_l) { return ɵvid(0, [(_l()(), ɵeld(0, 0, null, null, 3, "span", [], null, null, null, null, null)), (_l()(), ɵeld(1, 0, null, null, 0, "span", [["class", "badge-round-info mr-2"]], null, null, null, null, null)), (_l()(), ɵted(2, null, ["", "\n"])), ɵppd(3, 3)], null, function (_ck, _v) { var _co = _v.component; var currVal_0 = ɵunv(_v, 2, 0, _ck(_v, 3, 0, ɵnov(_v.parent.parent, 0), "GridField/billStatus_BillState_44b4a12b_ua37/enumData/Billing", _co.lang, "\u5236\u5355")); _ck(_v, 2, 0, currVal_0); }); }
             function View_DataGridComponent_5(_l) { return ɵvid(0, [(_l()(), ɵeld(0, 0, null, null, 3, "span", [], null, null, null, null, null)), (_l()(), ɵeld(1, 0, null, null, 0, "span", [["class", "badge-round-warning mr-2"]], null, null, null, null, null)), (_l()(), ɵted(2, null, ["", " "])), ɵppd(3, 3)], null, function (_ck, _v) { var _co = _v.component; var currVal_0 = ɵunv(_v, 2, 0, _ck(_v, 3, 0, ɵnov(_v.parent.parent, 0), "GridField/billStatus_BillState_44b4a12b_ua37/enumData/SubmitApproval", _co.lang, "\u63D0\u4EA4\u5BA1\u6279")); _ck(_v, 2, 0, currVal_0); }); }
@@ -5512,7 +4628,7 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                     ad = (pd_0 && ad);
                 } return ad; }, null, null)), (_l()(), ɵted(1, null, ["", ""])), ɵpid(0, ɵb$1, [ColumnFormatService, [2, Injector]])], null, function (_ck, _v) { var currVal_0 = ɵunv(_v, 1, 0, ɵnov(_v, 2).transform(_v.context.$implicit.column, _v.context.$implicit.rowData)); _ck(_v, 1, 0, currVal_0); }); }
             function View_DataGridComponent_0(_l) { return ɵvid(0, [ɵpid(0, LangPipe, [TranslateService, HttpClient]), ɵqud(671088640, 1, { dataGridDataGrid: 0 }), ɵqud(402653184, 2, { dataGridbillStatus_billStateTemplate: 0 }), ɵqud(402653184, 3, { dataGridplanCodeTemplate: 0 }), (_l()(), ɵand(16777216, null, null, 1, null, View_DataGridComponent_1)), ɵdid(5, 16384, null, 0, NgIf, [ViewContainerRef, TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), ɵand(0, [[2, 2], ["dataGridbillStatus_billStateTemplate", 2]], null, 0, null, View_DataGridComponent_3)), (_l()(), ɵand(0, [[3, 2], ["dataGridplanCodeTemplate", 2]], null, 0, null, View_DataGridComponent_8))], function (_ck, _v) { var currVal_0 = true; _ck(_v, 5, 0, currVal_0); }, null); }
-            function View_DataGridComponent_Host_0(_l) { return ɵvid(0, [(_l()(), ɵeld(0, 0, null, null, 82, "app-datagridcomponent", [], [[8, "className", 0]], null, null, View_DataGridComponent_0, RenderType_DataGridComponent)), ɵprd(4608, null, ViewModel, DataGridComponentViewmodel, []), ɵprd(4608, null, CommandService, CommandService, [ViewModel, AppContext]), ɵprd(4608, null, NavigationEventService, NavigationEventService, [RuntimeFrameworkService, MenuStateService, QuerystringService]), ɵprd(4608, null, NavigationService, NavigationService, [RuntimeFrameworkService, MenuStateService, NavigationEventService, QuerystringService, [2, FrameContext], [2, Injector], [2, LanguageService]]), ɵprd(4608, null, CardDataService, CardDataService, [FormMessageService, FrameContext, FormLoadingService, FormNotifyService, [2, LanguageService], FormErrorService, RuntimeFrameworkService, CommandService]), ɵprd(4608, null, NavigationMiddlewareService, NavigationMiddlewareService, [NavigationService, FrameContext, FormMessageService, [2, LanguageService], CardDataService]), ɵprd(5120, null, COMMAND_HANDLERS_TOKEN, function (p0_0, p1_0, p1_1, p1_2) { return [new ChangePage1Handler(p0_0), new datagridcomponentviewmodelView1Handler(p1_0, p1_1, p1_2)]; }, [CommandService, NavigationMiddlewareService, DataCheckService, NavigationService]), ɵprd(4608, null, CommandHandlerRegistry, CommandHandlerRegistry, [[2, COMMAND_HANDLERS_TOKEN]]), ɵprd(4608, null, CommandHandlerExtenderRegistry, CommandHandlerExtenderRegistry, [[2, COMMAND_HANDLER_EXTENDERS_TOKEN]]), ɵprd(4608, null, CommandHandlerFactory, CommandHandlerFactory, [CommandHandlerRegistry, CommandHandlerExtenderRegistry, FrameContext, VariableParseService]), ɵprd(4608, null, CommandBus, CommandBus, [CommandHandlerFactory]), ɵprd(4608, null, ValidationService, ValidationService, [Repository, FrameContext, [2, FormNotifyService], [2, LanguageService]]), ɵprd(4608, null, ChangeItemService, ChangeItemService, [Repository, FrameContext, FormNotifyService, LanguageService]), ɵprd(4608, null, UIStateService, UIStateService, []), ɵprd(4608, null, StateMachineService, StateMachineService, [StateMachine]), ɵprd(135680, null, BindingData, BindingData, []), ɵprd(4608, null, BindingDataService, BindingDataService, [BindingData, AppContext]), ɵprd(4608, null, EntityTraversingService, EntityTraversingService, [FrameContext]), ɵprd(4608, null, EntityManipulationService, EntityManipulationService, [FrameContext]), ɵprd(4608, null, EntityAggregationService, EntityAggregationService, [FrameContext]), ɵprd(4608, null, EntityListService, EntityListService, [BindingData]), ɵprd(4608, null, EntityService, EntityService, [FrameContext]), ɵprd(4608, null, ListDataService, ListDataService, [FormMessageService, Repository, BindingData, FormLoadingService, [2, LanguageService], FormNotifyService, FormErrorService, ViewModel, FilterConditionService]), ɵprd(4608, null, TreeDataService, TreeDataService, [FrameContext, FormMessageService, FormLoadingService, FormNotifyService, FormErrorService, [2, LanguageService]]), ɵprd(4608, null, SubTreeDataService, SubTreeDataService, [FrameContext, ViewModel, FormMessageService, FormLoadingService, FormErrorService, FormNotifyService, [2, LanguageService]]), ɵprd(4608, null, SubListDataService, SubListDataService, [FormMessageService, Repository, FormLoadingService, ViewModel, [2, LanguageService], FormNotifyService, FormErrorService]), ɵprd(4608, null, RemoveDataService, RemoveDataService, [FrameContext]), ɵprd(4608, null, SaveDataService, SaveDataService, [FrameContext]), ɵprd(4608, null, EditDataService, EditDataService, [FrameContext]), ɵprd(4608, null, FilterConditionDataService, FilterConditionDataService, [ViewModel, FilterConditionService, CommandService]), ɵprd(4608, null, RemoteSummaryService, RemoteSummaryService, [ViewModel]), ɵprd(4608, null, BeActionService, BeActionService, [Repository, FormLoadingService, FormMessageService, FormNotifyService, FormErrorService, [2, LanguageService]]), ɵprd(4608, null, ApproveService, ApproveService, [FormLoadingService, BeActionService, FormMessageService, FormNotifyService, [2, LanguageService], FormErrorService, FrameContext, [2, WFSubmiteService], [2, WFFlowchartService], [2, WfTaskHandlerService]]), ɵprd(4608, null, PrintService, PrintService, [FormMessageService, LanguageService, CloudprintService, [2, FormNotifyService]]), ɵprd(4608, null, AttachmentDataService, AttachmentDataService, [FrameContext, FormLoadingService]), ɵprd(4608, null, AttachmentService, AttachmentService, [FrameContext, AttachmentDataService, FormNotifyService, UploadDialogService, [2, DownloadService]]), ɵprd(4608, null, FileService, FileService, [FrameContext, AttachmentDataService, EntityService, SubListDataService, FormNotifyService, LanguageService, ListDataService, [2, FormLoadingService]]), ɵprd(4608, null, GridMiddlewareService, GridMiddlewareService, [FrameContext, FormMessageService, [2, LanguageService], ViewModel, CommandService]), ɵprd(4608, null, SidebarService, SidebarService, [FrameContext, FarrisSidebarService, FormMessageService, [2, LanguageService]]), ɵprd(4608, null, FarrisFormService, FarrisFormService, [[2, FARRIS_FORM_COMPONENTS]]), ɵprd(4608, null, DialogService$1, DialogService$1, [BsModalService, FarrisFormService, ComponentFactoryResolver, FrameContext, [2, Injector]]), ɵprd(4608, null, RouterService, RouterService, [Router, RouterParamService, FrameworkService, [2, AppService], [2, MenuStateService], [2, LanguageService]]), ɵprd(4608, null, AuthorityService, AuthorityService, []), ɵprd(4608, null, QUERYSOLUTION_HANDLER_TOKEN, ɵb, [FrameContext, FrameworkSessionService]), ɵprd(4608, null, LISTFILTER_HANDLER_TOKEN, ɵc, [FrameContext]), ɵprd(4608, null, EndEditService, EndEditService, [FrameContext]), ɵprd(4608, null, BatchEditDialogService, BatchEditDialogService, [Injector, BsModalService, ComponentFactoryResolver, LocaleService]), ɵprd(4608, null, BatchEditService, BatchEditService, [Injector, ComponentManagerService, ViewModel, Repository, BatchEditDialogService, DateTimeHelperService, LanguageService, FormNotifyService]), ɵprd(4608, null, DiscussionGroupService, DiscussionGroupService, [Injector, FrameContext, FormLoadingService, RuntimeFrameworkService]), ɵprd(4608, null, DataGridService, DataGridService, []), ɵprd(4608, null, FormAttentionService, FormAttentionService, [Injector, FrameContext, AttentionService]), ɵprd(4608, null, FeatureEditorService, FeatureEditorService, [Injector, BsModalService, ComponentFactoryResolver, LocaleService, I18nService]), ɵprd(4608, null, FeatureDataService, FeatureDataService, [Injector, FeatureRepository, [2, LOCALE_ID]]), ɵprd(4608, null, FeatureEditService, FeatureEditService, [Injector, FeatureEditorService, FeatureDataService, FormLoadingService, FormNotifyService, LanguageService]), ɵprd(4608, null, ExpressionService, ExpressionService, [Injector, ResolveService, FrameContext, ExpressionExecutor]), ɵprd(4608, null, PopUpService, PopUpService, [Injector, FrameContext, Repository, LanguageService, FormMessageService]), ɵprd(4608, null, DirtyCheckingService, DirtyCheckingService, [Injector, ChangeDetectorRef, ApplicationRef]), ɵprd(4608, null, FormService, FormService, [Injector, AppContext, Repository]), ɵprd(4608, null, ViewModelService, ViewModelService, []), ɵprd(4608, null, PaginationService$1, PaginationService$1, [Injector, FrameContext]), ɵprd(4608, null, FORM_MANIFEST_SERVICE_TOKEN, FormManifestService, [Injector, FORM_PATH_TOKEN, HttpClient]), ɵprd(4608, null, FORM_EXPRESSION_MANIFEST_SERVICE_TOKEN, FormExpressionManifestService, [Injector, FrameContext, HttpClient, FORM_PATH_TOKEN, FORM_MANIFEST_SERVICE_TOKEN]), ɵprd(4608, null, MESSAGE_SERVICE_TOKEN, FormMessageService, [MessagerService, [2, LanguageService], LOCALE_ID]), ɵprd(4608, null, NOTIFY_SERVICE_TOKEN, FormNotifyService, [NotifyService, [2, LanguageService]]), ɵprd(5120, null, FRAME_COMPONENT_INIT_HANDLER_TOKEN, function (p0_0, p0_1, p0_2, p0_3) { return [new WorkFlowMessageHandler(p0_0, p0_1, p0_2, p0_3)]; }, [Injector, FrameContext, WorkFlowMessageService, WorkFlowMessage]), ɵprd(4608, null, ServerSideToken, BefLookupRestService, [Repository, [2, FrameContext]]), ɵprd(4608, null, ComboServerSideToken, DefaultComboHttpService, [Repository]), ɵprd(4608, null, GRID_SETTINGS_HTTP, BefLookupRestService, [Repository, [2, FrameContext]]), ɵprd(4608, null, Form, DataGridComponentViewmodelForm, []), ɵprd(4608, null, UIState, DataGridComponentViewmodelUIState, []), ɵprd(512, null, LangService, LangService, [TranslateService]), ɵprd(512, null, LocalizationService, LocalizationService, [Injector, UserSettingsToken]), ɵprd(2048, null, Repository, null, [MaterialPlanRepository]), ɵprd(131584, null, FrameContext, FrameContext, [Injector, [3, FrameContext]]), ɵprd(512, null, BindingPathService, BindingPathService, [Injector, AppContext, Repository]), ɵprd(512, null, FormControlService, FormControlService, []), ɵprd(512, null, FrameContextService, FrameContextService, [Injector, AppContext, FrameContext, Repository, BindingPathService, FormControlService]), ɵprd(512, null, FocusInvalidService, FocusInvalidService, [Repository, FrameContext, FrameContextService, FormControlService]), ɵdid(79, 4440064, null, 0, DataGridComponent, [WizardService, KeybindingService, LangService, ActivatedRoute, Router, ElementRef, LocalizationService, FrmI18nSettingService, FocusInvalidService, CommonUtils, DomSanitizer, Injector], null, null), ɵprd(256, null, FRAME_ID, "data-grid-component", []), ɵprd(256, null, NAMESPACE, "", []), ɵprd(256, null, EXCEPTION_HANDLER, null, [])], function (_ck, _v) { _ck(_v, 79, 0); }, function (_ck, _v) { var currVal_0 = ɵnov(_v, 79).cls; _ck(_v, 0, 0, currVal_0); }); }
+            function View_DataGridComponent_Host_0(_l) { return ɵvid(0, [(_l()(), ɵeld(0, 0, null, null, 82, "app-datagridcomponent", [], [[8, "className", 0]], null, null, View_DataGridComponent_0, RenderType_DataGridComponent)), ɵprd(4608, null, ViewModel, DataGridComponentViewmodel, []), ɵprd(4608, null, CommandService, CommandService, [ViewModel, AppContext]), ɵprd(4608, null, NavigationEventService, NavigationEventService, [RuntimeFrameworkService, MenuStateService, QuerystringService]), ɵprd(4608, null, NavigationService, NavigationService, [RuntimeFrameworkService, MenuStateService, NavigationEventService, QuerystringService, [2, FrameContext], [2, Injector], [2, LanguageService]]), ɵprd(4608, null, CardDataService, CardDataService, [FormMessageService, FrameContext, FormLoadingService, FormNotifyService, [2, LanguageService], FormErrorService, RuntimeFrameworkService, CommandService]), ɵprd(4608, null, NavigationMiddlewareService, NavigationMiddlewareService, [NavigationService, FrameContext, FormMessageService, [2, LanguageService], CardDataService]), ɵprd(5120, null, COMMAND_HANDLERS_TOKEN, function (p0_0, p1_0, p1_1, p1_2) { return [new ChangePage1Handler(p0_0), new datagridcomponentviewmodelView1Handler(p1_0, p1_1, p1_2)]; }, [CommandService, NavigationMiddlewareService, DataCheckService, NavigationService]), ɵprd(4608, null, CommandHandlerRegistry, CommandHandlerRegistry, [[2, COMMAND_HANDLERS_TOKEN]]), ɵprd(4608, null, CommandHandlerExtenderRegistry, CommandHandlerExtenderRegistry, [[2, COMMAND_HANDLER_EXTENDERS_TOKEN]]), ɵprd(4608, null, CommandHandlerFactory, CommandHandlerFactory, [CommandHandlerRegistry, CommandHandlerExtenderRegistry, FrameContext, VariableParseService]), ɵprd(4608, null, CommandBus, CommandBus, [CommandHandlerFactory]), ɵprd(4608, null, ValidationService, ValidationService, [Repository, FrameContext, [2, FormNotifyService], [2, LanguageService]]), ɵprd(4608, null, ChangeItemService, ChangeItemService, [Repository, FrameContext, FormNotifyService, LanguageService]), ɵprd(4608, null, UIStateService, UIStateService, []), ɵprd(4608, null, StateMachineService, StateMachineService, [StateMachine]), ɵprd(135680, null, BindingData, BindingData, []), ɵprd(4608, null, BindingDataService, BindingDataService, [BindingData, AppContext]), ɵprd(4608, null, EntityTraversingService, EntityTraversingService, [FrameContext]), ɵprd(4608, null, EntityManipulationService, EntityManipulationService, [FrameContext]), ɵprd(4608, null, EntityAggregationService, EntityAggregationService, [FrameContext]), ɵprd(4608, null, EntityListService, EntityListService, [BindingData]), ɵprd(4608, null, EntityService, EntityService, [FrameContext]), ɵprd(4608, null, ListDataService, ListDataService, [FormMessageService, Repository, BindingData, FormLoadingService, [2, LanguageService], FormNotifyService, FormErrorService, ViewModel, FilterConditionService]), ɵprd(4608, null, TreeDataService, TreeDataService, [FrameContext, FormMessageService, FormLoadingService, FormNotifyService, FormErrorService, [2, LanguageService]]), ɵprd(4608, null, SubTreeDataService, SubTreeDataService, [FrameContext, ViewModel, FormMessageService, FormLoadingService, FormErrorService, FormNotifyService, [2, LanguageService]]), ɵprd(4608, null, SubListDataService, SubListDataService, [FormMessageService, Repository, FormLoadingService, ViewModel, [2, LanguageService], FormNotifyService, FormErrorService]), ɵprd(4608, null, RemoveDataService, RemoveDataService, [FrameContext]), ɵprd(4608, null, SaveDataService, SaveDataService, [FrameContext]), ɵprd(4608, null, EditDataService, EditDataService, [FrameContext]), ɵprd(4608, null, FilterConditionDataService, FilterConditionDataService, [ViewModel, FilterConditionService, CommandService]), ɵprd(4608, null, RemoteSummaryService, RemoteSummaryService, [ViewModel]), ɵprd(4608, null, BeActionService, BeActionService, [Repository, FormLoadingService, FormMessageService, FormNotifyService, FormErrorService, [2, LanguageService]]), ɵprd(4608, null, ApproveService, ApproveService, [FormLoadingService, BeActionService, FormMessageService, FormNotifyService, [2, LanguageService], FormErrorService, FrameContext, [2, WFSubmiteService], [2, WFFlowchartService], [2, WfTaskHandlerService]]), ɵprd(4608, null, PrintService, PrintService, [FormMessageService, LanguageService, CloudprintService, [2, FormNotifyService]]), ɵprd(4608, null, AttachmentDataService, AttachmentDataService, [FrameContext, FormLoadingService]), ɵprd(4608, null, AttachmentService, AttachmentService, [FrameContext, AttachmentDataService, FormNotifyService, UploadDialogService, [2, DownloadService]]), ɵprd(4608, null, FileService, FileService, [FrameContext, AttachmentDataService, EntityService, SubListDataService, FormNotifyService, LanguageService, ListDataService, [2, FormLoadingService]]), ɵprd(4608, null, GridMiddlewareService, GridMiddlewareService, [FrameContext, FormMessageService, [2, LanguageService], ViewModel, CommandService]), ɵprd(4608, null, SidebarService, SidebarService, [FrameContext, FarrisSidebarService, FormMessageService, [2, LanguageService]]), ɵprd(4608, null, FarrisFormService, FarrisFormService, [[2, FARRIS_FORM_COMPONENTS]]), ɵprd(4608, null, DialogService, DialogService, [BsModalService, FarrisFormService, ComponentFactoryResolver, FrameContext, [2, Injector]]), ɵprd(4608, null, RouterService, RouterService, [Router, RouterParamService, FrameworkService, [2, AppService], [2, MenuStateService], [2, LanguageService]]), ɵprd(4608, null, AuthorityService, AuthorityService, []), ɵprd(4608, null, QUERYSOLUTION_HANDLER_TOKEN, ɵb, [FrameContext, FrameworkSessionService]), ɵprd(4608, null, LISTFILTER_HANDLER_TOKEN, ɵc, [FrameContext]), ɵprd(4608, null, EndEditService, EndEditService, [FrameContext]), ɵprd(4608, null, BatchEditDialogService, BatchEditDialogService, [Injector, BsModalService, ComponentFactoryResolver, LocaleService]), ɵprd(4608, null, BatchEditService, BatchEditService, [Injector, ComponentManagerService, ViewModel, Repository, BatchEditDialogService, DateTimeHelperService, LanguageService, FormNotifyService]), ɵprd(4608, null, DiscussionGroupService, DiscussionGroupService, [Injector, FrameContext, FormLoadingService, RuntimeFrameworkService]), ɵprd(4608, null, DataGridService, DataGridService, []), ɵprd(4608, null, FormAttentionService, FormAttentionService, [Injector, FrameContext, AttentionService]), ɵprd(4608, null, FeatureEditorService, FeatureEditorService, [Injector, BsModalService, ComponentFactoryResolver, LocaleService, I18nService]), ɵprd(4608, null, FeatureDataService, FeatureDataService, [Injector, FeatureRepository, [2, LOCALE_ID]]), ɵprd(4608, null, FeatureEditService, FeatureEditService, [Injector, FeatureEditorService, FeatureDataService, FormLoadingService, FormNotifyService, LanguageService]), ɵprd(4608, null, ExpressionService, ExpressionService, [Injector, ResolveService, FrameContext, ExpressionExecutor]), ɵprd(4608, null, PopUpService, PopUpService, [Injector, FrameContext, Repository, LanguageService, FormMessageService]), ɵprd(4608, null, DirtyCheckingService, DirtyCheckingService, [Injector, ChangeDetectorRef, ApplicationRef]), ɵprd(4608, null, FormService, FormService, [Injector, AppContext, Repository]), ɵprd(4608, null, ViewModelService, ViewModelService, []), ɵprd(4608, null, PaginationService, PaginationService, [Injector, FrameContext]), ɵprd(4608, null, FORM_MANIFEST_SERVICE_TOKEN, FormManifestService, [Injector, FORM_PATH_TOKEN, HttpClient]), ɵprd(4608, null, FORM_EXPRESSION_MANIFEST_SERVICE_TOKEN, FormExpressionManifestService, [Injector, FrameContext, HttpClient, FORM_PATH_TOKEN, FORM_MANIFEST_SERVICE_TOKEN]), ɵprd(4608, null, MESSAGE_SERVICE_TOKEN, FormMessageService, [MessagerService, [2, LanguageService], LOCALE_ID]), ɵprd(4608, null, NOTIFY_SERVICE_TOKEN, FormNotifyService, [NotifyService, [2, LanguageService]]), ɵprd(5120, null, FRAME_COMPONENT_INIT_HANDLER_TOKEN, function (p0_0, p0_1, p0_2, p0_3) { return [new WorkFlowMessageHandler(p0_0, p0_1, p0_2, p0_3)]; }, [Injector, FrameContext, WorkFlowMessageService, WorkFlowMessage]), ɵprd(4608, null, ServerSideToken, BefLookupRestService, [Repository, [2, FrameContext]]), ɵprd(4608, null, ComboServerSideToken, DefaultComboHttpService, [Repository]), ɵprd(4608, null, GRID_SETTINGS_HTTP, BefLookupRestService, [Repository, [2, FrameContext]]), ɵprd(4608, null, Form, DataGridComponentViewmodelForm, []), ɵprd(4608, null, UIState, DataGridComponentViewmodelUIState, []), ɵprd(512, null, LangService, LangService, [TranslateService]), ɵprd(512, null, LocalizationService, LocalizationService, [Injector, UserSettingsToken]), ɵprd(2048, null, Repository, null, [MaterialPlanRepository]), ɵprd(131584, null, FrameContext, FrameContext, [Injector, [3, FrameContext]]), ɵprd(512, null, BindingPathService, BindingPathService, [Injector, AppContext, Repository]), ɵprd(512, null, FormControlService, FormControlService, []), ɵprd(512, null, FrameContextService, FrameContextService, [Injector, AppContext, FrameContext, Repository, BindingPathService, FormControlService]), ɵprd(512, null, FocusInvalidService, FocusInvalidService, [Repository, FrameContext, FrameContextService, FormControlService]), ɵdid(79, 4440064, null, 0, DataGridComponent, [WizardService, KeybindingService, LangService, ActivatedRoute, Router, ElementRef, LocalizationService, FrmI18nSettingService, FocusInvalidService, CommonUtils, DomSanitizer, Injector], null, null), ɵprd(256, null, FRAME_ID, "data-grid-component", []), ɵprd(256, null, NAMESPACE, "", []), ɵprd(256, null, EXCEPTION_HANDLER, null, [])], function (_ck, _v) { _ck(_v, 79, 0); }, function (_ck, _v) { var currVal_0 = ɵnov(_v, 79).cls; _ck(_v, 0, 0, currVal_0); }); }
             var DataGridComponentNgFactory = ɵccf("app-datagridcomponent", DataGridComponent, View_DataGridComponent_Host_0, {}, {}, []);
 
             /**
@@ -5538,10 +4654,16 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
                 } return ad; }, View_ResponseToolbarComponent_0, RenderType_ResponseToolbarComponent)), ɵdid(1, 13090816, [["responsebar", 4]], 0, ResponseToolbarComponent, [ElementRef, Renderer2, ChangeDetectorRef, LocaleService], { datas: [0, "datas"], btnState: [1, "btnState"], btnVisible: [2, "btnVisible"], buttonSize: [3, "buttonSize"], popDirection: [4, "popDirection"] }, { rtClickEvent: "rtClickEvent" })], function (_ck, _v) { var _co = _v.component; var currVal_2 = _co.pageHeaderToolbarToolbarItems; var currVal_3 = _co.pageHeaderToolbarToolbarItemsStates; var currVal_4 = _co.pageHeaderToolbarToolbarItemsVisibleStates; var currVal_5 = "default"; var currVal_6 = "default"; _ck(_v, 1, 0, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6); }, function (_ck, _v) { var currVal_0 = ɵnov(_v, 1).frtCls; var currVal_1 = ɵnov(_v, 1).prCls; _ck(_v, 0, 0, currVal_0, currVal_1); }); }
             function View_RootComponent_5(_l) { return ɵvid(0, [(_l()(), ɵeld(0, 0, null, null, 4, "div", [["class", "f-page-header-base"], ["id", "header-nav"]], null, null, null, null, null)), (_l()(), ɵand(16777216, null, null, 1, null, View_RootComponent_6)), ɵdid(2, 16384, null, 0, NgIf, [ViewContainerRef, TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), ɵand(16777216, null, null, 1, null, View_RootComponent_7)), ɵdid(4, 16384, null, 0, NgIf, [ViewContainerRef, TemplateRef], { ngIf: [0, "ngIf"] }, null)], function (_ck, _v) { var currVal_0 = true; _ck(_v, 2, 0, currVal_0); var currVal_1 = true; _ck(_v, 4, 0, currVal_1); }, null); }
             function View_RootComponent_4(_l) { return ɵvid(0, [(_l()(), ɵeld(0, 0, null, null, 2, "div", [["class", "f-page-header"], ["id", "page-header"]], null, null, null, null, null)), (_l()(), ɵand(16777216, null, null, 1, null, View_RootComponent_5)), ɵdid(2, 16384, null, 0, NgIf, [ViewContainerRef, TemplateRef], { ngIf: [0, "ngIf"] }, null)], function (_ck, _v) { var currVal_0 = true; _ck(_v, 2, 0, currVal_0); }, null); }
-            function View_RootComponent_8(_l) { return ɵvid(0, [(_l()(), ɵeld(0, 0, null, null, 83, "div", [["class", "f-page-main"], ["id", "page-main"]], null, null, null, null, null)), (_l()(), ɵeld(1, 0, null, null, 82, "app-datagridcomponent", [], [[8, "className", 0]], null, null, View_DataGridComponent_0, RenderType_DataGridComponent)), ɵprd(4608, null, ViewModel, DataGridComponentViewmodel, []), ɵprd(4608, null, CommandService, CommandService, [ViewModel, AppContext]), ɵprd(4608, null, NavigationEventService, NavigationEventService, [RuntimeFrameworkService, MenuStateService, QuerystringService]), ɵprd(4608, null, NavigationService, NavigationService, [RuntimeFrameworkService, MenuStateService, NavigationEventService, QuerystringService, [2, FrameContext], [2, Injector], [2, LanguageService]]), ɵprd(4608, null, CardDataService, CardDataService, [FormMessageService, FrameContext, FormLoadingService, FormNotifyService, [2, LanguageService], FormErrorService, RuntimeFrameworkService, CommandService]), ɵprd(4608, null, NavigationMiddlewareService, NavigationMiddlewareService, [NavigationService, FrameContext, FormMessageService, [2, LanguageService], CardDataService]), ɵprd(5120, null, COMMAND_HANDLERS_TOKEN, function (p0_0, p1_0, p1_1, p1_2) { return [new ChangePage1Handler(p0_0), new datagridcomponentviewmodelView1Handler(p1_0, p1_1, p1_2)]; }, [CommandService, NavigationMiddlewareService, DataCheckService, NavigationService]), ɵprd(4608, null, CommandHandlerRegistry, CommandHandlerRegistry, [[2, COMMAND_HANDLERS_TOKEN]]), ɵprd(4608, null, CommandHandlerExtenderRegistry, CommandHandlerExtenderRegistry, [[2, COMMAND_HANDLER_EXTENDERS_TOKEN]]), ɵprd(4608, null, CommandHandlerFactory, CommandHandlerFactory, [CommandHandlerRegistry, CommandHandlerExtenderRegistry, FrameContext, VariableParseService]), ɵprd(4608, null, CommandBus, CommandBus, [CommandHandlerFactory]), ɵprd(4608, null, ValidationService, ValidationService, [Repository, FrameContext, [2, FormNotifyService], [2, LanguageService]]), ɵprd(4608, null, ChangeItemService, ChangeItemService, [Repository, FrameContext, FormNotifyService, LanguageService]), ɵprd(4608, null, UIStateService, UIStateService, []), ɵprd(4608, null, StateMachineService, StateMachineService, [StateMachine]), ɵprd(135680, null, BindingData, BindingData, []), ɵprd(4608, null, BindingDataService, BindingDataService, [BindingData, AppContext]), ɵprd(4608, null, EntityTraversingService, EntityTraversingService, [FrameContext]), ɵprd(4608, null, EntityManipulationService, EntityManipulationService, [FrameContext]), ɵprd(4608, null, EntityAggregationService, EntityAggregationService, [FrameContext]), ɵprd(4608, null, EntityListService, EntityListService, [BindingData]), ɵprd(4608, null, EntityService, EntityService, [FrameContext]), ɵprd(4608, null, ListDataService, ListDataService, [FormMessageService, Repository, BindingData, FormLoadingService, [2, LanguageService], FormNotifyService, FormErrorService, ViewModel, FilterConditionService]), ɵprd(4608, null, TreeDataService, TreeDataService, [FrameContext, FormMessageService, FormLoadingService, FormNotifyService, FormErrorService, [2, LanguageService]]), ɵprd(4608, null, SubTreeDataService, SubTreeDataService, [FrameContext, ViewModel, FormMessageService, FormLoadingService, FormErrorService, FormNotifyService, [2, LanguageService]]), ɵprd(4608, null, SubListDataService, SubListDataService, [FormMessageService, Repository, FormLoadingService, ViewModel, [2, LanguageService], FormNotifyService, FormErrorService]), ɵprd(4608, null, RemoveDataService, RemoveDataService, [FrameContext]), ɵprd(4608, null, SaveDataService, SaveDataService, [FrameContext]), ɵprd(4608, null, EditDataService, EditDataService, [FrameContext]), ɵprd(4608, null, FilterConditionDataService, FilterConditionDataService, [ViewModel, FilterConditionService, CommandService]), ɵprd(4608, null, RemoteSummaryService, RemoteSummaryService, [ViewModel]), ɵprd(4608, null, BeActionService, BeActionService, [Repository, FormLoadingService, FormMessageService, FormNotifyService, FormErrorService, [2, LanguageService]]), ɵprd(4608, null, ApproveService, ApproveService, [FormLoadingService, BeActionService, FormMessageService, FormNotifyService, [2, LanguageService], FormErrorService, FrameContext, [2, WFSubmiteService], [2, WFFlowchartService], [2, WfTaskHandlerService]]), ɵprd(4608, null, PrintService, PrintService, [FormMessageService, LanguageService, CloudprintService, [2, FormNotifyService]]), ɵprd(4608, null, AttachmentDataService, AttachmentDataService, [FrameContext, FormLoadingService]), ɵprd(4608, null, AttachmentService, AttachmentService, [FrameContext, AttachmentDataService, FormNotifyService, UploadDialogService, [2, DownloadService]]), ɵprd(4608, null, FileService, FileService, [FrameContext, AttachmentDataService, EntityService, SubListDataService, FormNotifyService, LanguageService, ListDataService, [2, FormLoadingService]]), ɵprd(4608, null, GridMiddlewareService, GridMiddlewareService, [FrameContext, FormMessageService, [2, LanguageService], ViewModel, CommandService]), ɵprd(4608, null, SidebarService, SidebarService, [FrameContext, FarrisSidebarService, FormMessageService, [2, LanguageService]]), ɵprd(4608, null, FarrisFormService, FarrisFormService, [[2, FARRIS_FORM_COMPONENTS]]), ɵprd(4608, null, DialogService$1, DialogService$1, [BsModalService, FarrisFormService, ComponentFactoryResolver, FrameContext, [2, Injector]]), ɵprd(4608, null, RouterService, RouterService, [Router, RouterParamService, FrameworkService, [2, AppService], [2, MenuStateService], [2, LanguageService]]), ɵprd(4608, null, AuthorityService, AuthorityService, []), ɵprd(4608, null, QUERYSOLUTION_HANDLER_TOKEN, ɵb, [FrameContext, FrameworkSessionService]), ɵprd(4608, null, LISTFILTER_HANDLER_TOKEN, ɵc, [FrameContext]), ɵprd(4608, null, EndEditService, EndEditService, [FrameContext]), ɵprd(4608, null, BatchEditDialogService, BatchEditDialogService, [Injector, BsModalService, ComponentFactoryResolver, LocaleService]), ɵprd(4608, null, BatchEditService, BatchEditService, [Injector, ComponentManagerService, ViewModel, Repository, BatchEditDialogService, DateTimeHelperService, LanguageService, FormNotifyService]), ɵprd(4608, null, DiscussionGroupService, DiscussionGroupService, [Injector, FrameContext, FormLoadingService, RuntimeFrameworkService]), ɵprd(4608, null, DataGridService, DataGridService, []), ɵprd(4608, null, FormAttentionService, FormAttentionService, [Injector, FrameContext, AttentionService]), ɵprd(4608, null, FeatureEditorService, FeatureEditorService, [Injector, BsModalService, ComponentFactoryResolver, LocaleService, I18nService]), ɵprd(4608, null, FeatureDataService, FeatureDataService, [Injector, FeatureRepository, [2, LOCALE_ID]]), ɵprd(4608, null, FeatureEditService, FeatureEditService, [Injector, FeatureEditorService, FeatureDataService, FormLoadingService, FormNotifyService, LanguageService]), ɵprd(4608, null, ExpressionService, ExpressionService, [Injector, ResolveService, FrameContext, ExpressionExecutor]), ɵprd(4608, null, PopUpService, PopUpService, [Injector, FrameContext, Repository, LanguageService, FormMessageService]), ɵprd(4608, null, DirtyCheckingService, DirtyCheckingService, [Injector, ChangeDetectorRef, ApplicationRef]), ɵprd(4608, null, FormService, FormService, [Injector, AppContext, Repository]), ɵprd(4608, null, ViewModelService, ViewModelService, []), ɵprd(4608, null, PaginationService$1, PaginationService$1, [Injector, FrameContext]), ɵprd(4608, null, FORM_MANIFEST_SERVICE_TOKEN, FormManifestService, [Injector, FORM_PATH_TOKEN, HttpClient]), ɵprd(4608, null, FORM_EXPRESSION_MANIFEST_SERVICE_TOKEN, FormExpressionManifestService, [Injector, FrameContext, HttpClient, FORM_PATH_TOKEN, FORM_MANIFEST_SERVICE_TOKEN]), ɵprd(4608, null, MESSAGE_SERVICE_TOKEN, FormMessageService, [MessagerService, [2, LanguageService], LOCALE_ID]), ɵprd(4608, null, NOTIFY_SERVICE_TOKEN, FormNotifyService, [NotifyService, [2, LanguageService]]), ɵprd(5120, null, FRAME_COMPONENT_INIT_HANDLER_TOKEN, function (p0_0, p0_1, p0_2, p0_3) { return [new WorkFlowMessageHandler(p0_0, p0_1, p0_2, p0_3)]; }, [Injector, FrameContext, WorkFlowMessageService, WorkFlowMessage]), ɵprd(4608, null, ServerSideToken, BefLookupRestService, [Repository, [2, FrameContext]]), ɵprd(4608, null, ComboServerSideToken, DefaultComboHttpService, [Repository]), ɵprd(4608, null, GRID_SETTINGS_HTTP, BefLookupRestService, [Repository, [2, FrameContext]]), ɵprd(4608, null, Form, DataGridComponentViewmodelForm, []), ɵprd(4608, null, UIState, DataGridComponentViewmodelUIState, []), ɵprd(512, null, LangService, LangService, [TranslateService]), ɵprd(512, null, LocalizationService, LocalizationService, [Injector, UserSettingsToken]), ɵprd(2048, null, Repository, null, [MaterialPlanRepository]), ɵprd(131584, null, FrameContext, FrameContext, [Injector, [3, FrameContext]]), ɵprd(512, null, BindingPathService, BindingPathService, [Injector, AppContext, Repository]), ɵprd(512, null, FormControlService, FormControlService, []), ɵprd(512, null, FrameContextService, FrameContextService, [Injector, AppContext, FrameContext, Repository, BindingPathService, FormControlService]), ɵprd(512, null, FocusInvalidService, FocusInvalidService, [Repository, FrameContext, FrameContextService, FormControlService]), ɵdid(80, 4440064, null, 0, DataGridComponent, [WizardService, KeybindingService, LangService, ActivatedRoute, Router, ElementRef, LocalizationService, FrmI18nSettingService, FocusInvalidService, CommonUtils, DomSanitizer, Injector], null, null), ɵprd(256, null, FRAME_ID, "data-grid-component", []), ɵprd(256, null, NAMESPACE, "", []), ɵprd(256, null, EXCEPTION_HANDLER, null, [])], function (_ck, _v) { _ck(_v, 80, 0); }, function (_ck, _v) { var currVal_0 = ɵnov(_v, 80).cls; _ck(_v, 1, 0, currVal_0); }); }
-            function View_RootComponent_1(_l) { return ɵvid(0, [(_l()(), ɵeld(0, 0, null, null, 6, "div", [["class", "f-page f-page-is-managelist f-page-has-scheme"], ["id", "root-layout"]], null, null, null, null, null)), (_l()(), ɵand(16777216, null, null, 1, null, View_RootComponent_2)), ɵdid(2, 16384, null, 0, NgIf, [ViewContainerRef, TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), ɵand(16777216, null, null, 1, null, View_RootComponent_4)), ɵdid(4, 16384, null, 0, NgIf, [ViewContainerRef, TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), ɵand(16777216, null, null, 1, null, View_RootComponent_8)), ɵdid(6, 16384, null, 0, NgIf, [ViewContainerRef, TemplateRef], { ngIf: [0, "ngIf"] }, null)], function (_ck, _v) { var currVal_0 = true; _ck(_v, 2, 0, currVal_0); var currVal_1 = true; _ck(_v, 4, 0, currVal_1); var currVal_2 = true; _ck(_v, 6, 0, currVal_2); }, null); }
+            function View_RootComponent_8(_l) { return ɵvid(0, [(_l()(), ɵeld(0, 0, null, null, 83, "div", [["class", "f-page-main"], ["id", "page-main"]], null, null, null, null, null)), (_l()(), ɵeld(1, 0, null, null, 82, "app-datagridcomponent", [], [[8, "className", 0]], null, null, View_DataGridComponent_0, RenderType_DataGridComponent)), ɵprd(4608, null, ViewModel, DataGridComponentViewmodel, []), ɵprd(4608, null, CommandService, CommandService, [ViewModel, AppContext]), ɵprd(4608, null, NavigationEventService, NavigationEventService, [RuntimeFrameworkService, MenuStateService, QuerystringService]), ɵprd(4608, null, NavigationService, NavigationService, [RuntimeFrameworkService, MenuStateService, NavigationEventService, QuerystringService, [2, FrameContext], [2, Injector], [2, LanguageService]]), ɵprd(4608, null, CardDataService, CardDataService, [FormMessageService, FrameContext, FormLoadingService, FormNotifyService, [2, LanguageService], FormErrorService, RuntimeFrameworkService, CommandService]), ɵprd(4608, null, NavigationMiddlewareService, NavigationMiddlewareService, [NavigationService, FrameContext, FormMessageService, [2, LanguageService], CardDataService]), ɵprd(5120, null, COMMAND_HANDLERS_TOKEN, function (p0_0, p1_0, p1_1, p1_2) { return [new ChangePage1Handler(p0_0), new datagridcomponentviewmodelView1Handler(p1_0, p1_1, p1_2)]; }, [CommandService, NavigationMiddlewareService, DataCheckService, NavigationService]), ɵprd(4608, null, CommandHandlerRegistry, CommandHandlerRegistry, [[2, COMMAND_HANDLERS_TOKEN]]), ɵprd(4608, null, CommandHandlerExtenderRegistry, CommandHandlerExtenderRegistry, [[2, COMMAND_HANDLER_EXTENDERS_TOKEN]]), ɵprd(4608, null, CommandHandlerFactory, CommandHandlerFactory, [CommandHandlerRegistry, CommandHandlerExtenderRegistry, FrameContext, VariableParseService]), ɵprd(4608, null, CommandBus, CommandBus, [CommandHandlerFactory]), ɵprd(4608, null, ValidationService, ValidationService, [Repository, FrameContext, [2, FormNotifyService], [2, LanguageService]]), ɵprd(4608, null, ChangeItemService, ChangeItemService, [Repository, FrameContext, FormNotifyService, LanguageService]), ɵprd(4608, null, UIStateService, UIStateService, []), ɵprd(4608, null, StateMachineService, StateMachineService, [StateMachine]), ɵprd(135680, null, BindingData, BindingData, []), ɵprd(4608, null, BindingDataService, BindingDataService, [BindingData, AppContext]), ɵprd(4608, null, EntityTraversingService, EntityTraversingService, [FrameContext]), ɵprd(4608, null, EntityManipulationService, EntityManipulationService, [FrameContext]), ɵprd(4608, null, EntityAggregationService, EntityAggregationService, [FrameContext]), ɵprd(4608, null, EntityListService, EntityListService, [BindingData]), ɵprd(4608, null, EntityService, EntityService, [FrameContext]), ɵprd(4608, null, ListDataService, ListDataService, [FormMessageService, Repository, BindingData, FormLoadingService, [2, LanguageService], FormNotifyService, FormErrorService, ViewModel, FilterConditionService]), ɵprd(4608, null, TreeDataService, TreeDataService, [FrameContext, FormMessageService, FormLoadingService, FormNotifyService, FormErrorService, [2, LanguageService]]), ɵprd(4608, null, SubTreeDataService, SubTreeDataService, [FrameContext, ViewModel, FormMessageService, FormLoadingService, FormErrorService, FormNotifyService, [2, LanguageService]]), ɵprd(4608, null, SubListDataService, SubListDataService, [FormMessageService, Repository, FormLoadingService, ViewModel, [2, LanguageService], FormNotifyService, FormErrorService]), ɵprd(4608, null, RemoveDataService, RemoveDataService, [FrameContext]), ɵprd(4608, null, SaveDataService, SaveDataService, [FrameContext]), ɵprd(4608, null, EditDataService, EditDataService, [FrameContext]), ɵprd(4608, null, FilterConditionDataService, FilterConditionDataService, [ViewModel, FilterConditionService, CommandService]), ɵprd(4608, null, RemoteSummaryService, RemoteSummaryService, [ViewModel]), ɵprd(4608, null, BeActionService, BeActionService, [Repository, FormLoadingService, FormMessageService, FormNotifyService, FormErrorService, [2, LanguageService]]), ɵprd(4608, null, ApproveService, ApproveService, [FormLoadingService, BeActionService, FormMessageService, FormNotifyService, [2, LanguageService], FormErrorService, FrameContext, [2, WFSubmiteService], [2, WFFlowchartService], [2, WfTaskHandlerService]]), ɵprd(4608, null, PrintService, PrintService, [FormMessageService, LanguageService, CloudprintService, [2, FormNotifyService]]), ɵprd(4608, null, AttachmentDataService, AttachmentDataService, [FrameContext, FormLoadingService]), ɵprd(4608, null, AttachmentService, AttachmentService, [FrameContext, AttachmentDataService, FormNotifyService, UploadDialogService, [2, DownloadService]]), ɵprd(4608, null, FileService, FileService, [FrameContext, AttachmentDataService, EntityService, SubListDataService, FormNotifyService, LanguageService, ListDataService, [2, FormLoadingService]]), ɵprd(4608, null, GridMiddlewareService, GridMiddlewareService, [FrameContext, FormMessageService, [2, LanguageService], ViewModel, CommandService]), ɵprd(4608, null, SidebarService, SidebarService, [FrameContext, FarrisSidebarService, FormMessageService, [2, LanguageService]]), ɵprd(4608, null, FarrisFormService, FarrisFormService, [[2, FARRIS_FORM_COMPONENTS]]), ɵprd(4608, null, DialogService, DialogService, [BsModalService, FarrisFormService, ComponentFactoryResolver, FrameContext, [2, Injector]]), ɵprd(4608, null, RouterService, RouterService, [Router, RouterParamService, FrameworkService, [2, AppService], [2, MenuStateService], [2, LanguageService]]), ɵprd(4608, null, AuthorityService, AuthorityService, []), ɵprd(4608, null, QUERYSOLUTION_HANDLER_TOKEN, ɵb, [FrameContext, FrameworkSessionService]), ɵprd(4608, null, LISTFILTER_HANDLER_TOKEN, ɵc, [FrameContext]), ɵprd(4608, null, EndEditService, EndEditService, [FrameContext]), ɵprd(4608, null, BatchEditDialogService, BatchEditDialogService, [Injector, BsModalService, ComponentFactoryResolver, LocaleService]), ɵprd(4608, null, BatchEditService, BatchEditService, [Injector, ComponentManagerService, ViewModel, Repository, BatchEditDialogService, DateTimeHelperService, LanguageService, FormNotifyService]), ɵprd(4608, null, DiscussionGroupService, DiscussionGroupService, [Injector, FrameContext, FormLoadingService, RuntimeFrameworkService]), ɵprd(4608, null, DataGridService, DataGridService, []), ɵprd(4608, null, FormAttentionService, FormAttentionService, [Injector, FrameContext, AttentionService]), ɵprd(4608, null, FeatureEditorService, FeatureEditorService, [Injector, BsModalService, ComponentFactoryResolver, LocaleService, I18nService]), ɵprd(4608, null, FeatureDataService, FeatureDataService, [Injector, FeatureRepository, [2, LOCALE_ID]]), ɵprd(4608, null, FeatureEditService, FeatureEditService, [Injector, FeatureEditorService, FeatureDataService, FormLoadingService, FormNotifyService, LanguageService]), ɵprd(4608, null, ExpressionService, ExpressionService, [Injector, ResolveService, FrameContext, ExpressionExecutor]), ɵprd(4608, null, PopUpService, PopUpService, [Injector, FrameContext, Repository, LanguageService, FormMessageService]), ɵprd(4608, null, DirtyCheckingService, DirtyCheckingService, [Injector, ChangeDetectorRef, ApplicationRef]), ɵprd(4608, null, FormService, FormService, [Injector, AppContext, Repository]), ɵprd(4608, null, ViewModelService, ViewModelService, []), ɵprd(4608, null, PaginationService, PaginationService, [Injector, FrameContext]), ɵprd(4608, null, FORM_MANIFEST_SERVICE_TOKEN, FormManifestService, [Injector, FORM_PATH_TOKEN, HttpClient]), ɵprd(4608, null, FORM_EXPRESSION_MANIFEST_SERVICE_TOKEN, FormExpressionManifestService, [Injector, FrameContext, HttpClient, FORM_PATH_TOKEN, FORM_MANIFEST_SERVICE_TOKEN]), ɵprd(4608, null, MESSAGE_SERVICE_TOKEN, FormMessageService, [MessagerService, [2, LanguageService], LOCALE_ID]), ɵprd(4608, null, NOTIFY_SERVICE_TOKEN, FormNotifyService, [NotifyService, [2, LanguageService]]), ɵprd(5120, null, FRAME_COMPONENT_INIT_HANDLER_TOKEN, function (p0_0, p0_1, p0_2, p0_3) { return [new WorkFlowMessageHandler(p0_0, p0_1, p0_2, p0_3)]; }, [Injector, FrameContext, WorkFlowMessageService, WorkFlowMessage]), ɵprd(4608, null, ServerSideToken, BefLookupRestService, [Repository, [2, FrameContext]]), ɵprd(4608, null, ComboServerSideToken, DefaultComboHttpService, [Repository]), ɵprd(4608, null, GRID_SETTINGS_HTTP, BefLookupRestService, [Repository, [2, FrameContext]]), ɵprd(4608, null, Form, DataGridComponentViewmodelForm, []), ɵprd(4608, null, UIState, DataGridComponentViewmodelUIState, []), ɵprd(512, null, LangService, LangService, [TranslateService]), ɵprd(512, null, LocalizationService, LocalizationService, [Injector, UserSettingsToken]), ɵprd(2048, null, Repository, null, [MaterialPlanRepository]), ɵprd(131584, null, FrameContext, FrameContext, [Injector, [3, FrameContext]]), ɵprd(512, null, BindingPathService, BindingPathService, [Injector, AppContext, Repository]), ɵprd(512, null, FormControlService, FormControlService, []), ɵprd(512, null, FrameContextService, FrameContextService, [Injector, AppContext, FrameContext, Repository, BindingPathService, FormControlService]), ɵprd(512, null, FocusInvalidService, FocusInvalidService, [Repository, FrameContext, FrameContextService, FormControlService]), ɵdid(80, 4440064, null, 0, DataGridComponent, [WizardService, KeybindingService, LangService, ActivatedRoute, Router, ElementRef, LocalizationService, FrmI18nSettingService, FocusInvalidService, CommonUtils, DomSanitizer, Injector], null, null), ɵprd(256, null, FRAME_ID, "data-grid-component", []), ɵprd(256, null, NAMESPACE, "", []), ɵprd(256, null, EXCEPTION_HANDLER, null, [])], function (_ck, _v) { _ck(_v, 80, 0); }, function (_ck, _v) { var currVal_0 = ɵnov(_v, 80).cls; _ck(_v, 1, 0, currVal_0); }); }
+            function View_RootComponent_1(_l) { return ɵvid(0, [(_l()(), ɵeld(0, 0, null, null, 9, "div", [["class", "f-page f-page-is-managelist f-page-has-scheme"], ["id", "root-layout"]], [[2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "submit"], [null, "reset"]], function (_v, en, $event) { var ad = true; if (("submit" === en)) {
+                    var pd_0 = (ɵnov(_v, 1).onSubmit($event) !== false);
+                    ad = (pd_0 && ad);
+                } if (("reset" === en)) {
+                    var pd_1 = (ɵnov(_v, 1).onReset() !== false);
+                    ad = (pd_1 && ad);
+                } return ad; }, null, null)), ɵdid(1, 540672, null, 0, FormGroupDirective, [[8, null], [8, null]], { form: [0, "form"] }, null), ɵprd(2048, null, ControlContainer, null, [FormGroupDirective]), ɵdid(3, 16384, null, 0, NgControlStatusGroup, [[4, ControlContainer]], null, null), (_l()(), ɵand(16777216, null, null, 1, null, View_RootComponent_2)), ɵdid(5, 16384, null, 0, NgIf, [ViewContainerRef, TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), ɵand(16777216, null, null, 1, null, View_RootComponent_4)), ɵdid(7, 16384, null, 0, NgIf, [ViewContainerRef, TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), ɵand(16777216, null, null, 1, null, View_RootComponent_8)), ɵdid(9, 16384, null, 0, NgIf, [ViewContainerRef, TemplateRef], { ngIf: [0, "ngIf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_7 = _co.viewModel.form; _ck(_v, 1, 0, currVal_7); var currVal_8 = true; _ck(_v, 5, 0, currVal_8); var currVal_9 = true; _ck(_v, 7, 0, currVal_9); var currVal_10 = true; _ck(_v, 9, 0, currVal_10); }, function (_ck, _v) { var currVal_0 = ɵnov(_v, 3).ngClassUntouched; var currVal_1 = ɵnov(_v, 3).ngClassTouched; var currVal_2 = ɵnov(_v, 3).ngClassPristine; var currVal_3 = ɵnov(_v, 3).ngClassDirty; var currVal_4 = ɵnov(_v, 3).ngClassValid; var currVal_5 = ɵnov(_v, 3).ngClassInvalid; var currVal_6 = ɵnov(_v, 3).ngClassPending; _ck(_v, 0, 0, currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6); }); }
             function View_RootComponent_0(_l) { return ɵvid(0, [ɵpid(0, LangPipe, [TranslateService, HttpClient]), (_l()(), ɵand(16777216, null, null, 1, null, View_RootComponent_1)), ɵdid(2, 16384, null, 0, NgIf, [ViewContainerRef, TemplateRef], { ngIf: [0, "ngIf"] }, null)], function (_ck, _v) { var currVal_0 = true; _ck(_v, 2, 0, currVal_0); }, null); }
-            function View_RootComponent_Host_0(_l) { return ɵvid(0, [(_l()(), ɵeld(0, 0, null, null, 116, "app-rootcomponent", [], [[8, "className", 0]], null, null, View_RootComponent_0, RenderType_RootComponent)), ɵprd(135680, null, MaterialPlanRepository, MaterialPlanRepository, [Injector]), ɵprd(6144, null, Repository, null, [MaterialPlanRepository]), ɵprd(135680, null, FrameContext, FrameContext, [Injector, [3, FrameContext]]), ɵprd(4608, null, ChangeItemService, ChangeItemService, [Repository, FrameContext, FormNotifyService, LanguageService]), ɵprd(135680, null, BindingData, BindingData, []), ɵprd(4608, null, ViewModel, RootViewmodel, []), ɵprd(4608, null, ListDataService, ListDataService, [FormMessageService, Repository, BindingData, FormLoadingService, [2, LanguageService], FormNotifyService, FormErrorService, ViewModel, FilterConditionService]), ɵprd(4608, null, DataGridService, DataGridService, []), ɵprd(4608, null, NavigationEventService, NavigationEventService, [RuntimeFrameworkService, MenuStateService, QuerystringService]), ɵprd(4608, null, NavigationService, NavigationService, [RuntimeFrameworkService, MenuStateService, NavigationEventService, QuerystringService, [2, FrameContext], [2, Injector], [2, LanguageService]]), ɵprd(135680, null, AppContext, AppContext, [[2, Injector], [2, AppContextManager], [3, AppContext]]), ɵprd(4608, null, CommandService, CommandService, [ViewModel, AppContext]), ɵprd(4608, null, CardDataService, CardDataService, [FormMessageService, FrameContext, FormLoadingService, FormNotifyService, [2, LanguageService], FormErrorService, RuntimeFrameworkService, CommandService]), ɵprd(4608, null, NavigationMiddlewareService, NavigationMiddlewareService, [NavigationService, FrameContext, FormMessageService, [2, LanguageService], CardDataService]), ɵprd(4608, null, StateMachineService, StateMachineService, [StateMachine]), ɵprd(5120, null, COMMAND_HANDLERS_TOKEN, function (p0_0, p0_1, p1_0, p1_1, p2_0, p2_1, p3_0, p3_1, p4_0, p4_1, p4_2, p5_0, p5_1, p5_2, p6_0, p6_1, p7_0, p7_1, p8_0, p8_1, p8_2, p9_0, p9_1, p9_2) { return [new Load1Handler(p0_0, p0_1), new Search1Handler(p1_0, p1_1), new RemoveRows1Handler(p2_0, p2_1), new Add1Handler(p3_0, p3_1), new View1Handler(p4_0, p4_1, p4_2), new Edit1Handler(p5_0, p5_1, p5_2), new Remove1Handler(p6_0, p6_1), new Filter1Handler(p7_0, p7_1), new submitWithBizDefKey1Handler(p8_0, p8_1, p8_2), new cancelSubmitWithDataId1Handler(p9_0, p9_1, p9_2)]; }, [ChangeItemService, ListDataService, ListDataService, FilterService, DataGridService, ListDataService, NavigationMiddlewareService, NavigationService, NavigationMiddlewareService, DataCheckService, NavigationService, NavigationMiddlewareService, DataCheckService, NavigationService, DataGridService, ListDataService, ChangeItemService, ListDataService, WfTaskHandlerService, CardDataService, StateMachineService, WfTaskHandlerService, CardDataService, StateMachineService]), ɵprd(4608, null, CommandHandlerRegistry, CommandHandlerRegistry, [[2, COMMAND_HANDLERS_TOKEN]]), ɵprd(4608, null, CommandHandlerExtenderRegistry, CommandHandlerExtenderRegistry, [[2, COMMAND_HANDLER_EXTENDERS_TOKEN]]), ɵprd(4608, null, CommandHandlerFactory, CommandHandlerFactory, [CommandHandlerRegistry, CommandHandlerExtenderRegistry, FrameContext, VariableParseService]), ɵprd(4608, null, CommandBus, CommandBus, [CommandHandlerFactory]), ɵprd(4608, null, ValidationService, ValidationService, [Repository, FrameContext, [2, FormNotifyService], [2, LanguageService]]), ɵprd(4608, null, BindingPathService, BindingPathService, [Injector, AppContext, Repository]), ɵprd(4608, null, FormControlService, FormControlService, []), ɵprd(4608, null, FrameContextService, FrameContextService, [Injector, AppContext, FrameContext, Repository, BindingPathService, FormControlService]), ɵprd(4608, null, FocusInvalidService, FocusInvalidService, [Repository, FrameContext, FrameContextService, FormControlService]), ɵprd(4608, null, UIStateService, UIStateService, []), ɵprd(4608, null, BindingDataService, BindingDataService, [BindingData, AppContext]), ɵprd(4608, null, EntityTraversingService, EntityTraversingService, [FrameContext]), ɵprd(4608, null, EntityManipulationService, EntityManipulationService, [FrameContext]), ɵprd(4608, null, EntityAggregationService, EntityAggregationService, [FrameContext]), ɵprd(4608, null, EntityListService, EntityListService, [BindingData]), ɵprd(4608, null, EntityService, EntityService, [FrameContext]), ɵprd(4608, null, TreeDataService, TreeDataService, [FrameContext, FormMessageService, FormLoadingService, FormNotifyService, FormErrorService, [2, LanguageService]]), ɵprd(4608, null, SubTreeDataService, SubTreeDataService, [FrameContext, ViewModel, FormMessageService, FormLoadingService, FormErrorService, FormNotifyService, [2, LanguageService]]), ɵprd(4608, null, SubListDataService, SubListDataService, [FormMessageService, Repository, FormLoadingService, ViewModel, [2, LanguageService], FormNotifyService, FormErrorService]), ɵprd(4608, null, RemoveDataService, RemoveDataService, [FrameContext]), ɵprd(4608, null, SaveDataService, SaveDataService, [FrameContext]), ɵprd(4608, null, EditDataService, EditDataService, [FrameContext]), ɵprd(4608, null, FilterConditionDataService, FilterConditionDataService, [ViewModel, FilterConditionService, CommandService]), ɵprd(4608, null, RemoteSummaryService, RemoteSummaryService, [ViewModel]), ɵprd(4608, null, BeActionService, BeActionService, [Repository, FormLoadingService, FormMessageService, FormNotifyService, FormErrorService, [2, LanguageService]]), ɵprd(4608, null, WFSubmiteService, WFSubmiteService, [Injector, ComponentFactoryResolver, BsModalService, [2, I18nService$1]]), ɵprd(4608, null, WFFlowchartService, WFFlowchartService, [MessagerService, Injector, ComponentFactoryResolver, BsModalService]), ɵprd(4608, null, ApproveService, ApproveService, [FormLoadingService, BeActionService, FormMessageService, FormNotifyService, [2, LanguageService], FormErrorService, FrameContext, [2, WFSubmiteService], [2, WFFlowchartService], [2, WfTaskHandlerService]]), ɵprd(4608, null, CloudprintService, CloudprintService, [ɵa, ComponentFactoryResolver, ɵb$2, ɵc$1, Injector, ApplicationRef, NotifyService, AppService, WindowService, BsModalService]), ɵprd(4608, null, PrintService, PrintService, [FormMessageService, LanguageService, CloudprintService, [2, FormNotifyService]]), ɵprd(4608, null, AttachmentDataService, AttachmentDataService, [FrameContext, FormLoadingService]), ɵprd(4608, null, AttachmentService, AttachmentService, [FrameContext, AttachmentDataService, FormNotifyService, UploadDialogService, [2, DownloadService]]), ɵprd(4608, null, FileService, FileService, [FrameContext, AttachmentDataService, EntityService, SubListDataService, FormNotifyService, LanguageService, ListDataService, [2, FormLoadingService]]), ɵprd(4608, null, GridMiddlewareService, GridMiddlewareService, [FrameContext, FormMessageService, [2, LanguageService], ViewModel, CommandService]), ɵprd(4608, null, SidebarService, SidebarService, [FrameContext, FarrisSidebarService, FormMessageService, [2, LanguageService]]), ɵprd(4608, null, FarrisFormService, FarrisFormService, [[2, FARRIS_FORM_COMPONENTS]]), ɵprd(4608, null, DialogService$1, DialogService$1, [BsModalService, FarrisFormService, ComponentFactoryResolver, FrameContext, [2, Injector]]), ɵprd(4608, null, RouterService, RouterService, [Router, RouterParamService, FrameworkService, [2, AppService], [2, MenuStateService], [2, LanguageService]]), ɵprd(4608, null, AuthorityService, AuthorityService, []), ɵprd(4608, null, FrameworkSessionService, FrameworkSessionService, [[2, SessionService]]), ɵprd(4608, null, QUERYSOLUTION_HANDLER_TOKEN, ɵb, [FrameContext, FrameworkSessionService]), ɵprd(4608, null, LISTFILTER_HANDLER_TOKEN, ɵc, [FrameContext]), ɵprd(4608, null, EndEditService, EndEditService, [FrameContext]), ɵprd(4608, null, BatchEditDialogService, BatchEditDialogService, [Injector, BsModalService, ComponentFactoryResolver, LocaleService]), ɵprd(4608, null, ComponentManagerService, ComponentManagerService, []), ɵprd(4608, null, BatchEditService, BatchEditService, [Injector, ComponentManagerService, ViewModel, Repository, BatchEditDialogService, DateTimeHelperService, LanguageService, FormNotifyService]), ɵprd(4608, null, DiscussionGroupService, DiscussionGroupService, [Injector, FrameContext, FormLoadingService, RuntimeFrameworkService]), ɵprd(4608, null, FormAttentionService, FormAttentionService, [Injector, FrameContext, AttentionService]), ɵprd(4608, null, FeatureEditorService, FeatureEditorService, [Injector, BsModalService, ComponentFactoryResolver, LocaleService, I18nService]), ɵprd(4608, null, FeatureDataService, FeatureDataService, [Injector, FeatureRepository, [2, LOCALE_ID]]), ɵprd(4608, null, FeatureEditService, FeatureEditService, [Injector, FeatureEditorService, FeatureDataService, FormLoadingService, FormNotifyService, LanguageService]), ɵprd(5120, null, RESOLVER_TOKEN, function (p0_0) { return [new EntityDependencyResolver(p0_0), new StateDependencyResolver(), new CommentDependencyResolver()]; }, [Repository]), ɵprd(4608, null, ResolverRegistry, ResolverRegistry, [Injector, [2, RESOLVER_TOKEN]]), ɵprd(4608, null, ResolveService, ResolveService, [Injector, ResolverRegistry]), ɵprd(4608, null, ExpressionExecutor, ExpressionExecutor, []), ɵprd(4608, null, ExpressionService, ExpressionService, [Injector, ResolveService, FrameContext, ExpressionExecutor]), ɵprd(4608, null, PopUpService, PopUpService, [Injector, FrameContext, Repository, LanguageService, FormMessageService]), ɵprd(4608, null, DirtyCheckingService, DirtyCheckingService, [Injector, ChangeDetectorRef, ApplicationRef]), ɵprd(4608, null, FormService, FormService, [Injector, AppContext, Repository]), ɵprd(4608, null, ViewModelService, ViewModelService, []), ɵprd(4608, null, PaginationService$1, PaginationService$1, [Injector, FrameContext]), ɵprd(4608, null, FORM_MANIFEST_SERVICE_TOKEN, FormManifestService, [Injector, FORM_PATH_TOKEN, HttpClient]), ɵprd(4608, null, FORM_EXPRESSION_MANIFEST_SERVICE_TOKEN, FormExpressionManifestService, [Injector, FrameContext, HttpClient, FORM_PATH_TOKEN, FORM_MANIFEST_SERVICE_TOKEN]), ɵprd(4608, null, MESSAGE_SERVICE_TOKEN, FormMessageService, [MessagerService, [2, LanguageService], LOCALE_ID]), ɵprd(4608, null, NOTIFY_SERVICE_TOKEN, FormNotifyService, [NotifyService, [2, LanguageService]]), ɵprd(5120, null, FRAME_COMPONENT_INIT_HANDLER_TOKEN, function (p0_0, p0_1, p0_2, p0_3) { return [new WorkFlowMessageHandler(p0_0, p0_1, p0_2, p0_3)]; }, [Injector, FrameContext, WorkFlowMessageService, WorkFlowMessage]), ɵprd(4608, null, ServerSideToken, BefLookupRestService, [Repository, [2, FrameContext]]), ɵprd(4608, null, ComboServerSideToken, DefaultComboHttpService, [Repository]), ɵprd(4608, null, Form, RootViewmodelForm, []), ɵprd(4608, null, UIState, RootViewmodelUIState, []), ɵprd(4608, null, UriService, UriService, [BE_SERVER_URI_TOKEN]), ɵprd(4608, null, MaterialPlanProxy, MaterialPlanProxy, [HttpClient, UriService]), ɵprd(4608, null, Declaration, EventDeclaration, []), ɵprd(6144, null, TranslateToken, null, [LangService]), ɵprd(5120, null, LISTENER_TOKEN, function (p0_0, p0_1, p0_2, p0_3, p0_4, p1_0, p1_1, p1_2, p2_0, p2_1, p2_2) { return [new UIStateChangeListener(p0_0, p0_1, p0_2, p0_3, p0_4), new RepositoryChangeListener(p1_0, p1_1, p1_2), new BindingDataChangeListener(p2_0, p2_1, p2_2)]; }, [Injector, UIState, NAMESPACE, FRAME_ID, BindingData, Injector, Repository, NAMESPACE, Injector, BindingData, NAMESPACE]), ɵprd(5120, null, EFFECTOR_TOKEN, function (p0_0, p0_1, p0_2, p0_3, p1_0, p1_1, p1_2, p2_0, p2_1, p2_2, p3_0, p3_1, p3_2, p3_3, p4_0, p4_1, p4_2, p4_3, p5_0, p5_1, p5_2, p5_3, p5_4, p6_0, p6_1, p6_2, p6_3, p7_0, p7_1, p7_2, p7_3) { return [new RepositoryEffector(p0_0, p0_1, p0_2, p0_3), new UIStateEffector(p1_0, p1_1, p1_2), new ReadonlyEffector(p2_0, p2_1, p2_2), new DependencyEffector(p3_0, p3_1, p3_2, p3_3), new RelativeEffector(p4_0, p4_1, p4_2, p4_3), new ValidateEffector(p5_0, p5_1, p5_2, p5_3, p5_4), new RequiredEffector(p6_0, p6_1, p6_2, p6_3), new VisibleEffector(p7_0, p7_1, p7_2, p7_3)]; }, [Injector, Repository, NAMESPACE, BindingData, Injector, UIState, NAMESPACE, Injector, NAMESPACE, FrameContext, Injector, Repository, NAMESPACE, BindingData, Injector, MESSAGE_SERVICE_TOKEN, NOTIFY_SERVICE_TOKEN, NAMESPACE, Injector, MESSAGE_SERVICE_TOKEN, NOTIFY_SERVICE_TOKEN, NAMESPACE, FrameContext, Injector, Repository, NAMESPACE, FrameContext, Injector, NAMESPACE, FrameContext, Repository]), ɵprd(4608, null, ListenerRegistry, ListenerRegistry, [[2, LISTENER_TOKEN], [2, Injector]]), ɵprd(4608, null, Listeners, Listeners, [[2, ListenerRegistry]]), ɵprd(4608, null, EffectorRegistry, EffectorRegistry, [Injector, [2, EFFECTOR_TOKEN]]), ɵprd(4608, null, EffectorFactory, EffectorFactory, [Injector, EffectorRegistry]), ɵprd(4608, null, ExpressionRegistry, ExpressionRegistry, [Injector, FORM_EXPRESSION_MANIFEST_SERVICE_TOKEN, [2, TranslateToken]]), ɵprd(4608, null, ExpressionEventEmitter, ExpressionEventEmitter, [Listeners]), ɵprd(4608, null, ExpressionResult, ExpressionResult, [Injector]), ɵprd(4608, null, ExpressionManager, ExpressionManager, [Injector, ResolveService, ExpressionExecutor, ExpressionRegistry, ExpressionResult, MESSAGE_SERVICE_TOKEN, NOTIFY_SERVICE_TOKEN]), ɵprd(4608, null, ExpressionResultFactory, ExpressionResultFactory, [Injector, ExpressionRegistry, ExpressionManager, ExpressionResult]), ɵprd(5120, null, EVENT_HANDLER_TOKEN, function (p0_0, p0_1, p0_2, p0_3, p0_4, p0_5, p0_6, p1_0, p1_1, p1_2, p1_3, p1_4, p1_5, p1_6, p2_0, p2_1, p2_2, p2_3, p2_4, p2_5, p2_6, p3_0, p3_1, p3_2, p3_3, p3_4, p3_5, p3_6, p4_0, p4_1, p4_2, p4_3, p4_4, p4_5, p4_6, p5_0, p5_1, p5_2, p5_3, p5_4, p5_5, p5_6, p6_0, p6_1, p6_2, p6_3, p6_4, p6_5, p6_6, p7_0, p7_1, p7_2, p7_3, p7_4, p7_5, p7_6, p8_0, p8_1, p8_2, p8_3, p8_4, p8_5, p8_6, p9_0, p9_1, p9_2, p9_3, p9_4, p9_5, p9_6, p10_0, p10_1, p10_2, p10_3, p10_4, p10_5, p10_6) { return [new RepositoryAddEntityEventHandler(p0_0, p0_1, p0_2, p0_3, p0_4, p0_5, p0_6), new RepositoryRemoveEntityEventHandler(p1_0, p1_1, p1_2, p1_3, p1_4, p1_5, p1_6), new EntityValueChangedEventHandler(p2_0, p2_1, p2_2, p2_3, p2_4, p2_5, p2_6), new StateValueChangedEventHandler(p3_0, p3_1, p3_2, p3_3, p3_4, p3_5, p3_6), new RepositoryLoadEventHandler(p4_0, p4_1, p4_2, p4_3, p4_4, p4_5, p4_6), new EntityUpdateEventHandler(p5_0, p5_1, p5_2, p5_3, p5_4, p5_5, p5_6), new BindingDataAppendObjectEventHandler(p6_0, p6_1, p6_2, p6_3, p6_4, p6_5, p6_6), new BindingDataValueChangeEventHandler(p7_0, p7_1, p7_2, p7_3, p7_4, p7_5, p7_6), new BindingDataRemoveObjectEventHandler(p8_0, p8_1, p8_2, p8_3, p8_4, p8_5, p8_6), new BindingDataLoadEventHandler(p9_0, p9_1, p9_2, p9_3, p9_4, p9_5, p9_6), new BindingDataSelectionChangedEventHandler(p10_0, p10_1, p10_2, p10_3, p10_4, p10_5, p10_6)]; }, [Injector, Repository, BindingData, ExpressionRegistry, EffectorFactory, ExpressionExecutor, ExpressionResult, Injector, Repository, BindingData, ExpressionRegistry, EffectorFactory, ExpressionExecutor, ExpressionResult, Injector, Repository, BindingData, ExpressionRegistry, EffectorFactory, ExpressionExecutor, ExpressionResult, Injector, Repository, BindingData, ExpressionRegistry, EffectorFactory, ExpressionExecutor, ExpressionResult, Injector, Repository, BindingData, ExpressionRegistry, EffectorFactory, ExpressionExecutor, ExpressionResult, Injector, Repository, BindingData, ExpressionRegistry, EffectorFactory, ExpressionExecutor, ExpressionResult, Injector, Repository, BindingData, ExpressionRegistry, EffectorFactory, ExpressionExecutor, ExpressionResult, Injector, Repository, BindingData, ExpressionRegistry, EffectorFactory, ExpressionExecutor, ExpressionResult, Injector, Repository, BindingData, ExpressionRegistry, EffectorFactory, ExpressionExecutor, ExpressionResult, Injector, Repository, BindingData, ExpressionRegistry, EffectorFactory, ExpressionExecutor, ExpressionResult, Injector, Repository, BindingData, ExpressionRegistry, EffectorFactory, ExpressionExecutor, ExpressionResult]), ɵprd(4608, null, EventHandlerRegistry, EventHandlerRegistry, [[2, EVENT_HANDLER_TOKEN]]), ɵprd(4608, null, ExpressionEngineImpl, ExpressionEngineImpl, [Injector, ExpressionRegistry, ExpressionEventEmitter, ResolverRegistry, EventHandlerRegistry, ResolveService]), ɵprd(4608, null, EXCEPTION_HANDLER, ExceptionHandler, [FormErrorService, [2, LanguageService], AppContext]), ɵprd(4608, null, BACK_END_MESSAGE_HANDLER_TOKEN, BackEndMessageHandler, [Injector, FrameContext, TranslateToken]), ɵprd(512, null, LangService, LangService, [TranslateService]), ɵprd(512, null, LocalizationService, LocalizationService, [Injector, UserSettingsToken]), ɵprd(512, null, VerifyDetailService, VerifyDetailService, [ComponentFactoryResolver, Injector, ApplicationRef]), ɵprd(512, null, StateMachine, RootViewmodelStateMachine, []), ɵdid(111, 4440064, null, 0, RootComponent, [WizardService, KeybindingService, LangService, ActivatedRoute, Router, ElementRef, LocalizationService, FrmI18nSettingService, FrameworkService, ApplicationParamService, VerifyDetailService, StateMachine, DomSanitizer, Injector], null, null), ɵprd(256, null, FRAME_ID, "root-component", []), ɵprd(256, null, NAMESPACE, "", []), ɵprd(256, null, PARAM_TYPE_TRANSFORM_TOKEN, false, []), ɵprd(256, null, FORM_ID, "d5d6ccf3-5d06-44e2-92eb-e75d8fb2fcd3", []), ɵprd(256, null, BE_SESSION_HANDLING_STRATEGY_TOKEN, "SeparatedSession", [])], function (_ck, _v) { _ck(_v, 111, 0); }, function (_ck, _v) { var currVal_0 = ɵnov(_v, 111).cls; _ck(_v, 0, 0, currVal_0); }); }
+            function View_RootComponent_Host_0(_l) { return ɵvid(0, [(_l()(), ɵeld(0, 0, null, null, 117, "app-rootcomponent", [], [[8, "className", 0]], null, null, View_RootComponent_0, RenderType_RootComponent)), ɵprd(135680, null, MaterialPlanRepository, MaterialPlanRepository, [Injector]), ɵprd(6144, null, Repository, null, [MaterialPlanRepository]), ɵprd(135680, null, FrameContext, FrameContext, [Injector, [3, FrameContext]]), ɵprd(4608, null, ChangeItemService, ChangeItemService, [Repository, FrameContext, FormNotifyService, LanguageService]), ɵprd(135680, null, BindingData, BindingData, []), ɵprd(4608, null, ViewModel, RootViewmodel, []), ɵprd(4608, null, ListDataService, ListDataService, [FormMessageService, Repository, BindingData, FormLoadingService, [2, LanguageService], FormNotifyService, FormErrorService, ViewModel, FilterConditionService]), ɵprd(4608, null, DataGridService, DataGridService, []), ɵprd(4608, null, NavigationEventService, NavigationEventService, [RuntimeFrameworkService, MenuStateService, QuerystringService]), ɵprd(4608, null, NavigationService, NavigationService, [RuntimeFrameworkService, MenuStateService, NavigationEventService, QuerystringService, [2, FrameContext], [2, Injector], [2, LanguageService]]), ɵprd(135680, null, AppContext, AppContext, [[2, Injector], [2, AppContextManager], [3, AppContext]]), ɵprd(4608, null, CommandService, CommandService, [ViewModel, AppContext]), ɵprd(4608, null, CardDataService, CardDataService, [FormMessageService, FrameContext, FormLoadingService, FormNotifyService, [2, LanguageService], FormErrorService, RuntimeFrameworkService, CommandService]), ɵprd(4608, null, NavigationMiddlewareService, NavigationMiddlewareService, [NavigationService, FrameContext, FormMessageService, [2, LanguageService], CardDataService]), ɵprd(4608, null, StateMachineService, StateMachineService, [StateMachine]), ɵprd(5120, null, COMMAND_HANDLERS_TOKEN, function (p0_0, p0_1, p1_0, p1_1, p2_0, p2_1, p3_0, p3_1, p4_0, p4_1, p4_2, p5_0, p5_1, p5_2, p6_0, p6_1, p7_0, p7_1, p8_0, p8_1, p8_2, p9_0, p9_1, p9_2, p10_0, p10_1) { return [new Load1Handler(p0_0, p0_1), new Search1Handler(p1_0, p1_1), new RemoveRows1Handler(p2_0, p2_1), new Add1Handler(p3_0, p3_1), new View1Handler(p4_0, p4_1, p4_2), new Edit1Handler(p5_0, p5_1, p5_2), new Remove1Handler(p6_0, p6_1), new Filter1Handler(p7_0, p7_1), new submitWithBizDefKey1Handler(p8_0, p8_1, p8_2), new cancelSubmitWithDataId1Handler(p9_0, p9_1, p9_2), new rootviewmodelLoad1Handler(p10_0, p10_1)]; }, [ChangeItemService, ListDataService, ListDataService, FilterService, DataGridService, ListDataService, NavigationMiddlewareService, NavigationService, NavigationMiddlewareService, DataCheckService, NavigationService, NavigationMiddlewareService, DataCheckService, NavigationService, DataGridService, ListDataService, ChangeItemService, ListDataService, WfTaskHandlerService, CardDataService, StateMachineService, WfTaskHandlerService, CardDataService, StateMachineService, ChangeItemService, ListDataService]), ɵprd(4608, null, CommandHandlerRegistry, CommandHandlerRegistry, [[2, COMMAND_HANDLERS_TOKEN]]), ɵprd(4608, null, CommandHandlerExtenderRegistry, CommandHandlerExtenderRegistry, [[2, COMMAND_HANDLER_EXTENDERS_TOKEN]]), ɵprd(4608, null, CommandHandlerFactory, CommandHandlerFactory, [CommandHandlerRegistry, CommandHandlerExtenderRegistry, FrameContext, VariableParseService]), ɵprd(4608, null, CommandBus, CommandBus, [CommandHandlerFactory]), ɵprd(4608, null, ValidationService, ValidationService, [Repository, FrameContext, [2, FormNotifyService], [2, LanguageService]]), ɵprd(4608, null, BindingPathService, BindingPathService, [Injector, AppContext, Repository]), ɵprd(4608, null, FormControlService, FormControlService, []), ɵprd(4608, null, FrameContextService, FrameContextService, [Injector, AppContext, FrameContext, Repository, BindingPathService, FormControlService]), ɵprd(4608, null, FocusInvalidService, FocusInvalidService, [Repository, FrameContext, FrameContextService, FormControlService]), ɵprd(4608, null, UIStateService, UIStateService, []), ɵprd(4608, null, BindingDataService, BindingDataService, [BindingData, AppContext]), ɵprd(4608, null, EntityTraversingService, EntityTraversingService, [FrameContext]), ɵprd(4608, null, EntityManipulationService, EntityManipulationService, [FrameContext]), ɵprd(4608, null, EntityAggregationService, EntityAggregationService, [FrameContext]), ɵprd(4608, null, EntityListService, EntityListService, [BindingData]), ɵprd(4608, null, EntityService, EntityService, [FrameContext]), ɵprd(4608, null, TreeDataService, TreeDataService, [FrameContext, FormMessageService, FormLoadingService, FormNotifyService, FormErrorService, [2, LanguageService]]), ɵprd(4608, null, SubTreeDataService, SubTreeDataService, [FrameContext, ViewModel, FormMessageService, FormLoadingService, FormErrorService, FormNotifyService, [2, LanguageService]]), ɵprd(4608, null, SubListDataService, SubListDataService, [FormMessageService, Repository, FormLoadingService, ViewModel, [2, LanguageService], FormNotifyService, FormErrorService]), ɵprd(4608, null, RemoveDataService, RemoveDataService, [FrameContext]), ɵprd(4608, null, SaveDataService, SaveDataService, [FrameContext]), ɵprd(4608, null, EditDataService, EditDataService, [FrameContext]), ɵprd(4608, null, FilterConditionDataService, FilterConditionDataService, [ViewModel, FilterConditionService, CommandService]), ɵprd(4608, null, RemoteSummaryService, RemoteSummaryService, [ViewModel]), ɵprd(4608, null, BeActionService, BeActionService, [Repository, FormLoadingService, FormMessageService, FormNotifyService, FormErrorService, [2, LanguageService]]), ɵprd(4608, null, WFSubmiteService, WFSubmiteService, [Injector, ComponentFactoryResolver, BsModalService, [2, I18nService$1]]), ɵprd(4608, null, WFFlowchartService, WFFlowchartService, [MessagerService, Injector, ComponentFactoryResolver, BsModalService]), ɵprd(4608, null, ApproveService, ApproveService, [FormLoadingService, BeActionService, FormMessageService, FormNotifyService, [2, LanguageService], FormErrorService, FrameContext, [2, WFSubmiteService], [2, WFFlowchartService], [2, WfTaskHandlerService]]), ɵprd(4608, null, CloudprintService, CloudprintService, [ɵa, ComponentFactoryResolver, ɵb$2, ɵc$1, Injector, ApplicationRef, NotifyService, AppService, WindowService, BsModalService]), ɵprd(4608, null, PrintService, PrintService, [FormMessageService, LanguageService, CloudprintService, [2, FormNotifyService]]), ɵprd(4608, null, AttachmentDataService, AttachmentDataService, [FrameContext, FormLoadingService]), ɵprd(4608, null, AttachmentService, AttachmentService, [FrameContext, AttachmentDataService, FormNotifyService, UploadDialogService, [2, DownloadService]]), ɵprd(4608, null, FileService, FileService, [FrameContext, AttachmentDataService, EntityService, SubListDataService, FormNotifyService, LanguageService, ListDataService, [2, FormLoadingService]]), ɵprd(4608, null, GridMiddlewareService, GridMiddlewareService, [FrameContext, FormMessageService, [2, LanguageService], ViewModel, CommandService]), ɵprd(4608, null, SidebarService, SidebarService, [FrameContext, FarrisSidebarService, FormMessageService, [2, LanguageService]]), ɵprd(4608, null, FarrisFormService, FarrisFormService, [[2, FARRIS_FORM_COMPONENTS]]), ɵprd(4608, null, DialogService, DialogService, [BsModalService, FarrisFormService, ComponentFactoryResolver, FrameContext, [2, Injector]]), ɵprd(4608, null, RouterService, RouterService, [Router, RouterParamService, FrameworkService, [2, AppService], [2, MenuStateService], [2, LanguageService]]), ɵprd(4608, null, AuthorityService, AuthorityService, []), ɵprd(4608, null, FrameworkSessionService, FrameworkSessionService, [[2, SessionService]]), ɵprd(4608, null, QUERYSOLUTION_HANDLER_TOKEN, ɵb, [FrameContext, FrameworkSessionService]), ɵprd(4608, null, LISTFILTER_HANDLER_TOKEN, ɵc, [FrameContext]), ɵprd(4608, null, EndEditService, EndEditService, [FrameContext]), ɵprd(4608, null, BatchEditDialogService, BatchEditDialogService, [Injector, BsModalService, ComponentFactoryResolver, LocaleService]), ɵprd(4608, null, ComponentManagerService, ComponentManagerService, []), ɵprd(4608, null, BatchEditService, BatchEditService, [Injector, ComponentManagerService, ViewModel, Repository, BatchEditDialogService, DateTimeHelperService, LanguageService, FormNotifyService]), ɵprd(4608, null, DiscussionGroupService, DiscussionGroupService, [Injector, FrameContext, FormLoadingService, RuntimeFrameworkService]), ɵprd(4608, null, FormAttentionService, FormAttentionService, [Injector, FrameContext, AttentionService]), ɵprd(4608, null, FeatureEditorService, FeatureEditorService, [Injector, BsModalService, ComponentFactoryResolver, LocaleService, I18nService]), ɵprd(4608, null, FeatureDataService, FeatureDataService, [Injector, FeatureRepository, [2, LOCALE_ID]]), ɵprd(4608, null, FeatureEditService, FeatureEditService, [Injector, FeatureEditorService, FeatureDataService, FormLoadingService, FormNotifyService, LanguageService]), ɵprd(5120, null, RESOLVER_TOKEN, function (p0_0) { return [new EntityDependencyResolver(p0_0), new StateDependencyResolver(), new CommentDependencyResolver()]; }, [Repository]), ɵprd(4608, null, ResolverRegistry, ResolverRegistry, [Injector, [2, RESOLVER_TOKEN]]), ɵprd(4608, null, ResolveService, ResolveService, [Injector, ResolverRegistry]), ɵprd(4608, null, ExpressionExecutor, ExpressionExecutor, []), ɵprd(4608, null, ExpressionService, ExpressionService, [Injector, ResolveService, FrameContext, ExpressionExecutor]), ɵprd(4608, null, PopUpService, PopUpService, [Injector, FrameContext, Repository, LanguageService, FormMessageService]), ɵprd(4608, null, DirtyCheckingService, DirtyCheckingService, [Injector, ChangeDetectorRef, ApplicationRef]), ɵprd(4608, null, FormService, FormService, [Injector, AppContext, Repository]), ɵprd(4608, null, ViewModelService, ViewModelService, []), ɵprd(4608, null, PaginationService, PaginationService, [Injector, FrameContext]), ɵprd(4608, null, FORM_MANIFEST_SERVICE_TOKEN, FormManifestService, [Injector, FORM_PATH_TOKEN, HttpClient]), ɵprd(4608, null, FORM_EXPRESSION_MANIFEST_SERVICE_TOKEN, FormExpressionManifestService, [Injector, FrameContext, HttpClient, FORM_PATH_TOKEN, FORM_MANIFEST_SERVICE_TOKEN]), ɵprd(4608, null, MESSAGE_SERVICE_TOKEN, FormMessageService, [MessagerService, [2, LanguageService], LOCALE_ID]), ɵprd(4608, null, NOTIFY_SERVICE_TOKEN, FormNotifyService, [NotifyService, [2, LanguageService]]), ɵprd(5120, null, FRAME_COMPONENT_INIT_HANDLER_TOKEN, function (p0_0, p0_1, p0_2, p0_3) { return [new WorkFlowMessageHandler(p0_0, p0_1, p0_2, p0_3)]; }, [Injector, FrameContext, WorkFlowMessageService, WorkFlowMessage]), ɵprd(4608, null, ServerSideToken, BefLookupRestService, [Repository, [2, FrameContext]]), ɵprd(4608, null, ComboServerSideToken, DefaultComboHttpService, [Repository]), ɵprd(4608, null, Form, RootViewmodelForm, []), ɵprd(4608, null, UIState, RootViewmodelUIState, []), ɵprd(4608, null, UriService, UriService, [BE_SERVER_URI_TOKEN]), ɵprd(4608, null, MaterialPlanProxy, MaterialPlanProxy, [HttpClient, UriService]), ɵprd(4608, null, Declaration, EventDeclaration, []), ɵprd(6144, null, TranslateToken, null, [LangService]), ɵprd(5120, null, LISTENER_TOKEN, function (p0_0, p0_1, p0_2, p0_3, p0_4, p1_0, p1_1, p1_2, p2_0, p2_1, p2_2) { return [new UIStateChangeListener(p0_0, p0_1, p0_2, p0_3, p0_4), new RepositoryChangeListener(p1_0, p1_1, p1_2), new BindingDataChangeListener(p2_0, p2_1, p2_2)]; }, [Injector, UIState, NAMESPACE, FRAME_ID, BindingData, Injector, Repository, NAMESPACE, Injector, BindingData, NAMESPACE]), ɵprd(5120, null, EFFECTOR_TOKEN, function (p0_0, p0_1, p0_2, p0_3, p1_0, p1_1, p1_2, p2_0, p2_1, p2_2, p3_0, p3_1, p3_2, p3_3, p4_0, p4_1, p4_2, p4_3, p5_0, p5_1, p5_2, p5_3, p5_4, p6_0, p6_1, p6_2, p6_3, p7_0, p7_1, p7_2, p7_3) { return [new RepositoryEffector(p0_0, p0_1, p0_2, p0_3), new UIStateEffector(p1_0, p1_1, p1_2), new ReadonlyEffector(p2_0, p2_1, p2_2), new DependencyEffector(p3_0, p3_1, p3_2, p3_3), new RelativeEffector(p4_0, p4_1, p4_2, p4_3), new ValidateEffector(p5_0, p5_1, p5_2, p5_3, p5_4), new RequiredEffector(p6_0, p6_1, p6_2, p6_3), new VisibleEffector(p7_0, p7_1, p7_2, p7_3)]; }, [Injector, Repository, NAMESPACE, BindingData, Injector, UIState, NAMESPACE, Injector, NAMESPACE, FrameContext, Injector, Repository, NAMESPACE, BindingData, Injector, MESSAGE_SERVICE_TOKEN, NOTIFY_SERVICE_TOKEN, NAMESPACE, Injector, MESSAGE_SERVICE_TOKEN, NOTIFY_SERVICE_TOKEN, NAMESPACE, FrameContext, Injector, Repository, NAMESPACE, FrameContext, Injector, NAMESPACE, FrameContext, Repository]), ɵprd(4608, null, ListenerRegistry, ListenerRegistry, [[2, LISTENER_TOKEN], [2, Injector]]), ɵprd(4608, null, Listeners, Listeners, [[2, ListenerRegistry]]), ɵprd(4608, null, EffectorRegistry, EffectorRegistry, [Injector, [2, EFFECTOR_TOKEN]]), ɵprd(4608, null, EffectorFactory, EffectorFactory, [Injector, EffectorRegistry]), ɵprd(4608, null, ExpressionRegistry, ExpressionRegistry, [Injector, FORM_EXPRESSION_MANIFEST_SERVICE_TOKEN, [2, TranslateToken]]), ɵprd(4608, null, ExpressionEventEmitter, ExpressionEventEmitter, [Listeners]), ɵprd(4608, null, ExpressionResult, ExpressionResult, [Injector]), ɵprd(4608, null, ExpressionManager, ExpressionManager, [Injector, ResolveService, ExpressionExecutor, ExpressionRegistry, ExpressionResult, MESSAGE_SERVICE_TOKEN, NOTIFY_SERVICE_TOKEN]), ɵprd(4608, null, ExpressionResultFactory, ExpressionResultFactory, [Injector, ExpressionRegistry, ExpressionManager, ExpressionResult]), ɵprd(5120, null, EVENT_HANDLER_TOKEN, function (p0_0, p0_1, p0_2, p0_3, p0_4, p0_5, p0_6, p1_0, p1_1, p1_2, p1_3, p1_4, p1_5, p1_6, p2_0, p2_1, p2_2, p2_3, p2_4, p2_5, p2_6, p3_0, p3_1, p3_2, p3_3, p3_4, p3_5, p3_6, p4_0, p4_1, p4_2, p4_3, p4_4, p4_5, p4_6, p5_0, p5_1, p5_2, p5_3, p5_4, p5_5, p5_6, p6_0, p6_1, p6_2, p6_3, p6_4, p6_5, p6_6, p7_0, p7_1, p7_2, p7_3, p7_4, p7_5, p7_6, p8_0, p8_1, p8_2, p8_3, p8_4, p8_5, p8_6, p9_0, p9_1, p9_2, p9_3, p9_4, p9_5, p9_6, p10_0, p10_1, p10_2, p10_3, p10_4, p10_5, p10_6) { return [new RepositoryAddEntityEventHandler(p0_0, p0_1, p0_2, p0_3, p0_4, p0_5, p0_6), new RepositoryRemoveEntityEventHandler(p1_0, p1_1, p1_2, p1_3, p1_4, p1_5, p1_6), new EntityValueChangedEventHandler(p2_0, p2_1, p2_2, p2_3, p2_4, p2_5, p2_6), new StateValueChangedEventHandler(p3_0, p3_1, p3_2, p3_3, p3_4, p3_5, p3_6), new RepositoryLoadEventHandler(p4_0, p4_1, p4_2, p4_3, p4_4, p4_5, p4_6), new EntityUpdateEventHandler(p5_0, p5_1, p5_2, p5_3, p5_4, p5_5, p5_6), new BindingDataAppendObjectEventHandler(p6_0, p6_1, p6_2, p6_3, p6_4, p6_5, p6_6), new BindingDataValueChangeEventHandler(p7_0, p7_1, p7_2, p7_3, p7_4, p7_5, p7_6), new BindingDataRemoveObjectEventHandler(p8_0, p8_1, p8_2, p8_3, p8_4, p8_5, p8_6), new BindingDataLoadEventHandler(p9_0, p9_1, p9_2, p9_3, p9_4, p9_5, p9_6), new BindingDataSelectionChangedEventHandler(p10_0, p10_1, p10_2, p10_3, p10_4, p10_5, p10_6)]; }, [Injector, Repository, BindingData, ExpressionRegistry, EffectorFactory, ExpressionExecutor, ExpressionResult, Injector, Repository, BindingData, ExpressionRegistry, EffectorFactory, ExpressionExecutor, ExpressionResult, Injector, Repository, BindingData, ExpressionRegistry, EffectorFactory, ExpressionExecutor, ExpressionResult, Injector, Repository, BindingData, ExpressionRegistry, EffectorFactory, ExpressionExecutor, ExpressionResult, Injector, Repository, BindingData, ExpressionRegistry, EffectorFactory, ExpressionExecutor, ExpressionResult, Injector, Repository, BindingData, ExpressionRegistry, EffectorFactory, ExpressionExecutor, ExpressionResult, Injector, Repository, BindingData, ExpressionRegistry, EffectorFactory, ExpressionExecutor, ExpressionResult, Injector, Repository, BindingData, ExpressionRegistry, EffectorFactory, ExpressionExecutor, ExpressionResult, Injector, Repository, BindingData, ExpressionRegistry, EffectorFactory, ExpressionExecutor, ExpressionResult, Injector, Repository, BindingData, ExpressionRegistry, EffectorFactory, ExpressionExecutor, ExpressionResult, Injector, Repository, BindingData, ExpressionRegistry, EffectorFactory, ExpressionExecutor, ExpressionResult]), ɵprd(4608, null, EventHandlerRegistry, EventHandlerRegistry, [[2, EVENT_HANDLER_TOKEN]]), ɵprd(4608, null, ExpressionEngineImpl, ExpressionEngineImpl, [Injector, ExpressionRegistry, ExpressionEventEmitter, ResolverRegistry, EventHandlerRegistry, ResolveService]), ɵprd(4608, null, EXCEPTION_HANDLER, ExceptionHandler, [FormErrorService, [2, LanguageService], AppContext]), ɵprd(4608, null, BACK_END_MESSAGE_HANDLER_TOKEN, BackEndMessageHandler, [Injector, FrameContext, TranslateToken]), ɵprd(512, null, LangService, LangService, [TranslateService]), ɵprd(512, null, LocalizationService, LocalizationService, [Injector, UserSettingsToken]), ɵprd(512, null, VerifyDetailService, VerifyDetailService, [ComponentFactoryResolver, Injector, ApplicationRef]), ɵprd(512, null, StateMachine, RootViewmodelStateMachine, []), ɵdid(111, 4440064, null, 0, RootComponent, [WizardService, KeybindingService, LangService, ActivatedRoute, Router, ElementRef, LocalizationService, FrmI18nSettingService, FrameworkService, ApplicationParamService, VerifyDetailService, StateMachine, DomSanitizer, Injector], null, null), ɵprd(256, null, FRAME_ID, "root-component", []), ɵprd(256, null, NAMESPACE, "", []), ɵprd(256, null, PARAM_TYPE_TRANSFORM_TOKEN, false, []), ɵprd(256, null, FORM_ID, "d5d6ccf3-5d06-44e2-92eb-e75d8fb2fcd3", []), ɵprd(256, null, BE_SESSION_HANDLING_STRATEGY_TOKEN, "SeparatedSession", []), ɵprd(256, null, CHANGE_SET_POLICY_TOKEN, "valid", [])], function (_ck, _v) { _ck(_v, 111, 0); }, function (_ck, _v) { var currVal_0 = ɵnov(_v, 111).cls; _ck(_v, 0, 0, currVal_0); }); }
             var RootComponentNgFactory = ɵccf("app-rootcomponent", RootComponent, View_RootComponent_Host_0, {}, {}, []);
 
             // This service is based on the `ng2-cookies` package which sadly is not a service and does
@@ -5696,7 +4818,7 @@ System.register(['@angular/core', 'tslib', '@angular/common', '@angular/forms', 
              * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
              * tslint:disable
              */ 
-            var MaterialPlanFormModuleNgFactory = exports('MaterialPlanFormModuleNgFactory', ɵcmf(MaterialPlanFormModule, [RootComponent], function (_l) { return ɵmod([ɵmpd(512, ComponentFactoryResolver, ɵCodegenComponentFactoryResolver, [[8, [LoadingComponentNgFactory$1, TooltipComponentNgFactory$1, ModalBackdropComponentNgFactory$1, ModalContainerComponentNgFactory$1, MessagerComponentNgFactory$1, NotifyContainerComponentNgFactory$1, PopoverContainerComponentNgFactory$1, FarrisContextMenuComponentNgFactory$1, DataTableComponentNgFactory$1, TreeTableComponentNgFactory$1, LookupLeftComponentNgFactory$1, LookupTabsComponentNgFactory$1, LookupQuickSelectPanelComponentNgFactory$1, TimePickerPanelComponentNgFactory, CalendarComponentNgFactory, FilterPanelComponentNgFactory, PopupComponentNgFactory, ɵbNgFactory, ɵiNgFactory, ɵwNgFactory, ɵbfNgFactory, ɵcNgFactory, ɵeNgFactory, ɵbbNgFactory, ɵbcNgFactory, FileListComponentNgFactory, WfApprovalLogsComponentNgFactory, UIFlowchartComponentNgFactory, ɵEmptyOutletComponentNgFactory, LanguageTextPanelComponentNgFactory, EnumEditorComponentNgFactory, FilterEditorComponentNgFactory, SortEditorComponentNgFactory, ɵlNgFactory, DatagridTextboxComponentNgFactory, DatagridTextareaComponentNgFactory, ɵaNgFactory, ɵbNgFactory$1, ɵcNgFactory$1, ɵdNgFactory, ɵeNgFactory$1, ɵfNgFactory, ɵgNgFactory, ɵhNgFactory, ɵiNgFactory$1, ɵjNgFactory, ɵkNgFactory, DatagridEnumEditorComponentNgFactory, DatagridSortEditorComponentNgFactory, DatagridFilterEditorComponentNgFactory, TaskExecuteComponentNgFactory, TaskAssigninfoComponentNgFactory, ProcessSelectorComponentNgFactory, VerifyDetailComponentNgFactory, StringFilterCellComponentNgFactory, NumericFilterCellComponentNgFactory, BooleanFilterCellComponentNgFactory, DateFilterCellComponentNgFactory, StringFilterMenuComponentNgFactory, NumericFilterMenuComponentNgFactory, DateFilterMenuComponentNgFactory, BooleanFilterMenuComponentNgFactory, NgbTooltipWindowNgFactory, FileUploadComponentNgFactory, UploadDialogComponentNgFactory, ɵbNgFactory$2, QueryConditionComponentNgFactory, ɵcNgFactory$2, ɵeNgFactory$2, ɵaNgFactory$1, ProcessSelectorComponentNgFactory$1, WfWorkitemHandleComponentNgFactory, UserHelperComponentNgFactory, TaskAssignComponentNgFactory, TaskSignaddComponentNgFactory, TaskTransferComponentNgFactory, ɵaNgFactory$2, WindowComponentNgFactory, WindowTitleBarComponentNgFactory, DialogComponentNgFactory, DialogTitleBarComponentNgFactory, ɵdNgFactory$1, ɵfNgFactory$1, ɵgNgFactory$1, ɵhNgFactory$1, ɵbNgFactory$3, ɵcNgFactory$3, ɵdNgFactory$2, ɵeNgFactory$3, ɵfNgFactory$2, ɵgNgFactory$2, ɵhNgFactory$2, BatchEditDialogComponentNgFactory, ResultConfirmComponentNgFactory, DiscussionPersonnelComponentNgFactory, MultiDownloadInfoComponentNgFactory, FilterRowComponentNgFactory, FilterTextboxComponentNgFactory, FilterCheckboxComponentNgFactory, ConditionEditorComponentNgFactory, FilterDatalistComponentNgFactory, FilterRowPanelComponentNgFactory, FilterRowEditorComponentNgFactory, FilterSelectComponentNgFactory, OrganizationSelectorComponentNgFactory, GridOrganizationSelectorComponentNgFactory, DatagridSettingsComponentNgFactory, SimpleColumnsComponentNgFactory, NewSchemeComponentNgFactory, SchemeListComponentNgFactory, FEPageModalComponentNgFactory, FEModalBackdropComponentNgFactory, ɵaNgFactory$3, FeatureEditorComponentNgFactory, RootComponentNgFactory]], [3, ComponentFactoryResolver], NgModuleRef]), ɵmpd(4608, NgLocalization, NgLocaleLocalization, [LOCALE_ID, [2, ɵangular_packages_common_common_a]]), ɵmpd(4608, ɵangular_packages_forms_forms_j, ɵangular_packages_forms_forms_j, []), ɵmpd(4608, FormBuilder, FormBuilder, []), ɵmpd(4608, CommonUtils, CommonUtils, []), ɵmpd(4608, RuntimeStateService, RuntimeStateService, [CommonUtils]), ɵmpd(4608, IdService, IdService, []), ɵmpd(4608, DialogService, DialogService, []), ɵmpd(135680, GridComponent, GridComponent, [BrowserSupportService, SelectionService, ElementRef, GroupInfoService, GroupsService, ChangeNotificationService, DetailsService, EditService$1, FilterService$1, PDFService, ResponsiveService, Renderer2, ExcelService, NgZone, ScrollSyncService, DomEventsService, ColumnResizingService, ChangeDetectorRef, ColumnReorderService, ColumnInfoService, NavigationService$1, SortService, LocalizationService$1]), ɵmpd(4608, DateTimeHelperService, DateTimeHelperService, []), ɵmpd(4608, NumberHelperService, NumberHelperService, []), ɵmpd(4608, FarrisKendoGridFormatService, FarrisKendoGridFormatService, [DateTimeHelperService, NumberHelperService]), ɵmpd(4608, FarrisTreetableFormatService, FarrisTreetableFormatService, []), ɵmpd(4608, LocaleService, LocaleService, [LOCALE_ID, CommonUtils, [2, FARRIS_LOCAL_CUSTOM_DATA]]), ɵmpd(4608, AttentionService, AttentionService, [RendererFactory2, NgZone]), ɵmpd(4608, PositioningService, PositioningService, [RendererFactory2, PLATFORM_ID]), ɵmpd(4608, ComponentLoaderFactory, ComponentLoaderFactory, [ComponentFactoryResolver, NgZone, Injector, PositioningService, ApplicationRef]), ɵmpd(4608, BsModalService, BsModalService, [RendererFactory2, ComponentLoaderFactory, NgZone]), ɵmpd(4608, NotifyService, NotifyService, [ComponentFactoryResolver, Injector, ApplicationRef]), ɵmpd(4608, PaginationService, PaginationService, []), ɵmpd(4608, PopoverConfig, PopoverConfig, []), ɵmpd(4608, ColumnFormatService, ColumnFormatService, [DateTimeHelperService, NumberHelperService]), ɵmpd(4608, HttpXsrfTokenExtractor, ɵangular_packages_common_http_http_g, [DOCUMENT, PLATFORM_ID, ɵangular_packages_common_http_http_e]), ɵmpd(4608, ɵangular_packages_common_http_http_h, ɵangular_packages_common_http_http_h, [HttpXsrfTokenExtractor, ɵangular_packages_common_http_http_f]), ɵmpd(5120, HTTP_INTERCEPTORS, function (p0_0) { return [p0_0]; }, [ɵangular_packages_common_http_http_h]), ɵmpd(4608, LoadingService, LoadingService, [ApplicationRef, ComponentFactoryResolver, Injector]), ɵmpd(4608, ComboLocaleService, ComboLocaleService, [LocaleService]), ɵmpd(4608, FarrisContextMenuService, FarrisContextMenuService, [ComponentFactoryResolver, Injector]), ɵmpd(4608, TreetableService, TreetableService, []), ɵmpd(4608, ResizeService, ResizeService, []), ɵmpd(4608, TTHotkeys, TTHotkeys, [EventManager]), ɵmpd(4608, MessagerService, MessagerService, [BsModalService, Injector]), ɵmpd(4608, QuerySolutionService, QuerySolutionService, []), ɵmpd(4608, FilterService$2, FilterService$2, []), ɵmpd(4608, ConvertorService$1, ConvertorService$1, []), ɵmpd(4608, SolutionService$1, SolutionService$1, []), ɵmpd(4608, ErrorHandler, ɵt, []), ɵmpd(4608, ValidatorMessagerService, ValidatorMessagerService, []), ɵmpd(4608, SessionService, SessionService, []), ɵmpd(4608, SysCommonUtilService, SysCommonUtilService, [SessionService]), ɵmpd(4608, SysSecurityConfigService, SysSecurityConfigService, [HttpClient, SysCommonUtilService]), ɵmpd(4608, HelpFilterMap, HelpFilterMap, []), ɵmpd(4608, SysHelpService, SysHelpService, [HttpClient, SysCommonUtilService]), ɵmpd(4608, SysExceptionService, SysExceptionService, []), ɵmpd(4608, ɵf, ɵf, [HttpClient, SysCommonUtilService]), ɵmpd(4608, CookieService, CookieService, [DOCUMENT, PLATFORM_ID]), ɵmpd(4608, LanguageService$1, LanguageService$1, [CookieService]), ɵmpd(4608, SysLocaleService, SysLocaleService, [LanguageService$1]), ɵmpd(4608, PopupService, PopupService, [ApplicationRef, ComponentFactoryResolver, Injector, [2, POPUP_CONTAINER]]), ɵmpd(4608, ɵj, ɵj, []), ɵmpd(4608, ɵs, ɵs, []), ɵmpd(4608, ɵn, ɵn, []), ɵmpd(4608, ɵu, ɵu, []), ɵmpd(4608, ɵv, ɵv, [ɵu]), ɵmpd(4608, HttpService, HttpService, [HttpClient, SessionService]), ɵmpd(4608, ɵo, ɵo, []), ɵmpd(4608, ɵz, ɵz, []), ɵmpd(4608, ɵd, ɵd, [HttpService, HttpClient, ɵz]), ɵmpd(4608, ɵa$2, ɵa$2, [HttpService, HttpClient]), ɵmpd(4608, ɵy, ɵy, []), ɵmpd(4608, ɵa, ɵa, [HttpClient]), ɵmpd(4608, ɵb$2, ɵb$2, [HttpClient]), ɵmpd(4608, ɵc$1, ɵc$1, [HttpClient]), ɵmpd(4608, FrameworkVariableService, FrameworkVariableService, []), ɵmpd(4608, FrmI18nSettingService, FrmI18nSettingService, [FrameworkVariableService, LanguageService$1, HttpService]), ɵmpd(4608, AppService, AppService, [HttpService, SessionService, [2, FrmI18nSettingService]]), ɵmpd(4608, WindowContainerService, WindowContainerService, []), ɵmpd(4608, WindowService, WindowService, [ComponentFactoryResolver, WindowContainerService]), ɵmpd(4608, CloudprintService, CloudprintService, [ɵa, ComponentFactoryResolver, ɵb$2, ɵc$1, Injector, ApplicationRef, NotifyService, AppService, WindowService, BsModalService]), ɵmpd(4608, WfApprovalLogsService, WfApprovalLogsService, [MessagerService, Injector, ComponentFactoryResolver, BsModalService]), ɵmpd(4608, NgbDropdownConfig, NgbDropdownConfig, []), ɵmpd(4608, UiFlowchartService, UiFlowchartService, [HttpService]), ɵmpd(4608, WFFlowchartService, WFFlowchartService, [MessagerService, Injector, ComponentFactoryResolver, BsModalService]), ɵmpd(4608, TaskService, TaskService, [HttpService, MessagerService]), ɵmpd(4608, I18nService$2, I18nService$2, []), ɵmpd(4608, CacheStorageAbstract, CacheMemoryStorage, []), ɵmpd(4608, CacheService, CacheService, [[2, CacheStorageAbstract]]), ɵmpd(4608, FrmEventBus, FrmEventBus, []), ɵmpd(4608, FuncsService, FuncsService, [[2, FrameworkVariableService]]), ɵmpd(4608, FrameworkService, FrameworkService, [HttpService, Router, CacheService, SessionService, FrmEventBus, FuncsService, LoadingService$1, [2, AppService], [2, FrmI18nSettingService]]), ɵmpd(4608, WfTaskHandlerService, WfTaskHandlerService, [WfApprovalLogsService, WFFlowchartService, Injector, ComponentFactoryResolver, BsModalService, TaskService, NotifyService, I18nService$2, FrameworkService, ApplicationRef]), ɵmpd(4608, AppContextManager, AppContextManager, []), ɵmpd(135680, AppContext, AppContext, [[2, Injector], [2, AppContextManager], [3, AppContext]]), ɵmpd(4608, FormLoadingService, FormLoadingService, [LoadingService, [2, HideEventService], [2, AppContext]]), ɵmpd(4608, LanguageService, LanguageService, [[2, LOCALE_ID]]), ɵmpd(4608, FormMessageService, FormMessageService, [MessagerService, [2, LanguageService], LOCALE_ID]), ɵmpd(4608, FormNotifyService, FormNotifyService, [NotifyService, [2, LanguageService]]), ɵmpd(4608, FormErrorService, FormErrorService, [FormMessageService, [2, LanguageService]]), ɵmpd(4608, WizardService, WizardService, []), ɵmpd(4608, FormWizardService, FormWizardService, [WizardService]), ɵmpd(4608, CheckService, CheckService, []), ɵmpd(4608, DataCheckService, DataCheckService, [FormMessageService, FormNotifyService, [2, LanguageService]]), ɵmpd(4608, FrameEventBus, FrameEventBus, []), ɵmpd(4608, EventService, EventService, [FrameEventBus]), ɵmpd(4608, ComponentManagerService, ComponentManagerService, []), ɵmpd(4608, FilterService, FilterService, []), ɵmpd(4608, KeybindingService, KeybindingService, []), ɵmpd(4608, QuerystringService, QuerystringService, []), ɵmpd(4608, RuntimeFrameworkService, RuntimeFrameworkService, []), ɵmpd(4608, ParamService, ParamService, [QuerystringService, RuntimeFrameworkService]), ɵmpd(4608, MenuStateService, MenuStateService, []), ɵmpd(4608, NavigationEventService, NavigationEventService, [RuntimeFrameworkService, MenuStateService, QuerystringService]), ɵmpd(4608, NavigationService, NavigationService, [RuntimeFrameworkService, MenuStateService, NavigationEventService, QuerystringService, [2, FrameContext], [2, Injector], [2, LanguageService]]), ɵmpd(4608, RouterParamService, RouterParamService, []), ɵmpd(4608, RouterService, RouterService, [Router, RouterParamService, FrameworkService, [2, AppService], [2, MenuStateService], [2, LanguageService]]), ɵmpd(4608, ApplicationParamService, ApplicationParamService, [[2, ParamService], [2, RuntimeFrameworkService]]), ɵmpd(4608, FilterConditionService, FilterConditionService, []), ɵmpd(4608, UserSettingsToken, UserSettingsService, [Injector, [2, FrmI18nSettingService]]), ɵmpd(4608, VerifyDetailService, VerifyDetailService, [ComponentFactoryResolver, Injector, ApplicationRef]), ɵmpd(4608, IntlService, CldrIntlService, [LOCALE_ID]), ɵmpd(4608, DOMService, DOMService, []), ɵmpd(4608, CenturyViewService, CenturyViewService, []), ɵmpd(4608, DecadeViewService, DecadeViewService, []), ɵmpd(4608, MonthViewService, MonthViewService, [IntlService]), ɵmpd(4608, YearViewService, YearViewService, [IntlService]), ɵmpd(4608, WeekNamesService, WeekNamesService, [IntlService]), ɵmpd(135680, ResizeBatchService, ResizeBatchService, [NgZone]), ɵmpd(4608, NavigationService$2, NavigationService$2, [BusViewService]), ɵmpd(4608, DOMService$1, DOMService$1, []), ɵmpd(4608, HoursService, HoursService, [IntlService]), ɵmpd(4608, MinutesService, MinutesService, [IntlService]), ɵmpd(4608, SecondsService, SecondsService, [IntlService]), ɵmpd(4608, DayPeriodService, DayPeriodService, [IntlService]), ɵmpd(4608, NgbTooltipConfig, NgbTooltipConfig, []), ɵmpd(4608, TabService, TabService, [[2, TabConfig]]), ɵmpd(4608, UploadService, UploadService, [HttpService]), ɵmpd(4608, DownloadService, DownloadService, []), ɵmpd(4608, UploadDialogService, UploadDialogService, [BsModalService, ComponentFactoryResolver, Injector]), ɵmpd(4608, SolutionService, SolutionService, [NotifyService]), ɵmpd(4608, ConvertorService, ConvertorService, []), ɵmpd(4608, TaskCommentService, TaskCommentService, [HttpService]), ɵmpd(4608, TaskCommentUIState, TaskCommentUIState, []), ɵmpd(4608, TaskCommentViewModel, TaskCommentViewModel, [TaskCommentUIState, HttpService]), ɵmpd(4608, I18nService$3, I18nService$3, []), ɵmpd(4608, TaskCommentRepository, TaskCommentRepository, []), ɵmpd(4608, TaskService$1, TaskService$1, [HttpService]), ɵmpd(4608, UserService, UserService, [HttpClient, HttpService, SessionService]), ɵmpd(4608, I18nService$1, I18nService$1, []), ɵmpd(4608, WFSubmiteService, WFSubmiteService, [Injector, ComponentFactoryResolver, BsModalService, [2, I18nService$1]]), ɵmpd(4608, DialogContainerService, DialogContainerService, []), ɵmpd(4608, DialogService$2, DialogService$2, [ComponentFactoryResolver, DialogContainerService]), ɵmpd(4608, ɵe, ɵe, [HttpClient]), ɵmpd(4608, ConvertorService$2, ConvertorService$2, []), ɵmpd(4608, SolutionService$2, SolutionService$2, []), ɵmpd(4608, QuerySolutionService$1, QuerySolutionService$1, []), ɵmpd(135680, FarrisScrollSpyService, FarrisScrollSpyService, [NgZone]), ɵmpd(4608, DiscussionListService, DiscussionListService, []), ɵmpd(4608, FFileUploadAdaptUnifileConfigService, FFileUploadAdaptUnifileConfigService, [[2, FFileUploadAdaptUnifileConfigToken]]), ɵmpd(4608, UploadServerService, FfileuploadAdaptUnifileService, [UploadService, FFileUploadAdaptUnifileConfigService]), ɵmpd(4608, FFileUploaderService, FFileUploaderService, [[2, UploadServerService]]), ɵmpd(4608, FileViewerService, FileViewerService, [BsModalService, ComponentFactoryResolver, Injector, ɵa$2, MessagerService, CloudprintService, AppService]), ɵmpd(4608, FfilepreviewAdaptUnifileService, FfilepreviewAdaptUnifileService, [FileViewerService, FFileUploadAdaptUnifileConfigService, [2, DownloadService]]), ɵmpd(4608, EditorService, EditorService, []), ɵmpd(4608, I18nService, I18nService, [[2, LOCALE_ID]]), ɵmpd(4608, FEScrollCollapsibleAreaService, FEScrollCollapsibleAreaService, []), ɵmpd(4608, GRID_SETTINGS_SERVICE, DatagridSettingsService, [Injector, BsModalService, MessagerService, IdService, LocaleService]), ɵmpd(4608, WindowVariableService, WindowVariableService, []), ɵmpd(4608, TabEntityService, TabEntityService, []), ɵmpd(4608, FEPageModalService, FEPageModalService, [RendererFactory2, [2, ComponentLoaderFactory], Injector, NgZone]), ɵmpd(4608, EventBus, EventBus, []), ɵmpd(4608, Subscription, Subscription, []), ɵmpd(4608, RestfulService, RestfulService, [HttpClient]), ɵmpd(5120, VARIABLE_PARSERS, function () { return [new FrameIdVariableParser(), new ɵa$3(), new EventParamVariableParser(), new DataVariableParser(), new UIStateVariableParser(), new StateMachineVariableParser(), new CommandVariableParser()]; }, []), ɵmpd(4608, VariableParseService, VariableParseService, [VARIABLE_PARSERS]), ɵmpd(5120, BE_SERVER_URI_TOKEN, ɵ2$1, []), ɵmpd(1073742336, CommonModule, CommonModule, []), ɵmpd(1073742336, ɵangular_packages_forms_forms_bc, ɵangular_packages_forms_forms_bc, []), ɵmpd(1073742336, FormsModule, FormsModule, []), ɵmpd(1073742336, ReactiveFormsModule, ReactiveFormsModule, []), ɵmpd(1073742336, PanelBarModule, PanelBarModule, []), ɵmpd(1073742336, SplitterModule$1, SplitterModule$1, []), ɵmpd(1073742336, TabStripModule, TabStripModule, []), ɵmpd(1073742336, LayoutModule, LayoutModule, []), ɵmpd(1073742336, FarrisCommonModule, FarrisCommonModule, []), ɵmpd(1073742336, KendoBindingModule, KendoBindingModule, []), ɵmpd(1073742336, FlexLayoutModule, FlexLayoutModule, []), ɵmpd(1073742336, LocaleModule, LocaleModule, []), ɵmpd(1073742336, LoadingModule, LoadingModule, []), ɵmpd(1073742336, PerfectScrollbarModule, PerfectScrollbarModule, []), ɵmpd(1073742336, AngularDraggableModule, AngularDraggableModule, []), ɵmpd(1073742336, FAreaResponseModule, FAreaResponseModule, []), ɵmpd(1073742336, FarrisTooltipModule, FarrisTooltipModule, []), ɵmpd(1073742336, ModalModule, ModalModule, []), ɵmpd(1073742336, MessagerModule, MessagerModule, []), ɵmpd(1073742336, NotifyModule, NotifyModule, []), ɵmpd(1073742336, PaginationModule, PaginationModule, []), ɵmpd(1073742336, PopoverModule, PopoverModule, []), ɵmpd(1073742336, InputGroupModule, InputGroupModule, []), ɵmpd(1073742336, DateHelperModule, DateHelperModule, []), ɵmpd(1073742336, NumberHelperModule, NumberHelperModule, []), ɵmpd(1073742336, DataColumnModule, DataColumnModule, []), ɵmpd(1073742336, DataTableModule, DataTableModule, []), ɵmpd(1073742336, FarrisDialogModule, FarrisDialogModule, []), ɵmpd(1073742336, HttpClientXsrfModule, HttpClientXsrfModule, []), ɵmpd(1073742336, HttpClientModule, HttpClientModule, []), ɵmpd(1073742336, DatalistModule, DatalistModule, []), ɵmpd(1073742336, ComboListModule, ComboListModule, []), ɵmpd(1073742336, LayoutModule$1, LayoutModule$1, []), ɵmpd(1073742336, FarrisContextMenuModule, FarrisContextMenuModule, []), ɵmpd(1073742336, TreeTableModule, TreeTableModule, []), ɵmpd(1073742336, LookupModule, LookupModule, []), ɵmpd(1073742336, NgxPaginationModule, NgxPaginationModule, []), ɵmpd(1073742336, ScrollbarModule, ScrollbarModule, []), ɵmpd(1073742336, TimePickerModule, TimePickerModule, []), ɵmpd(1073742336, FarrisDatePickerModule, FarrisDatePickerModule, []), ɵmpd(1073742336, FarrisFormsModule, FarrisFormsModule, []), ɵmpd(1073742336, NumberSpinnerModule, NumberSpinnerModule, []), ɵmpd(1073742336, SwitchModule, SwitchModule, []), ɵmpd(1073742336, FilterConditionModule, FilterConditionModule, []), ɵmpd(1073742336, FilterPanelModule, FilterPanelModule, []), ɵmpd(1073742336, FarrisSidebarModule, FarrisSidebarModule, []), ɵmpd(1073742336, SimpleFilterModule, SimpleFilterModule, []), ɵmpd(1073742336, DatagridSmartFilterModule, DatagridSmartFilterModule, []), ɵmpd(1073742336, DatagridModule, DatagridModule, []), ɵmpd(1073742336, SysCommonModule, SysCommonModule, []), ɵmpd(1073742336, SysManagerUIModule, SysManagerUIModule, []), ɵmpd(1073742336, ButtonModule, ButtonModule, []), ɵmpd(1073742336, ButtonGroupModule, ButtonGroupModule, []), ɵmpd(1073742336, PopupModule, PopupModule, []), ɵmpd(1073742336, ListModule, ListModule, []), ɵmpd(1073742336, SplitButtonModule, SplitButtonModule, []), ɵmpd(1073742336, DropDownButtonModule, DropDownButtonModule, []), ɵmpd(1073742336, ButtonsModule, ButtonsModule, []), ɵmpd(1073742336, ɵf$1, ɵf$1, []), ɵmpd(1073742336, ɵh, ɵh, []), ɵmpd(1073742336, ɵbe, ɵbe, []), ɵmpd(1073742336, ɵg, ɵg, []), ɵmpd(1073742336, ɵt$1, ɵt$1, []), ɵmpd(1073742336, ɵbg, ɵbg, []), ɵmpd(1073742336, ɵbh, ɵbh, []), ɵmpd(1073742336, FileListModule, FileListModule, []), ɵmpd(1073742336, WfApprovalLogsModule, WfApprovalLogsModule, []), ɵmpd(1073742336, NgbDropdownModule, NgbDropdownModule, []), ɵmpd(1073742336, FarrisSectionModule, FarrisSectionModule, []), ɵmpd(1073742336, FDropdownDirectiveTypeModule, FDropdownDirectiveTypeModule, []), ɵmpd(1073742336, UiFlowchartModule, UiFlowchartModule, []), ɵmpd(1073742336, RouterModule, RouterModule, [[2, ɵangular_packages_router_router_a], [2, Router]]), ɵmpd(1073742336, CommonSharedModule, CommonSharedModule, []), ɵmpd(1073742336, TaskImplApiModule, TaskImplApiModule, []), ɵmpd(1073742336, WfSignModule, WfSignModule, []), ɵmpd(1073742336, AvatarModule, AvatarModule, []), ɵmpd(1073742336, ComboLookupModule, ComboLookupModule, []), ɵmpd(1073742336, LanguageTextboxModule, LanguageTextboxModule, []), ɵmpd(1073742336, EnumEditorModule, EnumEditorModule, []), ɵmpd(1073742336, FilterModule, FilterModule, []), ɵmpd(1073742336, SorterModule, SorterModule, []), ɵmpd(1073742336, DatagridEditorsModule, DatagridEditorsModule, []), ɵmpd(1073742336, WfTaskHandlerModule, WfTaskHandlerModule, []), ɵmpd(512, WorkFlowMessageService, WorkFlowMessageService, []), ɵmpd(512, WorkFlowMessage, WorkFlowMessage, [Injector, WorkFlowMessageService]), ɵmpd(1073742336, CommandServicesModule, CommandServicesModule, [WorkFlowMessage]), ɵmpd(1073742336, FResponseToolbarModule, FResponseToolbarModule, []), ɵmpd(1073742336, FormMessageModule, FormMessageModule, []), ɵmpd(1073742336, TranslateModule, TranslateModule, []), ɵmpd(1073742336, VerifyDetailModule, VerifyDetailModule, []), ɵmpd(1073742336, SharedModule, SharedModule, []), ɵmpd(1073742336, DragAndDropModule, DragAndDropModule, []), ɵmpd(1073742336, GroupModule, GroupModule, []), ɵmpd(1073742336, EventsModule, EventsModule, []), ɵmpd(1073742336, NumericTextBoxModule, NumericTextBoxModule, []), ɵmpd(1073742336, IntlModule, IntlModule, []), ɵmpd(1073742336, EventsModule$1, EventsModule$1, []), ɵmpd(1073742336, DateInputModule, DateInputModule, []), ɵmpd(1073742336, CalendarCommonModule, CalendarCommonModule, []), ɵmpd(1073742336, TemplatesModule, TemplatesModule, []), ɵmpd(1073742336, VirtualizationModule, VirtualizationModule, []), ɵmpd(1073742336, CalendarModule$1, CalendarModule$1, []), ɵmpd(1073742336, DatePickerModule, DatePickerModule, []), ɵmpd(1073742336, BodyModule, BodyModule, []), ɵmpd(1073742336, ResizeSensorModule, ResizeSensorModule, []), ɵmpd(1073742336, SharedDirectivesModule, SharedDirectivesModule, []), ɵmpd(1073742336, SharedModule$1, SharedModule$1, []), ɵmpd(1073742336, DropDownListModule, DropDownListModule, []), ɵmpd(1073742336, AutoCompleteModule, AutoCompleteModule, []), ɵmpd(1073742336, TextBoxModule, TextBoxModule, []), ɵmpd(1073742336, DraggableModule, DraggableModule, []), ɵmpd(1073742336, SliderModule, SliderModule, []), ɵmpd(1073742336, SwitchModule$1, SwitchModule$1, []), ɵmpd(1073742336, MaskedTextBoxModule, MaskedTextBoxModule, []), ɵmpd(1073742336, InputsModule, InputsModule, []), ɵmpd(1073742336, SharedFilterModule, SharedFilterModule, []), ɵmpd(1073742336, RowFilterModule, RowFilterModule, []), ɵmpd(1073742336, FilterMenuModule, FilterMenuModule, []), ɵmpd(1073742336, ColumnMenuModule, ColumnMenuModule, []), ɵmpd(1073742336, HeaderModule, HeaderModule, []), ɵmpd(1073742336, FooterModule, FooterModule, []), ɵmpd(1073742336, PagerModule, PagerModule, []), ɵmpd(1073742336, GridModule, GridModule, []), ɵmpd(1073742336, MultiViewCalendarModule, MultiViewCalendarModule, []), ɵmpd(1073742336, CalendarsModule, CalendarsModule, []), ɵmpd(1073742336, TimePickerModule$1, TimePickerModule$1, []), ɵmpd(1073742336, DateRangeModule, DateRangeModule, []), ɵmpd(1073742336, DateInputsModule, DateInputsModule, []), ɵmpd(1073742336, ComboBoxModule, ComboBoxModule, []), ɵmpd(1073742336, MultiSelectModule$1, MultiSelectModule$1, []), ɵmpd(1073742336, DropDownsModule, DropDownsModule, []), ɵmpd(1073742336, NgbTooltipModule, NgbTooltipModule, []), ɵmpd(1073742336, FarrisTabsModule, FarrisTabsModule, []), ɵmpd(1073742336, FarrisTagModule, FarrisTagModule, []), ɵmpd(1073742336, ProgressModule, ProgressModule, []), ɵmpd(1073742336, UploadModule, UploadModule, []), ɵmpd(1073742336, UploadDialogMoudle, UploadDialogMoudle, []), ɵmpd(1073742336, FieldGroupModule, FieldGroupModule, []), ɵmpd(1073742336, FarrisTimeSpinnerModule, FarrisTimeSpinnerModule, []), ɵmpd(1073742336, ProgressStepModule, ProgressStepModule, []), ɵmpd(1073742336, WizardModule, WizardModule, []), ɵmpd(1073742336, MultiSelectModule, MultiSelectModule, []), ɵmpd(1073742336, QueryConditionModule, QueryConditionModule, []), ɵmpd(1073742336, QuerySolutionModule, QuerySolutionModule, []), ɵmpd(1073742336, FarrisButtonModule, FarrisButtonModule, []), ɵmpd(1073742336, ListViewModule, ListViewModule, []), ɵmpd(1073742336, SplitterModule, SplitterModule, []), ɵmpd(1073742336, ListNavModule, ListNavModule, []), ɵmpd(1073742336, TextModule, TextModule, []), ɵmpd(1073742336, WFCommentModule, WFCommentModule, []), ɵmpd(1073742336, WFRuntimeModule, WFRuntimeModule, []), ɵmpd(1073742336, SharedModule$2, SharedModule$2, []), ɵmpd(1073742336, WindowModule, WindowModule, []), ɵmpd(1073742336, DialogModule, DialogModule, []), ɵmpd(1073742336, CloudPrintModule, CloudPrintModule, []), ɵmpd(1073742336, FarrisHtmlEditorModule, FarrisHtmlEditorModule, []), ɵmpd(1073742336, ViewChangeModule, ViewChangeModule, []), ɵmpd(1073742336, ListFilterModule, ListFilterModule, []), ɵmpd(1073742336, CalendarModule, CalendarModule, []), ɵmpd(1073742336, ScrollspyModule, ScrollspyModule, []), ɵmpd(1073742336, DynamicControlGroupModule, DynamicControlGroupModule, []), ɵmpd(1073742336, FarrisFooterModule, FarrisFooterModule, []), ɵmpd(1073742336, BatchEditDialogModule, BatchEditDialogModule, []), ɵmpd(1073742336, TreeModule, TreeModule, []), ɵmpd(1073742336, DiscussionGroupModule, DiscussionGroupModule, []), ɵmpd(1073742336, NavModule, NavModule, []), ɵmpd(1073742336, TagsModule, TagsModule, []), ɵmpd(1073742336, FFileUploadModule, FFileUploadModule, []), ɵmpd(1073742336, FfileuploadAdaptUnifileModule, FfileuploadAdaptUnifileModule, []), ɵmpd(1073742336, DatagridFilterRowModule, DatagridFilterRowModule, []), ɵmpd(1073742336, OrganizationSelectorModule, OrganizationSelectorModule, []), ɵmpd(1073742336, DatagridSettingsModule, DatagridSettingsModule, []), ɵmpd(1073742336, EditorModule, EditorModule, []), ɵmpd(1073742336, FrmCommonModule, FrmCommonModule, []), ɵmpd(1073742336, FEHeaderFooterModule, FEHeaderFooterModule, []), ɵmpd(1073742336, FEPageModalModule, FEPageModalModule, []), ɵmpd(1073742336, FeatureEditorModule, FeatureEditorModule, []), ɵmpd(1073742336, FEScrollCollapsibleAreaModule, FEScrollCollapsibleAreaModule, []), ɵmpd(1073742336, MaterialPlanFormRoutingModule, MaterialPlanFormRoutingModule, []), ɵmpd(512, TranslateStore, TranslateStore, []), ɵmpd(512, ɵangular_packages_common_http_http_d, ɵangular_packages_common_http_http_d, []), ɵmpd(2048, XhrFactory, null, [ɵangular_packages_common_http_http_d]), ɵmpd(512, HttpXhrBackend, HttpXhrBackend, [XhrFactory]), ɵmpd(2048, HttpBackend, null, [HttpXhrBackend]), ɵmpd(512, HttpHandler, ɵHttpInterceptingHandler, [HttpBackend, Injector]), ɵmpd(512, HttpClient, HttpClient, [HttpHandler]), ɵmpd(1024, TranslateLoader, ɵ0$2, [HttpClient]), ɵmpd(512, TranslateCompiler, TranslateFakeCompiler, []), ɵmpd(512, TranslateParser, TranslateDefaultParser, []), ɵmpd(512, MissingTranslationHandler, JitMissingTranslationHandler, []), ɵmpd(256, USE_DEFAULT_LANG, undefined, []), ɵmpd(256, USE_STORE, undefined, []), ɵmpd(512, TranslateService, TranslateService, [TranslateStore, TranslateLoader, TranslateCompiler, TranslateParser, MissingTranslationHandler, USE_DEFAULT_LANG, USE_STORE]), ɵmpd(512, TranslateResolveService, TranslateResolveService, [TranslateService, HttpClient]), ɵmpd(1073742336, MaterialPlanFormModule, MaterialPlanFormModule, [TranslateResolveService]), ɵmpd(256, LOCALE_ID, ɵ1$1, []), ɵmpd(256, FARRIS_LOCAL_CUSTOM_DATA, {}, []), ɵmpd(256, ɵangular_packages_common_http_http_e, "XSRF-TOKEN", []), ɵmpd(256, ɵangular_packages_common_http_http_f, "X-XSRF-TOKEN", []), ɵmpd(256, LOADING_DEFAULT_CONFIG, loaddingDefaultConfig, []), ɵmpd(256, MESSAGER_DEFAULT_CONFIG, MessagerDefaultConfig, []), ɵmpd(256, SWITCH_OPTIONS, {}, []), ɵmpd(256, SCROLLBAR_CONFIG, { minScrollbarLength: 20 }, []), ɵmpd(1024, GRID_EDITORS, function () { return [{ name: "textarea", value: DatagridTextareaComponent }, { name: "textbox", value: DatagridTextboxComponent }, { name: "checkbox", value: ɵa$4 }, { name: "datepicker", value: ɵb$4 }, { name: "input-group", value: ɵc$2 }, { name: "select", value: ɵd$1 }, { name: "lookup", value: ɵe$1 }, { name: "numberbox", value: ɵf$2 }, { name: "combolist", value: ɵg$1 }, { name: "switch", value: ɵh$1 }, { name: "timepicker", value: ɵi }, { name: "combo-lookup", value: ɵj$1 }, { name: "language-textbox", value: ɵk }, { name: "enum-editor", value: DatagridEnumEditorComponent }, { name: "filter-editor", value: DatagridFilterEditorComponent }, { name: "sort-editor", value: DatagridSortEditorComponent }, { name: "textarea", value: DatagridTextareaComponent }, { name: "textbox", value: DatagridTextboxComponent }, { name: "checkbox", value: ɵa$4 }, { name: "datepicker", value: ɵb$4 }, { name: "input-group", value: ɵc$2 }, { name: "select", value: ɵd$1 }, { name: "lookup", value: ɵe$1 }, { name: "numberbox", value: ɵf$2 }, { name: "combolist", value: ɵg$1 }, { name: "switch", value: ɵh$1 }, { name: "timepicker", value: ɵi }, { name: "combo-lookup", value: ɵj$1 }, { name: "language-textbox", value: ɵk }, { name: "enum-editor", value: DatagridEnumEditorComponent }, { name: "filter-editor", value: DatagridFilterEditorComponent }, { name: "sort-editor", value: DatagridSortEditorComponent }]; }, []), ɵmpd(256, TOUCH_ENABLED, touchEnabled, []), ɵmpd(256, TOUCH_ENABLED$1, touchEnabled$1, []), ɵmpd(256, ɵb$5, { modules: defaultModules }, []), ɵmpd(256, FFileUploadAPIServiceToken, null, []), ɵmpd(1024, ROUTES, function () { return [[{ path: "", component: RootComponent, children: [], resolve: { "translate": TranslateResolveService } }]]; }, []), ɵmpd(256, GRID_FILTER_ROW, FilterRowComponent, []), ɵmpd(256, TINYMCE_SCRIPT_SRC, "/platform/common/web/assets/tinymce/tinymce.min.js", []), ɵmpd(256, FORM_PATH_TOKEN, "/apps/scm/cm/web/bo-materialplan-front/materialplanform/", [])]); }));
+            var MaterialPlanFormModuleNgFactory = exports('MaterialPlanFormModuleNgFactory', ɵcmf(MaterialPlanFormModule, [RootComponent], function (_l) { return ɵmod([ɵmpd(512, ComponentFactoryResolver, ɵCodegenComponentFactoryResolver, [[8, [LoadingComponentNgFactory, TooltipComponentNgFactory, ModalBackdropComponentNgFactory, ModalContainerComponentNgFactory, MessagerComponentNgFactory, NotifyContainerComponentNgFactory, PopoverContainerComponentNgFactory, PopupComponentNgFactory, ɵbNgFactory, ɵiNgFactory, ɵwNgFactory, ɵbfNgFactory, ɵcNgFactory, ɵeNgFactory, ɵbbNgFactory, ɵbcNgFactory, FileListComponentNgFactory, WfApprovalLogsComponentNgFactory, TimePickerPanelComponentNgFactory, CalendarComponentNgFactory, FarrisContextMenuComponentNgFactory, DataTableComponentNgFactory, TreeTableComponentNgFactory, LookupLeftComponentNgFactory, LookupTabsComponentNgFactory, LookupQuickSelectPanelComponentNgFactory, SingleListComponentNgFactory, FilterPanelComponentNgFactory, UIFlowchartComponentNgFactory, ɵEmptyOutletComponentNgFactory, LanguageTextPanelComponentNgFactory, EnumEditorComponentNgFactory, FilterEditorComponentNgFactory, SortEditorComponentNgFactory, ɵlNgFactory, DatagridTextboxComponentNgFactory, DatagridTextareaComponentNgFactory, ɵaNgFactory, ɵbNgFactory$1, ɵcNgFactory$1, ɵdNgFactory, ɵeNgFactory$1, ɵfNgFactory, ɵgNgFactory, ɵhNgFactory, ɵiNgFactory$1, ɵjNgFactory, ɵkNgFactory, DatagridEnumEditorComponentNgFactory, DatagridSortEditorComponentNgFactory, DatagridFilterEditorComponentNgFactory, TaskExecuteComponentNgFactory, TaskAssigninfoComponentNgFactory, ProcessSelectorComponentNgFactory, AssigneeInfoComponentNgFactory, TaskCommentComponentNgFactory, CommentManageComponentNgFactory, VerifyDetailComponentNgFactory, StringFilterCellComponentNgFactory, NumericFilterCellComponentNgFactory, BooleanFilterCellComponentNgFactory, DateFilterCellComponentNgFactory, StringFilterMenuComponentNgFactory, NumericFilterMenuComponentNgFactory, DateFilterMenuComponentNgFactory, BooleanFilterMenuComponentNgFactory, NgbTooltipWindowNgFactory, FileUploadComponentNgFactory, UploadDialogComponentNgFactory, ɵbNgFactory$2, QueryConditionComponentNgFactory, ɵcNgFactory$2, ɵeNgFactory$2, ɵaNgFactory$1, ProcessSelectorComponentNgFactory$1, WfWorkitemHandleComponentNgFactory, UserHelperComponentNgFactory, TaskAssignComponentNgFactory, TaskSignaddComponentNgFactory, TaskTransferComponentNgFactory, ɵaNgFactory$2, WindowComponentNgFactory, WindowTitleBarComponentNgFactory, DialogComponentNgFactory, DialogTitleBarComponentNgFactory, ɵdNgFactory$1, ɵfNgFactory$1, ɵgNgFactory$1, ɵhNgFactory$1, ɵbNgFactory$3, ɵcNgFactory$3, ɵdNgFactory$2, ɵeNgFactory$3, ɵfNgFactory$2, ɵgNgFactory$2, ɵhNgFactory$2, BatchEditDialogComponentNgFactory, ResultConfirmComponentNgFactory, DiscussionPersonnelComponentNgFactory, MultiDownloadInfoComponentNgFactory, FilterRowComponentNgFactory, FilterTextboxComponentNgFactory, FilterCheckboxComponentNgFactory, ConditionEditorComponentNgFactory, FilterDatalistComponentNgFactory, FilterRowPanelComponentNgFactory, FilterRowEditorComponentNgFactory, FilterSelectComponentNgFactory, OrganizationSelectorComponentNgFactory, GridOrganizationSelectorComponentNgFactory, DatagridSettingsComponentNgFactory, SimpleColumnsComponentNgFactory, NewSchemeComponentNgFactory, SchemeListComponentNgFactory, FEPageModalComponentNgFactory, FEModalBackdropComponentNgFactory, ɵaNgFactory$3, FeatureEditorComponentNgFactory, RootComponentNgFactory]], [3, ComponentFactoryResolver], NgModuleRef]), ɵmpd(4608, NgLocalization, NgLocaleLocalization, [LOCALE_ID, [2, ɵangular_packages_common_common_a]]), ɵmpd(4608, ɵangular_packages_forms_forms_j, ɵangular_packages_forms_forms_j, []), ɵmpd(4608, FormBuilder, FormBuilder, []), ɵmpd(4608, CommonUtils, CommonUtils, []), ɵmpd(4608, RuntimeStateService, RuntimeStateService, [CommonUtils]), ɵmpd(4608, IdService, IdService, []), ɵmpd(4608, OverLayHiddenService, OverLayHiddenService, []), ɵmpd(4608, DialogService$1, DialogService$1, []), ɵmpd(135680, GridComponent, GridComponent, [BrowserSupportService, SelectionService, ElementRef, GroupInfoService, GroupsService, ChangeNotificationService, DetailsService, EditService$1, FilterService$1, PDFService, ResponsiveService, Renderer2, ExcelService, NgZone, ScrollSyncService, DomEventsService, ColumnResizingService, ChangeDetectorRef, ColumnReorderService, ColumnInfoService, NavigationService$1, SortService, LocalizationService$1]), ɵmpd(4608, DateTimeHelperService, DateTimeHelperService, []), ɵmpd(4608, NumberHelperService, NumberHelperService, []), ɵmpd(4608, FarrisKendoGridFormatService, FarrisKendoGridFormatService, [DateTimeHelperService, NumberHelperService]), ɵmpd(4608, FarrisTreetableFormatService, FarrisTreetableFormatService, []), ɵmpd(4608, LocaleService, LocaleService, [LOCALE_ID, CommonUtils, [2, FARRIS_LOCAL_CUSTOM_DATA]]), ɵmpd(4608, AttentionService, AttentionService, [RendererFactory2, NgZone]), ɵmpd(4608, PositioningService, PositioningService, [RendererFactory2, PLATFORM_ID]), ɵmpd(4608, ComponentLoaderFactory, ComponentLoaderFactory, [ComponentFactoryResolver, NgZone, Injector, PositioningService, ApplicationRef]), ɵmpd(4608, BsModalService, BsModalService, [RendererFactory2, ComponentLoaderFactory, NgZone]), ɵmpd(4608, NotifyService, NotifyService, [ComponentFactoryResolver, Injector, ApplicationRef]), ɵmpd(4608, PaginationService$1, PaginationService$1, []), ɵmpd(4608, PopoverConfig, PopoverConfig, []), ɵmpd(4608, ColumnFormatService, ColumnFormatService, [DateTimeHelperService, NumberHelperService]), ɵmpd(4608, HttpXsrfTokenExtractor, ɵangular_packages_common_http_http_g, [DOCUMENT, PLATFORM_ID, ɵangular_packages_common_http_http_e]), ɵmpd(4608, ɵangular_packages_common_http_http_h, ɵangular_packages_common_http_http_h, [HttpXsrfTokenExtractor, ɵangular_packages_common_http_http_f]), ɵmpd(5120, HTTP_INTERCEPTORS, function (p0_0) { return [p0_0]; }, [ɵangular_packages_common_http_http_h]), ɵmpd(4608, LoadingService, LoadingService, [ApplicationRef, ComponentFactoryResolver, Injector]), ɵmpd(4608, ComboLocaleService, ComboLocaleService, [LocaleService]), ɵmpd(4608, PopupService, PopupService, [ApplicationRef, ComponentFactoryResolver, Injector, [2, POPUP_CONTAINER]]), ɵmpd(4608, MessagerService, MessagerService, [BsModalService, Injector]), ɵmpd(4608, ɵj, ɵj, []), ɵmpd(4608, ɵs, ɵs, []), ɵmpd(4608, ɵn, ɵn, []), ɵmpd(4608, ɵu, ɵu, []), ɵmpd(4608, ɵv, ɵv, [ɵu]), ɵmpd(4608, SessionService, SessionService, []), ɵmpd(4608, HttpService, HttpService, [HttpClient, SessionService]), ɵmpd(4608, ɵo, ɵo, []), ɵmpd(4608, ɵz, ɵz, []), ɵmpd(4608, ɵd, ɵd, [HttpService, HttpClient, ɵz]), ɵmpd(4608, ɵa$2, ɵa$2, [HttpService, HttpClient]), ɵmpd(4608, ɵy, ɵy, []), ɵmpd(4608, ɵa, ɵa, [HttpClient]), ɵmpd(4608, ɵb$2, ɵb$2, [HttpClient]), ɵmpd(4608, ɵc$1, ɵc$1, [HttpClient]), ɵmpd(4608, FrameworkVariableService, FrameworkVariableService, []), ɵmpd(4608, CookieService, CookieService, [DOCUMENT, PLATFORM_ID]), ɵmpd(4608, LanguageService$1, LanguageService$1, [CookieService]), ɵmpd(4608, FrmI18nSettingService, FrmI18nSettingService, [FrameworkVariableService, LanguageService$1, HttpService]), ɵmpd(4608, AppService, AppService, [HttpService, SessionService, [2, FrmI18nSettingService]]), ɵmpd(4608, WindowContainerService, WindowContainerService, []), ɵmpd(4608, WindowService, WindowService, [ComponentFactoryResolver, WindowContainerService]), ɵmpd(4608, CloudprintService, CloudprintService, [ɵa, ComponentFactoryResolver, ɵb$2, ɵc$1, Injector, ApplicationRef, NotifyService, AppService, WindowService, BsModalService]), ɵmpd(4608, WfApprovalLogsService, WfApprovalLogsService, [MessagerService, Injector, ComponentFactoryResolver, BsModalService]), ɵmpd(4608, NgbDropdownConfig, NgbDropdownConfig, []), ɵmpd(4608, FarrisContextMenuService, FarrisContextMenuService, [ComponentFactoryResolver, Injector]), ɵmpd(4608, TreetableService, TreetableService, []), ɵmpd(4608, ResizeService, ResizeService, []), ɵmpd(4608, TTHotkeys, TTHotkeys, [EventManager]), ɵmpd(4608, QuerySolutionService, QuerySolutionService, []), ɵmpd(4608, FilterService$2, FilterService$2, []), ɵmpd(4608, ConvertorService$1, ConvertorService$1, []), ɵmpd(4608, SolutionService$1, SolutionService$1, []), ɵmpd(4608, ErrorHandler, ɵt, []), ɵmpd(4608, ValidatorMessagerService, ValidatorMessagerService, []), ɵmpd(4608, UiFlowchartService, UiFlowchartService, [HttpService]), ɵmpd(4608, WFFlowchartService, WFFlowchartService, [MessagerService, Injector, ComponentFactoryResolver, BsModalService]), ɵmpd(4608, TaskService, TaskService, [HttpService, MessagerService]), ɵmpd(4608, I18nService$2, I18nService$2, []), ɵmpd(4608, CacheStorageAbstract, CacheMemoryStorage, []), ɵmpd(4608, CacheService, CacheService, [[2, CacheStorageAbstract]]), ɵmpd(4608, FrmEventBus, FrmEventBus, []), ɵmpd(4608, FuncsService, FuncsService, [[2, FrameworkVariableService]]), ɵmpd(4608, FrameworkService, FrameworkService, [HttpService, Router, CacheService, SessionService, FrmEventBus, FuncsService, LoadingService$1, [2, AppService], [2, FrmI18nSettingService]]), ɵmpd(4608, WfTaskHandlerService, WfTaskHandlerService, [WfApprovalLogsService, WFFlowchartService, Injector, ComponentFactoryResolver, BsModalService, TaskService, NotifyService, I18nService$2, FrameworkService, ApplicationRef]), ɵmpd(4608, AppContextManager, AppContextManager, []), ɵmpd(135680, AppContext, AppContext, [[2, Injector], [2, AppContextManager], [3, AppContext]]), ɵmpd(4608, FormLoadingService, FormLoadingService, [LoadingService, [2, HideEventService], [2, AppContext]]), ɵmpd(4608, LanguageService, LanguageService, [[2, LOCALE_ID]]), ɵmpd(4608, FormMessageService, FormMessageService, [MessagerService, [2, LanguageService], LOCALE_ID]), ɵmpd(4608, FormNotifyService, FormNotifyService, [NotifyService, [2, LanguageService]]), ɵmpd(4608, FormErrorService, FormErrorService, [FormMessageService, [2, LanguageService]]), ɵmpd(4608, WizardService, WizardService, []), ɵmpd(4608, FormWizardService, FormWizardService, [WizardService]), ɵmpd(4608, CheckService, CheckService, []), ɵmpd(4608, DataCheckService, DataCheckService, [FormMessageService, FormNotifyService, [2, LanguageService]]), ɵmpd(4608, FrameEventBus, FrameEventBus, []), ɵmpd(4608, EventService, EventService, [FrameEventBus]), ɵmpd(4608, ComponentManagerService, ComponentManagerService, []), ɵmpd(4608, FilterService, FilterService, []), ɵmpd(4608, KeybindingService, KeybindingService, []), ɵmpd(4608, QuerystringService, QuerystringService, []), ɵmpd(4608, RuntimeFrameworkService, RuntimeFrameworkService, []), ɵmpd(4608, ParamService, ParamService, [QuerystringService, RuntimeFrameworkService]), ɵmpd(4608, MenuStateService, MenuStateService, []), ɵmpd(4608, NavigationEventService, NavigationEventService, [RuntimeFrameworkService, MenuStateService, QuerystringService]), ɵmpd(4608, NavigationService, NavigationService, [RuntimeFrameworkService, MenuStateService, NavigationEventService, QuerystringService, [2, FrameContext], [2, Injector], [2, LanguageService]]), ɵmpd(4608, RouterParamService, RouterParamService, []), ɵmpd(4608, RouterService, RouterService, [Router, RouterParamService, FrameworkService, [2, AppService], [2, MenuStateService], [2, LanguageService]]), ɵmpd(4608, ApplicationParamService, ApplicationParamService, [[2, ParamService], [2, RuntimeFrameworkService]]), ɵmpd(4608, FilterConditionService, FilterConditionService, []), ɵmpd(4608, UserSettingsToken, UserSettingsService, [Injector, [2, FrmI18nSettingService]]), ɵmpd(4608, VerifyDetailService, VerifyDetailService, [ComponentFactoryResolver, Injector, ApplicationRef]), ɵmpd(4608, IntlService, CldrIntlService, [LOCALE_ID]), ɵmpd(4608, DOMService, DOMService, []), ɵmpd(4608, CenturyViewService, CenturyViewService, []), ɵmpd(4608, DecadeViewService, DecadeViewService, []), ɵmpd(4608, MonthViewService, MonthViewService, [IntlService]), ɵmpd(4608, YearViewService, YearViewService, [IntlService]), ɵmpd(4608, WeekNamesService, WeekNamesService, [IntlService]), ɵmpd(135680, ResizeBatchService, ResizeBatchService, [NgZone]), ɵmpd(4608, NavigationService$2, NavigationService$2, [BusViewService]), ɵmpd(4608, DOMService$1, DOMService$1, []), ɵmpd(4608, HoursService, HoursService, [IntlService]), ɵmpd(4608, MinutesService, MinutesService, [IntlService]), ɵmpd(4608, SecondsService, SecondsService, [IntlService]), ɵmpd(4608, DayPeriodService, DayPeriodService, [IntlService]), ɵmpd(4608, NgbTooltipConfig, NgbTooltipConfig, []), ɵmpd(4608, TabService, TabService, [[2, TabConfig]]), ɵmpd(4608, UploadService, UploadService, [HttpService]), ɵmpd(4608, DownloadService, DownloadService, []), ɵmpd(4608, UploadDialogService, UploadDialogService, [BsModalService, ComponentFactoryResolver, Injector]), ɵmpd(4608, SolutionService, SolutionService, [NotifyService]), ɵmpd(4608, ConvertorService, ConvertorService, []), ɵmpd(4608, TaskCommentService, TaskCommentService, [HttpService]), ɵmpd(4608, TaskCommentUIState, TaskCommentUIState, []), ɵmpd(4608, TaskCommentViewModel, TaskCommentViewModel, [TaskCommentUIState, HttpService]), ɵmpd(4608, I18nService$3, I18nService$3, []), ɵmpd(4608, TaskCommentRepository, TaskCommentRepository, []), ɵmpd(4608, TaskService$1, TaskService$1, [HttpService]), ɵmpd(4608, UserService, UserService, [HttpClient, HttpService, SessionService]), ɵmpd(4608, I18nService$1, I18nService$1, []), ɵmpd(4608, WFSubmiteService, WFSubmiteService, [Injector, ComponentFactoryResolver, BsModalService, [2, I18nService$1]]), ɵmpd(4608, DialogContainerService, DialogContainerService, []), ɵmpd(4608, DialogService$2, DialogService$2, [ComponentFactoryResolver, DialogContainerService]), ɵmpd(4608, ɵe, ɵe, [HttpClient]), ɵmpd(4608, ConvertorService$2, ConvertorService$2, []), ɵmpd(4608, SolutionService$2, SolutionService$2, []), ɵmpd(4608, QuerySolutionService$1, QuerySolutionService$1, []), ɵmpd(135680, FarrisScrollSpyService, FarrisScrollSpyService, [NgZone]), ɵmpd(4608, DiscussionListService, DiscussionListService, []), ɵmpd(4608, FFileUploadAdaptUnifileConfigService, FFileUploadAdaptUnifileConfigService, [[2, FFileUploadAdaptUnifileConfigToken]]), ɵmpd(4608, UploadServerService, FfileuploadAdaptUnifileService, [UploadService, FFileUploadAdaptUnifileConfigService]), ɵmpd(4608, FFileUploaderService, FFileUploaderService, [[2, UploadServerService]]), ɵmpd(4608, FileViewerService, FileViewerService, [BsModalService, ComponentFactoryResolver, Injector, ɵa$2, MessagerService, CloudprintService, AppService]), ɵmpd(4608, FfilepreviewAdaptUnifileService, FfilepreviewAdaptUnifileService, [FileViewerService, FFileUploadAdaptUnifileConfigService, [2, DownloadService]]), ɵmpd(4608, EditorService, EditorService, []), ɵmpd(4608, I18nService, I18nService, [[2, LOCALE_ID]]), ɵmpd(4608, FEScrollCollapsibleAreaService, FEScrollCollapsibleAreaService, []), ɵmpd(4608, GRID_SETTINGS_SERVICE, DatagridSettingsService, [Injector, BsModalService, MessagerService, IdService, LocaleService]), ɵmpd(4608, WindowVariableService, WindowVariableService, []), ɵmpd(4608, TabEntityService, TabEntityService, []), ɵmpd(4608, FEPageModalService, FEPageModalService, [RendererFactory2, [2, ComponentLoaderFactory], Injector, NgZone]), ɵmpd(4608, EventBus, EventBus, []), ɵmpd(4608, Subscription, Subscription, []), ɵmpd(4608, RestfulService, RestfulService, [HttpClient]), ɵmpd(5120, VARIABLE_PARSERS, function () { return [new FrameIdVariableParser(), new ɵa$3(), new EventParamVariableParser(), new DataVariableParser(), new UIStateVariableParser(), new StateMachineVariableParser(), new CommandVariableParser()]; }, []), ɵmpd(4608, VariableParseService, VariableParseService, [VARIABLE_PARSERS]), ɵmpd(5120, BE_SERVER_URI_TOKEN, ɵ2$1, []), ɵmpd(1073742336, CommonModule, CommonModule, []), ɵmpd(1073742336, ɵangular_packages_forms_forms_bc, ɵangular_packages_forms_forms_bc, []), ɵmpd(1073742336, FormsModule, FormsModule, []), ɵmpd(1073742336, ReactiveFormsModule, ReactiveFormsModule, []), ɵmpd(1073742336, PanelBarModule, PanelBarModule, []), ɵmpd(1073742336, SplitterModule$1, SplitterModule$1, []), ɵmpd(1073742336, TabStripModule, TabStripModule, []), ɵmpd(1073742336, LayoutModule, LayoutModule, []), ɵmpd(1073742336, FarrisCommonModule, FarrisCommonModule, []), ɵmpd(1073742336, KendoBindingModule, KendoBindingModule, []), ɵmpd(1073742336, FlexLayoutModule, FlexLayoutModule, []), ɵmpd(1073742336, LocaleModule, LocaleModule, []), ɵmpd(1073742336, LoadingModule, LoadingModule, []), ɵmpd(1073742336, PerfectScrollbarModule, PerfectScrollbarModule, []), ɵmpd(1073742336, AngularDraggableModule, AngularDraggableModule, []), ɵmpd(1073742336, FAreaResponseModule, FAreaResponseModule, []), ɵmpd(1073742336, FarrisTooltipModule, FarrisTooltipModule, []), ɵmpd(1073742336, ModalModule, ModalModule, []), ɵmpd(1073742336, MessagerModule, MessagerModule, []), ɵmpd(1073742336, NotifyModule, NotifyModule, []), ɵmpd(1073742336, PaginationModule, PaginationModule, []), ɵmpd(1073742336, PopoverModule, PopoverModule, []), ɵmpd(1073742336, InputGroupModule, InputGroupModule, []), ɵmpd(1073742336, DateHelperModule, DateHelperModule, []), ɵmpd(1073742336, NumberHelperModule, NumberHelperModule, []), ɵmpd(1073742336, DataColumnModule, DataColumnModule, []), ɵmpd(1073742336, DataTableModule, DataTableModule, []), ɵmpd(1073742336, FarrisDialogModule, FarrisDialogModule, []), ɵmpd(1073742336, HttpClientXsrfModule, HttpClientXsrfModule, []), ɵmpd(1073742336, HttpClientModule, HttpClientModule, []), ɵmpd(1073742336, DatalistModule, DatalistModule, []), ɵmpd(1073742336, ComboListModule, ComboListModule, []), ɵmpd(1073742336, ButtonModule, ButtonModule, []), ɵmpd(1073742336, ButtonGroupModule, ButtonGroupModule, []), ɵmpd(1073742336, PopupModule, PopupModule, []), ɵmpd(1073742336, ListModule, ListModule, []), ɵmpd(1073742336, SplitButtonModule, SplitButtonModule, []), ɵmpd(1073742336, DropDownButtonModule, DropDownButtonModule, []), ɵmpd(1073742336, ButtonsModule, ButtonsModule, []), ɵmpd(1073742336, ɵf, ɵf, []), ɵmpd(1073742336, ɵh, ɵh, []), ɵmpd(1073742336, ɵbe, ɵbe, []), ɵmpd(1073742336, ɵg, ɵg, []), ɵmpd(1073742336, ɵt$1, ɵt$1, []), ɵmpd(1073742336, ɵbg, ɵbg, []), ɵmpd(1073742336, ɵbh, ɵbh, []), ɵmpd(1073742336, FileListModule, FileListModule, []), ɵmpd(1073742336, WfApprovalLogsModule, WfApprovalLogsModule, []), ɵmpd(1073742336, LayoutModule$1, LayoutModule$1, []), ɵmpd(1073742336, NgbDropdownModule, NgbDropdownModule, []), ɵmpd(1073742336, FarrisSectionModule, FarrisSectionModule, []), ɵmpd(1073742336, FDropdownDirectiveTypeModule, FDropdownDirectiveTypeModule, []), ɵmpd(1073742336, NgxPaginationModule, NgxPaginationModule, []), ɵmpd(1073742336, ScrollbarModule, ScrollbarModule, []), ɵmpd(1073742336, TimePickerModule, TimePickerModule, []), ɵmpd(1073742336, FarrisDatePickerModule, FarrisDatePickerModule, []), ɵmpd(1073742336, FarrisContextMenuModule, FarrisContextMenuModule, []), ɵmpd(1073742336, TreeTableModule, TreeTableModule, []), ɵmpd(1073742336, LookupModule, LookupModule, []), ɵmpd(1073742336, FarrisFormsModule, FarrisFormsModule, []), ɵmpd(1073742336, NumberSpinnerModule, NumberSpinnerModule, []), ɵmpd(1073742336, SwitchModule, SwitchModule, []), ɵmpd(1073742336, FilterConditionModule, FilterConditionModule, []), ɵmpd(1073742336, FilterPanelModule, FilterPanelModule, []), ɵmpd(1073742336, FarrisSidebarModule, FarrisSidebarModule, []), ɵmpd(1073742336, SimpleFilterModule, SimpleFilterModule, []), ɵmpd(1073742336, DatagridSmartFilterModule, DatagridSmartFilterModule, []), ɵmpd(1073742336, DatagridModule, DatagridModule, []), ɵmpd(1073742336, UiFlowchartModule, UiFlowchartModule, []), ɵmpd(1073742336, RouterModule, RouterModule, [[2, ɵangular_packages_router_router_a], [2, Router]]), ɵmpd(1073742336, CommonSharedModule, CommonSharedModule, []), ɵmpd(1073742336, TaskImplApiModule, TaskImplApiModule, []), ɵmpd(1073742336, WfSignModule, WfSignModule, []), ɵmpd(1073742336, AvatarModule, AvatarModule, []), ɵmpd(1073742336, ComboLookupModule, ComboLookupModule, []), ɵmpd(1073742336, LanguageTextboxModule, LanguageTextboxModule, []), ɵmpd(1073742336, EnumEditorModule, EnumEditorModule, []), ɵmpd(1073742336, FilterModule, FilterModule, []), ɵmpd(1073742336, SorterModule, SorterModule, []), ɵmpd(1073742336, DatagridEditorsModule, DatagridEditorsModule, []), ɵmpd(1073742336, WfTaskHandlerModule, WfTaskHandlerModule, []), ɵmpd(512, WorkFlowMessageService, WorkFlowMessageService, []), ɵmpd(512, WorkFlowMessage, WorkFlowMessage, [Injector, WorkFlowMessageService]), ɵmpd(1073742336, CommandServicesModule, CommandServicesModule, [WorkFlowMessage]), ɵmpd(1073742336, FResponseToolbarModule, FResponseToolbarModule, []), ɵmpd(1073742336, FormMessageModule, FormMessageModule, []), ɵmpd(1073742336, TranslateModule, TranslateModule, []), ɵmpd(1073742336, VerifyDetailModule, VerifyDetailModule, []), ɵmpd(1073742336, SharedModule, SharedModule, []), ɵmpd(1073742336, DragAndDropModule, DragAndDropModule, []), ɵmpd(1073742336, GroupModule, GroupModule, []), ɵmpd(1073742336, EventsModule, EventsModule, []), ɵmpd(1073742336, NumericTextBoxModule, NumericTextBoxModule, []), ɵmpd(1073742336, IntlModule, IntlModule, []), ɵmpd(1073742336, EventsModule$1, EventsModule$1, []), ɵmpd(1073742336, DateInputModule, DateInputModule, []), ɵmpd(1073742336, CalendarCommonModule, CalendarCommonModule, []), ɵmpd(1073742336, TemplatesModule, TemplatesModule, []), ɵmpd(1073742336, VirtualizationModule, VirtualizationModule, []), ɵmpd(1073742336, CalendarModule$1, CalendarModule$1, []), ɵmpd(1073742336, DatePickerModule, DatePickerModule, []), ɵmpd(1073742336, BodyModule, BodyModule, []), ɵmpd(1073742336, ResizeSensorModule, ResizeSensorModule, []), ɵmpd(1073742336, SharedDirectivesModule, SharedDirectivesModule, []), ɵmpd(1073742336, SharedModule$1, SharedModule$1, []), ɵmpd(1073742336, DropDownListModule, DropDownListModule, []), ɵmpd(1073742336, AutoCompleteModule, AutoCompleteModule, []), ɵmpd(1073742336, TextBoxModule, TextBoxModule, []), ɵmpd(1073742336, DraggableModule, DraggableModule, []), ɵmpd(1073742336, SliderModule, SliderModule, []), ɵmpd(1073742336, SwitchModule$1, SwitchModule$1, []), ɵmpd(1073742336, MaskedTextBoxModule, MaskedTextBoxModule, []), ɵmpd(1073742336, InputsModule, InputsModule, []), ɵmpd(1073742336, SharedFilterModule, SharedFilterModule, []), ɵmpd(1073742336, RowFilterModule, RowFilterModule, []), ɵmpd(1073742336, FilterMenuModule, FilterMenuModule, []), ɵmpd(1073742336, ColumnMenuModule, ColumnMenuModule, []), ɵmpd(1073742336, HeaderModule, HeaderModule, []), ɵmpd(1073742336, FooterModule, FooterModule, []), ɵmpd(1073742336, PagerModule, PagerModule, []), ɵmpd(1073742336, GridModule, GridModule, []), ɵmpd(1073742336, MultiViewCalendarModule, MultiViewCalendarModule, []), ɵmpd(1073742336, CalendarsModule, CalendarsModule, []), ɵmpd(1073742336, TimePickerModule$1, TimePickerModule$1, []), ɵmpd(1073742336, DateRangeModule, DateRangeModule, []), ɵmpd(1073742336, DateInputsModule, DateInputsModule, []), ɵmpd(1073742336, ComboBoxModule, ComboBoxModule, []), ɵmpd(1073742336, MultiSelectModule$1, MultiSelectModule$1, []), ɵmpd(1073742336, DropDownsModule, DropDownsModule, []), ɵmpd(1073742336, NgbTooltipModule, NgbTooltipModule, []), ɵmpd(1073742336, FarrisTabsModule, FarrisTabsModule, []), ɵmpd(1073742336, FarrisTagModule, FarrisTagModule, []), ɵmpd(1073742336, ProgressModule, ProgressModule, []), ɵmpd(1073742336, UploadModule, UploadModule, []), ɵmpd(1073742336, UploadDialogMoudle, UploadDialogMoudle, []), ɵmpd(1073742336, FieldGroupModule, FieldGroupModule, []), ɵmpd(1073742336, FarrisTimeSpinnerModule, FarrisTimeSpinnerModule, []), ɵmpd(1073742336, ProgressStepModule, ProgressStepModule, []), ɵmpd(1073742336, WizardModule, WizardModule, []), ɵmpd(1073742336, MultiSelectModule, MultiSelectModule, []), ɵmpd(1073742336, QueryConditionModule, QueryConditionModule, []), ɵmpd(1073742336, QuerySolutionModule, QuerySolutionModule, []), ɵmpd(1073742336, FarrisButtonModule, FarrisButtonModule, []), ɵmpd(1073742336, ListViewModule, ListViewModule, []), ɵmpd(1073742336, SplitterModule, SplitterModule, []), ɵmpd(1073742336, ListNavModule, ListNavModule, []), ɵmpd(1073742336, TextModule, TextModule, []), ɵmpd(1073742336, WFCommentModule, WFCommentModule, []), ɵmpd(1073742336, WFRuntimeModule, WFRuntimeModule, []), ɵmpd(1073742336, SharedModule$2, SharedModule$2, []), ɵmpd(1073742336, WindowModule, WindowModule, []), ɵmpd(1073742336, DialogModule, DialogModule, []), ɵmpd(1073742336, CloudPrintModule, CloudPrintModule, []), ɵmpd(1073742336, FarrisHtmlEditorModule, FarrisHtmlEditorModule, []), ɵmpd(1073742336, ViewChangeModule, ViewChangeModule, []), ɵmpd(1073742336, ListFilterModule, ListFilterModule, []), ɵmpd(1073742336, CalendarModule, CalendarModule, []), ɵmpd(1073742336, ScrollspyModule, ScrollspyModule, []), ɵmpd(1073742336, DynamicControlGroupModule, DynamicControlGroupModule, []), ɵmpd(1073742336, FarrisFooterModule, FarrisFooterModule, []), ɵmpd(1073742336, BatchEditDialogModule, BatchEditDialogModule, []), ɵmpd(1073742336, TreeModule, TreeModule, []), ɵmpd(1073742336, DiscussionGroupModule, DiscussionGroupModule, []), ɵmpd(1073742336, NavModule, NavModule, []), ɵmpd(1073742336, TagsModule, TagsModule, []), ɵmpd(1073742336, FFileUploadModule, FFileUploadModule, []), ɵmpd(1073742336, FfileuploadAdaptUnifileModule, FfileuploadAdaptUnifileModule, []), ɵmpd(1073742336, DatagridFilterRowModule, DatagridFilterRowModule, []), ɵmpd(1073742336, OrganizationSelectorModule, OrganizationSelectorModule, []), ɵmpd(1073742336, DatagridSettingsModule, DatagridSettingsModule, []), ɵmpd(1073742336, EditorModule, EditorModule, []), ɵmpd(1073742336, FrmCommonModule, FrmCommonModule, []), ɵmpd(1073742336, FEHeaderFooterModule, FEHeaderFooterModule, []), ɵmpd(1073742336, FEPageModalModule, FEPageModalModule, []), ɵmpd(1073742336, FeatureEditorModule, FeatureEditorModule, []), ɵmpd(1073742336, FEScrollCollapsibleAreaModule, FEScrollCollapsibleAreaModule, []), ɵmpd(1073742336, MaterialPlanFormRoutingModule, MaterialPlanFormRoutingModule, []), ɵmpd(512, TranslateStore, TranslateStore, []), ɵmpd(512, ɵangular_packages_common_http_http_d, ɵangular_packages_common_http_http_d, []), ɵmpd(2048, XhrFactory, null, [ɵangular_packages_common_http_http_d]), ɵmpd(512, HttpXhrBackend, HttpXhrBackend, [XhrFactory]), ɵmpd(2048, HttpBackend, null, [HttpXhrBackend]), ɵmpd(512, HttpHandler, ɵHttpInterceptingHandler, [HttpBackend, Injector]), ɵmpd(512, HttpClient, HttpClient, [HttpHandler]), ɵmpd(1024, TranslateLoader, ɵ0$2, [HttpClient]), ɵmpd(512, TranslateCompiler, TranslateFakeCompiler, []), ɵmpd(512, TranslateParser, TranslateDefaultParser, []), ɵmpd(512, MissingTranslationHandler, JitMissingTranslationHandler, []), ɵmpd(256, USE_DEFAULT_LANG, undefined, []), ɵmpd(256, USE_STORE, undefined, []), ɵmpd(512, TranslateService, TranslateService, [TranslateStore, TranslateLoader, TranslateCompiler, TranslateParser, MissingTranslationHandler, USE_DEFAULT_LANG, USE_STORE]), ɵmpd(512, TranslateResolveService, TranslateResolveService, [TranslateService, HttpClient]), ɵmpd(1073742336, MaterialPlanFormModule, MaterialPlanFormModule, [TranslateResolveService]), ɵmpd(256, LOCALE_ID, ɵ1$1, []), ɵmpd(256, FARRIS_LOCAL_CUSTOM_DATA, {}, []), ɵmpd(256, ɵangular_packages_common_http_http_e, "XSRF-TOKEN", []), ɵmpd(256, ɵangular_packages_common_http_http_f, "X-XSRF-TOKEN", []), ɵmpd(256, LOADING_DEFAULT_CONFIG, loaddingDefaultConfig, []), ɵmpd(256, MESSAGER_DEFAULT_CONFIG, MessagerDefaultConfig, []), ɵmpd(256, SWITCH_OPTIONS, {}, []), ɵmpd(256, SCROLLBAR_CONFIG, { minScrollbarLength: 20 }, []), ɵmpd(1024, GRID_EDITORS, function () { return [{ name: "textarea", value: DatagridTextareaComponent }, { name: "textbox", value: DatagridTextboxComponent }, { name: "checkbox", value: ɵa$4 }, { name: "datepicker", value: ɵb$4 }, { name: "input-group", value: ɵc$2 }, { name: "select", value: ɵd$1 }, { name: "lookup", value: ɵe$1 }, { name: "numberbox", value: ɵf$1 }, { name: "combolist", value: ɵg$1 }, { name: "switch", value: ɵh$1 }, { name: "timepicker", value: ɵi }, { name: "combo-lookup", value: ɵj$1 }, { name: "language-textbox", value: ɵk }, { name: "enum-editor", value: DatagridEnumEditorComponent }, { name: "filter-editor", value: DatagridFilterEditorComponent }, { name: "sort-editor", value: DatagridSortEditorComponent }, { name: "textarea", value: DatagridTextareaComponent }, { name: "textbox", value: DatagridTextboxComponent }, { name: "checkbox", value: ɵa$4 }, { name: "datepicker", value: ɵb$4 }, { name: "input-group", value: ɵc$2 }, { name: "select", value: ɵd$1 }, { name: "lookup", value: ɵe$1 }, { name: "numberbox", value: ɵf$1 }, { name: "combolist", value: ɵg$1 }, { name: "switch", value: ɵh$1 }, { name: "timepicker", value: ɵi }, { name: "combo-lookup", value: ɵj$1 }, { name: "language-textbox", value: ɵk }, { name: "enum-editor", value: DatagridEnumEditorComponent }, { name: "filter-editor", value: DatagridFilterEditorComponent }, { name: "sort-editor", value: DatagridSortEditorComponent }]; }, []), ɵmpd(256, TOUCH_ENABLED, touchEnabled, []), ɵmpd(256, TOUCH_ENABLED$1, touchEnabled$1, []), ɵmpd(256, ɵb$5, { modules: defaultModules }, []), ɵmpd(256, FFileUploadAPIServiceToken, null, []), ɵmpd(1024, ROUTES, function () { return [[{ path: "", component: RootComponent, children: [], resolve: { "translate": TranslateResolveService } }]]; }, []), ɵmpd(256, GRID_FILTER_ROW, FilterRowComponent, []), ɵmpd(256, TINYMCE_SCRIPT_SRC, "/platform/common/web/assets/tinymce/tinymce.min.js", []), ɵmpd(256, FORM_PATH_TOKEN, "/apps/scm/cm/web/bo-materialplan-front/materialplanform/", [])]); }));
 
         }
     };

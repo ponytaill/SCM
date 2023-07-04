@@ -16,6 +16,7 @@ import { FARRIS_DEVKIT_EXPRESSION_LISTENER_PROVIDERS, FARRIS_DEVKIT_EXPRESSION_E
 import { WFSubmiteService } from '@gsp-wf/rtdevkit';
 import { CloudprintService } from '@gsp-svc/cloudprint';
 import { WFFlowchartService } from '@gsp-wf/ui-flowchart';
+import { CHANGE_SET_POLICY_TOKEN } from '@farris/devkit';
 import { TranslateToken, FARRIS_DEVKIT_EXPRESSION_ROOT_FRAME_PROVIDERS } from '@farris/devkit';
 import { VerifyDetailService } from '@farris/ui-verify-detail';
 import { AppContext, FORM_ID, PARAM_TYPE_TRANSFORM_TOKEN } from '@farris/devkit';
@@ -43,6 +44,7 @@ import { Remove1Handler } from '../../viewmodels/handlers/remove1handler';
 import { Filter1Handler } from '../../viewmodels/handlers/filter1handler';
 import { submitWithBizDefKey1Handler } from '../../viewmodels/handlers/submitwithbizdefkey1handler';
 import { cancelSubmitWithDataId1Handler } from '../../viewmodels/handlers/cancelsubmitwithdataid1handler';
+import { rootviewmodelLoad1Handler } from '../../viewmodels/handlers/rootviewmodelload1handler';
 import { MaterialPlanProxy } from '../../models/materialplanproxy';
 var RootComponent = /** @class */ (function (_super) {
     tslib_1.__extends(RootComponent, _super);
@@ -67,8 +69,16 @@ var RootComponent = /** @class */ (function (_super) {
         _this.size = {};
         _this.enabledLanguageList = [];
         _this.pageHeaderToolbarToolbarItems = [{
+                "id": "toolBarItem-epjr",
+                "text": _this.langService.transform("toolBarItem-epjr", _this.lang, "同步"),
+                "resourceId": "toolBarItem-epjr",
+                "isDP": false,
+                "tipsEnable": false,
+                "icon": "",
+                "children": []
+            }, {
                 "id": "button-add",
-                "text": _this.langService.transform('button-add', _this.lang, "新增"),
+                "text": _this.langService.transform("button-add", _this.lang, "新增"),
                 "resourceId": "button-add",
                 "isDP": false,
                 "class": "btn-primary",
@@ -77,7 +87,7 @@ var RootComponent = /** @class */ (function (_super) {
                 "children": []
             }, {
                 "id": "button-edit",
-                "text": _this.langService.transform('button-edit', _this.lang, "编辑"),
+                "text": _this.langService.transform("button-edit", _this.lang, "编辑"),
                 "resourceId": "button-edit",
                 "isDP": false,
                 "tipsEnable": false,
@@ -85,7 +95,7 @@ var RootComponent = /** @class */ (function (_super) {
                 "children": []
             }, {
                 "id": "button-view",
-                "text": _this.langService.transform('button-view', _this.lang, "查看"),
+                "text": _this.langService.transform("button-view", _this.lang, "查看"),
                 "resourceId": "button-view",
                 "isDP": false,
                 "tipsEnable": false,
@@ -93,7 +103,7 @@ var RootComponent = /** @class */ (function (_super) {
                 "children": []
             }, {
                 "id": "button-delete",
-                "text": _this.langService.transform('button-delete', _this.lang, "删除"),
+                "text": _this.langService.transform("button-delete", _this.lang, "删除"),
                 "resourceId": "button-delete",
                 "isDP": false,
                 "tipsEnable": false,
@@ -101,7 +111,7 @@ var RootComponent = /** @class */ (function (_super) {
                 "children": []
             }, {
                 "id": "button-approve",
-                "text": _this.langService.transform('button-approve', _this.lang, "提交审批"),
+                "text": _this.langService.transform("button-approve", _this.lang, "提交审批"),
                 "resourceId": "button-approve",
                 "isDP": false,
                 "tipsEnable": false,
@@ -109,7 +119,7 @@ var RootComponent = /** @class */ (function (_super) {
                 "children": []
             }, {
                 "id": "button-cancel-approve",
-                "text": _this.langService.transform('button-cancel-approve', _this.lang, "取消提交审批"),
+                "text": _this.langService.transform("button-cancel-approve", _this.lang, "取消提交审批"),
                 "resourceId": "button-cancel-approve",
                 "isDP": false,
                 "tipsEnable": false,
@@ -127,32 +137,32 @@ var RootComponent = /** @class */ (function (_super) {
             position: 'inHead',
             contents: []
         };
-        _this.SectionqueryschemesectionMainTitle = _this.langService.transform('Section/query-scheme-section/mainTitle', _this.lang, "主标题");
-        _this.SectionqueryschemesectionSubTitle = _this.langService.transform('Section/query-scheme-section/subTitle', _this.lang, "");
-        _this.QuerySolutionqueryscheme1 = _this.langService.transform('query-scheme-1', _this.lang, "默认筛选方案");
+        _this.SectionqueryschemesectionMainTitle = _this.langService.transform("Section/query-scheme-section/mainTitle", _this.lang, "主标题");
+        _this.SectionqueryschemesectionSubTitle = _this.langService.transform("Section/query-scheme-section/subTitle", _this.lang, "");
+        _this.QuerySolutionqueryscheme1 = _this.langService.transform("query-scheme-1", _this.lang, "默认筛选方案");
         _this.fieldConfigsqueryscheme1 = [
             {
                 "id": "f73f5927-a02c-491c-9b5c-cd74be14d2fa",
                 "labelCode": "ID",
                 "code": "ID",
-                "name": _this.langService.transform('QueryScheme/query-scheme-1/f73f5927-a02c-491c-9b5c-cd74be14d2fa', _this.lang, "主键"),
-                "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/f73f5927-a02c-491c-9b5c-cd74be14d2fa/placeHolder', _this.lang, ""),
+                "name": _this.langService.transform("QueryScheme/query-scheme-1/f73f5927-a02c-491c-9b5c-cd74be14d2fa", _this.lang, "主键"),
+                "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/f73f5927-a02c-491c-9b5c-cd74be14d2fa/placeHolder", _this.lang, ""),
                 "control": { "id": "f73f5927-a02c-491c-9b5c-cd74be14d2fa", "controltype": "text", "require": false, "className": "", "modalConfig": { "modalCmp": null, "mapFields": null, "showHeader": true, "title": "", "showCloseButton": true, "showMaxButton": true, "width": 800, "height": 600, "showFooterButtons": true, "footerButtons": [] } }
             },
             {
                 "id": "040f40dd-c841-498f-86c5-d8d58afb91d7",
                 "labelCode": "Version",
                 "code": "Version",
-                "name": _this.langService.transform('QueryScheme/query-scheme-1/040f40dd-c841-498f-86c5-d8d58afb91d7', _this.lang, "版本"),
-                "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/040f40dd-c841-498f-86c5-d8d58afb91d7/placeHolder', _this.lang, ""),
+                "name": _this.langService.transform("QueryScheme/query-scheme-1/040f40dd-c841-498f-86c5-d8d58afb91d7", _this.lang, "版本"),
+                "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/040f40dd-c841-498f-86c5-d8d58afb91d7/placeHolder", _this.lang, ""),
                 "control": { "id": "040f40dd-c841-498f-86c5-d8d58afb91d7", "controltype": "date", "require": false, "format": "yyyy-MM-dd", "weekSelect": false }
             },
             {
                 "id": "6a6f7e09-0101-468f-ae3f-40c76c0f06b0",
                 "labelCode": "BillStatus.BillState",
                 "code": "BillState",
-                "name": _this.langService.transform('QueryScheme/query-scheme-1/6a6f7e09-0101-468f-ae3f-40c76c0f06b0', _this.lang, "状态"),
-                "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/6a6f7e09-0101-468f-ae3f-40c76c0f06b0/placeHolder', _this.lang, ""),
+                "name": _this.langService.transform("QueryScheme/query-scheme-1/6a6f7e09-0101-468f-ae3f-40c76c0f06b0", _this.lang, "状态"),
+                "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/6a6f7e09-0101-468f-ae3f-40c76c0f06b0/placeHolder", _this.lang, ""),
                 "control": {
                     "controltype": "dropdown",
                     "require": false,
@@ -161,19 +171,19 @@ var RootComponent = /** @class */ (function (_super) {
                     "enumValues": [
                         {
                             "value": "Billing",
-                            "name": _this.langService.transform('QueryScheme/query-scheme-1/6a6f7e09-0101-468f-ae3f-40c76c0f06b0/control/enumValues/Billing', _this.lang, "制单")
+                            "name": _this.langService.transform("QueryScheme/query-scheme-1/6a6f7e09-0101-468f-ae3f-40c76c0f06b0/control/enumValues/Billing", _this.lang, "制单")
                         },
                         {
                             "value": "SubmitApproval",
-                            "name": _this.langService.transform('QueryScheme/query-scheme-1/6a6f7e09-0101-468f-ae3f-40c76c0f06b0/control/enumValues/SubmitApproval', _this.lang, "提交审批")
+                            "name": _this.langService.transform("QueryScheme/query-scheme-1/6a6f7e09-0101-468f-ae3f-40c76c0f06b0/control/enumValues/SubmitApproval", _this.lang, "提交审批")
                         },
                         {
                             "value": "Approved",
-                            "name": _this.langService.transform('QueryScheme/query-scheme-1/6a6f7e09-0101-468f-ae3f-40c76c0f06b0/control/enumValues/Approved', _this.lang, "审批通过")
+                            "name": _this.langService.transform("QueryScheme/query-scheme-1/6a6f7e09-0101-468f-ae3f-40c76c0f06b0/control/enumValues/Approved", _this.lang, "审批通过")
                         },
                         {
                             "value": "ApprovalNotPassed",
-                            "name": _this.langService.transform('QueryScheme/query-scheme-1/6a6f7e09-0101-468f-ae3f-40c76c0f06b0/control/enumValues/ApprovalNotPassed', _this.lang, "审批不通过")
+                            "name": _this.langService.transform("QueryScheme/query-scheme-1/6a6f7e09-0101-468f-ae3f-40c76c0f06b0/control/enumValues/ApprovalNotPassed", _this.lang, "审批不通过")
                         }
                     ]
                 }
@@ -182,56 +192,56 @@ var RootComponent = /** @class */ (function (_super) {
                 "id": "502cfc60-ad8f-4da3-a430-c8a7f2162135",
                 "labelCode": "ProcessInstance.ProcessInstance",
                 "code": "ProcessInstance",
-                "name": _this.langService.transform('QueryScheme/query-scheme-1/502cfc60-ad8f-4da3-a430-c8a7f2162135', _this.lang, "流程实例"),
-                "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/502cfc60-ad8f-4da3-a430-c8a7f2162135/placeHolder', _this.lang, ""),
+                "name": _this.langService.transform("QueryScheme/query-scheme-1/502cfc60-ad8f-4da3-a430-c8a7f2162135", _this.lang, "流程实例"),
+                "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/502cfc60-ad8f-4da3-a430-c8a7f2162135/placeHolder", _this.lang, ""),
                 "control": { "id": "502cfc60-ad8f-4da3-a430-c8a7f2162135", "controltype": "text", "require": false, "className": "" }
             },
             {
                 "id": "a50f04eb-fc31-457c-8c85-0c5ab0cae592",
                 "labelCode": "Applicant.Applicant",
                 "code": "Applicant",
-                "name": _this.langService.transform('QueryScheme/query-scheme-1/a50f04eb-fc31-457c-8c85-0c5ab0cae592', _this.lang, "制单人"),
-                "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/a50f04eb-fc31-457c-8c85-0c5ab0cae592/placeHolder', _this.lang, ""),
+                "name": _this.langService.transform("QueryScheme/query-scheme-1/a50f04eb-fc31-457c-8c85-0c5ab0cae592", _this.lang, "制单人"),
+                "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/a50f04eb-fc31-457c-8c85-0c5ab0cae592/placeHolder", _this.lang, ""),
                 "control": { "id": "a50f04eb-fc31-457c-8c85-0c5ab0cae592", "controltype": "text", "require": false, "className": "" }
             },
             {
                 "id": "493e5d57-896f-46dd-a9a7-af9a5a54d0a1",
                 "labelCode": "Applicant.Applicant_ID",
                 "code": "ID",
-                "name": _this.langService.transform('QueryScheme/query-scheme-1/493e5d57-896f-46dd-a9a7-af9a5a54d0a1', _this.lang, "ID"),
-                "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/493e5d57-896f-46dd-a9a7-af9a5a54d0a1/placeHolder', _this.lang, ""),
+                "name": _this.langService.transform("QueryScheme/query-scheme-1/493e5d57-896f-46dd-a9a7-af9a5a54d0a1", _this.lang, "ID"),
+                "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/493e5d57-896f-46dd-a9a7-af9a5a54d0a1/placeHolder", _this.lang, ""),
                 "control": { "id": "493e5d57-896f-46dd-a9a7-af9a5a54d0a1", "controltype": "text", "require": false, "className": "" }
             },
             {
                 "id": "36e050c8-bb2f-4649-8974-9b4af77eeb21",
                 "labelCode": "Applicant.Applicant_Name",
                 "code": "Name",
-                "name": _this.langService.transform('QueryScheme/query-scheme-1/36e050c8-bb2f-4649-8974-9b4af77eeb21', _this.lang, "名称"),
-                "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/36e050c8-bb2f-4649-8974-9b4af77eeb21/placeHolder', _this.lang, ""),
+                "name": _this.langService.transform("QueryScheme/query-scheme-1/36e050c8-bb2f-4649-8974-9b4af77eeb21", _this.lang, "名称"),
+                "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/36e050c8-bb2f-4649-8974-9b4af77eeb21/placeHolder", _this.lang, ""),
                 "control": { "id": "36e050c8-bb2f-4649-8974-9b4af77eeb21", "controltype": "text", "require": false, "className": "" }
             },
             {
                 "id": "19bd9bfb-8d65-4f70-b5e9-c1dee32cec5a",
                 "labelCode": "DeliveryDate",
                 "code": "DeliveryDate",
-                "name": _this.langService.transform('QueryScheme/query-scheme-1/19bd9bfb-8d65-4f70-b5e9-c1dee32cec5a', _this.lang, "交货日期"),
-                "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/19bd9bfb-8d65-4f70-b5e9-c1dee32cec5a/placeHolder', _this.lang, ""),
+                "name": _this.langService.transform("QueryScheme/query-scheme-1/19bd9bfb-8d65-4f70-b5e9-c1dee32cec5a", _this.lang, "交货日期"),
+                "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/19bd9bfb-8d65-4f70-b5e9-c1dee32cec5a/placeHolder", _this.lang, ""),
                 "control": { "id": "19bd9bfb-8d65-4f70-b5e9-c1dee32cec5a", "controltype": "date", "require": false, "format": "yyyy-MM-dd", "weekSelect": false }
             },
             {
                 "id": "f9f7f6fd-68a4-430c-856a-adda5d47fd52",
                 "labelCode": "PurchaseDept.PurchaseDept",
                 "code": "PurchaseDept",
-                "name": _this.langService.transform('QueryScheme/query-scheme-1/f9f7f6fd-68a4-430c-856a-adda5d47fd52', _this.lang, "采购部门"),
-                "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/f9f7f6fd-68a4-430c-856a-adda5d47fd52/placeHolder', _this.lang, ""),
+                "name": _this.langService.transform("QueryScheme/query-scheme-1/f9f7f6fd-68a4-430c-856a-adda5d47fd52", _this.lang, "采购部门"),
+                "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/f9f7f6fd-68a4-430c-856a-adda5d47fd52/placeHolder", _this.lang, ""),
                 "control": { "id": "f9f7f6fd-68a4-430c-856a-adda5d47fd52", "controltype": "text", "require": false, "className": "", "modalConfig": { "modalCmp": null, "mapFields": null, "showHeader": true, "title": "", "showCloseButton": true, "showMaxButton": true, "width": 800, "height": 600, "showFooterButtons": true, "footerButtons": [] } }
             },
             {
                 "id": "97d95d4b-8497-4df5-bec8-8838acc68ee7",
                 "labelCode": "PurchaseDept.PurchaseDept_ID",
                 "code": "ID",
-                "name": _this.langService.transform('QueryScheme/query-scheme-1/97d95d4b-8497-4df5-bec8-8838acc68ee7', _this.lang, "采购部门"),
-                "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/97d95d4b-8497-4df5-bec8-8838acc68ee7/placeHolder', _this.lang, ""),
+                "name": _this.langService.transform("QueryScheme/query-scheme-1/97d95d4b-8497-4df5-bec8-8838acc68ee7", _this.lang, "采购部门"),
+                "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/97d95d4b-8497-4df5-bec8-8838acc68ee7/placeHolder", _this.lang, ""),
                 "control": {
                     "controltype": "help",
                     "require": false,
@@ -244,15 +254,21 @@ var RootComponent = /** @class */ (function (_super) {
                     "loadTreeDataType": 'default',
                     "enableFullTree": false,
                     "editable": false,
-                    "dialogTitle": _this.langService.transform('QueryScheme/query-scheme-1/97d95d4b-8497-4df5-bec8-8838acc68ee7/control/help/dialogTitle', _this.lang, ""),
+                    "dialogTitle": _this.langService.transform("QueryScheme/query-scheme-1/97d95d4b-8497-4df5-bec8-8838acc68ee7/control/help/dialogTitle", _this.lang, ""),
                     "singleSelect": true,
                     "enableCascade": false,
+                    "cascadeStatus": "enable",
                     "pageSize": 20,
                     "pageList": "10,20,30,50,100",
                     "nosearch": false,
                     "expandLevel": -1,
                     "context": {
-                        "enableExtendLoadMethod": true
+                        "enableExtendLoadMethod": false
+                    },
+                    "quickSelect": {
+                        "enable": false,
+                        "showMore": true,
+                        "showItemsCount": 10
                     }
                 }
             },
@@ -260,32 +276,32 @@ var RootComponent = /** @class */ (function (_super) {
                 "id": "53265c41-b6d3-4977-9dde-450cb0505c91",
                 "labelCode": "PurchaseDept.PurchaseDept_name",
                 "code": "name",
-                "name": _this.langService.transform('QueryScheme/query-scheme-1/53265c41-b6d3-4977-9dde-450cb0505c91', _this.lang, "名称"),
-                "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/53265c41-b6d3-4977-9dde-450cb0505c91/placeHolder', _this.lang, ""),
+                "name": _this.langService.transform("QueryScheme/query-scheme-1/53265c41-b6d3-4977-9dde-450cb0505c91", _this.lang, "名称"),
+                "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/53265c41-b6d3-4977-9dde-450cb0505c91/placeHolder", _this.lang, ""),
                 "control": { "id": "53265c41-b6d3-4977-9dde-450cb0505c91", "controltype": "text", "require": false, "className": "" }
             },
             {
                 "id": "210f7065-4c19-4009-81e3-3cafec40792a",
                 "labelCode": "PlanCode",
                 "code": "PlanCode",
-                "name": _this.langService.transform('QueryScheme/query-scheme-1/210f7065-4c19-4009-81e3-3cafec40792a', _this.lang, "计划编号"),
-                "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/210f7065-4c19-4009-81e3-3cafec40792a/placeHolder', _this.lang, ""),
+                "name": _this.langService.transform("QueryScheme/query-scheme-1/210f7065-4c19-4009-81e3-3cafec40792a", _this.lang, "计划编号"),
+                "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/210f7065-4c19-4009-81e3-3cafec40792a/placeHolder", _this.lang, ""),
                 "control": { "id": "210f7065-4c19-4009-81e3-3cafec40792a", "controltype": "text", "require": false, "className": "" }
             },
             {
                 "id": "4f24ebc0-acb5-4039-8ee5-9e1fd296f133",
                 "labelCode": "PlanName",
                 "code": "PlanName",
-                "name": _this.langService.transform('QueryScheme/query-scheme-1/4f24ebc0-acb5-4039-8ee5-9e1fd296f133', _this.lang, "计划名称"),
-                "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/4f24ebc0-acb5-4039-8ee5-9e1fd296f133/placeHolder', _this.lang, ""),
+                "name": _this.langService.transform("QueryScheme/query-scheme-1/4f24ebc0-acb5-4039-8ee5-9e1fd296f133", _this.lang, "计划名称"),
+                "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/4f24ebc0-acb5-4039-8ee5-9e1fd296f133/placeHolder", _this.lang, ""),
                 "control": { "id": "4f24ebc0-acb5-4039-8ee5-9e1fd296f133", "controltype": "text", "require": false, "className": "" }
             },
             {
                 "id": "75108363-b463-4d9a-8ee1-899a42e20e04",
                 "labelCode": "IsPurchaseOrder",
                 "code": "IsPurchaseOrder",
-                "name": _this.langService.transform('QueryScheme/query-scheme-1/75108363-b463-4d9a-8ee1-899a42e20e04', _this.lang, "是否已生成采购订单"),
-                "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/75108363-b463-4d9a-8ee1-899a42e20e04/placeHolder', _this.lang, ""),
+                "name": _this.langService.transform("QueryScheme/query-scheme-1/75108363-b463-4d9a-8ee1-899a42e20e04", _this.lang, "是否已生成采购订单"),
+                "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/75108363-b463-4d9a-8ee1-899a42e20e04/placeHolder", _this.lang, ""),
                 "control": {
                     "controltype": "dropdown",
                     "require": false,
@@ -294,11 +310,11 @@ var RootComponent = /** @class */ (function (_super) {
                     "enumValues": [
                         {
                             "value": "true",
-                            "name": _this.langService.transform('QueryScheme/query-scheme-1/75108363-b463-4d9a-8ee1-899a42e20e04/control/enumValues/true', _this.lang, "true")
+                            "name": _this.langService.transform("QueryScheme/query-scheme-1/75108363-b463-4d9a-8ee1-899a42e20e04/control/enumValues/true", _this.lang, "true")
                         },
                         {
                             "value": "false",
-                            "name": _this.langService.transform('QueryScheme/query-scheme-1/75108363-b463-4d9a-8ee1-899a42e20e04/control/enumValues/false', _this.lang, "false")
+                            "name": _this.langService.transform("QueryScheme/query-scheme-1/75108363-b463-4d9a-8ee1-899a42e20e04/control/enumValues/false", _this.lang, "false")
                         }
                     ]
                 }
@@ -307,32 +323,32 @@ var RootComponent = /** @class */ (function (_super) {
                 "id": "da36cd69-7e29-4add-85f0-ea43a2691188",
                 "labelCode": "TotalPrice",
                 "code": "TotalPrice",
-                "name": _this.langService.transform('QueryScheme/query-scheme-1/da36cd69-7e29-4add-85f0-ea43a2691188', _this.lang, "物料总价"),
-                "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/da36cd69-7e29-4add-85f0-ea43a2691188/placeHolder', _this.lang, ""),
+                "name": _this.langService.transform("QueryScheme/query-scheme-1/da36cd69-7e29-4add-85f0-ea43a2691188", _this.lang, "物料总价"),
+                "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/da36cd69-7e29-4add-85f0-ea43a2691188/placeHolder", _this.lang, ""),
                 "control": { "id": "da36cd69-7e29-4add-85f0-ea43a2691188", "controltype": "number", "require": false, "className": "", "textAlign": "left", "precision": 2, "isBigNumber": false }
             },
             {
                 "id": "f039a9da-8150-4935-8af3-836b7aca3bef",
                 "labelCode": "Purchaser.Purchaser",
                 "code": "Purchaser",
-                "name": _this.langService.transform('QueryScheme/query-scheme-1/f039a9da-8150-4935-8af3-836b7aca3bef', _this.lang, "采购员"),
-                "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/f039a9da-8150-4935-8af3-836b7aca3bef/placeHolder', _this.lang, ""),
+                "name": _this.langService.transform("QueryScheme/query-scheme-1/f039a9da-8150-4935-8af3-836b7aca3bef", _this.lang, "采购员"),
+                "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/f039a9da-8150-4935-8af3-836b7aca3bef/placeHolder", _this.lang, ""),
                 "control": { "id": "f039a9da-8150-4935-8af3-836b7aca3bef", "controltype": "text", "require": false, "className": "" }
             },
             {
                 "id": "8a441b44-720b-4e36-aa28-a20d4008658e",
                 "labelCode": "Purchaser.Purchaser_ID",
                 "code": "ID",
-                "name": _this.langService.transform('QueryScheme/query-scheme-1/8a441b44-720b-4e36-aa28-a20d4008658e', _this.lang, "ID"),
-                "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/8a441b44-720b-4e36-aa28-a20d4008658e/placeHolder', _this.lang, ""),
+                "name": _this.langService.transform("QueryScheme/query-scheme-1/8a441b44-720b-4e36-aa28-a20d4008658e", _this.lang, "ID"),
+                "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/8a441b44-720b-4e36-aa28-a20d4008658e/placeHolder", _this.lang, ""),
                 "control": { "id": "8a441b44-720b-4e36-aa28-a20d4008658e", "controltype": "text", "require": false, "className": "" }
             },
             {
                 "id": "e646ee4c-4ae8-4df5-a9b4-0c39402adff8",
                 "labelCode": "Purchaser.Purchaser_Name",
                 "code": "Name",
-                "name": _this.langService.transform('QueryScheme/query-scheme-1/e646ee4c-4ae8-4df5-a9b4-0c39402adff8', _this.lang, "名称"),
-                "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/e646ee4c-4ae8-4df5-a9b4-0c39402adff8/placeHolder', _this.lang, ""),
+                "name": _this.langService.transform("QueryScheme/query-scheme-1/e646ee4c-4ae8-4df5-a9b4-0c39402adff8", _this.lang, "名称"),
+                "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/e646ee4c-4ae8-4df5-a9b4-0c39402adff8/placeHolder", _this.lang, ""),
                 "control": { "id": "e646ee4c-4ae8-4df5-a9b4-0c39402adff8", "controltype": "text", "require": false, "className": "" }
             }
         ];
@@ -341,32 +357,32 @@ var RootComponent = /** @class */ (function (_super) {
                 "id": "210f7065-4c19-4009-81e3-3cafec40792a",
                 "labelCode": "PlanCode",
                 "code": "PlanCode",
-                "name": _this.langService.transform('QueryScheme/query-scheme-1/210f7065-4c19-4009-81e3-3cafec40792a', _this.lang, "计划编号"),
-                "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/210f7065-4c19-4009-81e3-3cafec40792a/placeHolder', _this.lang, ""),
+                "name": _this.langService.transform("QueryScheme/query-scheme-1/210f7065-4c19-4009-81e3-3cafec40792a", _this.lang, "计划编号"),
+                "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/210f7065-4c19-4009-81e3-3cafec40792a/placeHolder", _this.lang, ""),
                 "control": { "id": "210f7065-4c19-4009-81e3-3cafec40792a", "controltype": "text", "require": false, "className": "" }
             },
             {
                 "id": "4f24ebc0-acb5-4039-8ee5-9e1fd296f133",
                 "labelCode": "PlanName",
                 "code": "PlanName",
-                "name": _this.langService.transform('QueryScheme/query-scheme-1/4f24ebc0-acb5-4039-8ee5-9e1fd296f133', _this.lang, "计划名称"),
-                "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/4f24ebc0-acb5-4039-8ee5-9e1fd296f133/placeHolder', _this.lang, ""),
+                "name": _this.langService.transform("QueryScheme/query-scheme-1/4f24ebc0-acb5-4039-8ee5-9e1fd296f133", _this.lang, "计划名称"),
+                "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/4f24ebc0-acb5-4039-8ee5-9e1fd296f133/placeHolder", _this.lang, ""),
                 "control": { "id": "4f24ebc0-acb5-4039-8ee5-9e1fd296f133", "controltype": "text", "require": false, "className": "" }
             },
             {
                 "id": "19bd9bfb-8d65-4f70-b5e9-c1dee32cec5a",
                 "labelCode": "DeliveryDate",
                 "code": "DeliveryDate",
-                "name": _this.langService.transform('QueryScheme/query-scheme-1/19bd9bfb-8d65-4f70-b5e9-c1dee32cec5a', _this.lang, "交货日期"),
-                "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/19bd9bfb-8d65-4f70-b5e9-c1dee32cec5a/placeHolder', _this.lang, ""),
+                "name": _this.langService.transform("QueryScheme/query-scheme-1/19bd9bfb-8d65-4f70-b5e9-c1dee32cec5a", _this.lang, "交货日期"),
+                "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/19bd9bfb-8d65-4f70-b5e9-c1dee32cec5a/placeHolder", _this.lang, ""),
                 "control": { "id": "19bd9bfb-8d65-4f70-b5e9-c1dee32cec5a", "controltype": "date", "require": false, "format": "yyyy-MM-dd", "weekSelect": false }
             },
             {
                 "id": "97d95d4b-8497-4df5-bec8-8838acc68ee7",
                 "labelCode": "PurchaseDept.PurchaseDept_ID",
                 "code": "ID",
-                "name": _this.langService.transform('QueryScheme/query-scheme-1/97d95d4b-8497-4df5-bec8-8838acc68ee7', _this.lang, "采购部门"),
-                "placeHolder": _this.langService.transform('QueryScheme/query-scheme-1/97d95d4b-8497-4df5-bec8-8838acc68ee7/placeHolder', _this.lang, ""),
+                "name": _this.langService.transform("QueryScheme/query-scheme-1/97d95d4b-8497-4df5-bec8-8838acc68ee7", _this.lang, "采购部门"),
+                "placeHolder": _this.langService.transform("QueryScheme/query-scheme-1/97d95d4b-8497-4df5-bec8-8838acc68ee7/placeHolder", _this.lang, ""),
                 "control": {
                     "controltype": "help",
                     "require": false,
@@ -379,15 +395,21 @@ var RootComponent = /** @class */ (function (_super) {
                     "loadTreeDataType": 'default',
                     "enableFullTree": false,
                     "editable": false,
-                    "dialogTitle": _this.langService.transform('QueryScheme/query-scheme-1/97d95d4b-8497-4df5-bec8-8838acc68ee7/control/help/dialogTitle', _this.lang, ""),
+                    "dialogTitle": _this.langService.transform("QueryScheme/query-scheme-1/97d95d4b-8497-4df5-bec8-8838acc68ee7/control/help/dialogTitle", _this.lang, ""),
                     "singleSelect": true,
                     "enableCascade": false,
+                    "cascadeStatus": "enable",
                     "pageSize": 20,
                     "pageList": "10,20,30,50,100",
                     "nosearch": false,
                     "expandLevel": -1,
                     "context": {
-                        "enableExtendLoadMethod": true
+                        "enableExtendLoadMethod": false
+                    },
+                    "quickSelect": {
+                        "enable": false,
+                        "showMore": true,
+                        "showItemsCount": 10
                     }
                 }
             }
@@ -434,6 +456,7 @@ var RootComponent = /** @class */ (function (_super) {
         });
         this.stateMachine.stateChange.subscribe(function () {
             var pageHeaderToolbarToolbarItemsstates = {
+                'toolBarItem-epjr': false,
                 'button-add': !_this.viewModel.stateMachine['canAdd'],
                 'button-edit': _this.viewModel.stateMachine['canOperation'],
                 'button-view': !_this.viewModel.stateMachine['canView'],
@@ -445,6 +468,7 @@ var RootComponent = /** @class */ (function (_super) {
         });
         this.stateMachine.stateChange.subscribe(function () {
             var pageHeaderToolbarToolbarItemsvisibleStates = {
+                'toolBarItem-epjr': true,
                 'button-add': true,
                 'button-edit': true,
                 'button-view': true,
@@ -497,6 +521,9 @@ var RootComponent = /** @class */ (function (_super) {
     };
     RootComponent.prototype.pageHeaderToolbarClickHandler = function (args) {
         switch (args.id) {
+            case 'toolBarItem-epjr':
+                this.viewModel.rootviewmodelLoad1(args);
+                break;
             case 'button-add':
                 this.viewModel.Add1(args);
                 break;
@@ -559,6 +586,7 @@ var RootComponent = /** @class */ (function (_super) {
                 { provide: FORM_ID, useValue: "d5d6ccf3-5d06-44e2-92eb-e75d8fb2fcd3" },
                 { provide: BE_SESSION_HANDLING_STRATEGY_TOKEN, useValue: "SeparatedSession" },
                 { provide: EXCEPTION_HANDLER, useClass: ExceptionHandler },
+                { provide: CHANGE_SET_POLICY_TOKEN, useValue: 'valid' },
                 { provide: BACK_END_MESSAGE_HANDLER_TOKEN, useClass: BackEndMessageHandler },
                 { provide: COMMAND_HANDLERS_TOKEN, useClass: Load1Handler, multi: true },
                 { provide: COMMAND_HANDLERS_TOKEN, useClass: Search1Handler, multi: true },
@@ -570,6 +598,7 @@ var RootComponent = /** @class */ (function (_super) {
                 { provide: COMMAND_HANDLERS_TOKEN, useClass: Filter1Handler, multi: true },
                 { provide: COMMAND_HANDLERS_TOKEN, useClass: submitWithBizDefKey1Handler, multi: true },
                 { provide: COMMAND_HANDLERS_TOKEN, useClass: cancelSubmitWithDataId1Handler, multi: true },
+                { provide: COMMAND_HANDLERS_TOKEN, useClass: rootviewmodelLoad1Handler, multi: true },
             ]
         }),
         tslib_1.__metadata("design:paramtypes", [WizardService,

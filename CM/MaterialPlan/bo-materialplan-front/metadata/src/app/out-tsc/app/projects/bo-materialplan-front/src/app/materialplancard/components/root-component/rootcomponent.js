@@ -16,6 +16,7 @@ import { FARRIS_DEVKIT_EXPRESSION_LISTENER_PROVIDERS, FARRIS_DEVKIT_EXPRESSION_E
 import { WFSubmiteService } from '@gsp-wf/rtdevkit';
 import { CloudprintService } from '@gsp-svc/cloudprint';
 import { WFFlowchartService } from '@gsp-wf/ui-flowchart';
+import { CHANGE_SET_POLICY_TOKEN } from '@farris/devkit';
 import { TranslateToken, FARRIS_DEVKIT_EXPRESSION_ROOT_FRAME_PROVIDERS } from '@farris/devkit';
 import { VerifyDetailService } from '@farris/ui-verify-detail';
 import { AppContext, FORM_ID, PARAM_TYPE_TRANSFORM_TOKEN } from '@farris/devkit';
@@ -77,7 +78,7 @@ var RootComponent = /** @class */ (function (_super) {
         _this.enabledLanguageList = [];
         _this.pageHeaderToolbarToolbarItems = [{
                 "id": "button-add",
-                "text": _this.langService.transform('button-add', _this.lang, "新增"),
+                "text": _this.langService.transform("button-add", _this.lang, "新增"),
                 "resourceId": "button-add",
                 "isDP": false,
                 "class": "btn-primary",
@@ -86,7 +87,7 @@ var RootComponent = /** @class */ (function (_super) {
                 "children": []
             }, {
                 "id": "button-edit",
-                "text": _this.langService.transform('button-edit', _this.lang, "编辑"),
+                "text": _this.langService.transform("button-edit", _this.lang, "编辑"),
                 "resourceId": "button-edit",
                 "isDP": false,
                 "tipsEnable": false,
@@ -94,7 +95,7 @@ var RootComponent = /** @class */ (function (_super) {
                 "children": []
             }, {
                 "id": "button-save",
-                "text": _this.langService.transform('button-save', _this.lang, "保存"),
+                "text": _this.langService.transform("button-save", _this.lang, "保存"),
                 "resourceId": "button-save",
                 "isDP": false,
                 "tipsEnable": false,
@@ -102,7 +103,7 @@ var RootComponent = /** @class */ (function (_super) {
                 "children": []
             }, {
                 "id": "button-cancel",
-                "text": _this.langService.transform('button-cancel', _this.lang, "取消"),
+                "text": _this.langService.transform("button-cancel", _this.lang, "取消"),
                 "resourceId": "button-cancel",
                 "isDP": false,
                 "tipsEnable": false,
@@ -121,7 +122,7 @@ var RootComponent = /** @class */ (function (_super) {
                     id: 'plandetailsAddButton',
                     disable: !_this.viewModel.stateMachine['canAddDetail'],
                     visible: true,
-                    title: _this.langService.transform('plandetailsAddButton', _this.lang, "新增"),
+                    title: _this.langService.transform("plandetailsAddButton", _this.lang, "新增"),
                     click: function () { _this.viewModel.plandetailsComponentViewmodel.rootviewmodelAddItem1(); },
                     appearance: {
                         "class": "btn btn-secondary f-btn-ml"
@@ -131,7 +132,7 @@ var RootComponent = /** @class */ (function (_super) {
                     id: 'plandetailsRemoveButton',
                     disable: !_this.viewModel.stateMachine['canRemoveDetail'],
                     visible: true,
-                    title: _this.langService.transform('plandetailsRemoveButton', _this.lang, "删除"),
+                    title: _this.langService.transform("plandetailsRemoveButton", _this.lang, "删除"),
                     click: function () { _this.viewModel.plandetailsComponentViewmodel.plandetailsRemoveItem1(); },
                     appearance: {
                         "class": "btn btn-secondary f-btn-ml"
@@ -141,7 +142,7 @@ var RootComponent = /** @class */ (function (_super) {
                     id: 'tabToolbarItem-fy36',
                     disable: false,
                     visible: true,
-                    title: _this.langService.transform('tabToolbarItem-fy36', _this.lang, "导入"),
+                    title: _this.langService.transform("tabToolbarItem-fy36", _this.lang, "导入"),
                     click: function () { _this.viewModel.rootviewmodelDataImport1(); },
                     appearance: {
                         "class": "btn btn-secondary f-btn-ml"
@@ -151,7 +152,7 @@ var RootComponent = /** @class */ (function (_super) {
                     id: 'tabToolbarItem-56w5',
                     disable: false,
                     visible: true,
-                    title: _this.langService.transform('tabToolbarItem-56w5', _this.lang, "勾选导出"),
+                    title: _this.langService.transform("tabToolbarItem-56w5", _this.lang, "勾选导出"),
                     click: function () { _this.viewModel.rootviewmodelDataExport1(); },
                     appearance: {
                         "class": "btn btn-secondary f-btn-ml"
@@ -161,7 +162,7 @@ var RootComponent = /** @class */ (function (_super) {
                     id: 'tabToolbarItem-caan',
                     disable: false,
                     visible: true,
-                    title: _this.langService.transform('tabToolbarItem-caan', _this.lang, "全部导出"),
+                    title: _this.langService.transform("tabToolbarItem-caan", _this.lang, "全部导出"),
                     click: function () { _this.viewModel.rootviewmodelDataExport2(); },
                     appearance: {
                         "class": "btn btn-secondary f-btn-ml"
@@ -169,15 +170,15 @@ var RootComponent = /** @class */ (function (_super) {
                 }
             ]
         };
-        _this.plandetailstabpage = _this.langService.transform('plandetails-tab-page', _this.lang, "物料需求计划明细");
+        _this.plandetailstabpage = _this.langService.transform("plandetails-tab-page", _this.lang, "物料需求计划明细");
         _this.sectionsToolbarStates = new BehaviorSubject({});
         _this.sectionsToolbarVisibleStates = new BehaviorSubject({});
         _this.detailSectionToolbar = {
             position: 'inHead',
             contents: []
         };
-        _this.SectiondetailsectionMainTitle = _this.langService.transform('Section/detail-section/mainTitle', _this.lang, "");
-        _this.SectiondetailsectionSubTitle = _this.langService.transform('Section/detail-section/subTitle', _this.lang, "");
+        _this.SectiondetailsectionMainTitle = _this.langService.transform("Section/detail-section/mainTitle", _this.lang, "");
+        _this.SectiondetailsectionSubTitle = _this.langService.transform("Section/detail-section/subTitle", _this.lang, "");
         _this.lang = localStorage.getItem('languageCode') || "zh-CHS";
         if (_this.frmI18nSettingService) {
             var i18nSetting = _this.frmI18nSettingService.getSetting();
@@ -358,6 +359,7 @@ var RootComponent = /** @class */ (function (_super) {
                 { provide: FORM_ID, useValue: "98708d9f-8b7c-4539-b546-8b5f2a886381" },
                 { provide: BE_SESSION_HANDLING_STRATEGY_TOKEN, useValue: "SeparatedSession" },
                 { provide: EXCEPTION_HANDLER, useClass: ExceptionHandler },
+                { provide: CHANGE_SET_POLICY_TOKEN, useValue: 'valid' },
                 { provide: BACK_END_MESSAGE_HANDLER_TOKEN, useClass: BackEndMessageHandler },
                 { provide: COMMAND_HANDLERS_TOKEN, useClass: Load1Handler, multi: true },
                 { provide: COMMAND_HANDLERS_TOKEN, useClass: LoadAndAdd1Handler, multi: true },

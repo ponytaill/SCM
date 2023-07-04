@@ -8,6 +8,7 @@ import { KeybindingService } from '@farris/command-services';
 import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 import { FrmI18nSettingService } from '@gsp-sys/rtf-common';
 import { DomSanitizer } from '@angular/platform-browser';
+
 import { FocusInvalidService } from '@farris/command-services';
 
 import { EditorTypes } from '@farris/ui-datagrid-editors';
@@ -118,7 +119,7 @@ export class DataGridComponent extends FrameComponent implements OnInit, AfterVi
                     id: 'billStatus_BillState_6a6f7e09_pbh3',
                     field: 'billStatus.billState',
                     width: 120,
-                    title: this.langService.transform('billStatus_BillState_6a6f7e09_pbh3', this.lang, "审批状态"),
+                    title: this.langService.transform("billStatus_BillState_6a6f7e09_pbh3", this.lang, "审批状态"),
                     dataType: 'enum',
                     template: this.dataGridbillStatus_billStateTemplate,
                     align: 'left',
@@ -153,19 +154,19 @@ export class DataGridComponent extends FrameComponent implements OnInit, AfterVi
                             "data": [
                                 {
                                     "value": "Billing",
-                                    "name": this.langService.transform('GridField/billStatus_BillState_6a6f7e09_pbh3/enumData/Billing', this.lang, "制单")
+                                    "name": this.langService.transform("GridField/billStatus_BillState_6a6f7e09_pbh3/enumData/Billing", this.lang, "制单")
                                 },
                                 {
                                     "value": "SubmitApproval",
-                                    "name": this.langService.transform('GridField/billStatus_BillState_6a6f7e09_pbh3/enumData/SubmitApproval', this.lang, "提交审批")
+                                    "name": this.langService.transform("GridField/billStatus_BillState_6a6f7e09_pbh3/enumData/SubmitApproval", this.lang, "提交审批")
                                 },
                                 {
                                     "value": "Approved",
-                                    "name": this.langService.transform('GridField/billStatus_BillState_6a6f7e09_pbh3/enumData/Approved', this.lang, "审批通过")
+                                    "name": this.langService.transform("GridField/billStatus_BillState_6a6f7e09_pbh3/enumData/Approved", this.lang, "审批通过")
                                 },
                                 {
                                     "value": "ApprovalNotPassed",
-                                    "name": this.langService.transform('GridField/billStatus_BillState_6a6f7e09_pbh3/enumData/ApprovalNotPassed', this.lang, "审批不通过")
+                                    "name": this.langService.transform("GridField/billStatus_BillState_6a6f7e09_pbh3/enumData/ApprovalNotPassed", this.lang, "审批不通过")
                                 }]
                         }
                     }
@@ -174,7 +175,7 @@ export class DataGridComponent extends FrameComponent implements OnInit, AfterVi
                     id: 'planCode_210f7065_7a35',
                     field: 'planCode',
                     width: 120,
-                    title: this.langService.transform('planCode_210f7065_7a35', this.lang, "计划编号"),
+                    title: this.langService.transform("planCode_210f7065_7a35", this.lang, "计划编号"),
                     dataType: 'string',
                     template: this.dataGridplanCodeTemplate,
                     align: 'left',
@@ -205,7 +206,7 @@ export class DataGridComponent extends FrameComponent implements OnInit, AfterVi
                     id: 'applicant_Applicant_Name_36e050c8_radi',
                     field: 'applicant.applicant_Name',
                     width: 120,
-                    title: this.langService.transform('applicant_Applicant_Name_36e050c8_radi', this.lang, "制单人"),
+                    title: this.langService.transform("applicant_Applicant_Name_36e050c8_radi", this.lang, "制单人"),
                     dataType: 'string',
                     align: 'left',
                     halign: 'left',
@@ -235,7 +236,7 @@ export class DataGridComponent extends FrameComponent implements OnInit, AfterVi
                     id: 'purchaseDept_PurchaseDept_name_53265c41_3q8s',
                     field: 'purchaseDept.purchaseDept_name',
                     width: 120,
-                    title: this.langService.transform('purchaseDept_PurchaseDept_name_53265c41_3q8s', this.lang, "采购部门"),
+                    title: this.langService.transform("purchaseDept_PurchaseDept_name_53265c41_3q8s", this.lang, "采购部门"),
                     dataType: 'string',
                     align: 'left',
                     halign: 'left',
@@ -265,7 +266,7 @@ export class DataGridComponent extends FrameComponent implements OnInit, AfterVi
                     id: 'purchaser_Purchaser_Name_e646ee4c_5c6k',
                     field: 'purchaser.purchaser_Name',
                     width: 120,
-                    title: this.langService.transform('purchaser_Purchaser_Name_e646ee4c_5c6k', this.lang, "采购员"),
+                    title: this.langService.transform("purchaser_Purchaser_Name_e646ee4c_5c6k", this.lang, "采购员"),
                     dataType: 'string',
                     align: 'left',
                     halign: 'left',
@@ -295,7 +296,7 @@ export class DataGridComponent extends FrameComponent implements OnInit, AfterVi
                     id: 'deliveryDate_19bd9bfb_nnlo',
                     field: 'deliveryDate',
                     width: 120,
-                    title: this.langService.transform('deliveryDate_19bd9bfb_nnlo', this.lang, "交货日期"),
+                    title: this.langService.transform("deliveryDate_19bd9bfb_nnlo", this.lang, "交货日期"),
                     dataType: 'datetime',
                     align: 'left',
                     halign: 'left',
@@ -325,7 +326,7 @@ export class DataGridComponent extends FrameComponent implements OnInit, AfterVi
                     id: 'planName_4f24ebc0_a9kt',
                     field: 'planName',
                     width: 120,
-                    title: this.langService.transform('planName_4f24ebc0_a9kt', this.lang, "计划名称"),
+                    title: this.langService.transform("planName_4f24ebc0_a9kt", this.lang, "计划名称"),
                     dataType: 'string',
                     align: 'left',
                     halign: 'left',
@@ -355,7 +356,7 @@ export class DataGridComponent extends FrameComponent implements OnInit, AfterVi
                     id: 'totalPrice_da36cd69_48ad',
                     field: 'totalPrice',
                     width: 120,
-                    title: this.langService.transform('totalPrice_da36cd69_48ad', this.lang, "物料总价"),
+                    title: this.langService.transform("totalPrice_da36cd69_48ad", this.lang, "物料总价"),
                     dataType: 'number',
                     align: 'left',
                     halign: 'left',
@@ -395,7 +396,7 @@ export class DataGridComponent extends FrameComponent implements OnInit, AfterVi
                     id: 'isPurchaseOrder_75108363_6uu3',
                     field: 'isPurchaseOrder',
                     width: 120,
-                    title: this.langService.transform('isPurchaseOrder_75108363_6uu3', this.lang, "是否已生成采购订单"),
+                    title: this.langService.transform("isPurchaseOrder_75108363_6uu3", this.lang, "是否已生成采购订单"),
                     dataType: 'boolean',
                     align: 'left',
                     halign: 'left',
@@ -471,7 +472,7 @@ export class DataGridComponent extends FrameComponent implements OnInit, AfterVi
     } 
     tabsToolbarStates = new BehaviorSubject({});
     tabsToolbarVisibleStates = new BehaviorSubject({});
-    SectiondatagridsectionMainTitle = this.langService.transform('Section/data-grid-section/mainTitle', this.lang, "");
-    SectiondatagridsectionSubTitle = this.langService.transform('Section/data-grid-section/subTitle', this.lang, "");
-    dataGridlineNumberTitle = this.langService.transform('DataGrid/dataGrid/lineNumberTitle', this.lang, "序");
+    SectiondatagridsectionMainTitle = this.langService.transform("Section/data-grid-section/mainTitle", this.lang, "");
+    SectiondatagridsectionSubTitle = this.langService.transform("Section/data-grid-section/subTitle", this.lang, "");
+    dataGridlineNumberTitle = this.langService.transform("DataGrid/dataGrid/lineNumberTitle", this.lang, "序");
 }

@@ -42,38 +42,38 @@ var BasicFormComponent = /** @class */ (function (_super) {
         _this.enabledLanguageList = [];
         _this.tabsToolbarStates = new BehaviorSubject({});
         _this.tabsToolbarVisibleStates = new BehaviorSubject({});
-        _this.SectionbasicformsectionMainTitle = _this.langService.transform('Section/basic-form-section/mainTitle', _this.lang, "基本信息");
-        _this.SectionbasicformsectionSubTitle = _this.langService.transform('Section/basic-form-section/subTitle', _this.lang, "");
-        _this.LookupEditapplicantApplicantNamed4373c286dicDialogTitle = _this.langService.transform('LookupEdit/applicant_Applicant_Name_d4373c28_6dic/dialogTitle', _this.lang, "");
-        _this.applicant_Applicant_Name_d4373c28_6dic_PlaceHolder = _this.langService.transform('LookupEdit/applicant_Applicant_Name_d4373c28_6dic/placeHolder', _this.lang, "");
+        _this.SectionbasicformsectionMainTitle = _this.langService.transform("Section/basic-form-section/mainTitle", _this.lang, "基本信息");
+        _this.SectionbasicformsectionSubTitle = _this.langService.transform("Section/basic-form-section/subTitle", _this.lang, "");
+        _this.LookupEditapplicantApplicantNamed4373c286dicDialogTitle = _this.langService.transform("LookupEdit/applicant_Applicant_Name_d4373c28_6dic/dialogTitle", _this.lang, "");
+        _this.applicant_Applicant_Name_d4373c28_6dic_PlaceHolder = _this.langService.transform("LookupEdit/applicant_Applicant_Name_d4373c28_6dic/placeHolder", _this.lang, "");
         _this.applicant_Applicant_Name_d4373c28_6dicQuickSelect = {
             "enable": false,
             "showItemsCount": 10,
             "showMore": true
         };
-        _this.LookupEditpurchaseDeptPurchaseDeptname8d6e8922yvzrDialogTitle = _this.langService.transform('LookupEdit/purchaseDept_PurchaseDept_name_8d6e8922_yvzr/dialogTitle', _this.lang, "");
-        _this.purchaseDept_PurchaseDept_name_8d6e8922_yvzr_PlaceHolder = _this.langService.transform('LookupEdit/purchaseDept_PurchaseDept_name_8d6e8922_yvzr/placeHolder', _this.lang, "");
+        _this.LookupEditpurchaseDeptPurchaseDeptname8d6e8922yvzrDialogTitle = _this.langService.transform("LookupEdit/purchaseDept_PurchaseDept_name_8d6e8922_yvzr/dialogTitle", _this.lang, "");
+        _this.purchaseDept_PurchaseDept_name_8d6e8922_yvzr_PlaceHolder = _this.langService.transform("LookupEdit/purchaseDept_PurchaseDept_name_8d6e8922_yvzr/placeHolder", _this.lang, "");
         _this.purchaseDept_PurchaseDept_name_8d6e8922_yvzrQuickSelect = {
             "enable": false,
             "showItemsCount": 10,
             "showMore": true
         };
-        _this.LookupEditpurchaserPurchaserName55f1e399hz5jDialogTitle = _this.langService.transform('LookupEdit/purchaser_Purchaser_Name_55f1e399_hz5j/dialogTitle', _this.lang, "");
-        _this.purchaser_Purchaser_Name_55f1e399_hz5j_PlaceHolder = _this.langService.transform('LookupEdit/purchaser_Purchaser_Name_55f1e399_hz5j/placeHolder', _this.lang, "");
+        _this.LookupEditpurchaserPurchaserName55f1e399hz5jDialogTitle = _this.langService.transform("LookupEdit/purchaser_Purchaser_Name_55f1e399_hz5j/dialogTitle", _this.lang, "");
+        _this.purchaser_Purchaser_Name_55f1e399_hz5j_PlaceHolder = _this.langService.transform("LookupEdit/purchaser_Purchaser_Name_55f1e399_hz5j/placeHolder", _this.lang, "");
         _this.purchaser_Purchaser_Name_55f1e399_hz5jQuickSelect = {
             "enable": false,
             "showItemsCount": 10,
             "showMore": true
         };
-        _this.totalPrice_1c1f8bdb_p30m_PlaceHolder = _this.langService.transform('NumericBox/totalPrice_1c1f8bdb_p30m/placeHolder', _this.lang, "");
+        _this.totalPrice_1c1f8bdb_p30m_PlaceHolder = _this.langService.transform("NumericBox/totalPrice_1c1f8bdb_p30m/placeHolder", _this.lang, "");
         _this.totalPrice1c1f8bdbP30mTextOptions = {
             "type": "number",
             "useThousands": true,
             "precision": 2,
         };
-        _this.deliveryDate_7be8a928_jelq_PlaceHolder = _this.langService.transform('DateBox/deliveryDate_7be8a928_jelq/placeHolder', _this.lang, "");
-        _this.planCode_7b926633_5dke_PlaceHolder = _this.langService.transform('TextBox/planCode_7b926633_5dke/placeHolder', _this.lang, "");
-        _this.planName_fbe5d590_15n2_PlaceHolder = _this.langService.transform('TextBox/planName_fbe5d590_15n2/placeHolder', _this.lang, "");
+        _this.deliveryDate_7be8a928_jelq_PlaceHolder = _this.langService.transform("DateBox/deliveryDate_7be8a928_jelq/placeHolder", _this.lang, "");
+        _this.planCode_7b926633_5dke_PlaceHolder = _this.langService.transform("TextBox/planCode_7b926633_5dke/placeHolder", _this.lang, "");
+        _this.planName_fbe5d590_15n2_PlaceHolder = _this.langService.transform("TextBox/planName_fbe5d590_15n2/placeHolder", _this.lang, "");
         _this.lang = localStorage.getItem('languageCode') || "zh-CHS";
         _this.viewModel.verifycationChanged.subscribe(function (verifyInformations) {
             _this.focusInvalidService.focusInvalidInput(verifyInformations, _this.rootElement);

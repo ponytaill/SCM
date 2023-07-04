@@ -24,6 +24,7 @@ var RootViewmodel = /** @class */ (function (_super) {
     RootViewmodel.prototype.Filter1 = function (commandParam) { return; };
     RootViewmodel.prototype.submitWithBizDefKey1 = function (commandParam) { return; };
     RootViewmodel.prototype.cancelSubmitWithDataId1 = function (commandParam) { return; };
+    RootViewmodel.prototype.rootviewmodelLoad1 = function (commandParam) { return; };
     tslib_1.__decorate([
         NgCommand({
             name: 'Load1',
@@ -210,6 +211,22 @@ var RootViewmodel = /** @class */ (function (_super) {
         tslib_1.__metadata("design:paramtypes", [Object]),
         tslib_1.__metadata("design:returntype", Observable)
     ], RootViewmodel.prototype, "cancelSubmitWithDataId1", null);
+    tslib_1.__decorate([
+        NgCommand({
+            name: 'rootviewmodelLoad1',
+            params: {
+                filter: '',
+                sort: ''
+            },
+            paramDescriptions: {
+                filter: { type: 'string' },
+                sort: { type: 'string' }
+            }
+        }),
+        tslib_1.__metadata("design:type", Function),
+        tslib_1.__metadata("design:paramtypes", [Object]),
+        tslib_1.__metadata("design:returntype", Observable)
+    ], RootViewmodel.prototype, "rootviewmodelLoad1", null);
     RootViewmodel = tslib_1.__decorate([
         Injectable()
     ], RootViewmodel);

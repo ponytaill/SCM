@@ -49,7 +49,7 @@ var PlandetailsComponent = /** @class */ (function (_super) {
         _this.enabledLanguageList = [];
         _this.tabsToolbarStates = new BehaviorSubject({});
         _this.tabsToolbarVisibleStates = new BehaviorSubject({});
-        _this.dataGrid_plandetailslineNumberTitle = _this.langService.transform('DataGrid/dataGrid_plandetails/lineNumberTitle', _this.lang, "");
+        _this.dataGrid_plandetailslineNumberTitle = _this.langService.transform("DataGrid/dataGrid_plandetails/lineNumberTitle", _this.lang, "");
         _this.lang = localStorage.getItem('languageCode') || "zh-CHS";
         _this.viewModel.verifycationChanged.subscribe(function (verifyInformations) {
             _this.focusInvalidService.focusGridCell(verifyInformations, _this.dataGrid_plandetailsDataGrid);
@@ -87,7 +87,7 @@ var PlandetailsComponent = /** @class */ (function (_super) {
                     id: 'materialId_MaterialId_MaterialCode_08ca00c7_ao7g',
                     field: 'materialId.materialId_MaterialCode',
                     width: 120,
-                    title: this.langService.transform('materialId_MaterialId_MaterialCode_08ca00c7_ao7g', this.lang, "物料编号"),
+                    title: this.langService.transform("materialId_MaterialId_MaterialCode_08ca00c7_ao7g", this.lang, "物料编号"),
                     dataType: 'string',
                     align: 'left',
                     halign: 'left',
@@ -109,7 +109,10 @@ var PlandetailsComponent = /** @class */ (function (_super) {
                             "displayType": 'List',
                             "mapFields": { 'id': 'materialId.materialId,materialId.materialId_ID', 'materialCode': 'materialId.materialId_MaterialCode', 'materialName': 'materialId.materialId_MaterialName', 'materialCat.materialCat_CatName': 'materialId.materialId_MaterialCat_CatName', 'evePrice': 'materialId.materialId_EvePrice' },
                             "expandLevel": -1,
+                            "showNavigation": true,
                             "cascadeStatus": 'enable',
+                            "navTreeToList": false,
+                            "treeToList": false,
                             "editable": false,
                             "enableCascade": false,
                             "quickSelect": {
@@ -124,12 +127,13 @@ var PlandetailsComponent = /** @class */ (function (_super) {
                             "useTip": false,
                             "selectFirstInNav": false,
                             "loadDataWhenOpen": true,
-                            "title": this.langService.transform('GridField/materialId_MaterialId_MaterialCode_08ca00c7_ao7g/editor/LookupEdit/materialId_MaterialId_MaterialCode_08ca00c7_bba6/dialogTitle', this.lang, ""),
+                            "title": this.langService.transform("GridField/materialId_MaterialId_MaterialCode_08ca00c7_ao7g/editor/LookupEdit/materialId_MaterialId_MaterialCode_08ca00c7_bba6/dialogTitle", this.lang, ""),
                             "nosearch": false,
                             "context": {
                                 "enableExtendLoadMethod": true
                             },
-                            "isRecordSize": false
+                            "isRecordSize": false,
+                            "viewType": 'text'
                         }
                     },
                     sortable: true,
@@ -151,7 +155,7 @@ var PlandetailsComponent = /** @class */ (function (_super) {
                     id: 'materialId_MaterialId_MaterialName_0d109a4f_7r0m',
                     field: 'materialId.materialId_MaterialName',
                     width: 120,
-                    title: this.langService.transform('materialId_MaterialId_MaterialName_0d109a4f_7r0m', this.lang, "物料名称"),
+                    title: this.langService.transform("materialId_MaterialId_MaterialName_0d109a4f_7r0m", this.lang, "物料名称"),
                     dataType: 'string',
                     align: 'left',
                     halign: 'left',
@@ -179,7 +183,7 @@ var PlandetailsComponent = /** @class */ (function (_super) {
                     id: 'materialId_MaterialId_EvePrice_998dde09_udfc',
                     field: 'materialId.materialId_EvePrice',
                     width: 120,
-                    title: this.langService.transform('materialId_MaterialId_EvePrice_998dde09_udfc', this.lang, "市场价格"),
+                    title: this.langService.transform("materialId_MaterialId_EvePrice_998dde09_udfc", this.lang, "市场价格"),
                     dataType: 'number',
                     align: 'left',
                     halign: 'left',
@@ -207,7 +211,7 @@ var PlandetailsComponent = /** @class */ (function (_super) {
                     id: 'materialId_MaterialId_MaterialCat_CatName_e6f48613_344b',
                     field: 'materialId.materialId_MaterialCat_CatName',
                     width: 120,
-                    title: this.langService.transform('materialId_MaterialId_MaterialCat_CatName_e6f48613_344b', this.lang, "物料类别"),
+                    title: this.langService.transform("materialId_MaterialId_MaterialCat_CatName_e6f48613_344b", this.lang, "物料类别"),
                     dataType: 'string',
                     align: 'left',
                     halign: 'left',
@@ -235,7 +239,7 @@ var PlandetailsComponent = /** @class */ (function (_super) {
                     id: 'materiaAmount_143b71b6_wiiv',
                     field: 'materialAmount',
                     width: 120,
-                    title: this.langService.transform('materiaAmount_143b71b6_wiiv', this.lang, "物料数量"),
+                    title: this.langService.transform("materiaAmount_143b71b6_wiiv", this.lang, "物料数量"),
                     dataType: 'number',
                     align: 'left',
                     halign: 'left',
@@ -243,7 +247,7 @@ var PlandetailsComponent = /** @class */ (function (_super) {
                     isMultilingualField: false,
                     editor: {
                         type: EditorTypes.NUMBERBOX,
-                        options: { "id": "materiaAmount_143b71b6_5utc", "title": "数值框", "placeHolder": "", "readonly": false, "localization": null, "localizationType": null, "type": "EditorTypes.NUMBERBOX", "precision": 0, "step": 1, "canNull": true, "bigNumber": false, "showButton": true, "showZero": false }
+                        options: { "id": "materiaAmount_143b71b6_5utc", "title": "数值框", "placeHolder": "", "readonly": false, "localization": null, "localizationType": null, "type": "EditorTypes.NUMBERBOX", "precision": 0, "step": 1, "min": 0, "canNull": true, "bigNumber": false, "showButton": true, "showZero": false }
                     },
                     sortable: true,
                     footer: {
@@ -275,7 +279,7 @@ var PlandetailsComponent = /** @class */ (function (_super) {
                     id: 'supplier_Supplier_SupplierCode_1d93ad3d_alr2',
                     field: 'supplier.supplier_SupplierCode',
                     width: 120,
-                    title: this.langService.transform('supplier_Supplier_SupplierCode_1d93ad3d_alr2', this.lang, "供应商编号"),
+                    title: this.langService.transform("supplier_Supplier_SupplierCode_1d93ad3d_alr2", this.lang, "供应商编号"),
                     dataType: 'string',
                     align: 'left',
                     halign: 'left',
@@ -297,7 +301,10 @@ var PlandetailsComponent = /** @class */ (function (_super) {
                             "displayType": 'List',
                             "mapFields": { 'id': 'supplier.supplier,supplier.supplier_ID', 'supplierName': 'supplier.supplier_SupplierName', 'supplierCode': 'supplier.supplier_SupplierCode', 'contactsEmail': 'supplier.supplier_ContactsEmail', 'contactsAddress': 'supplier.supplier_ContactsAddress' },
                             "expandLevel": -1,
+                            "showNavigation": true,
                             "cascadeStatus": 'enable',
+                            "navTreeToList": false,
+                            "treeToList": false,
                             "editable": false,
                             "enableCascade": false,
                             "quickSelect": {
@@ -312,12 +319,13 @@ var PlandetailsComponent = /** @class */ (function (_super) {
                             "useTip": false,
                             "selectFirstInNav": false,
                             "loadDataWhenOpen": true,
-                            "title": this.langService.transform('GridField/supplier_Supplier_SupplierCode_1d93ad3d_alr2/editor/LookupEdit/supplier_Supplier_SupplierCode_1d93ad3d_6lav/dialogTitle', this.lang, ""),
+                            "title": this.langService.transform("GridField/supplier_Supplier_SupplierCode_1d93ad3d_alr2/editor/LookupEdit/supplier_Supplier_SupplierCode_1d93ad3d_6lav/dialogTitle", this.lang, ""),
                             "nosearch": false,
                             "context": {
                                 "enableExtendLoadMethod": true
                             },
-                            "isRecordSize": false
+                            "isRecordSize": false,
+                            "viewType": 'text'
                         }
                     },
                     sortable: true,
@@ -339,7 +347,7 @@ var PlandetailsComponent = /** @class */ (function (_super) {
                     id: 'supplier_Supplier_SupplierName_a4a0e5d0_ju44',
                     field: 'supplier.supplier_SupplierName',
                     width: 120,
-                    title: this.langService.transform('supplier_Supplier_SupplierName_a4a0e5d0_ju44', this.lang, "供应商名称"),
+                    title: this.langService.transform("supplier_Supplier_SupplierName_a4a0e5d0_ju44", this.lang, "供应商名称"),
                     dataType: 'string',
                     align: 'left',
                     halign: 'left',
@@ -367,7 +375,7 @@ var PlandetailsComponent = /** @class */ (function (_super) {
                     id: 'supplier_Supplier_ContactsEmail_9f031afb_8tfe',
                     field: 'supplier.supplier_ContactsEmail',
                     width: 120,
-                    title: this.langService.transform('supplier_Supplier_ContactsEmail_9f031afb_8tfe', this.lang, "联系人邮箱"),
+                    title: this.langService.transform("supplier_Supplier_ContactsEmail_9f031afb_8tfe", this.lang, "联系人邮箱"),
                     dataType: 'string',
                     align: 'left',
                     halign: 'left',
@@ -395,7 +403,7 @@ var PlandetailsComponent = /** @class */ (function (_super) {
                     id: 'supplier_Supplier_ContactsAddress_27ddf90a_w9yq',
                     field: 'supplier.supplier_ContactsAddress',
                     width: 120,
-                    title: this.langService.transform('supplier_Supplier_ContactsAddress_27ddf90a_w9yq', this.lang, "办公地址"),
+                    title: this.langService.transform("supplier_Supplier_ContactsAddress_27ddf90a_w9yq", this.lang, "办公地址"),
                     dataType: 'string',
                     align: 'left',
                     halign: 'left',

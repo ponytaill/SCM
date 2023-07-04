@@ -22,7 +22,7 @@
             "ngcOut": "out-tsc/app/projects/bo-materialplan-front",
             "excludeNgFactory": true,
             "index": "projects/bo-materialplan-front/src/index.rollup.html",
-            "importmap": "/platform/runtime/common/web/runtime.common.manifest.json?v=1688286831330",
+            "importmap": "/platform/runtime/common/web/runtime.common.manifest.json?v=1688372406508",
             "tsConfig": "projects/bo-materialplan-front/tsconfig.app.json",
             "entry": {
               "main": {
@@ -45,8 +45,8 @@
             "libs": {},
             "serve": false,
             "visualize": false,
-            "libsPath": "F:/summer/Projects/node_modules/@farris/farris-rollup/src/build/libsWithNgFactory.json",
-            "linkedNodeModules": "F:/summer/Projects/node_modules",
+            "libsPath": "C:/projects/node_modules/@farris/farris-rollup/src/build/libsWithNgFactory.json",
+            "linkedNodeModules": "C:/projects/node_modules",
             "assets": [],
             "i18n": {
               "projects/bo-materialplan-front/src/app/materialplancard/i18n": "dist-rollup/bo-materialplan-front/materialplancard/i18n",
@@ -61,7 +61,7 @@
           },
           "configurations": {
             "production": {
-              "importmap": "/platform/runtime/common/web/runtime.common.manifest.json?v=1688286831330",
+              "importmap": "/platform/runtime/common/web/runtime.common.manifest.json?v=1688372406508",
               "optimization": false,
               "buildOptimizer": false,
               "outputHashing": "none",

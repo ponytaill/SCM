@@ -86,10 +86,6 @@ var PlandetailsComponentViewmodelForm = /** @class */ (function (_super) {
                 {
                     type: 'maxValue',
                     constraints: [1.7976931348623157e+308],
-                },
-                {
-                    type: 'minValue',
-                    constraints: [-1.7976931348623157e+308],
                 }
             ]
         }),

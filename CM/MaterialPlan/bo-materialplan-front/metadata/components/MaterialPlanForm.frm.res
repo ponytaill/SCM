@@ -305,6 +305,11 @@
       "comment" : "",
       "resourceType" : "Message"
     }, {
+      "id" : "Inspur.GS.SCM.CM.MaterialPlan.MaterialPlan.Front.MaterialPlanForm.Form.toolBarItem-epjr",
+      "value" : "同步",
+      "comment" : "同步",
+      "resourceType" : "Message"
+    }, {
       "id" : "Inspur.GS.SCM.CM.MaterialPlan.MaterialPlan.Front.MaterialPlanForm.Form.button-add",
       "value" : "新增",
       "comment" : "新增",

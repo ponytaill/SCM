@@ -169,4 +169,17 @@ export class RootViewmodel extends ViewModel {
     })
     public cancelSubmitWithDataId1(commandParam?: any): Observable<any> { return; }
 
+    @NgCommand({
+        name: 'rootviewmodelLoad1',
+        params: {
+            filter: '',
+            sort: ''
+        },
+        paramDescriptions: {
+            filter: { type: 'string' },
+            sort: { type: 'string' }
+        }
+    })
+    public rootviewmodelLoad1(commandParam?: any): Observable<any> { return; }
+
 }

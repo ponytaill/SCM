@@ -427,6 +427,7 @@ var PlandetailsComponentViewmodel = /** @class */ (function (_super) {
                                 "value": "materialAmount"
                             },
                             "disable": false,
+                            "minValue": 0,
                             "step": 1,
                             "useThousands": true,
                             "textAlign": "left",

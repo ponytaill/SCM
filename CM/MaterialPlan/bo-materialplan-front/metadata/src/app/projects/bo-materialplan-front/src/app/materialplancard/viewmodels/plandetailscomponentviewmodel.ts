@@ -430,6 +430,7 @@ export class PlandetailsComponentViewmodel extends ViewModel {
             "value": "materialAmount"
           },
           "disable": false,
+          "minValue": 0,
           "step": 1,
           "useThousands": true,
           "textAlign": "left",

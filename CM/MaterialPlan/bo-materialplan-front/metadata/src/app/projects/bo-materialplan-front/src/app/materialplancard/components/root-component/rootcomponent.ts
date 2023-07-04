@@ -8,6 +8,7 @@ import { KeybindingService } from '@farris/command-services';
 import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 import { FrmI18nSettingService } from '@gsp-sys/rtf-common';
 import { DomSanitizer } from '@angular/platform-browser';
+
 import { ExceptionHandler } from '@farris/command-services';
 import { FrameworkSessionService, UriService } from '@farris/bef';
 import { FrameworkService } from '@gsp-sys/rtf-common';
@@ -18,6 +19,7 @@ import { WFSubmiteService } from '@gsp-wf/rtdevkit';
 import { CloudprintService } from '@gsp-svc/cloudprint';
 import { WFFlowchartService } from '@gsp-wf/ui-flowchart';
 
+import { CHANGE_SET_POLICY_TOKEN } from '@farris/devkit';
 import { TranslateToken, FARRIS_DEVKIT_EXPRESSION_ROOT_FRAME_PROVIDERS } from '@farris/devkit';
 import { VerifyDetailService } from '@farris/ui-verify-detail';
 import { AppContext, FORM_ID,  PARAM_TYPE_TRANSFORM_TOKEN } from '@farris/devkit';
@@ -100,6 +102,7 @@ import { MaterialPlanProxy } from '../../models/materialplanproxy';
         { provide: FORM_ID, useValue: "98708d9f-8b7c-4539-b546-8b5f2a886381" },
         { provide: BE_SESSION_HANDLING_STRATEGY_TOKEN, useValue: "SeparatedSession" },
         { provide: EXCEPTION_HANDLER, useClass: ExceptionHandler },
+        { provide: CHANGE_SET_POLICY_TOKEN, useValue: 'valid' },
         { provide: BACK_END_MESSAGE_HANDLER_TOKEN, useClass: BackEndMessageHandler },
         { provide: COMMAND_HANDLERS_TOKEN, useClass: Load1Handler, multi: true },
         { provide: COMMAND_HANDLERS_TOKEN, useClass: LoadAndAdd1Handler, multi: true },
@@ -277,7 +280,7 @@ export class RootComponent extends FrameComponent implements OnInit, AfterViewIn
     } 
     pageHeaderToolbarToolbarItems = [{
         "id": "button-add",
-        "text": this.langService.transform('button-add', this.lang, "新增"),
+        "text": this.langService.transform("button-add", this.lang, "新增"),
         "resourceId": "button-add",
         "isDP": false,
         "class": "btn-primary",
@@ -286,7 +289,7 @@ export class RootComponent extends FrameComponent implements OnInit, AfterViewIn
         "children": []
         },{
         "id": "button-edit",
-        "text": this.langService.transform('button-edit', this.lang, "编辑"),
+        "text": this.langService.transform("button-edit", this.lang, "编辑"),
         "resourceId": "button-edit",
         "isDP": false,
         "tipsEnable": false,
@@ -294,7 +297,7 @@ export class RootComponent extends FrameComponent implements OnInit, AfterViewIn
         "children": []
         },{
         "id": "button-save",
-        "text": this.langService.transform('button-save', this.lang, "保存"),
+        "text": this.langService.transform("button-save", this.lang, "保存"),
         "resourceId": "button-save",
         "isDP": false,
         "tipsEnable": false,
@@ -302,7 +305,7 @@ export class RootComponent extends FrameComponent implements OnInit, AfterViewIn
         "children": []
         },{
         "id": "button-cancel",
-        "text": this.langService.transform('button-cancel', this.lang, "取消"),
+        "text": this.langService.transform("button-cancel", this.lang, "取消"),
         "resourceId": "button-cancel",
         "isDP": false,
         "tipsEnable": false,
@@ -341,7 +344,7 @@ export class RootComponent extends FrameComponent implements OnInit, AfterViewIn
                 id: 'plandetailsAddButton',
                 disable: !this.viewModel.stateMachine['canAddDetail'],
                 visible: true,
-                title: this.langService.transform('plandetailsAddButton', this.lang, "新增"),
+                title: this.langService.transform("plandetailsAddButton", this.lang, "新增"),
                 click: () => { this.viewModel.plandetailsComponentViewmodel.rootviewmodelAddItem1(); },
                 appearance: {
                     "class": "btn btn-secondary f-btn-ml"
@@ -351,7 +354,7 @@ export class RootComponent extends FrameComponent implements OnInit, AfterViewIn
                 id: 'plandetailsRemoveButton',
                 disable: !this.viewModel.stateMachine['canRemoveDetail'],
                 visible: true,
-                title: this.langService.transform('plandetailsRemoveButton', this.lang, "删除"),
+                title: this.langService.transform("plandetailsRemoveButton", this.lang, "删除"),
                 click: () => { this.viewModel.plandetailsComponentViewmodel.plandetailsRemoveItem1(); },
                 appearance: {
                     "class": "btn btn-secondary f-btn-ml"
@@ -361,7 +364,7 @@ export class RootComponent extends FrameComponent implements OnInit, AfterViewIn
                 id: 'tabToolbarItem-fy36',
                 disable: false,
                 visible: true,
-                title: this.langService.transform('tabToolbarItem-fy36', this.lang, "导入"),
+                title: this.langService.transform("tabToolbarItem-fy36", this.lang, "导入"),
                 click: () => { this.viewModel.rootviewmodelDataImport1(); },
                 appearance: {
                     "class": "btn btn-secondary f-btn-ml"
@@ -371,7 +374,7 @@ export class RootComponent extends FrameComponent implements OnInit, AfterViewIn
                 id: 'tabToolbarItem-56w5',
                 disable: false,
                 visible: true,
-                title: this.langService.transform('tabToolbarItem-56w5', this.lang, "勾选导出"),
+                title: this.langService.transform("tabToolbarItem-56w5", this.lang, "勾选导出"),
                 click: () => { this.viewModel.rootviewmodelDataExport1(); },
                 appearance: {
                     "class": "btn btn-secondary f-btn-ml"
@@ -381,7 +384,7 @@ export class RootComponent extends FrameComponent implements OnInit, AfterViewIn
                 id: 'tabToolbarItem-caan',
                 disable: false,
                 visible: true,
-                title: this.langService.transform('tabToolbarItem-caan', this.lang, "全部导出"),
+                title: this.langService.transform("tabToolbarItem-caan", this.lang, "全部导出"),
                 click: () => { this.viewModel.rootviewmodelDataExport2(); },
                 appearance: {
                     "class": "btn btn-secondary f-btn-ml"
@@ -389,7 +392,7 @@ export class RootComponent extends FrameComponent implements OnInit, AfterViewIn
             }
         ]
     }
-    plandetailstabpage = this.langService.transform('plandetails-tab-page', this.lang, "物料需求计划明细");
+    plandetailstabpage = this.langService.transform("plandetails-tab-page", this.lang, "物料需求计划明细");
     sectionsToolbarStates = new BehaviorSubject({});
     sectionsToolbarVisibleStates = new BehaviorSubject({});
     detailSectionToolbar = {
@@ -397,6 +400,6 @@ export class RootComponent extends FrameComponent implements OnInit, AfterViewIn
         contents: [
         ]
     }
-    SectiondetailsectionMainTitle = this.langService.transform('Section/detail-section/mainTitle', this.lang, "");
-    SectiondetailsectionSubTitle = this.langService.transform('Section/detail-section/subTitle', this.lang, "");
+    SectiondetailsectionMainTitle = this.langService.transform("Section/detail-section/mainTitle", this.lang, "");
+    SectiondetailsectionSubTitle = this.langService.transform("Section/detail-section/subTitle", this.lang, "");
 }

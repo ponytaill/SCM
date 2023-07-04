@@ -26,7 +26,6 @@
   "Content" : {
     "code" : null,
     "name" : null,
-    "Id" : "e72f0873-e8ea-4969-8451-a0bdf12a5d16",
     "Contents" : {
       "module" : {
         "id" : "MaterialPlanForm",
@@ -1229,6 +1228,24 @@
             "isInvalid" : false,
             "isNewGenerated" : false,
             "targetComponent" : "root-component"
+          }, {
+            "id" : "ba71133e-0982-4f3b-96d3-431bc79632ca",
+            "code" : "rootviewmodelLoad1",
+            "name" : "加载数据1",
+            "params" : [ {
+              "name" : "filter",
+              "shownName" : "过滤条件",
+              "value" : ""
+            }, {
+              "name" : "sort",
+              "shownName" : "排序条件",
+              "value" : ""
+            } ],
+            "handlerName" : "Load",
+            "cmpId" : "70b4abd4-9f2c-4b7c-90e9-6ac6f4b74c72",
+            "isInvalid" : false,
+            "isNewGenerated" : true,
+            "targetComponent" : "root-component"
           } ],
           "states" : [ {
             "id" : "ad1250a9-fe0c-4dcf-81fe-9c2c52608c66",
@@ -1862,6 +1879,17 @@
                   },
                   "size" : null,
                   "items" : [ {
+                    "id" : "toolBarItem-epjr",
+                    "type" : "ToolBarItem",
+                    "appearance" : null,
+                    "disable" : false,
+                    "text" : "同步",
+                    "items" : [ ],
+                    "visible" : true,
+                    "click" : "rootviewmodelLoad1",
+                    "usageMode" : "button",
+                    "modalConfig" : null
+                  }, {
                     "id" : "button-add",
                     "type" : "ToolBarItem",
                     "appearance" : {
@@ -2741,6 +2769,9 @@
           }, {
             "host" : "4f7a55f3-ed3b-40c1-83e3-93a889fa437a",
             "handler" : "View"
+          }, {
+            "host" : "ba71133e-0982-4f3b-96d3-431bc79632ca",
+            "handler" : "Load"
           } ],
           "code" : "ListController",
           "nameSpace" : "Inspur.GS.Gsp.Web.WebCmp"
@@ -3285,6 +3316,97 @@
               }
             } ]
           }
+        }, {
+          "sourceComponent" : {
+            "id" : "toolBarItem-epjr",
+            "viewModelId" : "root-viewmodel",
+            "map" : [ {
+              "event" : {
+                "label" : "click",
+                "name" : "点击事件"
+              },
+              "targetComponent" : {
+                "id" : "root-component",
+                "viewModelId" : "root-viewmodel"
+              },
+              "command" : {
+                "id" : "ba71133e-0982-4f3b-96d3-431bc79632ca",
+                "label" : "rootviewmodelLoad1",
+                "name" : "加载数据1",
+                "handlerName" : "Load",
+                "params" : [ {
+                  "id" : "fd8552c4-b609-f52d-a449-1b37d7bebbd8",
+                  "name" : "filter",
+                  "value" : "",
+                  "shownName" : "过滤条件",
+                  "description" : "可选，根据“过滤条件编辑器”编辑而得",
+                  "editorType" : null,
+                  "isRetVal" : false,
+                  "origin" : {
+                    "dict" : null,
+                    "required" : null,
+                    "defaultValue" : null,
+                    "constraint" : null,
+                    "kind" : "DefaultParameter",
+                    "controlType" : null,
+                    "helpInfo" : null,
+                    "paramConstraint" : null,
+                    "enumCollection" : [ ],
+                    "extensionKeys" : null,
+                    "Code" : "filter",
+                    "Name" : "过滤条件",
+                    "Description" : "可选，根据“过滤条件编辑器”编辑而得",
+                    "ParameterType" : "string",
+                    "controlSource" : {
+                      "type" : "FilterEditor",
+                      "context" : null
+                    },
+                    "Id" : "fd8552c4-b609-f52d-a449-1b37d7bebbd8",
+                    "IsRetVal" : false,
+                    "EditorType" : null
+                  }
+                }, {
+                  "id" : "d1395b4b-7896-1a5a-cd76-84e9e676880e",
+                  "name" : "sort",
+                  "value" : "",
+                  "shownName" : "排序条件",
+                  "description" : "可选，根据“排序条件编辑器”编辑而得",
+                  "editorType" : null,
+                  "isRetVal" : false,
+                  "origin" : {
+                    "dict" : null,
+                    "required" : null,
+                    "defaultValue" : null,
+                    "constraint" : null,
+                    "kind" : "DefaultParameter",
+                    "controlType" : null,
+                    "helpInfo" : null,
+                    "paramConstraint" : null,
+                    "enumCollection" : [ ],
+                    "extensionKeys" : null,
+                    "Code" : "sort",
+                    "Name" : "排序条件",
+                    "Description" : "可选，根据“排序条件编辑器”编辑而得",
+                    "ParameterType" : "string",
+                    "controlSource" : {
+                      "type" : "SortEditor",
+                      "context" : null
+                    },
+                    "Id" : "d1395b4b-7896-1a5a-cd76-84e9e676880e",
+                    "IsRetVal" : false,
+                    "EditorType" : null
+                  }
+                } ],
+                "isNewGenerated" : true,
+                "isInvalid" : false
+              },
+              "controller" : {
+                "id" : "70b4abd4-9f2c-4b7c-90e9-6ac6f4b74c72",
+                "label" : "ListController",
+                "name" : "列表控制器"
+              }
+            } ]
+          }
         } ]
       },
       "options" : {
@@ -3295,6 +3417,7 @@
         "publishFormProcess" : true
       }
     },
+    "Id" : "e72f0873-e8ea-4969-8451-a0bdf12a5d16",
     "CreationDate" : null
   },
   "ExtendRule" : null,
