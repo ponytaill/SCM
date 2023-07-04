@@ -1,5 +1,5 @@
-#Last modified on: Mon Jul 03 16:35:26 GMT+08:00 2023
-#Mon Jul 03 16:35:26 GMT+08:00 2023
+#Last modified on: Tue Jul 04 08:38:43 GMT+08:00 2023
+#Tue Jul 04 08:38:43 GMT+08:00 2023
 SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanCard_frm.vo.metadataName=\u7269\u6599\u9700\u6C42\u8BA1\u5212\u8BE6\u60C5_frm
 SCM/CM/MaterialPlan/bo-materialplan-front/metadata/lookups/MaterialStorageLookup.hlp.metadataName=\u7269\u6599\u5E93\u5B58\u6570\u91CF\u5E2E\u52A9
 SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanCard_frm_MinDate.webcmd.metadataCode=MaterialPlanCard_frm_MinDate
@@ -24,7 +24,7 @@ SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanCard_f
 SCM/CM/MaterialPlan/bo-materialplan-front/metadata/eapi/MaterialStorageLookup_hlp.eapi.metadataCode=MaterialStorageLookup_hlp
 SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanCard_frm_MinDate.webcmd.lastChangeOn=1688370906640
 SCM/CM/MaterialPlan/bo-materialplan-back/metadata/be/MaterialPlan.be.metadataCode=MaterialPlan
-SCM/CM/MaterialPlan/bo-materialplan-back/metadata/dbo/SCMPlanDetails.dbo.lastChangeOn=1688370906606
+SCM/CM/MaterialPlan/bo-materialplan-back/metadata/dbo/SCMPlanDetails.dbo.lastChangeOn=1688373423128
 SCM/CM/MaterialPlan/bo-materialplan-back/metadata/dbo/SCMMaterialPlan.dbo.metadataName=\u7269\u6599\u9700\u6C42\u8BA1\u5212
 SCM/CM/MaterialPlan/bo-materialplan-front/metadata/eapi/MaterialStorageLookup_hlp.eapi.lastChangeOn=1688370906648
 SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanForm_frm.vo.metadataName=\u7269\u6599\u9700\u6C42\u8BA1\u5212\u8868\u5355_frm
@@ -69,17 +69,17 @@ SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanCard_f
 SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanCard_frm.sm.metadataCode=MaterialPlanCard_frm
 SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanCard.frm.res.lastChangeOn=1688370906633
 SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanForm_frm.vo.res.metadataCode=MaterialPlanForm_frm.vo
-SCM/CM/MaterialPlan/bo-materialplan-front/metadata/lookups/MaterialStorageLookup.hlp.res.metadataId=c89c2d81-6d20-4793-ad15-c317ecf5ce07
-SCM/CM/MaterialPlan/bo-materialplan-front/metadata/eapi/MaterialPlanForm_frm.eapi.metadataCode=MaterialPlanForm_frm
 SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanCard_frm.vo.res.lastChangeOn=1688370906637
+SCM/CM/MaterialPlan/bo-materialplan-front/metadata/eapi/MaterialPlanForm_frm.eapi.metadataCode=MaterialPlanForm_frm
+SCM/CM/MaterialPlan/bo-materialplan-front/metadata/lookups/MaterialStorageLookup.hlp.res.metadataId=c89c2d81-6d20-4793-ad15-c317ecf5ce07
 SCM/CM/MaterialPlan/bo-materialplan-front/metadata/lookups/MaterialStorageLookup.hlp.res.metadataName=MaterialStorageLookup.hlp
 SCM/CM/MaterialPlan/bo-materialplan-front/metadata/eapi/MaterialPlanForm_frm.eapi.lastChangeOn=1688370906647
 SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanCard.frm.metadataCode=MaterialPlanCard
 SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanCard.frm.metadataId=13b2d168-4d6a-4ea3-b811-e3e56498f101
 SCM/CM/MaterialPlan/bo-materialplan-back/metadata/be/MaterialPlan.be.res.metadataCode=MaterialPlan.be
-SCM/CM/MaterialPlan/bo-materialplan-back/metadata/be/MaterialPlan.be.res.metadataId=31552b8f-082e-4efe-8bf6-e22f7cef9b6a
-SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanCard.frm.res.metadataName=MaterialPlanCard.frm
 SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanCard_frm.sm.metadataId=a51384c1-4c24-41eb-99d1-e440cd274da0
+SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanCard.frm.res.metadataName=MaterialPlanCard.frm
+SCM/CM/MaterialPlan/bo-materialplan-back/metadata/be/MaterialPlan.be.res.metadataId=31552b8f-082e-4efe-8bf6-e22f7cef9b6a
 SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanForm_frm.vo.metadataId=d5d6ccf3-5d06-44e2-92eb-e75d8fb2fcd3
 SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanCard_frm.vo.metadataCode=MaterialPlanCard_frm
 SCM/CM/MaterialPlan/bo-materialplan-front/metadata/lookups/MaterialStorageLookup.hlp.metadataCode=MaterialStorageLookup
@@ -90,25 +90,25 @@ SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanForm_f
 SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanCard.frm.lastChangeOn=1688370906632
 SCM/CM/MaterialPlan/bo-materialplan-back/metadata/be/component/MaterialPlanValBeforeSave1ValidationController.beValCmp.metadataCode=MaterialPlanValBeforeSave1ValidationController
 SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanCard_frm.vo.res.metadataName=MaterialPlanCard_frm.vo
-SCM/CM/MaterialPlan/bo-materialplan-front/metadata/lookups/MaterialStorageLookup.hlp.metadataId=4ce0776d-9347-4749-8207-a958370893be
 SCM/CM/MaterialPlan/bo-materialplan-back/metadata/be/MaterialPlan.be.res.lastChangeOn=1688370906597
+SCM/CM/MaterialPlan/bo-materialplan-front/metadata/lookups/MaterialStorageLookup.hlp.metadataId=4ce0776d-9347-4749-8207-a958370893be
 SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanCard_frm.sm.metadataName=\u7269\u6599\u9700\u6C42\u8BA1\u5212\u8BE6\u60C5_frm
 SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanForm_frm.vo.res.metadataName=MaterialPlanForm_frm.vo
-SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanCard_frm.vo.lastChangeOn=1688370906636
 SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanCard_frm_Controller.webcmp.metadataCode=MaterialPlanCard_frm_Controller
-SCM/CM/MaterialPlan/bo-materialplan-front/metadata/lookups/MaterialStorageLookup.hlp.lastChangeOn=1688370906650
+SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanCard_frm.vo.lastChangeOn=1688370906636
 SCM/CM/MaterialPlan/bo-materialplan-front/metadata/eapi/MaterialPlanForm_frm.eapi.metadataName=\u7269\u6599\u9700\u6C42\u8BA1\u5212\u8868\u5355_frm
+SCM/CM/MaterialPlan/bo-materialplan-front/metadata/lookups/MaterialStorageLookup.hlp.lastChangeOn=1688370906650
 SCM/CM/MaterialPlan/bo-materialplan-front/metadata/eapi/MaterialPlanCard_frm.eapi.metadataId=dd20afe9-2983-4dc5-91e1-9d8ea5e42520
 SCM/CM/MaterialPlan/bo-materialplan-back/metadata/dbo/SCMMaterialPlan.dbo.metadataCode=SCMMaterialPlan
-SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanCard.frm.res.metadataId=7cf116fa-c01c-49a7-a748-38513b268223
-SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanForm_frm.vo.metadataCode=MaterialPlanForm_frm
 SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanCard_frm_MinDate.webcmp.metadataCode=MaterialPlanCard_frm_MinDate
+SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanForm_frm.vo.metadataCode=MaterialPlanForm_frm
+SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanCard.frm.res.metadataId=7cf116fa-c01c-49a7-a748-38513b268223
 SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanForm_frm.sm.lastChangeOn=1688370906643
 SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanForm_frm.sm.metadataId=ae2ed0b0-a9bf-4b2a-bf47-91114a3e2222
-SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanCard.frm.metadataName=\u7269\u6599\u9700\u6C42\u8BA1\u5212\u8BE6\u60C5
 SCM/CM/MaterialPlan/bo-materialplan-back/metadata/be/MaterialPlan.be.metadataId=2f520bf6-62e7-4482-a186-14cce865f5c5
-SCM/CM/MaterialPlan/bo-materialplan-back/metadata/dbo/SCMMaterialPlan.dbo.lastChangeOn=1688370906604
-SCM/CM/MaterialPlan/bo-materialplan-front/metadata/route/predefinePageflow.pf.metadataCode=predefinePageflow
+SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanCard.frm.metadataName=\u7269\u6599\u9700\u6C42\u8BA1\u5212\u8BE6\u60C5
+SCM/CM/MaterialPlan/bo-materialplan-back/metadata/dbo/SCMMaterialPlan.dbo.lastChangeOn=1688373683914
 SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components/MaterialPlanCard_frm_MinDate.webcmp.lastChangeOn=1688370906640
+SCM/CM/MaterialPlan/bo-materialplan-front/metadata/route/predefinePageflow.pf.metadataCode=predefinePageflow
 SCM/CM/MaterialPlan/bo-materialplan-back/metadata/be/MaterialPlan.be.res.metadataName=MaterialPlan.be
 SCM/CM/MaterialPlan/bo-materialplan-back/metadata/be/component/MaterialPlanValBeforeSave1ValidationController.beValCmp.lastChangeOn=1688370906599

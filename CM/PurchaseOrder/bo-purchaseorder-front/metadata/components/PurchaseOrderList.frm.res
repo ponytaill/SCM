@@ -210,6 +210,11 @@
       "comment" : "",
       "resourceType" : "Message"
     }, {
+      "id" : "Inspur.GS.SCM.CM.PurchaseOrder.PurchaseOrder.Front.PurchaseOrderList.Form.toolBarItem-7798",
+      "value" : "同步",
+      "comment" : "同步",
+      "resourceType" : "Message"
+    }, {
       "id" : "Inspur.GS.SCM.CM.PurchaseOrder.PurchaseOrder.Front.PurchaseOrderList.Form.button-add",
       "value" : "新增",
       "comment" : "新增",

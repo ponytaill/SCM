@@ -1,12 +1,12 @@
-#Last modified on: Mon Jul 03 08:55:59 GMT+08:00 2023
-#Mon Jul 03 08:55:59 GMT+08:00 2023
+#Last modified on: Tue Jul 04 08:41:57 GMT+08:00 2023
+#Tue Jul 04 08:41:57 GMT+08:00 2023
 metadata/eapi/SupplierMaCard_frm.eapi=c2374f9ba98e168991a8fc95e19094b4a4ac2c75
-metadata/components/SupplierMaList.frm=89f3797d17aa5fd6a6b1f05a9e817ac39a3e8f14
+metadata/components/SupplierMaList.frm=ce4566bc63c1ea766f6505bcfbf40f99ceb59a17
 metadata/eapi=12248e085360283b2622ffe50c356b2e0285a3d7
 metadata/components/SupplierMaCard.frm.res=7bf0370246321c4b2e4f9062f435b6924b101842
 metadata/components/SupplierMaList_frm.vo=9d2b7cc70fb564d215abfe030b32128813ae8e44
 metadata/eapi/SupplierMaList_frm.eapi=e3ea616b7ab74b50ed8a339982b282cce6edd614
-metadata/components/SupplierMaList.frm.res=bd38759846a3dfdedb4fbd207b8ea4a4b2fc17ae
+metadata/components/SupplierMaList.frm.res=be084f8fbab870d837b7507ce6440dcfee260548
 metadata/components/SupplierMaList_frm.vo.res=c856535db5f35350eec2408d75b26b3e35200de4
 metadata/lookups/SupplierMaLookup_hlp.vo.res=ccd343b767a6f1566a159196d014b33b4cf6b32b
 metadata/lookups/SupplierMaLookup.hlp=b9b0735589447cf3212292f56c477631b08eb9db

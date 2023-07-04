@@ -195,6 +195,11 @@
       "comment" : "",
       "resourceType" : "Message"
     }, {
+      "id" : "Inspur.GS.SCM.CM.SupplierMa.SupplierMa.Front.SupplierMaList.Form.toolBarItem-wp82",
+      "value" : "同步",
+      "comment" : "同步",
+      "resourceType" : "Message"
+    }, {
       "id" : "Inspur.GS.SCM.CM.SupplierMa.SupplierMa.Front.SupplierMaList.Form.button-add",
       "value" : "新增",
       "comment" : "新增",

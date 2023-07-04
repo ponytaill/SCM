@@ -26,6 +26,8 @@
   "Content" : {
     "code" : null,
     "name" : null,
+    "CreationDate" : null,
+    "Id" : "e3af421f-8e5a-4684-92b5-3ac56d690c00",
     "Contents" : {
       "module" : {
         "id" : "PurchaseOrderList",
@@ -1223,6 +1225,24 @@
             "isInvalid" : false,
             "isNewGenerated" : false,
             "targetComponent" : "root-component"
+          }, {
+            "id" : "1aa7269b-5199-47ed-8fdd-efae0807fe43",
+            "code" : "rootviewmodelLoad1",
+            "name" : "加载数据1",
+            "params" : [ {
+              "name" : "filter",
+              "shownName" : "过滤条件",
+              "value" : ""
+            }, {
+              "name" : "sort",
+              "shownName" : "排序条件",
+              "value" : ""
+            } ],
+            "handlerName" : "Load",
+            "cmpId" : "70b4abd4-9f2c-4b7c-90e9-6ac6f4b74c72",
+            "isInvalid" : false,
+            "isNewGenerated" : true,
+            "targetComponent" : "root-component"
           } ],
           "states" : [ {
             "id" : "ad1250a9-fe0c-4dcf-81fe-9c2c52608c66",
@@ -1815,6 +1835,17 @@
                   },
                   "size" : null,
                   "items" : [ {
+                    "id" : "toolBarItem-7798",
+                    "type" : "ToolBarItem",
+                    "appearance" : null,
+                    "disable" : false,
+                    "text" : "同步",
+                    "items" : [ ],
+                    "visible" : true,
+                    "click" : "rootviewmodelLoad1",
+                    "usageMode" : "button",
+                    "modalConfig" : null
+                  }, {
                     "id" : "button-add",
                     "type" : "ToolBarItem",
                     "appearance" : {
@@ -2584,6 +2615,9 @@
           }, {
             "host" : "e0dd64f5-46fe-43a2-b75c-8715de231c69",
             "handler" : "Remove"
+          }, {
+            "host" : "1aa7269b-5199-47ed-8fdd-efae0807fe43",
+            "handler" : "Load"
           } ],
           "code" : "ListController",
           "nameSpace" : "Inspur.GS.Gsp.Web.WebCmp"
@@ -3030,6 +3064,44 @@
           }
         }, {
           "sourceComponent" : {
+            "id" : "toolBarItem-7798",
+            "viewModelId" : "root-viewmodel",
+            "map" : [ {
+              "event" : {
+                "label" : "click",
+                "name" : "点击事件"
+              },
+              "targetComponent" : {
+                "id" : "root-component",
+                "viewModelId" : "root-viewmodel"
+              },
+              "command" : {
+                "id" : "1aa7269b-5199-47ed-8fdd-efae0807fe43",
+                "label" : "rootviewmodelLoad1",
+                "name" : "加载数据1",
+                "handlerName" : "Load",
+                "params" : [ {
+                  "name" : "filter",
+                  "shownName" : "过滤条件",
+                  "value" : ""
+                }, {
+                  "name" : "sort",
+                  "shownName" : "排序条件",
+                  "value" : ""
+                } ],
+                "cmpId" : "70b4abd4-9f2c-4b7c-90e9-6ac6f4b74c72",
+                "isNewGenerated" : true,
+                "isInvalid" : false
+              },
+              "controller" : {
+                "id" : "70b4abd4-9f2c-4b7c-90e9-6ac6f4b74c72",
+                "label" : "ListController",
+                "name" : "列表控制器"
+              }
+            } ]
+          }
+        }, {
+          "sourceComponent" : {
             "id" : "root-component",
             "viewModelId" : "root-viewmodel",
             "map" : [ {
@@ -3270,9 +3342,7 @@
         "enableDeleteSourceCode" : true,
         "changeSetPolicy" : "valid"
       }
-    },
-    "Id" : "e3af421f-8e5a-4684-92b5-3ac56d690c00",
-    "CreationDate" : null
+    }
   },
   "ExtendRule" : null,
   "RelativePath" : "SCM/CM/PurchaseOrder/bo-purchaseorder-front/metadata/components",

@@ -875,6 +875,24 @@
             "shortcut" : { },
             "extensions" : [ ],
             "isInvalid" : false
+          }, {
+            "id" : "747ff4b6-96be-43a7-aa7b-4a50b22c6d68",
+            "code" : "rootviewmodelLoad1",
+            "name" : "加载数据1",
+            "params" : [ {
+              "name" : "filter",
+              "shownName" : "过滤条件",
+              "value" : ""
+            }, {
+              "name" : "sort",
+              "shownName" : "排序条件",
+              "value" : ""
+            } ],
+            "handlerName" : "Load",
+            "cmpId" : "70b4abd4-9f2c-4b7c-90e9-6ac6f4b74c72",
+            "isInvalid" : false,
+            "isNewGenerated" : true,
+            "targetComponent" : "root-component"
           } ],
           "states" : [ {
             "id" : "ad1250a9-fe0c-4dcf-81fe-9c2c52608c66",
@@ -1230,6 +1248,17 @@
                   },
                   "size" : null,
                   "items" : [ {
+                    "id" : "toolBarItem-wp82",
+                    "type" : "ToolBarItem",
+                    "appearance" : null,
+                    "disable" : false,
+                    "text" : "同步",
+                    "items" : [ ],
+                    "visible" : true,
+                    "click" : "rootviewmodelLoad1",
+                    "usageMode" : "button",
+                    "modalConfig" : null
+                  }, {
                     "id" : "button-add",
                     "type" : "ToolBarItem",
                     "appearance" : {
@@ -1939,6 +1968,9 @@
           }, {
             "host" : "debae2dd-3387-48cf-90ba-96e74ab5a8e5",
             "handler" : "Remove"
+          }, {
+            "host" : "747ff4b6-96be-43a7-aa7b-4a50b22c6d68",
+            "handler" : "Load"
           } ],
           "code" : "ListController",
           "nameSpace" : "Inspur.GS.Gsp.Web.WebCmp"
@@ -2323,6 +2355,97 @@
                 } ],
                 "cmpId" : "70b4abd4-9f2c-4b7c-90e9-6ac6f4b74c72",
                 "isNewGenerated" : false,
+                "isInvalid" : false
+              },
+              "controller" : {
+                "id" : "70b4abd4-9f2c-4b7c-90e9-6ac6f4b74c72",
+                "label" : "ListController",
+                "name" : "列表控制器"
+              }
+            } ]
+          }
+        }, {
+          "sourceComponent" : {
+            "id" : "toolBarItem-wp82",
+            "viewModelId" : "root-viewmodel",
+            "map" : [ {
+              "event" : {
+                "label" : "click",
+                "name" : "点击事件"
+              },
+              "targetComponent" : {
+                "id" : "root-component",
+                "viewModelId" : "root-viewmodel"
+              },
+              "command" : {
+                "id" : "747ff4b6-96be-43a7-aa7b-4a50b22c6d68",
+                "label" : "rootviewmodelLoad1",
+                "name" : "加载数据1",
+                "handlerName" : "Load",
+                "params" : [ {
+                  "id" : "fd8552c4-b609-f52d-a449-1b37d7bebbd8",
+                  "name" : "filter",
+                  "value" : "",
+                  "shownName" : "过滤条件",
+                  "description" : "可选，根据“过滤条件编辑器”编辑而得",
+                  "editorType" : null,
+                  "isRetVal" : false,
+                  "origin" : {
+                    "dict" : null,
+                    "required" : null,
+                    "defaultValue" : null,
+                    "constraint" : null,
+                    "kind" : "DefaultParameter",
+                    "controlType" : null,
+                    "helpInfo" : null,
+                    "paramConstraint" : null,
+                    "enumCollection" : [ ],
+                    "extensionKeys" : null,
+                    "Code" : "filter",
+                    "Name" : "过滤条件",
+                    "Description" : "可选，根据“过滤条件编辑器”编辑而得",
+                    "ParameterType" : "string",
+                    "controlSource" : {
+                      "type" : "FilterEditor",
+                      "context" : null
+                    },
+                    "Id" : "fd8552c4-b609-f52d-a449-1b37d7bebbd8",
+                    "IsRetVal" : false,
+                    "EditorType" : null
+                  }
+                }, {
+                  "id" : "d1395b4b-7896-1a5a-cd76-84e9e676880e",
+                  "name" : "sort",
+                  "value" : "",
+                  "shownName" : "排序条件",
+                  "description" : "可选，根据“排序条件编辑器”编辑而得",
+                  "editorType" : null,
+                  "isRetVal" : false,
+                  "origin" : {
+                    "dict" : null,
+                    "required" : null,
+                    "defaultValue" : null,
+                    "constraint" : null,
+                    "kind" : "DefaultParameter",
+                    "controlType" : null,
+                    "helpInfo" : null,
+                    "paramConstraint" : null,
+                    "enumCollection" : [ ],
+                    "extensionKeys" : null,
+                    "Code" : "sort",
+                    "Name" : "排序条件",
+                    "Description" : "可选，根据“排序条件编辑器”编辑而得",
+                    "ParameterType" : "string",
+                    "controlSource" : {
+                      "type" : "SortEditor",
+                      "context" : null
+                    },
+                    "Id" : "d1395b4b-7896-1a5a-cd76-84e9e676880e",
+                    "IsRetVal" : false,
+                    "EditorType" : null
+                  }
+                } ],
+                "isNewGenerated" : true,
                 "isInvalid" : false
               },
               "controller" : {

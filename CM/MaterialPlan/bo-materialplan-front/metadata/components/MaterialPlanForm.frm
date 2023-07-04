@@ -26,6 +26,8 @@
   "Content" : {
     "code" : null,
     "name" : null,
+    "CreationDate" : null,
+    "Id" : "e72f0873-e8ea-4969-8451-a0bdf12a5d16",
     "Contents" : {
       "module" : {
         "id" : "MaterialPlanForm",
@@ -2848,6 +2850,44 @@
           }
         }, {
           "sourceComponent" : {
+            "id" : "toolBarItem-epjr",
+            "viewModelId" : "root-viewmodel",
+            "map" : [ {
+              "event" : {
+                "label" : "click",
+                "name" : "点击事件"
+              },
+              "targetComponent" : {
+                "id" : "root-component",
+                "viewModelId" : "root-viewmodel"
+              },
+              "command" : {
+                "id" : "ba71133e-0982-4f3b-96d3-431bc79632ca",
+                "label" : "rootviewmodelLoad1",
+                "name" : "加载数据1",
+                "handlerName" : "Load",
+                "params" : [ {
+                  "name" : "filter",
+                  "shownName" : "过滤条件",
+                  "value" : ""
+                }, {
+                  "name" : "sort",
+                  "shownName" : "排序条件",
+                  "value" : ""
+                } ],
+                "cmpId" : "70b4abd4-9f2c-4b7c-90e9-6ac6f4b74c72",
+                "isNewGenerated" : true,
+                "isInvalid" : false
+              },
+              "controller" : {
+                "id" : "70b4abd4-9f2c-4b7c-90e9-6ac6f4b74c72",
+                "label" : "ListController",
+                "name" : "列表控制器"
+              }
+            } ]
+          }
+        }, {
+          "sourceComponent" : {
             "id" : "button-add",
             "viewModelId" : "root-viewmodel",
             "map" : [ {
@@ -3316,97 +3356,6 @@
               }
             } ]
           }
-        }, {
-          "sourceComponent" : {
-            "id" : "toolBarItem-epjr",
-            "viewModelId" : "root-viewmodel",
-            "map" : [ {
-              "event" : {
-                "label" : "click",
-                "name" : "点击事件"
-              },
-              "targetComponent" : {
-                "id" : "root-component",
-                "viewModelId" : "root-viewmodel"
-              },
-              "command" : {
-                "id" : "ba71133e-0982-4f3b-96d3-431bc79632ca",
-                "label" : "rootviewmodelLoad1",
-                "name" : "加载数据1",
-                "handlerName" : "Load",
-                "params" : [ {
-                  "id" : "fd8552c4-b609-f52d-a449-1b37d7bebbd8",
-                  "name" : "filter",
-                  "value" : "",
-                  "shownName" : "过滤条件",
-                  "description" : "可选，根据“过滤条件编辑器”编辑而得",
-                  "editorType" : null,
-                  "isRetVal" : false,
-                  "origin" : {
-                    "dict" : null,
-                    "required" : null,
-                    "defaultValue" : null,
-                    "constraint" : null,
-                    "kind" : "DefaultParameter",
-                    "controlType" : null,
-                    "helpInfo" : null,
-                    "paramConstraint" : null,
-                    "enumCollection" : [ ],
-                    "extensionKeys" : null,
-                    "Code" : "filter",
-                    "Name" : "过滤条件",
-                    "Description" : "可选，根据“过滤条件编辑器”编辑而得",
-                    "ParameterType" : "string",
-                    "controlSource" : {
-                      "type" : "FilterEditor",
-                      "context" : null
-                    },
-                    "Id" : "fd8552c4-b609-f52d-a449-1b37d7bebbd8",
-                    "IsRetVal" : false,
-                    "EditorType" : null
-                  }
-                }, {
-                  "id" : "d1395b4b-7896-1a5a-cd76-84e9e676880e",
-                  "name" : "sort",
-                  "value" : "",
-                  "shownName" : "排序条件",
-                  "description" : "可选，根据“排序条件编辑器”编辑而得",
-                  "editorType" : null,
-                  "isRetVal" : false,
-                  "origin" : {
-                    "dict" : null,
-                    "required" : null,
-                    "defaultValue" : null,
-                    "constraint" : null,
-                    "kind" : "DefaultParameter",
-                    "controlType" : null,
-                    "helpInfo" : null,
-                    "paramConstraint" : null,
-                    "enumCollection" : [ ],
-                    "extensionKeys" : null,
-                    "Code" : "sort",
-                    "Name" : "排序条件",
-                    "Description" : "可选，根据“排序条件编辑器”编辑而得",
-                    "ParameterType" : "string",
-                    "controlSource" : {
-                      "type" : "SortEditor",
-                      "context" : null
-                    },
-                    "Id" : "d1395b4b-7896-1a5a-cd76-84e9e676880e",
-                    "IsRetVal" : false,
-                    "EditorType" : null
-                  }
-                } ],
-                "isNewGenerated" : true,
-                "isInvalid" : false
-              },
-              "controller" : {
-                "id" : "70b4abd4-9f2c-4b7c-90e9-6ac6f4b74c72",
-                "label" : "ListController",
-                "name" : "列表控制器"
-              }
-            } ]
-          }
         } ]
       },
       "options" : {
@@ -3416,9 +3365,7 @@
         "changeSetPolicy" : "valid",
         "publishFormProcess" : true
       }
-    },
-    "Id" : "e72f0873-e8ea-4969-8451-a0bdf12a5d16",
-    "CreationDate" : null
+    }
   },
   "ExtendRule" : null,
   "RelativePath" : "SCM/CM/MaterialPlan/bo-materialplan-front/metadata/components",
